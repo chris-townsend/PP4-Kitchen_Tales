@@ -1,0 +1,13 @@
+body {
+    background-color: bisque;
+}
+
+.bg-company-red {
+    background-color: bisque;
+    font-size: 20px;
+}
+
+.btn {
+    outline: solid 0.2px black;
+}
+
