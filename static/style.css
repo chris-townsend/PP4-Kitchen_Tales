@@ -36,3 +36,18 @@ body {
 .custom-recipe-title {
     font-size: 20px;
 }
+
+/* Recipe Detail page */
+
+.custom-recipe-detail-img {
+    max-height: 375px;
+    object-fit: cover;
+    width: 100%;
+    padding: 1px;
+}
+
+.custom-recipe-detail-header {
+    border: none;
+    background-color:bisque;
+    color: #886363;
+}

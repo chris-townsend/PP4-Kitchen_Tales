@@ -19,8 +19,7 @@ class RecipeListHome(generic.ListView):
 
 class RecipeDetail(View):
     """
-    This view is used to display the full recipe details including comments.
-    It also includes the comment form and add to meal plan form
+    This view is used to display the full recipe details
     """
     def get(self, request, slug):
         """
