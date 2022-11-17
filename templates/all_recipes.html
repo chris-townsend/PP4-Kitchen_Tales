@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %} Kitchen Tales | All Recipes {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="page-title">Recipes</h1>
+        </div>
+    </div>
+    
+    <br>
+    <!-- Recipe Cards -->
+    <div class="row card-deck">
+        {% for recipe in recipe_list  %}
+        <div class="col-sm-6 col-md-4 col-lg-3 px-1 d-flex align-items-stretch">
+            <div class="card recipe-card mb-3 shadow-sm mx-auto mx-sm-2">
+                {% if "placeholder" in recipe.image.url %}
+                <img src="#"
+                    class="custom-recipe-card" alt="placeholder image">
+                {% else %}
+                <img src=" {{ recipe.image.url }}" alt="recipe image" class="custom-recipe-card">
+                {% endif %}
+                <div class="card-body pb-1">
+                    <h2 class="card-title custom-recipe-title">{{ recipe.title }}</h2>
+                    <p class="card-text">
+                        <span><i class="far fa-clock pr-2"></i></span>
+                        <span>Prep Time: {{ recipe.prep_time }}</span>
+                    </p>
+                    <p class="card-text">
+                        <span><i class="far fa-clock pr-2"></i></span>
+                        <span>Cook Time: {{ recipe.cook_time }}</span>
+                    </p>
+                    <a href="#" class="stretched-link"
+                        aria-label="recipe-detail"></a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

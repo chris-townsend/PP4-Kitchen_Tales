@@ -1,6 +1,18 @@
+/* Global Styles */
+
 body {
     background-color: bisque;
 }
+
+.page-title {
+    font-weight: 300;
+    text-align: center;
+    color: #976c6c;
+    padding-top: 15px;
+}
+
+
+/* Navbar */
 
 .bg-company-red {
     background-color: bisque;
@@ -11,3 +23,16 @@ body {
     outline: solid 0.2px black;
 }
 
+
+/* Recipe Cards */
+
+.custom-recipe-card {
+    width: 100%;
+    height: 20px;
+    object-fit: cover;
+    min-height: 200px;
+}
+
+.custom-recipe-title {
+    font-size: 20px;
+}
