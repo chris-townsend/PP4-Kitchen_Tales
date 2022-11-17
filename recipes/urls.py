@@ -7,4 +7,5 @@ from .views import RecipeListHome
 urlpatterns = [
     path("", views.Home.as_view(), name="home"),
     path('all_recipes/', views.RecipeListHome.as_view(), name='all_recipes'),
+    path('recipe_detail/<slug:slug>/', views.RecipeDetail.as_view(), name='recipe_detail'),
 ]
