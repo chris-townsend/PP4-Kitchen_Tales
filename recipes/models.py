@@ -30,3 +30,19 @@ class Recipe(models.Model):
 
     def number_of_saves(self):
         return self.save_recipe.count()
+
+
+class Comment(models.Model):
+    """Model for adding comments to the database"""
+    post = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name='comments')
+    body = models.TextField()
+    name = models.CharField(max_length=70)
+    email = models.EmailField()
+    created_date = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ['-created_date']
+
+    def __str__(self):
+        return f"Comment {self.body} by {self.name}"
