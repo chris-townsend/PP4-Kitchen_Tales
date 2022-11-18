@@ -27,10 +27,13 @@ class RecipeDetail(View):
         """
         queryset = Recipe.objects.all()
         recipe = get_object_or_404(queryset, slug=slug)
+        comments = recipe.comments.order_by('created_date')
         return render(
             request,
             "recipe_detail.html",
             {
                 "recipe": recipe,
+                "comments": comments,
             },
+
         )
