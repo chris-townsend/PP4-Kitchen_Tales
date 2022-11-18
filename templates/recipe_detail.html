@@ -21,6 +21,7 @@
                         <div>
                             <h1 class="page-title text-left">{{ recipe.title }}</h1>
                         </div>
+                        <br>
                         <p class="card-text">Author: {{ recipe.author }}</p>
                         <div class="mb-5">
                             <p>
@@ -35,6 +36,12 @@
                                 <span><i class="fas fa-wrench pr-2""></i></span>
                                 <span>Last Updated: {{ recipe.updated_date }}</span>
                             </p>
+                            <p>
+                             <br>   
+                                <strong class="text-secondary"><i class="far fa-star pr-2"></i>
+                                     {{ recipe.like_recipe }}</strong>
+                            </p>
+                          
                             
                         </div>
                         <div class="container text-center">
