@@ -39,7 +39,7 @@
                             <p>
                              <br>   
                                 <strong class="text-secondary"><i class="far fa-star pr-2"></i>
-                                     {{ recipe.like_recipe }}</strong>
+                                     {{ recipe.like_recipe |  safe }}</strong>
                             </p>
                           
                             
@@ -96,7 +96,33 @@
                             </div>
                         </div>
                     </div>
-                   
+
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card mb-3">
+                                <h4 class="card-header custom-recipe-detail-header">Comments</h4>
+                                <div class="card-body">
+                                    <!-- a for loop to iterate through each comment in comments -->
+                                    {% for comment in comments %}
+                                    <div class="comments" style="padding: 10px;">
+                                        <p class="font-weight-normal">
+                                            {{ comment.created_date }}
+                                            <span class=" text-muted font-weight-bold">
+                                                {{ comment.name | safe }}
+                                            </span> commented:
+                                            <br>
+                                             {{ comment.body | safe }}   
+                                        </p>
+                                    </div>
+                                    <!-- for loop ends here -->
+                                    {% endfor %}
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                
+    
 
 
 {% endblock content %}

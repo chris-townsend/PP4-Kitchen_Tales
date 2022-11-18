@@ -50,4 +50,11 @@ body {
     border: none;
     background-color:bisque;
     color: #886363;
+    letter-spacing: 1px;
 }
+
+
+.comments {
+    border: 0.5px solid rgb(222, 136, 90);
+}
+
