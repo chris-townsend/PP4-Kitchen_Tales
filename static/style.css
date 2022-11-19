@@ -15,28 +15,23 @@ body {
 /* Navbar */
 
 .logo-image {
-    margin-top: -75px;
-    height: 250px;
-    width: 250px;
-}
-
-.navbar {
-    margin-top: -25px;
+    width: 80%;
+    height: auto;
+    margin-left: -40px;
 }
 
 .bg-company-red {
-    margin-top: -10px;
+    margin-top: 1px;
+    padding: 20px;
     letter-spacing: 1.25px;
-    word-spacing: 8px;
+    word-spacing: 6px;
     background-color: bisque;
     font-size: 20px;
 }
 
-
 .nav-item {
-    margin-top: -50px;
+    margin-right: 20px;
 }
-
 
 /* Recipe Cards */
 
