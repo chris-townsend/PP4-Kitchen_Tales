@@ -14,13 +14,27 @@ body {
 
 /* Navbar */
 
+.logo-image {
+    margin-top: -75px;
+    height: 250px;
+    width: 250px;
+}
+
+.navbar {
+    margin-top: -25px;
+}
+
 .bg-company-red {
+    margin-top: -10px;
+    letter-spacing: 1.25px;
+    word-spacing: 8px;
     background-color: bisque;
     font-size: 20px;
 }
 
-.btn {
-    outline: solid 0.2px black;
+
+.nav-item {
+    margin-top: -50px;
 }
 
 
@@ -56,5 +70,11 @@ body {
 
 .comments {
     border: 0.5px solid rgb(222, 136, 90);
+}
+
+
+.main-header {
+    margin-top: -450px;
+    margin-left: -25px;
 }
 

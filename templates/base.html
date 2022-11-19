@@ -21,7 +21,12 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-company-red">
-        <a class="navbar-brand" href="{% url 'home' %}">Kitchen Tales</a>
+      
+        <a class="navbar-brand" href="{% url 'home' %}">
+          <img class="logo-image"
+          src="https://res.cloudinary.com/diez1cpce/image/upload/v1668859975/pp4/logo_transparent_u1i132.png"
+          alt="headerlogo">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,24 +34,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{% url 'home' %}"
+              >Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{% url 'all_recipes' %}">Recipes</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                My Account
+                MyAccount
               </a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Sign In</a>
+                <a class="dropdown-item" href="#">Sign-in</a>
                 <a class="dropdown-item" href="#">Register</a>
                
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <form class="form-inline nav-item">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
           </form>
         </div>
         
