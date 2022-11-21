@@ -81,11 +81,7 @@ body {
 }
 
 
-.main-header {
-    margin-top: -450px;
-    margin-left: -25px;
-}
-
+/* signup.html styling */
 
 .btn-signup {
     background-color: #4492d1;
@@ -97,3 +93,23 @@ body {
     background-color: rgb(41, 182, 218);
     color: #fff;
 }
+
+.sign-up-form {
+    text-align: center;
+    align-content: center;
+    width: 570px;
+    height: 450px;
+    padding: 10px;
+    border: 4px double rgb(41, 182, 218);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.login {
+    margin-left: 50px;
+    text-align: center;
+    align-content: center;
+    padding: 12px;
+
+}
+
