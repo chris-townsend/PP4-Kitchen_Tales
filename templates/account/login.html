@@ -9,13 +9,14 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
+    <div class="col-md-8 mt-1 offset-md-2">
 
 <h3 class="page-title">{% trans "Sign In" %}</h3>
 <br>
 
 <p class="text-center">{% blocktrans %}Welcome back to Kitchen Tales |
   To leave a like or comment on a recipe, please log in.
+  <br>
   If you haven't created an account yet, please
 <a href="{{ signup_url }}">sign up</a> here{% endblocktrans %}</p>
 <br>
@@ -23,7 +24,7 @@
 
    
 
-<form class="login text-center" method="POST" action="{% url 'account_login' %}">
+<form class="sign-in text-center login-form mt-1 col-md-8" method="POST" action="{% url 'account_login' %}">
   {% csrf_token %}
   {{ form.as_p }}
   {% if redirect_field_value %}
