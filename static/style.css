@@ -33,6 +33,19 @@ body {
     margin-right: 20px;
 }
 
+.btn-search {
+    background-color: #4492d1;
+    color: #fff;
+}
+
+.btn-search:hover,
+.btn-search:active {
+    background-color: rgb(41, 182, 218);
+    color: #fff;
+}
+
+
+
 /* Recipe Cards */
 
 .custom-recipe-card {
@@ -73,3 +86,14 @@ body {
     margin-left: -25px;
 }
 
+
+.btn-signup {
+    background-color: #4492d1;
+    color: #fff;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: rgb(41, 182, 218);
+    color: #fff;
+}
