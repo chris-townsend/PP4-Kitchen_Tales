@@ -42,6 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'django_extensions',
     'cloudinary_storage',
     'django.contrib.staticfiles',
@@ -49,6 +53,20 @@ INSTALLED_APPS = [
     'django_summernote',
     'recipes',
 ]
+
+
+# Tells Django the site number
+SITE_ID = 1 
+
+
+# Redirectional URLS back to the homepage after login/logout
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
+# Prevents 500 errors during login and registration
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
