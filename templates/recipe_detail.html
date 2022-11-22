@@ -37,9 +37,24 @@
                                 <span>Last Updated: {{ recipe.updated_date }}</span>
                             </p>
                             <p>
-                             <br>   
-                                <strong class="text-secondary"><i class="far fa-star pr-2"></i>
-                                     {{ recipe.like_recipe |  safe }}</strong>
+                             <br>  
+                             <strong>
+                                {% if user.is_authenticated %}
+                                <form class="d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
+                                    {% csrf_token %}
+                                    {% if liked %}
+                                    <button type="submit" name="recipepost_id" value="{{ recipe.slug }}" class="btn-like">
+                                        <i class="fas fa-heart"></i></button>
+                                    {% else %}
+                                    <button type="submit" name="recipepost_id" value="{{ recipe.slug }}" class="btn-like">
+                                        <i class="far fa-heart"></i></button>
+                                    {% endif %}
+                                </form>
+                                {% else %}
+                                <span class="text-secondary"><i class="far fa-heart"></i></span>
+                                {% endif %}
+                                <span class="text-secondary"> {{ recipe.like_recipe }}</span>
+                             </strong> 
                             </p>
                           
                             
