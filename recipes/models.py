@@ -20,7 +20,8 @@ class Recipe(models.Model):
     notes = models.TextField()
     image = CloudinaryField('image', default='placeholder')
     status = models.IntegerField(choices=STATUS, default=0)
-    like_recipe = models.ManyToManyField(User, related_name='recipe_likes', blank='True')
+    like_recipe = models.ManyToManyField(
+        User, related_name='recipe_likes', default=None, blank=True)
 
     class Meta:
         ordering = ['-created_date']
