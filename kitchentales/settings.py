@@ -64,7 +64,7 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
-# Message Tags set to different Bootstrap classes
+# Message Tags set to different Bootstrap classes for alerts
 MESSAGE_TAGS = {
     messages.DEBUG: 'alert-info',
     messages.INFO: 'alert-info',
