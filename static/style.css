@@ -75,6 +75,20 @@ body {
     letter-spacing: 1px;
 }
 
+.btn-like {
+    font-size: 25px;
+    color: #4492d1;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #4492d1;
+    background: transparent;
+    border: none;
+}
+
 
 .comments {
     border: 0.5px solid rgb(222, 136, 90);
