@@ -3,7 +3,7 @@
 
 
 {% block content %}
-
+{% load crispy_forms_tags %}
 <div class="container p-0">
     <div class="container pt-3">
         <div class="card mb-3">
@@ -40,24 +40,26 @@
                              <br>  
                              <strong>
                                 {% if user.is_authenticated %}
-                                <form class="d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
-                                    {% csrf_token %}
-                                    {% if liked %}
-                                    <button type="submit" name="recipepost_id" value="{{ recipe.slug }}" class="btn-like">
-                                        <i class="fas fa-star"></i></button>
-                                    {% else %}
-                                    <button type="submit" name="recipepost_id" value="{{ recipe.slug }}" class="btn-like">
-                                        <i class="far fa-star"></i></button>
-                                    {% endif %}
-                                </form>
-                                {% else %}
-                                <span class="text-secondary"><i class="far fa-star"></i></span>
-                                {% endif %}
-                                <span class="text-secondary"> {{ recipe.number_of_likes }}</span>
-                             </strong> 
+                                <form class=" d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
+                                        {% csrf_token %}
+                                        {% if liked %}
+                                        <button type="submit" name="recipepost_id" value="{{ recipe.slug }}"
+                                            class="btn-like">
+                                            <i class="fas fa-star"></i></button>
+                                        {% else %}
+                                        <button type="submit" name="recipepost_id" value="{{ recipe.slug }}"
+                                            class="btn-like">
+                                            <i class="far fa-star"></i></button>
+                                        {% endif %}
+                                        </form>
+                                        {% else %}
+                                        <span class="text-secondary"><i class="far fa-star"></i></span>
+                                        {% endif %}
+                                        <span class="text-secondary"> {{ recipe.number_of_likes }}</span>
+                                        </strong>
                             </p>
-                          
-                            
+
+
                         </div>
                         <div class="container text-center">
                             <div class="row">
@@ -116,28 +118,53 @@
                         <div class="row">
                             <div class="col">
                                 <div class="card mb-3">
-                                <h4 class="card-header custom-recipe-detail-header">Comments</h4>
-                                <div class="card-body">
-                                    <!-- a for loop to iterate through each comment in comments -->
-                                    {% for comment in comments %}
-                                    <div class="comments" style="padding: 10px;">
-                                        <p class="font-weight-normal">
-                                            {{ comment.created_date }}
-                                            <span class=" text-muted font-weight-bold">
-                                                {{ comment.name | safe }}
-                                            </span> commented:
-                                            <br>
-                                             {{ comment.body | safe }}   
-                                        </p>
+                                    <h4 class="card-header custom-recipe-detail-header">Comments</h4>
+                                    <div class="card-body">
+                                        <!-- a for loop to iterate through each comment in comments -->
+                                        {% for comment in comments %}
+                                        <div class="comments" style="padding: 10px;">
+                                            <p class="font-weight-normal">
+                                                {{ comment.created_date }}
+                                                <span class=" text-muted font-weight-bold">
+                                                    {{ comment.name | safe }}
+                                                </span> commented:
+                                                <br>
+                                                {{ comment.body | safe }}
+                                            </p>
+                                        </div>
+                                        <!-- for loop ends here -->
+                                        {% endfor %}
                                     </div>
-                                    <!-- for loop ends here -->
-                                    {% endfor %}
                                 </div>
+                            </div>
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card mb-3">
+                                            <div class="card-body">
+                                                {% if commented %}
+                                                <div class="alert alert-success" role="alert">
+                                                    Your comment is awaiting approval
+                                                </div>
+                                                {% else %}
+                                                {% if user.is_authenticated %}
+                                                <div class="card mb-3">
+
+                                                <h5 class="card-header custom-recipe-detail-header">Leave a comment:</h5>
+                                                <p class="comments font-weight-normal">Posting as: <span class="font-weight-bold">{{ user.username }}</span></p>
+                                                <form method="post" style="margin-top: 1.1em; padding: 20px">
+                                                    {{ comment_form | crispy }}
+                                                    {% csrf_token %}
+                                                    <button type="submit" class="btn btn-signup btn-md">Submit</button>
+                                                </form>
+                                                </div>
+                                                {% endif %}
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                
-    
 
-
-{% endblock content %}
+                        {% endblock content %}

@@ -52,12 +52,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'django_summernote',
+    'crispy_forms',
     'recipes',
 ]
 
 
 # Tells Django the site number
-SITE_ID = 1 
+SITE_ID = 1
 
 
 # Redirectional URLS back to the homepage after login/logout
@@ -73,9 +74,11 @@ MESSAGE_TAGS = {
     messages.ERROR: 'alert-danger',
 }
 
+# Tell crispy_forms which template pack to use for formatting
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 # Prevents 500 errors during login and registration
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-
 
 
 MIDDLEWARE = [
