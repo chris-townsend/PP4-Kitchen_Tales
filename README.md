@@ -30,6 +30,9 @@ The live link can be found here - [Kitchen Tales](https://)
     - [Features Left to Implement](#future-features)
     - [Languages Used](#languages-used)
   - [Technologies Used](#programs-frameworks--libraries-used)
+    - [Programs](#programs)
+    - [Frameworks](#frameworks)
+    - [Libraries](#libraries)   
   * [Deployment](#deployment)
     - [Heroku](#heroku)
     - [Forking the GitHub Repository](#forking-this-repository)
@@ -402,8 +405,60 @@ By forking the GitHub Repository you can make a copy of the original repository 
 ## Programs, Frameworks & Libraries Used
 #
 
+### Programs
+#
+[**Balsamiq**](https://balsamiq.com/) - Balsamiq was used to create the basic wireframes during the design process.
+
+[**Pixlr**](https://pixlr.com/x/) - Pixlr was used to resize and change the format of my images.
+
+[**Google DevTools**](https://developer.chrome.com/docs/devtools/) - Once the website was made to a basic deployment level, Google DevTools was used frequently to resize objects within the site, very helpful for making my website responsive.
+
+[**Python Tutor**](https://pythontutor.com/) - Python Tutor was used for helping step through non-functioning code and resolve issues.
+
+[**Git**](https://git-scm.com/) - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
+[**GitHub**](https://github.com/) - GitHub is used to store the project's code after being pushed from Git.
+
+[**Heroku**](http://heroku.com/) - Heroku is a cloud platform that lets people build, deliver, monitor, and scale apps. It supports several programming languages. Heroku was used for the deployment of this project.
+
+[**W3C Markup Validator**](https://validator.w3.org/) - This site was used to ensure that my HTML and CSS were error-free. I had to push my code to ensure it was updated and then add the URL of the website to the address bar which then checked for errors or warnings.
+
+[**Favicon Generator**](https://favicon.io/favicon-converter/) - This was used to create my favicon icon. 
+
+[**JSHint Validator**](https://jshint.com/) - Jshint was used to validate the JavaScript code. It shows any warnings and errors within my code. 
+
+[**PEP8 Validator**](http://pep8online.com/) - The PEP8 validator was used to validate my python code, you can paste your code or upload the file to see the results. It's built with a backend Python framework called Flask. 
+
+[**Cloudinary**](https://imgpile.com/) - A cloud hosting website, used for hosting my images.
+
+[**DrawSQL**](https://drawsql.app/) - DrawSQL is a database diagram tool which was used to visualize relationship diagrams for my databases.
+
+#
+### Frameworks
+#
+
+[**Django 3.2**](https://www.djangoproject.com/) - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+#
+
+### Libraries 
+#
+
+[**Bootstrap 4.6**](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Bootstrap provides a popular framework for building responsive mobile-first sites with built-in CSS & Javascript libraries.
+
+[**Psycopg2**](https://pypi.org/project/psycopg2/) - A PostgreSQL database adapter for Python.
+
+[**dj-database-url**](https://pypi.org/project/dj-database-url/) - A simple Django utility that allows you to create an environment variable to configure your Django application.
+
+[**Gunicorn**](https://gunicorn.org/) - Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server.
+
+[**django-all-auth**](https://github.com/pennersr/django-allauth) Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party *social* account authentication.
+
+[**django-crispy-forms**](https://django-crispy-forms.readthedocs.io/en/latest/) Used to control the rendering behaviour of my django forms.
+
+[**django-cloudinary-storage**](https://pypi.org/project/django-cloudinary-storage/) Facillitates integration with  Cloudinary by implementing a Django Storage API. This is to enable storage of static and media files.
 
 
+#
 ## Credits
 #
 
