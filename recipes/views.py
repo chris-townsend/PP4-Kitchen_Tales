@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Recipe
+from .models import Recipe, Comment
 from .forms import CommentForm
 
 
@@ -23,11 +23,11 @@ class RecipeDetail(View):
     """
     This view is used to display the full recipe details and comment section
     """
-    def get(self, request, slug, *args, **kwargs):
+    def get(self, request, slug):
         """
         Retrives the recipe from the database
         """
-        queryset = Recipe.objects.all()
+        queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
         comments = recipe.comments.filter(
             approved=True).order_by('created_date')
@@ -41,14 +41,12 @@ class RecipeDetail(View):
                 "recipe": recipe,
                 "comments": comments,
                 "commented": False,
+                "comment_form": CommentForm(),
                 "liked": liked,
-                "comment_form": CommentForm()
             },
-
         )
 
-    def post(self, request, slug, *args, **kwargs):
-        
+    def post(self, request, slug):
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
         comments = recipe.comments.filter(
@@ -57,12 +55,25 @@ class RecipeDetail(View):
         if recipe.like_recipe.filter(id=self.request.user.id).exists():
             liked = True
 
+        comment_form = CommentForm(data=request.POST)
+
+        if comment_form.is_valid():
+            comment_form.instance.email = request.user.email
+            comment_form.instance.name = request.user.username
+            comment = comment_form.save(commit=False)
+            comment.post_id = recipe.id
+            comment.save()
+        else:
+            comment_form = CommentForm()
+
         return render(
             request,
             "recipe_detail.html",
             {
                 "recipe": recipe,
                 "comments": comments,
+                "commented": True,
+                "comment_form": comment_form,
                 "liked": liked,
             },
         )
