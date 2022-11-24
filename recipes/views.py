@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
+from django.contrib import messages
 from django.http import HttpResponseRedirect
 from .models import Recipe, Comment
 from .forms import CommentForm
@@ -63,6 +64,8 @@ class RecipeDetail(View):
             comment = comment_form.save(commit=False)
             comment.post_id = recipe.id
             comment.save()
+            messages.success(
+                self.request, 'Your comment is awaiting approval')
         else:
             comment_form = CommentForm()
 
