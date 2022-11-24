@@ -161,3 +161,30 @@ body {
     color:rgb(34, 50, 54);
 }
 
+/* footer.html Styling */
+
+.footer-container {
+    border-top: 1.5px solid #4492d1;
+}
+
+.social-icons {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline;
+}
+
+.social-icons a {
+    padding: 0 40px;
+    text-decoration: none;
+    color:#4492d1;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
