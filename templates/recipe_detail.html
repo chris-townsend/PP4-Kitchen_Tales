@@ -38,6 +38,8 @@
                             </p>
                             <p>
                              <br>  
+                
+                            </span>
                              <strong>
                                 {% if user.is_authenticated %}
                                 <form class=" d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
@@ -120,13 +122,23 @@
                                 <div class="card mb-3">
                                     <h4 class="card-header custom-recipe-detail-header">Comments</h4>
                                     <div class="card-body">
+                                        
                                         <!-- a for loop to iterate through each comment in comments -->
                                         {% for comment in comments %}
-                                        <div class="comments" style="padding: 10px;">
+                                         <div class="comments" style="padding: 10px;">
+                                            {% if user.is_authenticated and user.username == comment.name %}
+                                             <span class="comment-btn">
+                                             <a href="#" aria-label="edit comment"><i
+                                              class="fas fa-edit"></i></a>
+                                             <a href="#" aria-label="delete comment"><i
+                                              class="fas fa-trash-alt"></i></a>
+                                           </span>
+                                        {% endif %}
                                             <p class="font-weight-normal">
                                                 {{ comment.created_date }}
                                                 <span class=" text-muted font-weight-bold">
                                                     {{ comment.name | safe }}
+                                                    
                                                 </span> commented:
                                                 <br>
                                                 {{ comment.body | safe }}
@@ -160,6 +172,7 @@
                                                 </div>
                                                 {% endif %}
                                                 {% endif %}
+                                                
                                             </div>
                                         </div>
                                     </div>
