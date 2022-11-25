@@ -93,3 +93,9 @@ class RecipeLike(View):
             recipe.like_recipe.add(request.user)
 
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
+
+
+class AddRecipeView(generic.CreateView):
+    model = Recipe
+    template_name = 'add_recipe.html'
+    fields = '__all__'

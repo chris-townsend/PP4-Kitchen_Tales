@@ -46,7 +46,7 @@
               </a>
               <div class="dropdown-menu">
                 {% if user.is_authenticated %}
-                    <a class="dropdown-item" href="#">MyProfile</a>
+                    <a class="dropdown-item" href="{% url 'add_recipe' %}">AddRecipe</a>
                     <a class="dropdown-item" href="#">MyRecipes</a>
                     <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
                     
