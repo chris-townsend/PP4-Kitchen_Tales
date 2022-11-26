@@ -15,7 +15,7 @@
         {% load cloudinary %}
         <div class="col-11 col-md-8 col-lg-6 mt-3">
             <!--  Add Recipe Form -->
-            <form method="post" action="{% url 'update_recipe' recipe.id %}" class="add-recipe mb-5" enctype="multipart/form-data">
+            <form method="post" action="{% url 'update_recipe' recipe.id %}" class="mb-5" enctype="multipart/form-data">
                 {{ form  }}
                 {% csrf_token %}
                 <a class="btn btn-signup" href="{%  url 'update_recipe' recipe.id %}" >Cancel</a>
