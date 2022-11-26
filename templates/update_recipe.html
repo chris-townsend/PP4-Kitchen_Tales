@@ -1,22 +1,19 @@
 {% extends 'base.html' %}
 {% block title %} Kitchen Tales | Update Recipe {{ recipe.title }}{% endblock %}
-
-
-
-
-
 {% block content %}
+{% load cloudinary %}
+{% load crispy_forms_tags %}
 
 <div class="container">
-    <h1 class="page-title">Add Recipe</h1>
+    <h1 class="page-title">Update Recipe</h1>
     <hr>
     <br>
     <div class="row justify-content-center ">
-        {% load cloudinary %}
+        
         <div class="col-11 col-md-8 col-lg-6 mt-3">
             <!--  Add Recipe Form -->
             <form method="post" action="{% url 'update_recipe' recipe.id %}" class="mb-5" enctype="multipart/form-data">
-                {{ form  }}
+                {{ form | crispy }}
                 {% csrf_token %}
                 <a class="btn btn-signup" href="{%  url 'update_recipe' recipe.id %}" >Cancel</a>
                 <input type="submit" class="btn btn-signup" value="Update Recipe" />
