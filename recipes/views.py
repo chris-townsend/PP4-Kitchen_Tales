@@ -1,9 +1,12 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Recipe, Comment
-from .forms import CommentForm
+from .forms import CommentForm, RecipeForm
+from django.contrib.auth.models import User
+
 
 
 class Home(generic.TemplateView):
@@ -95,7 +98,45 @@ class RecipeLike(View):
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
 
 
-class AddRecipeView(generic.CreateView):
+class AddRecipeView(LoginRequiredMixin, generic.CreateView):
     model = Recipe
+    form_class = RecipeForm
     template_name = 'add_recipe.html'
-    fields = '__all__'
+
+    def post(self, request):
+        recipe_form = RecipeForm(data=request.POST)
+
+        if recipe_form.is_valid():
+            recipe = recipe_form.save(commit=False)
+            recipe.author = User.objects.get(id=request.user.id)
+            recipe.save()
+
+        return redirect(reverse('all_recipes'))
+
+
+class UpdateRecipeView(LoginRequiredMixin, View):
+
+    model = Recipe
+    form_class = RecipeForm
+    template_name = 'update_recipe.html'
+
+    def get(self, request, recipe_id):
+        recipe = Recipe.objects.get(id=recipe_id)
+        print(recipe)
+        return render(
+            request,
+            "update_recipe.html",
+            {
+                "form": RecipeForm(instance=recipe),
+                "recipe": recipe
+            },
+        )
+
+    def post(self, request, recipe_id):
+        recipe = Recipe.objects.get(id=recipe_id)
+        recipe_form = RecipeForm(request.POST, instance=recipe)
+
+        if recipe_form.is_valid():
+            recipe_form.save()
+
+        return redirect(reverse('all_recipes'))

@@ -40,8 +40,17 @@
                              <br>  
                 
                             </span>
+                            {% if request.user.username == recipe.author.username %}
+                             <span class="comment-btn">
+                             <a href=" {% url 'update_recipe' recipe.id %}" aria-label="edit comment"><i
+                             class="fas fa-edit"></i></a>
+                            <a href="#" aria-label="delete comment"><i
+                             class="fas fa-trash-alt"></i></a>
+                             </span>
+                            {% endif %}
                              <strong>
                                 {% if user.is_authenticated %}
+
                                 <form class=" d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
                                         {% csrf_token %}
                                         {% if liked %}
@@ -132,9 +141,9 @@
                                               class="fas fa-edit"></i></a>
                                              <a href="#" aria-label="delete comment"><i
                                               class="fas fa-trash-alt"></i></a>
-                                           </span>
-                                        {% endif %}
-                                            <p class="font-weight-normal">
+                                            </span>
+                                               {% endif %}
+                                               <p class="font-weight-normal">
                                                 {{ comment.created_date }}
                                                 <span class=" text-muted font-weight-bold">
                                                     {{ comment.name | safe }}
