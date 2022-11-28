@@ -207,3 +207,13 @@ body {
     transform: scale(1.2);
 }
 
+
+/* Homepage */
+
+.carousel-inner {
+    height: 400px;
+    width: 100%;
+}
+
+
+
