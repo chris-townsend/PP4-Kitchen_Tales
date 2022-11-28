@@ -23,7 +23,7 @@
                 {% else %}
                 <img src=" {{ recipe.image.url }}" alt="recipe image" class="custom-recipe-card">
                 {% endif %}
-                <div class="card-body pb-1">
+                <div class="card-body mt-1">
                     <h2 class="card-title custom-recipe-title">{{ recipe.title }}</h2>
                     <p class="card-text">
                         <span><i class="far fa-clock pr-2"></i></span>
@@ -41,5 +41,5 @@
         {% endfor %}
     </div>
 </div>
-
+{% include "recipe_paginator.html" %}
 {% endblock %}
