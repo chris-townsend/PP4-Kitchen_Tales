@@ -110,7 +110,6 @@ class AddRecipeView(LoginRequiredMixin, generic.CreateView):
             recipe = recipe_form.save(commit=False)
             recipe.author = User.objects.get(id=request.user.id)
             recipe.save()
-
         return redirect(reverse('all_recipes'))
 
 
@@ -152,6 +151,3 @@ class DeleteRecipeView(LoginRequiredMixin, generic.DeleteView):
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, self.success_message)
         return super(DeleteRecipeView, self).delete(request, *args, **kwargs)
-  
-    
-            
