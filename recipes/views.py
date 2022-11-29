@@ -140,3 +140,10 @@ class UpdateRecipeView(LoginRequiredMixin, View):
             recipe_form.save()
 
         return redirect(reverse('all_recipes'))
+
+
+class DeleteRecipeView(LoginRequiredMixin, generic.DeleteView):
+
+    model = Recipe
+    template_name = 'delete_recipe.html'
+

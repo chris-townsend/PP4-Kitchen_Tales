@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %} Kitchen Tales | Delete Recipe {{ recipe.title }}{% endblock %}
+{% block content %}
+{% load cloudinary %}
+{% load crispy_forms_tags %}
+
+<div class="container">
+    <h1 class="page-title">Delete Recipe</h1>
+    <hr>
+    <br>
+   
+    <div class="row text-center justify-content-center mt-4">
+         <h5 class="text-center"><strong>Are you sure you want to delete your {{ recipe.title }} recipe?</strong></h5>
+         <br>
+        <div class="col-lg-8 mb-3 mt-4">
+            <form method="post" class="mb-5 col-12">
+                {% csrf_token %}
+                <a class="btn btn-signup btn-sm m-2 col-lg-2" href="{%  url 'all_recipes' %}" >Cancel</a>
+                <a class="btn btn-signup btn-sm m-2 col-lg-2" href="{%  url 'update_recipe' recipe.id %}">Update Instead</a>
+                <button class="btn btn-danger btn-sm m-2 col-lg-4" input type="submit">Delete Recipe ></button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -41,10 +41,10 @@
                 
                             </span>
                             {% if request.user.username == recipe.author.username %}
-                             <span class="comment-btn">
-                             <a href=" {% url 'update_recipe' recipe.id %}" aria-label="edit comment"><i
+                             <span class="edit-btn">
+                             <a href=" {% url 'update_recipe' recipe.id %}" aria-label="edit recipe"><i
                              class="fas fa-edit"></i></a>
-                            <a href="#" aria-label="delete comment"><i
+                            <a href="{% url 'delete_recipe' recipe.id %}" aria-label="delete recipe"><i
                              class="fas fa-trash-alt"></i></a>
                              </span>
                             {% endif %}
