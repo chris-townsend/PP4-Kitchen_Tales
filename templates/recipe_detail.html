@@ -22,7 +22,7 @@
                             <h1 class="page-title text-left">{{ recipe.title }}</h1>
                         </div>
                         <br>
-                        <p class="card-text">Author: {{ recipe.author }}</p>
+                        <p> Author: {{ recipe.author }}</p>
                         <div class="mb-5">
                             <p>
                                 <span><i class="far fa-clock pr-2"> </i></span>
@@ -37,16 +37,23 @@
                                 <span>Last Updated: {{ recipe.updated_date }}</span>
                             </p>
                             <p>
-                             <br>  
+                        
                 
                             </span>
                             {% if request.user.username == recipe.author.username %}
-                             <span class="edit-btn">
+                            <p>
+                             <span>
                              <a href=" {% url 'update_recipe' recipe.id %}" aria-label="edit recipe"><i
-                             class="fas fa-edit"></i></a>
+                             class="fas fa-edit"></i> Edit</a>  
+                             </span> 
+                            </p>
+                             <p>
+                            <span>
                             <a href="{% url 'delete_recipe' recipe.id %}" aria-label="delete recipe"><i
-                             class="fas fa-trash-alt"></i></a>
-                             </span>
+                             class="fas fa-trash-alt"></i> Delete</a>
+                             </span>  
+                             </p>
+                           
                             {% endif %}
                              <strong>
                                 {% if user.is_authenticated %}
