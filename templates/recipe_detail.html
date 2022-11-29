@@ -37,8 +37,6 @@
                                 <span>Last Updated: {{ recipe.updated_date }}</span>
                             </p>
                             <p>
-                        
-                
                             </span>
                             {% if request.user.username == recipe.author.username %}
                             <p>
@@ -63,11 +61,11 @@
                                         {% if liked %}
                                         <button type="submit" name="recipepost_id" value="{{ recipe.slug }}"
                                             class="btn-like">
-                                            <i class="fas fa-star"></i></button> {{ recipe.like_recipe.count }} likes
+                                           <i class="fas fa-star"></i></button> {{ recipe.like_recipe.count }}<span> likes</span>  
                                         {% else %}
                                         <button type="submit" name="recipepost_id" value="{{ recipe.slug }}"
                                             class="btn-like">
-                                            <i class="far fa-star"></i></button> 
+                                            <i class="far fa-star"></i></button><span>Click to bookmark this recipe</span> 
                                         {% endif %}
                                         </form>
                                         {% else %}
