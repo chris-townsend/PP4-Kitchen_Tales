@@ -3,10 +3,10 @@ from django.views import generic, View
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.urls import reverse_lazy
 from .models import Recipe, Comment
 from .forms import CommentForm, RecipeForm
 from django.contrib.auth.models import User
-
 
 
 class Home(generic.TemplateView):
@@ -146,4 +146,12 @@ class DeleteRecipeView(LoginRequiredMixin, generic.DeleteView):
 
     model = Recipe
     template_name = 'delete_recipe.html'
+    success_url = reverse_lazy('home')
+    success_message = 'Your recipe has been deleted successfully'
 
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(DeleteRecipeView, self).delete(request, *args, **kwargs)
+  
+    
+            
