@@ -15,7 +15,7 @@
             <form method="post"  class="mb-5" enctype="multipart/form-data">
                 {{ form | crispy }}
                 {% csrf_token %}
-                <a class="btn btn-signup" href="{%  url 'add_recipe'  %}">Cancel</a>
+                <a class="btn btn-signup" href="{% url 'all_recipes' %}">Cancel</a>
                 <button type="submit" class="btn btn-signup">Add recipe</button>
             </form>
         </div>
