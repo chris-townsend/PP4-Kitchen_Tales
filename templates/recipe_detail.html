@@ -56,17 +56,18 @@
                                         {% if liked %}
                                         <button type="submit" name="recipepost_id" value="{{ recipe.slug }}"
                                             class="btn-like">
-                                            <i class="fas fa-star"></i></button>
+                                            <i class="fas fa-star"></i></button> {{ recipe.like_recipe.count }} likes
                                         {% else %}
                                         <button type="submit" name="recipepost_id" value="{{ recipe.slug }}"
                                             class="btn-like">
-                                            <i class="far fa-star"></i></button>
+                                            <i class="far fa-star"></i></button> 
                                         {% endif %}
                                         </form>
                                         {% else %}
                                         <span class="text-secondary"><i class="far fa-star"></i></span>
+                                        <a href="#" class="link">Sign up to star & bookmark recipes</a>
                                         {% endif %}
-                                        <span class="text-secondary"> {{ recipe.number_of_likes }}</span>
+                                        <span class="text-secondary"> {{ recipe.number_of_likes }}</span> 
                                         </strong>
                             </p>
 
