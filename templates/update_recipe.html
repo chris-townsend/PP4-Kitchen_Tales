@@ -15,7 +15,7 @@
             <form method="post" action="{% url 'update_recipe' recipe.id %}" class="mb-5" enctype="multipart/form-data">
                 {{ form | crispy }}
                 {% csrf_token %}
-                <a class="btn btn-signup" href="{%  url 'update_recipe' recipe.id %}" >Cancel</a>
+                <a class="btn btn-signup" href="{%  url 'recipe_detail' recipe.slug %}" >Cancel</a>
                 <input type="submit" class="btn btn-signup" value="Update Recipe" />
             </form>
         </div>
