@@ -17,6 +17,10 @@ body {
     padding-top: 15px;
 }
 
+.form-font {
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+}
 
 /* Navbar */
 
