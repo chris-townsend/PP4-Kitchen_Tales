@@ -22,7 +22,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-company-red">
       
-        <a class="navbar-brand mr-auto" href="{% url 'home' %}">
+        <a class="navbar-brand flex-grow-1 mr-auto" href="{% url 'home' %}">
           <img class="logo-image"
           src="https://res.cloudinary.com/diez1cpce/image/upload/v1668872940/pp4/logo_transparent_new_gqeyfq.png"
           alt="headerlogo">
@@ -56,9 +56,9 @@
             </li>
             {% endif %}
           </ul>
-          <form class="form-inline">
-            <input class="form-control my-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn my-sm-0 btn-search" type="submit"><i class="fas fa-search"></i></button>
+          <form class="form-inline flex-nowrap mx-0 mx-lg-auto rounded p-1">
+            <input class="form-control my-sm-2 form-font" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn my-sm-0 btn-search mr-1" type="submit"><i class="fas fa-search"></i></button>
           </form>
           </div>
         </div>
