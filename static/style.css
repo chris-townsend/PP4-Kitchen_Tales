@@ -9,6 +9,11 @@ body {
     background-color: bisque;
 }
 
+h5 {
+    font-family: 'Karla', sans-serif;
+
+}
+
 .page-title {
     font-family: 'Karla', sans-serif;
     font-weight: 300;

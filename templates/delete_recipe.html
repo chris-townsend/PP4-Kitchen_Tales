@@ -15,9 +15,9 @@
         <div class="col-lg-8 mb-3 mt-4">
             <form method="post" class="mb-5 col-12">
                 {% csrf_token %}
-                <a class="btn btn-signup btn-sm m-2 col-lg-2" href="{%  url 'recipe_detail' recipe.slug %}" >Cancel</a>
-                <a class="btn btn-signup btn-sm m-2 col-lg-2" href="{%  url 'update_recipe' recipe.id %}">Update Instead</a>
-                <button class="btn btn-danger btn-sm m-2 col-lg-4" input type="submit">Delete Recipe ></button>
+                <a class="btn btn-signup m-2 form-font" href="{%  url 'recipe_detail' recipe.slug %}" >Cancel</a>
+                <a class="btn btn-signup m-2 form-font" href="{%  url 'update_recipe' recipe.id %}">Update Instead</a>
+                <button class="btn btn-danger m-2 col-lg-4 form-font" input type="submit">Delete Recipe</button>
             </form>
         </div>
     </div>
