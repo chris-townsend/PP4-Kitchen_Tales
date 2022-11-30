@@ -9,18 +9,19 @@
 
 <h3 class="page-title">{% trans "Sign Out" %}</h1>
 <br>
-<p class="text-center">{% trans 'Are you sure you want to sign out?' %}</p>
+<h5 class="text-center form-font">{% trans 'Are you sure you want to sign out?' %}</h5>
 
-<form class="login text-center" method="post" action="{% url 'account_logout' %}">
+<form class="login text-center form-font" method="post" action="{% url 'account_logout' %}">
   {% csrf_token %}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
   {% endif %}
-  <button class="btn btn-signup" type="submit">{% trans 'Sign Out' %}</button>
+  <button class="btn btn-signup form-font" type="submit">{% trans 'Sign Out' %}</button>
 </form>
     </div>
   </div>
 </div>
+<br>
 
 
 {% endblock %}
