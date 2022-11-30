@@ -85,15 +85,22 @@ class RecipeDetail(View):
         )
 
 
-class RecipeLike(View):
+class RecipeLike(LoginRequiredMixin, View):
     """This view is used to star a recipe and save it to the database"""
     def post(self, request, slug, *args, **kwargs):
         recipe = get_object_or_404(Recipe, slug=slug)
 
         if recipe.like_recipe.filter(id=request.user.id).exists():
             recipe.like_recipe.remove(request.user)
+            messages.success(
+                self.request,
+                'Recipe removed from your saved-Recipes <i class="far fa-star"></i>')
+
         else:
             recipe.like_recipe.add(request.user)
+            messages.success(
+                self.request,
+                'Recipe saved! Find it in your saved-Recipes <i class="far fa-star"></i>')
 
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
 
