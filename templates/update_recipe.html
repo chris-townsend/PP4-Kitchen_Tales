@@ -12,11 +12,11 @@
         
         <div class="col-11 col-md-8 col-lg-6 mt-3">
             <!--  Add Recipe Form -->
-            <form method="post" action="{% url 'update_recipe' recipe.id %}" class="mb-5" enctype="multipart/form-data">
+            <form method="post" action="{% url 'update_recipe' recipe.id %}" class="mb-5 form-font" enctype="multipart/form-data">
                 {{ form | crispy }}
                 {% csrf_token %}
-                <a class="btn btn-signup" href="{%  url 'recipe_detail' recipe.slug %}" >Cancel</a>
-                <input type="submit" class="btn btn-signup" value="Update Recipe" />
+                <a class="btn btn-signup form-font" href="{%  url 'recipe_detail' recipe.slug %}" >Cancel</a>
+                <input type="submit" class="btn btn-signup form-font" value="Update Recipe" />
             </form>
         </div>
     </div>
