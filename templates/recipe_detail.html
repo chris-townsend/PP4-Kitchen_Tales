@@ -70,7 +70,7 @@
                                         </form>
                                         {% else %}
                                         <span class="text-secondary"><i class="far fa-star"></i></span>
-                                        <a href="{{ signup_url }}" class="link">Sign up to star & bookmark recipes</a>
+                                        <a href="{% url 'account_signup' %}" class="link">Sign up to star & bookmark recipes</a>
                                         {% endif %}
                                         <span class="text-secondary"> {{ recipe.number_of_likes }}</span> 
                                         </strong>
