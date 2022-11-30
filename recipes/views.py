@@ -163,3 +163,15 @@ class MyRecipesView(LoginRequiredMixin, generic.ListView):
 
     def get_queryset(self):
         return Recipe.objects.filter(author=self.request.user)
+
+
+class MyStarredRecipesView(LoginRequiredMixin, generic.ListView):
+    """
+    This view is used to display a users starred recipes
+    """
+    model = Recipe
+    template_name = 'my_starred_recipes.html'
+    paginate_by = 8
+
+    def get_queryset(self):
+        return Recipe.objects.filter(like_recipe=self.request.user.id)

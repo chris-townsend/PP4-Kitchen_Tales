@@ -46,10 +46,10 @@
               </a>
               <div class="dropdown-menu">
                 {% if user.is_authenticated %}
-                    <a class="dropdown-item" href="{% url 'add_recipe' %}">AddRecipe</a>
-                    <a class="dropdown-item" href="{% url 'my_recipes' %}">MyRecipes</a>
+                    <a class="dropdown-item" href="{% url 'add_recipe' %}">Add-Recipe</a>
+                    <a class="dropdown-item" href="{% url 'my_recipes' %}">My-Recipes</a>
+                    <a class="dropdown-item" href="{% url 'save_recipe' %}">Saved-Recipes <i class="far fa-star"></i></a>
                     <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
-                    
                     {% else %}
                 <a class="dropdown-item" href="{% url 'account_login' %}">Sign-in</a>
                 <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
