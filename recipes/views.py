@@ -151,3 +151,15 @@ class DeleteRecipeView(LoginRequiredMixin, generic.DeleteView):
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, self.success_message)
         return super(DeleteRecipeView, self).delete(request, *args, **kwargs)
+
+
+class MyRecipesView(LoginRequiredMixin, generic.ListView):
+    """
+    This view is used to display user created recipes
+    """
+    model = Recipe
+    template_name = 'my_recipes.html'
+    paginate_by = 8
+
+    def get_queryset(self):
+        return Recipe.objects.filter(author=self.request.user)
