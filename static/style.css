@@ -130,6 +130,15 @@ h5 {
     border: none;
 }
 
+.recipe-text {
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+}
+
+.like-recipe-text {
+    font-weight: bold;
+}
+
 
 
 /* Comments section in recipe_detail template */

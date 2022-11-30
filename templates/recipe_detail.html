@@ -22,33 +22,33 @@
                             <h1 class="page-title text-left">{{ recipe.title }}</h1>
                         </div>
                         <br>
-                        <p> Author: {{ recipe.author }}</p>
+                        <p class="recipe-text"> Author: {{ recipe.author }}</p>
                         <div class="mb-5">
                             <p>
                                 <span><i class="far fa-clock pr-2"> </i></span>
-                                <span>Prep Time: {{ recipe.prep_time }}</span>
+                                <span class="recipe-text">Prep Time: {{ recipe.prep_time }}</span>
                             </p>
                             <p>
                                 <span><i class="far fa-clock pr-2"></i></span>
-                                <span>Cook Time: {{ recipe.cook_time }}</span>
+                                <span class="recipe-text">Cook Time: {{ recipe.cook_time }}</span>
                             </p>
                             <p>
                                 <span><i class="fas fa-wrench pr-2""></i></span>
-                                <span>Last Updated: {{ recipe.updated_date }}</span>
+                                <span class="recipe-text">Last Updated: {{ recipe.updated_date }}</span>
                             </p>
                             <p>
                             </span>
                             {% if request.user.username == recipe.author.username %}
-                            <p>
+                            <p class="recipe-text">
                              <span>
                              <a href=" {% url 'update_recipe' recipe.id %}" aria-label="edit recipe"><i
-                             class="fas fa-edit"></i> Edit</a>  
+                             class="fas fa-edit"></i>  Edit</a>  
                              </span> 
                             </p>
-                             <p>
+                             <p class="recipe-text">
                             <span>
                             <a href="{% url 'delete_recipe' recipe.id %}" aria-label="delete recipe"><i
-                             class="fas fa-trash-alt"></i> Delete</a>
+                             class="fas fa-trash-alt"></i>  Delete</a>
                              </span>  
                              </p>
                            
@@ -61,16 +61,16 @@
                                         {% if liked %}
                                         <button type="submit" name="recipepost_id" value="{{ recipe.slug }}"
                                             class="btn-like">
-                                           <i class="fas fa-star"></i></button> {{ recipe.like_recipe.count }}<span> likes</span>  
+                                           <i class="fas fa-star"></i></button><span class="like-recipe-text">{{ recipe.like_recipe.count }} likes</span> 
                                         {% else %}
                                         <button type="submit" name="recipepost_id" value="{{ recipe.slug }}"
                                             class="btn-like">
-                                            <i class="far fa-star"></i></button><span>Click to bookmark this recipe</span> 
+                                            <i class="far fa-star"></i></button><span class="like-recipe-text">Click to bookmark this recipe</span> 
                                         {% endif %}
                                         </form>
                                         {% else %}
                                         <span class="text-secondary"><i class="far fa-star"></i></span>
-                                        <a href="{% url 'account_signup' %}" class="link">Sign up to star & bookmark recipes</a>
+                                        <a href="{% url 'account_signup' %}" class="link recipe-text"><strong>Sign up to star & bookmark recipes</strong></a>
                                         {% endif %}
                                         <span class="text-secondary"> {{ recipe.number_of_likes }}</span> 
                                         </strong>
