@@ -5,15 +5,41 @@
 
 <div class="container">
     {% if searched %}
-   
-    <h1 class="page-title">You searched for {{ searched }}</h1>
+    <h1 class="page-title">You searched for <strong>{{ searched }}</strong></h1>
+    <hr>
+    <br>
+  <div class="row card-deck">
     {% for result in results %}
-     <a href="{% url 'recipe_detail' result.slug %}">{{ result }}</a>  
-    {% endfor %}
+    <div class="col-sm-6 col-md-4 col-lg-3 px-1 d-flex align-items-stretch">
+      <div class="card recipe-card mb-3 shadow-sm mx-auto mx-sm-2">
+          {% if "placeholder" in result.image.url %}
+          <img src="https://res.cloudinary.com/diez1cpce/image/upload/v1668704852/pp4/placeholder-recipe_jurheg.jpg"
+              class="custom-recipe-card" alt="placeholder image">
+          {% else %}
+          <img src=" {{ result.image.url }}" alt="recipe image" class="custom-recipe-card">
+          {% endif %}
+          <div class="card-body mt-1">
+            <h2 class="card-title custom-recipe-title"><a href="{% url 'recipe_detail' result.slug %}">{{ result.title }}</a></h2>
+            <p class="card-text">
+                <span><i class="far fa-clock pr-2"></i></span>
+                <span>Prep Time: {{ result.prep_time }}</span>
+            </p>
+            <p class="card-text">
+                <span><i class="far fa-clock pr-2"></i></span>
+                <span>Cook Time: {{ result.cook_time }}</span>
+            </p>   
+          </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+{% else %}    
+<h2>No recipes with that keyword</h2>
+{% endif %}    
+<br>
+    
 
-    {% else %}
 
-    <h2>No recipes with that keyword</h2>
-  {% endif %}
-
+{% include "recipe_paginator.html" %}
 {% endblock content %}
