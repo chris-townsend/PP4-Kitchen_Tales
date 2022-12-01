@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %} Kitchen Tales | Search results{% endblock %}
+{% block content %}
+{% load cloudinary %}
+
+<div class="container">
+    {% if searched %}
+   
+    <h1 class="page-title">You searched for {{ searched }}</h1>
+    {% for result in results %}
+     <a href="{% url 'recipe_detail' result.slug %}">{{ result }}</a>  
+    {% endfor %}
+
+    {% else %}
+
+    <h2>No recipes with that keyword</h2>
+  {% endif %}
+
+{% endblock content %}

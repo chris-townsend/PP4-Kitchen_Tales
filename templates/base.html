@@ -56,8 +56,9 @@
             </li>
             {% endif %}
           </ul>
-          <form class="form-inline flex-nowrap mx-0 mx-lg-auto rounded p-1">
-            <input class="form-control my-sm-2 form-font" type="search" placeholder="Search" aria-label="Search">
+          <form class="form-inline flex-nowrap mx-0 mx-lg-auto rounded p-1" method="post" action="{% url 'search_result' %}">
+            {% csrf_token %}
+            <input class="form-control my-sm-2 form-font" type="search" placeholder="Search Recipes" aria-label="Search" name="searched">
             <button class="btn my-sm-0 btn-search mr-1" type="submit"><i class="fas fa-search"></i></button>
           </form>
           </div>

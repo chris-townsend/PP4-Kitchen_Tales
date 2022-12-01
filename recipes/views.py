@@ -9,6 +9,19 @@ from .forms import CommentForm, RecipeForm
 from django.contrib.auth.models import User
 
 
+def search_results(request):
+    if request.method == "POST":
+        searched = request.POST['searched']
+        results = Recipe.objects.filter(title__contains=searched)
+
+        return render(request, 'search_results.html',
+                      {'searched': searched,
+                       'results': results})
+
+    else:
+        return render(request, 'search_results.html',)
+
+
 class Home(generic.TemplateView):
     template_name = 'index.html'
 
@@ -172,7 +185,7 @@ class MyRecipesView(LoginRequiredMixin, generic.ListView):
         return Recipe.objects.filter(author=self.request.user)
 
 
-class MyStarredRecipesView(LoginRequiredMixin, generic.ListView):
+class MyStarredRecipesView(LoginRequiredMixin, UserPassesTestMixin, generic.ListView):
     """
     This view is used to display a users starred recipes
     """
@@ -182,3 +195,4 @@ class MyStarredRecipesView(LoginRequiredMixin, generic.ListView):
 
     def get_queryset(self):
         return Recipe.objects.filter(like_recipe=self.request.user.id)
+

@@ -14,5 +14,6 @@ urlpatterns = [
     path('delete_recipe/<int:pk>/', DeleteRecipeView.as_view(), name='delete_recipe'),
     path('my_recipes/', views.MyRecipesView.as_view(), name='my_recipes'),
     path('my_starred_recipes/', views.MyStarredRecipesView.as_view(), name='save_recipe'),
+    path('search_results/', views.search_results, name='search_result'),
 
 ]
