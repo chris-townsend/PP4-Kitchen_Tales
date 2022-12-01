@@ -185,7 +185,7 @@ class MyRecipesView(LoginRequiredMixin, generic.ListView):
         return Recipe.objects.filter(author=self.request.user)
 
 
-class MyStarredRecipesView(LoginRequiredMixin, UserPassesTestMixin, generic.ListView):
+class MyStarredRecipesView(LoginRequiredMixin, generic.ListView):
     """
     This view is used to display a users starred recipes
     """
