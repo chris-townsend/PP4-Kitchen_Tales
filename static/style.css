@@ -22,6 +22,17 @@ h5 {
     padding-top: 15px;
 }
 
+hr {
+    border: 0;
+    height: 2.6px;
+    margin-top: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 34%;
+    background-image: linear-gradient(to right, rgb(226, 183, 122), rgba(206, 141, 100, 0.842), rgba(141, 92, 9, 0));
+    }
+
+
 .form-font {
     font-family: 'Karla', sans-serif;
     font-weight: 300;
@@ -31,6 +42,8 @@ h5 {
     font-family: 'Karla', sans-serif;
     font-weight: 300;
 }
+
+
 
 
 
