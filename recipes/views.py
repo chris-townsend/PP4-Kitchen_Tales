@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from .models import Recipe, Comment
 from .forms import CommentForm, RecipeForm
@@ -130,6 +130,10 @@ class AddRecipeView(LoginRequiredMixin, generic.CreateView):
             recipe = recipe_form.save(commit=False)
             recipe.author = User.objects.get(id=request.user.id)
             recipe.save()
+            messages.success(
+                self.request,
+                'Your recipe has been added successfully')
+
         return redirect(reverse('all_recipes'))
 
 
@@ -157,6 +161,9 @@ class UpdateRecipeView(LoginRequiredMixin, View):
 
         if recipe_form.is_valid():
             recipe_form.save()
+            messages.success(
+                self.request,
+                'Your recipe has been updated')
 
         return redirect(reverse('all_recipes'))
 
