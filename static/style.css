@@ -254,9 +254,15 @@ hr {
 
 /* footer.html Styling */
 
-.footer-container {
-    border-top: 1.5px solid #4492d1;
-}
+.footer-break {
+    border: 0;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-image: linear-gradient(to center, rgb(226, 183, 122), rgba(206, 141, 100, 0.842), rgba(141, 92, 9, 0));
+    }
+    
 
 .social-icons {
     flex-direction: column;
