@@ -11,7 +11,6 @@
     <div class="row justify-content-center ">
         
         <div class="col-11 col-md-8 col-lg-6 mt-3">
-            <!--  Add Recipe Form -->
             <form method="post" action="{% url 'update_comment' comment.id %}" class="mb-5 form-font" enctype="multipart/form-data">
                 {{ form | crispy }}
                 {% csrf_token %}
