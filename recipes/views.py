@@ -180,6 +180,18 @@ class DeleteRecipeView(LoginRequiredMixin, generic.DeleteView):
         return super(DeleteRecipeView, self).delete(request, *args, **kwargs)
 
 
+class DeleteCommentView(LoginRequiredMixin, generic.DeleteView):
+
+    model = Comment
+    template_name = 'delete_comment.html'
+    success_url = reverse_lazy('home')
+    success_message = 'Your comment has been deleted successfully'
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(DeleteCommentView, self).delete(request, *args, **kwargs)
+
+
 class MyRecipesView(LoginRequiredMixin, generic.ListView):
     """
     This view is used to display user created recipes
