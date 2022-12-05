@@ -10,13 +10,12 @@
     <br>
    
     <div class="row text-center justify-content-center mt-4">
-         <h5 class="text-center"><strong>Are you sure you want to delete your {{ comment.post }} comment?</strong></h5>
+         <h5 class="text-center"><strong>Are you sure you want to delete your {{ comment.body }} comment?</strong></h5>
          <br>
         <div class="col-lg-8 mb-3 mt-4">
             <form method="post" class="mb-5 col-12">
                 {% csrf_token %}
-                <a class="btn btn-signup m-2 form-font" href="#" >Cancel</a>
-                <a class="btn btn-signup m-2 form-font" href="#">Update Instead</a>
+                <a class="btn btn-signup m-2 form-font" href="{%  url 'recipe_detail' comment.post.slug  %}" >Cancel</a>
                 <button class="btn btn-danger m-2 col-lg-4 form-font" input type="submit">Delete Comment</button>
             </form>
         </div>
