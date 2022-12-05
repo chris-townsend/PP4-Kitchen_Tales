@@ -215,3 +215,33 @@ class MyStarredRecipesView(LoginRequiredMixin, generic.ListView):
     def get_queryset(self):
         return Recipe.objects.filter(like_recipe=self.request.user.id)
 
+
+class UpdateCommentView(LoginRequiredMixin, View):
+
+    model = Comment
+    form_class = CommentForm
+    template_name = 'update_comment.html'
+
+    def get(self, request, comment_id):
+        comment = Comment.objects.get(id=comment_id)
+        print(comment)
+        return render(
+            request,
+            "update_comment.html",
+            {
+                "form": CommentForm(instance=comment),
+                "comment": comment
+            },
+        )
+
+    def post(self, request, comment_id):
+        comment = Comment.objects.get(id=comment_id)
+        comment_form = CommentForm(request.POST, instance=comment)
+
+        if comment_form.is_valid():
+            comment_form.save()
+            messages.success(
+                self.request,
+                'Your comment has been updated')
+
+        return redirect(reverse('all_recipes'))
