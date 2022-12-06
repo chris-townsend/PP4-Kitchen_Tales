@@ -69,12 +69,18 @@ hr {
 .nav-item a {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
+    font-size: 22px;
     margin-right: 20px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
 }
 
 .dropdown-menu a {
     font-family: 'Karla', sans-serif;
     font-weight: 300;
+    font-size: 17px;
 }
 
 .btn-search {
