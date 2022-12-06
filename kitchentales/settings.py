@@ -77,6 +77,12 @@ MESSAGE_TAGS = {
 # Tell crispy_forms which template pack to use for formatting
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+# Summernote display configuration
+SUMMERNOTE_CONFIG = {
+    'width': '100%',
+    'height': '300',
+}
+
 # Prevents 500 errors during login and registration
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
