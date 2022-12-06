@@ -3,9 +3,28 @@
 {% block content %}
 
 <!--Welcome Section-->
+{% if user.is_authenticated %}
 <section>
   <div class="container welcome-container">
-    <div class="row py-1 d-inline-flex justify-content-center">
+    <div class="row py-1 d-inline-flex">
+      <div class="col-lg-9 text-center">
+      <h1 class="welcome-title mt-3">Welcome back to Kitchen Tales</h1>
+  </div>
+  <br>
+   <p class="welcome-text ml-3">Share your favourite recipes..</p>
+   <div class="">
+    <a class="btn btn-lg btn-outline-dark rounded-pill ml-4 form-font"
+     href="{% url 'add_recipe' %}">Add a new recipe!</a>
+   </div>
+  </div>
+  <br>
+</section>
+
+{% else %}
+
+<section>
+  <div class="container welcome-container">
+    <div class="row py-1 d-inline-flex">
       <div class="col-lg-7 text-center">
       <h1 class="welcome-title mt-3">Welcome to Kitchen Tales</h1>
   </div>
@@ -15,11 +34,12 @@
     <a class="btn btn-lg btn-outline-dark rounded-pill ml-4 form-font"
      href="{% url 'account_signup' %}">Sign Up Today!</a>
    </div>
-    
   </div>
- 
   <br>
 </section>
+{% endif %}
+
+
 <br>
 
 <section>
