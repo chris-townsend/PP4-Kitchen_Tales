@@ -27,7 +27,11 @@
             <p class="card-text">
                 <span><i class="far fa-clock pr-2"></i></span>
                 <span>Cook Time: {{ result.cook_time }}</span>
-            </p>   
+            </p> 
+            <p class="card-text">
+              <span><i class="far fa-star"></i></span>
+              <span>{{ recipe.like_recipe.count }} Likes</span>
+          </p>  
           </div>
       </div>
     </div>
