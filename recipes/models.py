@@ -14,6 +14,7 @@ class Recipe(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='recipe_posts')
     updated_date = models.DateTimeField(auto_now=True)
     created_date = models.DateTimeField(auto_now_add=True)
+    description = models.TextField(default='A description about the recipe')
     prep_time = models.CharField(max_length=8, default='0 mins')
     cook_time = models.CharField(max_length=8, default='0 mins')
     ingredients = models.TextField()
