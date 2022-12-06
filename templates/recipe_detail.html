@@ -22,19 +22,19 @@
                             <h1 class="page-title text-left">{{ recipe.title }}</h1>
                         </div>
                         <br>
-                        <p class="recipe-text"> Author: {{ recipe.author }}</p>
+                        <p class="comment-author"><strong>Author: {{ recipe.author }}</strong></p>
                         <div class="mb-5">
                             <p>
                                 <span><i class="far fa-clock pr-2"> </i></span>
-                                <span class="recipe-text">Prep Time: {{ recipe.prep_time }}</span>
+                                <span class="recipe-text"><strong>Prep Time: {{ recipe.prep_time }}</strong></span>
                             </p>
                             <p>
                                 <span><i class="far fa-clock pr-2"></i></span>
-                                <span class="recipe-text">Cook Time: {{ recipe.cook_time }}</span>
+                                <span class="recipe-text"><strong>Cook Time: {{ recipe.cook_time }}</strong></span>
                             </p>
                             <p>
                                 <span><i class="fas fa-wrench pr-2""></i></span>
-                                <span class="recipe-text">Last Updated: {{ recipe.updated_date }}</span>
+                                <span class="recipe-text"><strong>Last Updated: {{ recipe.updated_date }}</strong></span>
                             </p>
                             <p>
                             </span>
@@ -85,8 +85,8 @@
                                         <h5 class="card-header custom-recipe-detail-header">
                                             Description
                                         </h5>
-                                        <div class="card-body">
-                                            <p class="card-text">{{ recipe.description | safe }}</p>
+                                        <div class="card-body form-font">
+                                            <p class="recipe-text">{{ recipe.description | safe }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -100,14 +100,14 @@
                                             Ingredients
                                         </h5>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">{{ recipe.ingredients | safe }}</li>
+                                            <li class="list-group-item form-font">{{ recipe.ingredients | safe }}</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="card mb-3">
                                         <h5 class="card-header custom-recipe-detail-header">Method</h5>
-                                        <div class="card-body">
+                                        <div class="card-body form-font">
                                             <div class="card-text">{{ recipe.method | safe }}</div>
                                         </div>
                                     </div>
@@ -123,7 +123,7 @@
                                     <h5 class="card-header custom-recipe-detail-header">
                                         Notes
                                     </h5>
-                                    <div class="card-body">
+                                    <div class="card-body form-font">
                                         <p class="card-text">{{ recipe.notes | safe }}</p>
                                     </div>
                                 </div>
@@ -136,11 +136,11 @@
                             <div class="col">
                                 <div class="card mb-3">
                                     <h4 class="card-header custom-recipe-detail-header">Comments</h4>
-                                    <div class="card-body">
+                                    <div class="card-body form-font">
                                         
                                         <!-- a for loop to iterate through each comment in comments -->
                                         {% for comment in comments %}
-                                         <div class="comments" style="padding: 10px;">
+                                         <div class="comments" style="padding: 5px;">
                                             {% if user.is_authenticated and user.username == comment.name %}
                                              <span class="comment-btn">
                                              <a href="{% url 'update_comment' comment.id %}" aria-label="edit comment"><i
@@ -150,12 +150,12 @@
                                               class="fas fa-trash-alt"></i></a>
                                             </span>
                                                {% endif %}
-                                               <p class="font-weight-normal">
+                                               <p class="font-weight-normal form-font">
                                                 {{ comment.created_date }}
-                                                <span class=" text-muted font-weight-bold">
+                                                <span class=" text-muted font-weight-bold comment-author">
                                                     {{ comment.name | safe }}
                                                     
-                                                </span> commented:
+                                                </span class="form-font"> commented:
                                                 <br>
                                                 {{ comment.body | safe }}
                                             </p>
@@ -179,8 +179,8 @@
                                                 <div class="card mb-3">
 
                                                 <h5 class="card-header custom-recipe-detail-header">Leave a comment:</h5>
-                                                <p class="comments font-weight-normal">Posting as: <span class="font-weight-bold">{{ user.username }}</span></p>
-                                                <form method="post" style="margin-top: 1.1em; padding: 20px">
+                                                <p class="comments font-weight-normal comment-author">Posting as: <span class="font-weight-bold">{{ user.username }}</span></p>
+                                                <form method="post" style="margin-top: 1.1em; padding: 20px" class="form-font">
                                                     {{ comment_form | crispy }}
                                                     {% csrf_token %}
                                                     <button type="submit" class="btn btn-signup btn-md form-font">Submit</button>

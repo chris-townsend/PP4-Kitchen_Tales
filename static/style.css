@@ -122,6 +122,7 @@ hr {
     font-family: 'Karla', sans-serif;
 }
 
+
 /* Recipe Detail page */
 
 .custom-recipe-detail-img {
@@ -132,10 +133,15 @@ hr {
 }
 
 .custom-recipe-detail-header {
+    font-family: 'Karla', sans-serif;
     border: none;
     background-color:bisque;
     color: #886363;
     letter-spacing: 1px;
+}
+
+.comment-author {
+    font-family: 'Italiana', serif;
 }
 
 .btn-like {
@@ -162,6 +168,8 @@ hr {
 .like-recipe-text {
     font-weight: bold;
 }
+
+
 
 
 
