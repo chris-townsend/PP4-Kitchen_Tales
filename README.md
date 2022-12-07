@@ -311,15 +311,81 @@ Custom Error Pages were created to give the user more information on the error a
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:
 
 ### Create the Heroku App:
-- Log in to [Heroku](https://dashboard.heroku.com/apps) or create an account.
-- On the main page click the button labelled New in the top right corner and from the drop-down menu select "Create New App".
-- Enter a unique and meaningful app name.
-- Next select your region.
-- Click on the Create App button.
 
-### Attach the Postgres database:
-- In the Resources tab, under add-ons, type in Postgres and select the Heroku Postgres option.
-- Copy the DATABASE_URL located in Config Vars in the Settings Tab.
+1. Log in to [Heroku](https://dashboard.heroku.com/apps) or create an account.
+![Heroku Signup](static/images/heroku-signup.webp)
+
+2. On your Heroku dashboard, click the button labelled **New** in the top right corner and from the drop-down menu select **Create new app**.
+![Heroku Dashboard](static/images/heroku-dashboard.webp)
+![Create new app](static/images/heroku-create-app.webp)
+
+3. Enter a **unique and meaningful app name** and **choose the region** which is best suited to your location.
+![Meaningful app-name](static/images/heroku-meaningful-name.webp)
+- Click on the **Create app** button.
+
+4. Select **Settings** from the tabs at the top of the app page.
+![Heroku app settings](static/images/heroku-dashboard-settings.webp)
+
+5. Click **Reveal Config Vars**.    
+![Heroku app settings](static/images/heroku-config-vars.webp)
+
+6. Input all key-value pairs from the `env.py` file. Ensure `DEBUG` and `DISABLE_COLLECTSTATIC` are not included in the final production.
+![Heroku app settings](static/images/heroku-config-var-setup.webp)
+
+- `SECRET_KEY` = 
+- `CLOUDINARY_URL` = 
+- `PORT` = `8000`
+- `DISABLE_COLLECTSTATIC` = `1`
+
+7. Below your Config Vars in your app settings, click **Add buildpack**.
+![Heroku add buildpack](static/images/heroku-add-buildpack.webp)
+
+8. Select **Python** from the list of buildpacks.
+![Heroku select buildpack](static/images/heroku-select-buildpack.webp)
+- Remember to click **Save changes**.
+
+9. Select **Deploy** from the tabs at the top of the app page.
+![Heroku deploy](static/images/heroku-deploy.webp)
+
+10. Select **Connect to GitHub** from the deployment methods.
+![Heroku deployment method](static/images/heroku-deployment-method.webp)
+
+11. Search for the repository to connect to by name.
+![Heroku select repository](static/images/heroku-select-repository.webp)
+
+12. Click **Connect**.
+![Heroku click connect](static/images/heroku-connect-to-github.webp)
+
+ - Your app should now be connected to your GitHub account.
+
+![Heroku connected app](static/images/heroku-connected-app.webp)
+
+ 13. Select **Enable Automatic Deploys** for automatic deployments.
+
+![Heroku automatic deploy](static/images/heroku-automatic-deploys.webp)
+
+- If you would like to deploy manually, select **Deploy Branch**. If you manually deploy, you will need to re-deploy each time the repository is updated.
+
+![Heroku manual deploy](static/images/heroku-manual-deploy.webp)
+
+- For the first time deploying to Heroku you may have to deploy manually but if you select automatic deploys it will update from then onwards.
+
+14. Click **View** to view the deployed site.
+![Heroku successful deploy](static/images/heroku-successful-deploy.webp)
+
+
+
+
+
+
+
+
+
+
+
+### Attach the Elephant SQL database:
+1. Log in to [ElephantSQL](https://customer.elephantsql.com/instance#) to access your dashboard
+![Elephant SQL dashboard](static/images/elephant-sql-dashboard.webp)
 
 ### Prepare the environment and settings.py file:
 - In your GitPod workspace, create an env.py file in the main directory.
@@ -339,12 +405,6 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 - Create three directories in the main directory; media, storage and templates.
 - Create a file named "Procfile" in the main directory and add the following: web: gunicorn project-name.wsgi
 
-### Update Heroku Config Vars
-Add the following Config Vars in Heroku:
-- SECRET_KEY value 
-- CLOUDINARY_URL
-- PORT = 8000
-- DISABLE_COLLECTSTATIC = 1
 
 ### Deploy
 - NB: Ensure in Django settings, DEBUG is False
