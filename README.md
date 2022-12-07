@@ -374,20 +374,49 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 ![Heroku successful deploy](static/images/heroku-successful-deploy.webp)
 
 
+### Create & Attach the Elephant SQL database:
 
-
-
-
-
-
-
-
-
-### Attach the Elephant SQL database:
-1. Log in to [ElephantSQL](https://customer.elephantsql.com/instance#) to access your dashboard
+1. Log in to [ElephantSQL](https://customer.elephantsql.com/instance#) to access your dashboard.
 ![Elephant SQL dashboard](static/images/elephant-sql-dashboard.webp)
 
-### Prepare the environment and settings.py file:
+2. Click **Create New Instance** at the top right of the page.        
+![Elephant SQL new instance](static/images/elephant-create-new-instance.webp)
+
+3. Set up your **plan**.
+- Give your plan a **Name** (this is commonly the name of the project)
+- Select the **Tiny Turtle (Free)** plan
+- You can leave the **Tags** field blank
+
+![Elephant SQL setup plan](static/images/elephant-setup-plan.webp)
+
+4. Click **Select Region**.        
+![Elephant SQL select region](static/images/elephant-select-region.webp)
+
+5. Select a **data center** near you.
+![Elephant SQL select data center](static/images/elephant-select-data-center.webp)
+
+6. Click **Review**.                 
+![Elephant SQL review data center](static/images/elephant-review-data.webp)
+
+7. Ensure your details are correct and then click **Create instance**.
+![Elephant SQL confirm instance](static/images/elephant-confirm-instance.webp)
+
+8. Return to the **ElephantSQL dashboard** and you should see your **database instance name** for this project.
+![Elephant SQL dashboard instance](static/images/elephant-dashboard-instance.webp)
+
+9. On your **ElephantSQL dashboard**, click on the **database instance name** for this project.  
+![Elephant SQL click instance](static/images/elephant-click-instance.webp)
+
+10. In the **URL section**, click the **copy icon** to copy the **database URL**.
+![Elephant SQL copy URL](static/images/elephant-copy-url.webp)
+
+11. Within your **Heroku app**, add `DATABASE_URL` as the `KEY` and paste the URL you just copied in **ElephantSQL** into the `VALUE` column. Your **ElephantSQL** database should now be connected to your **Heroku** app.
+![Elephant SQL add database URL ](static/images/elephant-add-database-url.webp)
+ 
+
+
+### Setting up the environment and settings.py file:
+
 - In your GitPod workspace, create an env.py file in the main directory.
 - Add the DATABASE_URL value and your chosen SECRET_KEY value to the env.py file. 
 - Update the settings.py file to import the env.py file and add the SECRETKEY and DATABASE_URL file paths.
@@ -404,15 +433,6 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 - Create requirements.txt file
 - Create three directories in the main directory; media, storage and templates.
 - Create a file named "Procfile" in the main directory and add the following: web: gunicorn project-name.wsgi
-
-
-### Deploy
-- NB: Ensure in Django settings, DEBUG is False
-- Go to the deploy tab on Heroku and connect to GitHub, then to the required repository. 
-- Scroll to the bottom of the deploy page and either click Enable Automatic Deploys for automatic deploys or Deploy Branch to deploy manually. Manually deployed branches will need re-deploying each time the repo is updated.
-- Click View to view the deployed site.
-
-The site is now live and operational.
 
 ***
 
