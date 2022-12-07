@@ -32,9 +32,13 @@ The live link can be found here - [Kitchen Tales](https://)
   - [Technologies Used](#programs-frameworks--libraries-used)
     - [Programs](#programs)
     - [Frameworks](#frameworks)
-    - [Libraries](#libraries)   
+    - [Libraries](#libraries)
+  - [Development](#development)
+    - [GitHub](#github)
+    - [Django](#django)
   * [Deployment](#deployment)
     - [Heroku](#heroku)
+    - [ElephantSQL](#elephant-sql)
     - [Forking the GitHub Repository](#forking-this-repository)
     - [Making a local clone](#cloning-this-repository)
   * [Credits](#credits)
@@ -305,9 +309,44 @@ Custom Error Pages were created to give the user more information on the error a
 #
 ***
 
-## Deployment - Heroku
+
+# Development
+
+This site was made using [GitHub](#github) & [Gitpod](https://www.gitpod.io/). The site was further developed using [Django](#django), a Python web-framework.
+## GitHub
+#
+### Create the repository
+1. Sign into Github and navigate to [Code Institute's Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template).
+![GitHub Code Institute template](static/images/github-use-this-template.webp)
+ - At the top of the repository click **Use this template** followed by **Create a new repository**.
+ ![GitHub Code Institute template](static/images/github-create-new-repository.webp)
+
+*Alternatively:*
+
+1. Click the GitHub label in the top left of the nav section.
+![GitHub create repository](static/images/github-label.webp)
+
+2. Select **New** next to **Top Repositories**.     
+![GitHub click new repository](static/images/github-new.webp)
+
+3. Select the **template** you wish to use.                
+![GitHub select template](static/images/github-select-template.webp)
+
+4. Give the repository a name and description and then click **Create repository**.
+![GitHub create repository](static/images/github-create-repository.webp)
+
+The repository has now been created and is ready for editing through the gitpod terminal.
+ 
+***
+
+## Django
 #
 
+***
+# Deployment
+
+## Heroku
+#
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:
 
 ### Create the Heroku App:
@@ -373,8 +412,10 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 14. Click **View** to view the deployed site.
 ![Heroku successful deploy](static/images/heroku-successful-deploy.webp)
 
-
-### Create & Attach the Elephant SQL database:
+***
+## Elephant SQL
+#
+### Create & Attach the Elephant SQL database
 
 1. Log in to [ElephantSQL](https://customer.elephantsql.com/instance#) to access your dashboard.
 ![Elephant SQL dashboard](static/images/elephant-sql-dashboard.webp)
@@ -412,7 +453,8 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 
 11. Within your **Heroku app**, add `DATABASE_URL` as the `KEY` and paste the URL you just copied in **ElephantSQL** into the `VALUE` column. Your **ElephantSQL** database should now be connected to your **Heroku** app.
 ![Elephant SQL add database URL ](static/images/elephant-add-database-url.webp)
- 
+
+***
 
 
 ### Setting up the environment and settings.py file:
