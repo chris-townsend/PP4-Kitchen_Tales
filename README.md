@@ -12,6 +12,7 @@ The live link can be found here - [Kitchen Tales](https://)
   * [Objective](#objective)
   * [Brief & Target Audience](#brief)
   * [User Experience (UX)](#user-experience-ux)
+    + [Epics](#epics)
     + [User Stories](#user-stories)
     + [Design](#design)
       - [Colour Scheme](#colour-scheme)
@@ -60,13 +61,46 @@ A visitor to Kitchen Tales would be someone who is most likely an adult who enjo
 ## User Experience (UX)
 #
 
+### Epics 
+#
+7 Epics were created as Milestones which were then further developed into 42 User Stories. The details on each epic, along with the user stories linked to each one can be found [here](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestones).
+
+[1.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/1) Early Deployment 
+
+[2.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/2) Initial Django Setup
+
+[3.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/3) Website Functionality
+
+[4.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/4) Navigation
+
+[5.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/5) User Recipe Management
+
+[6.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/6) User Account Management
+
+[7.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/7) Admin Features & Owner Objectives
 
 ### User Stories
 #
+From the Epics, 42 User stories were developed. Some of my initial user stories were based around setting up the environment and deploying early. Each story was assigned a classification of must-have, should-have, could-have or won't have. Each story was also assigned user story points, based on my best estimation for the difficulty/time of completing each story. I gave the project a total of 
 
 
-#### EPIC | Early Deployment
-- 
+
+#### EPIC | **Early Deployment**
+
+[#1](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/1) **Create Heroku App** - *As a developer, I can create an account with Heroku to process setting up the app so that I can deploy my site to Heroku*
+
+[#2](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/2) **Create Config Vars & static files** - *As a developer, I can add my config vars to my app in Heroku so that I can allow deployment to production*
+
+[#3](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/3) **Create Procfile** - *As a developer, I can create a Procfile within my project so that the application will run in Heroku*
+
+[#4](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/4) **Cloudinary Setup** - *As a developer, I can create a Cloudinary account so that I can store my media files*
+
+[#5](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/5) **Deploy using GitHub** - *As a developer, I can connect my GitHub account for the final deployment stages so that I can allow deployment to production*
+
+
+
+
+
 
 #### EPIC | Initial Django Setup
 - 
