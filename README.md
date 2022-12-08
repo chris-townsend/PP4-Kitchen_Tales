@@ -340,7 +340,52 @@ The repository has now been created and is ready for editing through the gitpod 
 ***
 
 ## Django
-#
+
+### Installing Django and supporting libraries
+
+
+To initialise a Django project, first Django must be installed within your Python environment. This is done via the command ``pip3 install 'django<4' gunicorn``
+
+**Django 3.2 is the LTS (Long Term Support) version of Django and is therefore preferable to use over the newest Django 4.**
+
+**1.** Install Django and gunicorn: ``pip3 install 'django<4' gunicorn``
+
+- Gunicorn is the server we want to run our project on Heroku.
+
+**2.** Install supporting libraries: ``pip3 install dj_database_url==0.5.0 psycopg2``
+
+- Needed to connect to the PostgresSQL database but later gets transferred to elephantSQL.
+
+**3.** Install Cloudinary libraries: ``pip3 install dj3-cloudinary-storage``
+
+- Cloudinary will be used to store our static media files.
+
+**4.** Create a ``requirements.txt`` file: ``pip3 freeze --local > requirements.txt``
+
+**The ``requirements.txt`` file contains all the applications and dependencies that are required to run the application.**
+
+**5.** Create a Django project (*kitchentales*): ``django-admin startproject 'PROJ_NAME' .`` 
+**(Don’t forget the . at the end of the project name to tell Django admin we want to create our project in the current directory.)**
+
+ - This should have created a new directory called your ``'PROJ_NAME'`` and a ``manage.py`` file. Wthin your project folder you should see the file settings and URL files added to the directory.
+
+**6.** Create an App name (*recipes*): ``python3 manage.py startapp 'APP_NAME'``
+
+- Now the App has been installed, you need to add it to your ``INSTALLED_APPS`` within ``settings.py``
+
+ - ``INSTALLED_APPS = [
+    …
+    'recipes',
+]``
+
+**7.** Save changes and then **Migrate changes** in the terminal - ``python3 manage.py migrate``
+
+- Whenever a new app is created, migrations are automatically created and these changes need migrating. By migrating the changes, it adds all of the changes to the database.
+
+**8.** Run the server and you should see the basic skeleton project up and running - ``python3 manage.py runserver``
+
+![Django successful set-up](static/images/django-success.webp)
+
 
 ***
 # Deployment
@@ -414,7 +459,7 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 
 ***
 ## Elephant SQL
-#
+
 ### Create & Attach the Elephant SQL database
 
 1. Log in to [ElephantSQL](https://customer.elephantsql.com/instance#) to access your dashboard.
