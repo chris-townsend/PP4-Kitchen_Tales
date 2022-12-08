@@ -313,8 +313,9 @@ Custom Error Pages were created to give the user more information on the error a
 # Development
 
 This site was made using [GitHub](#github) & [Gitpod](https://www.gitpod.io/). The site was further developed using [Django](#django), a Python web-framework.
+
 ## GitHub
-#
+
 ### Create the repository
 1. Sign into Github and navigate to [Code Institute's Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template).
 ![GitHub Code Institute template](static/images/github-use-this-template.webp)
@@ -387,11 +388,13 @@ To initialise a Django project, first Django must be installed within your Pytho
 ![Django successful set-up](static/images/django-success.webp)
 
 
+add procfile 
+
 ***
 # Deployment
 
 ## Heroku
-#
+
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:
 
 ### Create the Heroku App:
@@ -459,6 +462,10 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 
 ***
 ## Elephant SQL
+
+Heroku announced in September 2022 that they would be ending their free tier hosting at the end of November 2022. As I am a student who is currently registered with the GitHub Student Developer Pack, I can apply for the Heroku credits. The Heroku credits allowed me to transfer my projects from free dynos to Eco dynos to ensure that they continue to work. Unfortunately the student offer does not include the postgres add-on being used to host my postgres database. Code Insitute therefore have recommended students to migrate their databases to a new provider. In this case its ElephantSQL, as they are free. The ``DATABASE_URL`` value now points to the elephantSQL database in my Heroku Config Vars.
+
+As the database provided by Django is only accessible within Gitpod and is not suitable for a production environment. The deployed project on Heroku will not be able to access it. So, you need to create a new database that can be accessed by Heroku. The following steps will create a new PostgreSQL database instance for use within the project.
 
 ### Create & Attach the Elephant SQL database
 
