@@ -387,8 +387,75 @@ To initialise a Django project, first Django must be installed within your Pytho
 
 ![Django successful set-up](static/images/django-success.webp)
 
+## Attaching the Database
 
-add procfile 
+Create a new env.py file at the top level directory - ``env.py``
+
+- Within ``env.py``:
+
+| Instruction | Code |
+| --- | --- |
+| **1.** Import os library | ``import os`` |
+| **2.** Set environment variables | ``os.environ["DATABASE_URL"] = "Paste in Heroku DATABASE_URL Link"`` |
+| **3.** Add in secret key | ``os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"`` |
+
+ ## Prepare the environment and settings.py
+
+ - Within ``settings.py``:
+
+ | Instruction | Code |
+| --- | --- |
+| **1.** Reference env.py | `` import os``<br> ``import dj_database_url``<br> ``if os.path.isfile("env.py"): import env``|
+| **2.** Remove the insecure secret key **and replace** | ``SECRET_KEY = os.environ.get('SECRET_KEY')``|
+| **3.** Comment out the old ``DATABASES`` section | ``#DATABASES = {``<br>``#'default': {``<br>``#'ENGINE': 'django.db.backends.sqlite3',``<br>  ``#'NAME': BASE_DIR / 'db.sqlite3',``<br>``#}``<br>``#}`` |
+| **4.** Add new ``DATABASES`` Section | ``DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}`` |
+
+- Save all files and now make migrations to complete the changes - ``python3 manage.py migrate``
+
+## Get our static and media files stored on Cloudinary
+
+**- Within your [Cloudinary](https://cloudinary.com/users/login#gsc.tab=0) dashboard:**
+
+| Instruction | Code |
+| --- | --- |
+| **1.** Copy your CLOUDINARY_URL e.g. API environment variable | **From your Cloudinary dashboard** |
+
+**- Within ``env.py``:**
+
+| Instruction | Code |
+| --- | --- |
+| **1.** Add Cloudinary URL to ``env.py`` - be sure to paste in the correct section of the link | ``os.environ["CLOUDINARY_URL"] = "cloudinary://************************"`` |
+
+
+**- Within your [Heroku](https://id.heroku.com/login) dashboard:**
+
+| Instruction | Code |
+| --- | --- |
+| **1.** Add Cloudinary URL to Heroku Config Vars | Add to Settings tab in Config Vars e.g. ``COUDINARY_URL, cloudinary://************************`` |
+| **2.** Add ``DISABLE_COLLECTSTATIC`` to Heroku Config Vars (temporary step which will be removed before deployment) | ``DISABLE_COLLECTSTATIC = 1``
+
+**- Within ``settings.py``:**
+
+| Instruction | Code |
+| --- | --- |
+| **1.** Add Cloudinary Libraries to installed apps | ``INSTALLED_APPS = […,'cloudinary_storage','django.contrib.staticfiles','cloudinary', …,]`` |
+| **2.** Tell Django to use Cloudinary to store media and static files - *Place under the Static files* | ``STATIC_URL = '/static/'``<br> ``STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'``<br>``STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]``<br>``STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')``<br>``MEDIA_URL = '/media/' ``<br>``DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'`` |
+| **3.** Link file to the templates directory in Heroku - Place under the ``BASE_DIR`` | ``TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')`` |
+| **4.** Change the templates directory to ``TEMPLATES_DIR`` - Place within the ``TEMPLATES`` array | ``TEMPLATES = [``<br>``{``<br>``…,``<br>``'DIRS': [TEMPLATES_DIR],``<br>``…,``<br>``],``<br>``},``<br>``},``<br>``]``<br>
+| **5.** Add Heroku Hostname to ``ALLOWED_HOSTS`` *(e.g. kitchentales)* | ``ALLOWED_HOSTS = ["PROJ_NAME.herokuapp.com", "localhost"]`` |
+
+**Within Gitpod:**
+
+1. Create three new folders at the top level directory - ``media``, ``static`` & ``templates``.
+
+2. Create a file named **Procfile** at the top level directory - ``Procfile``.
+
+    - Add the following code: ``web: gunicorn PROJ_NAME.wsgi``
+
+**The Procfile must live in your app’s root directory. It does not function if placed anywhere else.**
+
+*The purpose of the Procfile is a mechanism for declaring what commands are run by your application’s dynos on the Heroku platform.*
+
 
 ***
 # Deployment
@@ -508,27 +575,6 @@ As the database provided by Django is only accessible within Gitpod and is not s
 
 ***
 
-
-### Setting up the environment and settings.py file:
-
-- In your GitPod workspace, create an env.py file in the main directory.
-- Add the DATABASE_URL value and your chosen SECRET_KEY value to the env.py file. 
-- Update the settings.py file to import the env.py file and add the SECRETKEY and DATABASE_URL file paths.
-- Comment out the default database configuration.
-- Save files and make migrations.
-- Add Cloudinary URL to env.py
-- Add the cloudinary libraries to the list of installed apps.
-- Add the STATIC files settings - the url, storage path, directory path, root path, media url and default file storage path.
-- Link the file to the templates directory in Heroku.
-- Change the templates directory to TEMPLATES_DIR
-- Add Heroku to the ALLOWED_HOSTS list the format ['app_name.heroku.com', 'localhost']
-
-### Create files / directories
-- Create requirements.txt file
-- Create three directories in the main directory; media, storage and templates.
-- Create a file named "Procfile" in the main directory and add the following: web: gunicorn project-name.wsgi
-
-***
 
 ### Forking the GitHub Repository
 #
