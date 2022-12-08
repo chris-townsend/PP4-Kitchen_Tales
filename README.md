@@ -86,6 +86,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 
 #### EPIC | **Early Deployment**
+#
 
 [#1](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/1) **Create Heroku App** - *As a **developer**, I can create an account with Heroku to process setting up the app** so that **I can deploy my site to Heroku***
 
@@ -99,6 +100,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 
 #### EPIC | **Initial Django Setup**
+#
 
 [#6](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/6) **Django Setup** - *As a **developer**, I can **set up Django and supporting libraries** so that **I can start developing the site***
 
@@ -112,6 +114,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 
 #### EPIC | Website Functionality
+#
 
 [#10](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/10) **Simple page design** - *As a **first-time user**, I can **immediately understand the purpose of the website**, and I know if it's **what I'm looking for***
 
@@ -123,7 +126,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 [#34](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/34) **View comments** - *As a **User**, I can **view comments on recipes** so that I can **read other user's feedback***
 
-[#35](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/34) **Comment on a recipe** - *As a **Logged-in User**, I can **comment on recipes** so that **I can leave my feedback for others***
+[#35](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/35) **Comment on a recipe** - *As a **Logged-in User**, I can **comment on recipes** so that **I can leave my feedback for others***
 
 [#37](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/37) **Contact the site owner** - *As a **User**, I can **contact the site owner** so that **I can offer my feedback***
 
@@ -131,6 +134,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 
 #### EPIC | Navigation
+#
 
 [#14](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/14) **Site Navigation** - *As a **User**, I can **navigate around the site** so that **I can easily view desired content***
 
@@ -138,6 +142,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 
 #### EPIC | User Recipe Management
+#
 
 [#16](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/16) **Create a recipe** - *As a **logged-in User**, I can **create recipes** so that **I can add them to the site**
 
@@ -157,6 +162,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 
 #### EPIC | User Account Management
+#
 
 [#22](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/22) **Register for an account** - *As a **User**, I can **register for an account** so that I can **interact with the site content***
 
@@ -172,6 +178,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 
 #### EPIC | Admin Features & Owner Objectives
+#
 
 [#28](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/28) **Admin CRUD features** - *As a **Site admin**, I can **create, edit and delete recipes and comments** so that **I can control the site content**
 
