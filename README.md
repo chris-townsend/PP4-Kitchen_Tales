@@ -387,11 +387,11 @@ To initialise a Django project, first Django must be installed within your Pytho
 
 ![Django successful set-up](static/images/django-success.webp)
 
-## Attaching the Database
+### Attaching the Database
 
 Create a new env.py file at the top level directory - ``env.py``
 
-- Within ``env.py``:
+#### - Within ``env.py``:
 
 | Instruction | Code |
 | --- | --- |
@@ -399,9 +399,9 @@ Create a new env.py file at the top level directory - ``env.py``
 | **2.** Set environment variables | ``os.environ["DATABASE_URL"] = "Paste in Heroku DATABASE_URL Link"`` |
 | **3.** Add in secret key | ``os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"`` |
 
- ## Prepare the environment and settings.py
+ ### Prepare the environment and settings.py
 
- - Within ``settings.py``:
+ #### - Within ``settings.py``:
 
  | Instruction | Code |
 | --- | --- |
@@ -412,7 +412,7 @@ Create a new env.py file at the top level directory - ``env.py``
 
 - Save all files and now make migrations to complete the changes - ``python3 manage.py migrate``
 
-## Get our static and media files stored on Cloudinary
+### Get our static and media files stored on Cloudinary
 
 **- Within your [Cloudinary](https://cloudinary.com/users/login#gsc.tab=0) dashboard:**
 
@@ -420,21 +420,21 @@ Create a new env.py file at the top level directory - ``env.py``
 | --- | --- |
 | **1.** Copy your CLOUDINARY_URL e.g. API environment variable | **From your Cloudinary dashboard** |
 
-**- Within ``env.py``:**
+#### **- Within ``env.py``:**
 
 | Instruction | Code |
 | --- | --- |
 | **1.** Add Cloudinary URL to ``env.py`` - be sure to paste in the correct section of the link | ``os.environ["CLOUDINARY_URL"] = "cloudinary://************************"`` |
 
 
-**- Within your [Heroku](https://id.heroku.com/login) dashboard:**
+#### **- Within your [Heroku](https://id.heroku.com/login) dashboard:**
 
 | Instruction | Code |
 | --- | --- |
 | **1.** Add Cloudinary URL to Heroku Config Vars | Add to Settings tab in Config Vars e.g. ``COUDINARY_URL, cloudinary://************************`` |
 | **2.** Add ``DISABLE_COLLECTSTATIC`` to Heroku Config Vars (temporary step which will be removed before deployment) | ``DISABLE_COLLECTSTATIC = 1``
 
-**- Within ``settings.py``:**
+#### **- Within ``settings.py``:**
 
 | Instruction | Code |
 | --- | --- |
@@ -444,7 +444,7 @@ Create a new env.py file at the top level directory - ``env.py``
 | **4.** Change the templates directory to ``TEMPLATES_DIR`` - Place within the ``TEMPLATES`` array | ``TEMPLATES = [``<br>``{``<br>``…,``<br>``'DIRS': [TEMPLATES_DIR],``<br>``…,``<br>``],``<br>``},``<br>``},``<br>``]``<br>
 | **5.** Add Heroku Hostname to ``ALLOWED_HOSTS`` *(e.g. kitchentales)* | ``ALLOWED_HOSTS = ["PROJ_NAME.herokuapp.com", "localhost"]`` |
 
-**Within Gitpod:**
+#### **Within Gitpod:**
 
 1. Create three new folders at the top level directory - ``media``, ``static`` & ``templates``.
 
@@ -534,7 +534,7 @@ Heroku announced in September 2022 that they would be ending their free tier hos
 
 As the database provided by Django is only accessible within Gitpod and is not suitable for a production environment. The deployed project on Heroku will not be able to access it. So, you need to create a new database that can be accessed by Heroku. The following steps will create a new PostgreSQL database instance for use within the project.
 
-### Create & Attach the Elephant SQL database
+### Create & attach the Elephant SQL database
 
 1. Log in to [ElephantSQL](https://customer.elephantsql.com/instance#) to access your dashboard.
 ![Elephant SQL dashboard](static/images/elephant-sql-dashboard.webp)
@@ -575,40 +575,39 @@ As the database provided by Django is only accessible within Gitpod and is not s
 
 ***
 
-
 ### Forking the GitHub Repository
-#
 
-By forking the GitHub Repository you can make a copy of the original repository You can view and/or make changes without affecting the original repository by using the following steps...
+By forking the GitHub Repository you can make a copy of the original repository. You can view and/or make changes without affecting the original repository by using the following steps..
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/) you would like to fork.
+**1.** Log in to GitHub and locate the [GitHub Repository](https://github.com/) you would like to fork.
 
-![GitHub Repository](./readme-content/images/github-locate-repository.webp)
+![GitHub Repository](static/images/github-select-repository.webp)
 
-2. At the top of the Repository, just above the "Settings" Button on the menu, locate the "Fork" Button and you should now have a copy of the original repository in your account.
+**2.** At the top of the Repository, just above the **Tabs**, locate the **Fork** Button and you should now have a copy of the repository in your account.
 
-![GitHub Fork](./readme-content/images/github-fork.webp)
+![GitHub Fork](static/images/github-fork-repository.webp)
 
 ### Cloning this repository
 #
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
-![GitHub Repository](./readme-content/images/github-locate-repository.webp)
+**1.** Log in to GitHub and locate the [GitHub Repository](https://github.com/).
+![GitHub Repository](static/images/github-select-repository.webp)
 
-2. On the repository main page, click the drop-down menu called Code.
+**2.** On the repository main page, click the drop-down menu called Code.
 
-    ![GitHub Code Drowndown menu](./readme-content/images/github-clone.webp)
+![GitHub Code Drowndown menu](static/images/github-clone-repository.webp)
 
-3. To clone the repository using HTTPS, copy the link.
+**3.** To clone the repository using HTTPS, copy the link.
 
-    ![GitHub copy URL](./readme-content/images/github-copy-url.webp)
+![GitHub copy URL](static/images/github-copy-url.webp)
 
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, and then paste the URL you copied in Step 3.
+**4.** Open Git Bash
 
+**5.** Change the current working directory to the location where you want the cloned directory to be made.
 
-7. Press Enter. Your local clone will be created.
+**6.** Type `git clone`, and then paste the URL you copied in Step 3.
+
+**7.** Press Enter. Your local clone will be created.
 
 ***
 ## Languages Used
