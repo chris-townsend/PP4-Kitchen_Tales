@@ -317,6 +317,8 @@ This site was made using [GitHub](#github) & [Gitpod](https://www.gitpod.io/). T
 ## GitHub
 
 ### Create the repository
+#
+
 1. Sign into Github and navigate to [Code Institute's Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template).
 ![GitHub Code Institute template](static/images/github-use-this-template.webp)
  - At the top of the repository click **Use this template** followed by **Create a new repository**.
@@ -343,6 +345,7 @@ The repository has now been created and is ready for editing through the gitpod 
 ## Django
 
 ### Installing Django and supporting libraries
+#
 
 
 To initialise a Django project, first Django must be installed within your Python environment. This is done via the command ``pip3 install 'django<4' gunicorn``
@@ -366,7 +369,7 @@ To initialise a Django project, first Django must be installed within your Pytho
 **The ``requirements.txt`` file contains all the applications and dependencies that are required to run the application.**
 
 **5.** Create a Django project (*kitchentales*): ``django-admin startproject 'PROJ_NAME' .`` 
-**(Don’t forget the . at the end of the project name to tell Django admin we want to create our project in the current directory.)**
+**(Don’t forget the ``.`` at the end of the project name to tell Django admin we want to create our project in the current directory.)**
 
  - This should have created a new directory called your ``'PROJ_NAME'`` and a ``manage.py`` file. Wthin your project folder you should see the file settings and URL files added to the directory.
 
@@ -388,6 +391,7 @@ To initialise a Django project, first Django must be installed within your Pytho
 ![Django successful set-up](static/images/django-success.webp)
 
 ### Attaching the Database
+#
 
 Create a new env.py file at the top level directory - ``env.py``
 
@@ -400,6 +404,7 @@ Create a new env.py file at the top level directory - ``env.py``
 | **3.** Add in secret key | ``os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"`` |
 
  ### Prepare the environment and settings.py
+ #
 
  #### - Within ``settings.py``:
 
@@ -413,6 +418,7 @@ Create a new env.py file at the top level directory - ``env.py``
 - Save all files and now make migrations to complete the changes - ``python3 manage.py migrate``
 
 ### Get our static and media files stored on Cloudinary
+#
 
 **- Within your [Cloudinary](https://cloudinary.com/users/login#gsc.tab=0) dashboard:**
 
@@ -465,6 +471,7 @@ Create a new env.py file at the top level directory - ``env.py``
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:
 
 ### Create the Heroku App:
+#
 
 1. Log in to [Heroku](https://dashboard.heroku.com/apps) or create an account.
 ![Heroku Signup](static/images/heroku-signup.webp)
@@ -486,10 +493,14 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 6. Input all key-value pairs from the `env.py` file. Ensure `DEBUG` and `DISABLE_COLLECTSTATIC` are not included in the final production.
 ![Heroku app settings](static/images/heroku-config-var-setup.webp)
 
-- `SECRET_KEY` = 
-- `CLOUDINARY_URL` = 
-- `PORT` = `8000`
-- `DISABLE_COLLECTSTATIC` = `1`
+| KEY | VALUE |
+| --- | --- |
+|``DATABASE_URL``|=  ``****``  |
+|``SECRET_KEY``  |=  ``****``  |
+|``CLOUDINARY_URL`` |=  ``****``  |
+|``PORT``  |= `8000` |
+|``DISABLE_COLLECTSTATIC``  |=  ``1`` |
+
 
 7. Below your Config Vars in your app settings, click **Add buildpack**.
 ![Heroku add buildpack](static/images/heroku-add-buildpack.webp)
@@ -535,6 +546,7 @@ Heroku announced in September 2022 that they would be ending their free tier hos
 As the database provided by Django is only accessible within Gitpod and is not suitable for a production environment. The deployed project on Heroku will not be able to access it. So, you need to create a new database that can be accessed by Heroku. The following steps will create a new PostgreSQL database instance for use within the project.
 
 ### Create & attach the Elephant SQL database
+#
 
 1. Log in to [ElephantSQL](https://customer.elephantsql.com/instance#) to access your dashboard.
 ![Elephant SQL dashboard](static/images/elephant-sql-dashboard.webp)
@@ -576,7 +588,7 @@ As the database provided by Django is only accessible within Gitpod and is not s
 ***
 
 ### Forking the GitHub Repository
-
+#
 By forking the GitHub Repository you can make a copy of the original repository. You can view and/or make changes without affecting the original repository by using the following steps..
 
 **1.** Log in to GitHub and locate the [GitHub Repository](https://github.com/) you would like to fork.
@@ -589,7 +601,6 @@ By forking the GitHub Repository you can make a copy of the original repository.
 
 ### Cloning this repository
 #
-
 **1.** Log in to GitHub and locate the [GitHub Repository](https://github.com/).
 ![GitHub Repository](static/images/github-select-repository.webp)
 
