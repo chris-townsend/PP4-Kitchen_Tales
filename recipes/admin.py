@@ -5,7 +5,9 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Recipe)
 class RecipeAdmin(SummernoteModelAdmin):
-    """Admin can manage recipes within the Django admin panel """
+    """
+    Admin can manage recipes within the Django admin panel
+    """
     list_filter = ('status', 'created_date')
     list_display = ('title', 'slug', 'status', 'created_date')
     search_fields = ('title', 'method', 'notes', 'ingredients')
@@ -14,6 +16,9 @@ class RecipeAdmin(SummernoteModelAdmin):
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
+    """
+    Admin can manage comments on a recipe_detail page within the admin panel
+    """
     list_display = ('name', 'body', 'post', 'created_date', 'approved')
     list_filter = ('approved', 'created_date')
     search_fields = ('name', 'email', 'body')
@@ -21,4 +26,3 @@ class CommentAdmin(admin.ModelAdmin):
 
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
-

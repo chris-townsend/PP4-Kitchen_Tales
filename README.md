@@ -81,7 +81,7 @@ A visitor to Kitchen Tales would be someone who is most likely an adult who enjo
 
 ### User Stories
 #
-From the Epics, 42 User stories were developed. Some of my initial user stories were based around setting up the environment and deploying early. Each story was assigned a classification of must-have, should-have, could-have or won't have. Each story was also assigned user story points, based on my best estimation for the difficulty/time of completing each story. I gave the project a total of 
+From the Epics, 42 User stories were developed. Some of my initial user stories were based around setting up the environment and deploying early. Each story was assigned a classification of must-have, should-have, could-have or won't have. Each story was also assigned user story points, based on my best estimation of the difficulty/time of completing each story. I gave the project a total of 
 
 
 
@@ -313,10 +313,10 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 
 Custom Error Pages were created to give the user more information on the error and to provide them with buttons to guide them back to the site.
 
-- 400 Bad Request - The Easy Eater is unable to handle this request.
+- 400 Bad Request - unable to handle this request.
 - 403 Page Forbidden - Looks like you're trying to access forbidden content. Please log out and sign in to the correct account.
 - 404 Page Not Found - The page you're looking for doesn't exist.
-- 500 Server Error - The Easy Eater is currently unable to handle this request
+- 500 Server Error - Kitchen Tales is currently unable to handle this request
 
 ## Features
 #
@@ -409,7 +409,7 @@ Custom Error Pages were created to give the user more information on the error a
 Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
 
 
-- 400 Bad Request - 
+- 400 Bad Request - unable to handle this request.
 - 403 Page Forbidden -
 - 404 Page Not Found - 
 - 500 Server Error - 
