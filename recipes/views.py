@@ -161,6 +161,7 @@ class UpdateRecipeView(LoginRequiredMixin, View):
         recipe_form = RecipeForm(request.POST, instance=recipe)
 
         if recipe_form.is_valid():
+            recipe.image = request.FILES['image']
             recipe_form.save()
             messages.success(
                 self.request,
