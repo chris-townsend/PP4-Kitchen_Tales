@@ -129,6 +129,7 @@ class AddRecipeView(LoginRequiredMixin, generic.CreateView):
         if recipe_form.is_valid():
             recipe = recipe_form.save(commit=False)
             recipe.author = User.objects.get(id=request.user.id)
+            recipe.image = request.FILES['image']
             recipe.save()
             messages.success(
                 self.request,
