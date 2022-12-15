@@ -13,7 +13,7 @@
                     <img src="https://res.cloudinary.com/diez1cpce/image/upload/v1668704852/pp4/placeholder-recipe_jurheg.jpg"
                         class="custom-recipe-detail-img" alt="placeholder image">
                     {% else %}
-                    <img src=" {{ recipe.image.url }}" alt="recipe image" class="custom-recipe-detail-img">
+                    <img src="{{ recipe.image.url }}" alt="recipe image" class="custom-recipe-detail-img">
                     {% endif %}
                 </div>
                 <div class="col-12 col-md-8">
@@ -108,7 +108,7 @@
                                     <div class="card mb-3">
                                         <h5 class="card-header custom-recipe-detail-header">Method</h5>
                                         <div class="card-body form-font">
-                                            <div class="card-text">{{ recipe.method | safe }}</div>
+                                            <div class="card-text form-font">{{ recipe.method | safe }}</div>
                                         </div>
                                     </div>
                                 </div>

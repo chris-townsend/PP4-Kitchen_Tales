@@ -7,6 +7,7 @@ from django.urls import reverse_lazy
 from .models import Recipe, Comment
 from .forms import CommentForm, RecipeForm
 from django.contrib.auth.models import User
+from django.utils.datastructures import MultiValueDictKeyError
 
 
 def search_results(request):
@@ -129,7 +130,10 @@ class AddRecipeView(LoginRequiredMixin, generic.CreateView):
         if recipe_form.is_valid():
             recipe = recipe_form.save(commit=False)
             recipe.author = User.objects.get(id=request.user.id)
-            recipe.image = request.FILES['image']
+            
+            #recipe.image = request.FILES['image']
+            recipe.image = request.FILES.get('image')
+            #recipe.image = request.POST.get('image')
             recipe.save()
             messages.success(
                 self.request,
@@ -161,7 +165,8 @@ class UpdateRecipeView(LoginRequiredMixin, View):
         recipe_form = RecipeForm(request.POST, instance=recipe)
 
         if recipe_form.is_valid():
-            recipe.image = request.FILES['image']
+            #recipe.image = request.FILES['image']
+            recipe.image = request.FILES.get('image')
             recipe_form.save()
             messages.success(
                 self.request,
