@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %} Kitchen Tales | {{ recipe.title }}{% endblock %}
 
 
@@ -10,7 +11,7 @@
             <div class="row no-gutters">
                 <div class="col-12 col-md-4">
                     {% if "placeholder" in recipe.image.url %}
-                    <img src="https://res.cloudinary.com/diez1cpce/image/upload/v1668704852/pp4/placeholder-recipe_jurheg.jpg"
+                    <img src="{% static 'images/placeholder.webp' %}"
                         class="custom-recipe-detail-img" alt="placeholder image">
                     {% else %}
                     <img src="{{ recipe.image.url }}" alt="recipe image" class="custom-recipe-detail-img">
