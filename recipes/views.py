@@ -1,17 +1,26 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
+from django.contrib.auth.models import User
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
+from django.utils.datastructures import MultiValueDictKeyError
 from .models import Recipe, Comment
 from .forms import CommentForm, RecipeForm
-from django.contrib.auth.models import User
-from django.utils.datastructures import MultiValueDictKeyError
+
+
+"""
+The search_results function is used to search for a recipe
+"""
 
 
 def search_results(request):
     if request.method == "POST":
+        """
+         when a POST request is made this method is called which
+         renders the search results based on recipe title
+        """
         searched = request.POST['searched']
         results = Recipe.objects.filter(title__contains=searched)
 
@@ -24,12 +33,15 @@ def search_results(request):
 
 
 class Home(generic.TemplateView):
+    """
+    The main site homepage view
+    """
     template_name = 'index.html'
 
 
 class RecipeListHome(generic.ListView):
     """
-    This view is used to display all recipes in the all recipes page
+    This view is used to display all recipes in the main recipes page
     """
     model = Recipe
     queryset = Recipe.objects.filter(status=1).order_by('-created_date')
@@ -65,11 +77,16 @@ class RecipeDetail(View):
         )
 
     def post(self, request, slug):
+        """
+        When a POST request is made to this view from
+        the comments section this method is called
+        """
         queryset = Recipe.objects.filter(status=1)
         recipe = get_object_or_404(queryset, slug=slug)
         comments = recipe.comments.filter(
             approved=True).order_by("-created_date")
         liked = False
+
         if recipe.like_recipe.filter(id=self.request.user.id).exists():
             liked = True
 
@@ -100,7 +117,10 @@ class RecipeDetail(View):
 
 
 class RecipeLike(LoginRequiredMixin, View):
-    """This view is used to star a recipe and save it to the database"""
+    """
+    This view is used to star a recipe and save it to the database,
+    success messages used to alert the user
+    """
     def post(self, request, slug, *args, **kwargs):
         recipe = get_object_or_404(Recipe, slug=slug)
 
@@ -108,32 +128,38 @@ class RecipeLike(LoginRequiredMixin, View):
             recipe.like_recipe.remove(request.user)
             messages.success(
                 self.request,
-                'Recipe removed from your saved-Recipes <i class="far fa-star"></i>')
-
+                'Recipe removed from your saved-Recipes'
+                '<i class="far fa-star"></i>')
         else:
             recipe.like_recipe.add(request.user)
             messages.success(
                 self.request,
-                'Recipe saved! Find it in your saved-Recipes <i class="far fa-star"></i>')
+                'Recipe saved! Find it in your saved-Recipes'
+                '<i class="far fa-star"></i>')
 
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
 
 
 class AddRecipeView(LoginRequiredMixin, generic.CreateView):
+    """
+    This view allows a logged-in user to add a recipe to the site
+    """
     model = Recipe
     form_class = RecipeForm
     template_name = 'add_recipe.html'
 
     def post(self, request):
+        """
+        This method is called when a POST request is made to the view,
+        a success message will alert the user of a successful add
+        of a new recipe
+        """
         recipe_form = RecipeForm(data=request.POST)
 
         if recipe_form.is_valid():
             recipe = recipe_form.save(commit=False)
             recipe.author = User.objects.get(id=request.user.id)
-            
-            #recipe.image = request.FILES['image']
             recipe.image = request.FILES.get('image')
-            #recipe.image = request.POST.get('image')
             recipe.save()
             messages.success(
                 self.request,
@@ -155,12 +181,18 @@ class AddRecipeView(LoginRequiredMixin, generic.CreateView):
 
 
 class UpdateRecipeView(LoginRequiredMixin, View):
-
+    """
+    This view allows a logged-in user to edit their own recipe
+    """
     model = Recipe
     form_class = RecipeForm
     template_name = 'update_recipe.html'
 
     def get(self, request, recipe_id):
+        """
+        Gets the recipe from the database and returns the data
+        within the form
+        """
         recipe = Recipe.objects.get(id=recipe_id)
         print(recipe)
         return render(
@@ -173,11 +205,14 @@ class UpdateRecipeView(LoginRequiredMixin, View):
         )
 
     def post(self, request, recipe_id):
+        """
+        The form is posted with the updated data if the RecipeForm
+        data is valid and a success message is displayed to the user
+        """
         recipe = Recipe.objects.get(id=recipe_id)
         recipe_form = RecipeForm(request.POST, instance=recipe)
 
         if recipe_form.is_valid():
-            #recipe.image = request.FILES['image']
             recipe.image = request.FILES.get('image')
             recipe_form.save()
             messages.success(
@@ -188,7 +223,10 @@ class UpdateRecipeView(LoginRequiredMixin, View):
 
 
 class DeleteRecipeView(LoginRequiredMixin, generic.DeleteView):
-
+    """
+    This view allows a logged-in user to delete their own recipe
+    from the database
+    """
     model = Recipe
     template_name = 'delete_recipe.html'
     success_url = reverse_lazy('home')
@@ -200,7 +238,9 @@ class DeleteRecipeView(LoginRequiredMixin, generic.DeleteView):
 
 
 class DeleteCommentView(LoginRequiredMixin, generic.DeleteView):
-
+    """
+    This view allows a logged-in user to delete their own comment
+    """
     model = Comment
     template_name = 'delete_comment.html'
     success_url = reverse_lazy('home')
@@ -213,7 +253,7 @@ class DeleteCommentView(LoginRequiredMixin, generic.DeleteView):
 
 class MyRecipesView(LoginRequiredMixin, generic.ListView):
     """
-    This view is used to display user created recipes
+    This view is used to display a logged-in user created recipes
     """
     model = Recipe
     template_name = 'my_recipes.html'
@@ -225,7 +265,7 @@ class MyRecipesView(LoginRequiredMixin, generic.ListView):
 
 class MyStarredRecipesView(LoginRequiredMixin, generic.ListView):
     """
-    This view is used to display a users starred recipes
+    This view is used to display a logged-in user starred recipes
     """
     model = Recipe
     template_name = 'my_starred_recipes.html'
@@ -236,12 +276,18 @@ class MyStarredRecipesView(LoginRequiredMixin, generic.ListView):
 
 
 class UpdateCommentView(LoginRequiredMixin, View):
-
+    """
+    This view allows a logged-in user to edit their own comment
+    """
     model = Comment
     form_class = CommentForm
     template_name = 'update_comment.html'
 
     def get(self, request, comment_id):
+        """
+        retrieves the comment from the database
+        and displays a form to edit the comment
+        """
         comment = Comment.objects.get(id=comment_id)
         print(comment)
         return render(
@@ -254,6 +300,11 @@ class UpdateCommentView(LoginRequiredMixin, View):
         )
 
     def post(self, request, comment_id):
+        """
+        If valid data has been input by the user, the comment
+        will be updated and the user alerted with a success message
+        and returned back to the main recipes page
+        """
         comment = Comment.objects.get(id=comment_id)
         comment_form = CommentForm(request.POST, instance=comment)
 
