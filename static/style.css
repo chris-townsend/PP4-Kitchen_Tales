@@ -358,5 +358,14 @@ hr {
     transition: all 0.4s;
     }
 
+/* Home newsletter section */
+
+.sign-up-container {
+    margin-left: 60px;
+    margin-top: 20px;
+    background-color: antiquewhite;
+    width: 90%;
+    height: 270px;
+}
 
 
