@@ -1,6 +1,13 @@
-from .models import Comment, Recipe
+from .models import Comment, Recipe, NewsletterUser
 from django import forms
 from django_summernote.widgets import SummernoteWidget
+
+
+class NewsletterForm(forms.ModelForm):
+
+    class Meta:
+        model = NewsletterUser
+        fields = ('email',)
 
 
 class CommentForm(forms.ModelForm):

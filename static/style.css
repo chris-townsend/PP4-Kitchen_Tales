@@ -365,7 +365,20 @@ hr {
     margin-top: 20px;
     background-color: antiquewhite;
     width: 90%;
-    height: 270px;
+    justify-content: center;
+    height: 260px;
 }
+
+/* newsletter page */
+
+.newsletter-container {
+    margin-left: 60px;
+    margin-top: 20px;
+    background-color: antiquewhite;
+    width: 90%;
+    height: 320px;
+}
+
+
 
 

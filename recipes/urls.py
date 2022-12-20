@@ -26,4 +26,5 @@ urlpatterns = [
          name='delete_comment'),
     path('update_comment/<int:comment_id>/', UpdateCommentView.as_view(),
          name='update_comment'),
+    path("newsletter", views.newsletter, name="newsletter"),
 ]

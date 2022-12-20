@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block title %}Kitchen Tales | Home{% endblock %}
+{% load crispy_forms_tags %}
 {% block content %}
 
 <!--Welcome Section-->
@@ -142,7 +143,8 @@
       <div class="row">
         <div class="col-md-8 offset-md-2">
           <h2 class="welcome-text"> Never miss a recipe from Kitchen Tales</h2>
-          <p class="card-text-home mb-sm">
+          <br>
+          <p class="card-text-home mb-sm text-center">
             Sign up to receive our monthly newsletter.
           </p>
         </div>
@@ -150,43 +152,23 @@
 
       <div class="row">
         <div class="col">
-          <form action="#" class="#">
+          <form class="validate-form" method="POST" action="{% url 'newsletter' %}" enctype="multipart/form-data">
+            {% csrf_token %}
             <div class="row d-flex justify-content-center">
-              <input name="endpoint" type="hidden" value="im-adestra/v1/newsletter-sign-up"><input type="hidden"
-                id="_wpnonce" name="_wpnonce" value="50ffe2335b"><input type="hidden" name="_wp_http_referer"
-                value="/"><input type="hidden" name="newsletter" value="nl_bbcgf_newsletter--837">
-              <div class="col-md-5">
-                <div class="form-control btn ml-3">
-                  <input id="newsletter-sign-up-email" name="email" type="email" class="input-text rounded-pill"
-                    placeholder="Email address" value=""
-                    aria-label="Enter your email address to sign up to the newsletter" class="#"> Please enter your
-                  email address</span></div>
-              </div>
-              <div class="col-md-3">
-                <div class="#">
-                  <a class="btn btn-lg mb-3 btn-outline-dark rounded-pill ml-4 form-font">Sign me up</a>
-                </div>
+              <div class="col-md-3 text-center">
+                <br>
+                  <button class="btn btn-lg mb-3 btn-outline-dark rounded-pill ml-4 form-font"
+                   type="submit" name="email">Subscribe</button>
               </div>
             </div>
           </form>
         </div>
       </div>
       <br>
-      
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-12">
-            <p class="card-text-home">
-              By entering your details, you are agreeing to Kitchen Tales <a class="link-copy"
-                href="https://www.immediate.co.uk/terms-and-conditions/" target="_blank">terms and conditions</a>. You
-              can
-              unsubscribe at any time.
-            </p>
-          </div>
-        </div>
 </section>
 
 <br>
+
 
 
 {%endblock%}

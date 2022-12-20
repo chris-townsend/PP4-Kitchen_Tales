@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Kitchen Tales | Subscribe{% endblock %}
+{% block content %}
+{% load cloudinary %}
+{% load crispy_forms_tags %}
+
+
+<section>
+  <div class="newsletter-container">
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h2 class="welcome-text"> Never miss a recipe from Kitchen Tales</h2>
+          <p class="card-text-home mb-sm">
+            Sign up to receive our monthly newsletter.
+          </p>
+        </div>
+      </div>
+
+
+<div class="row">
+    <div class="col">
+      <form class="validate-form" method="POST">
+        {% csrf_token %}
+        {{ form|crispy  }}
+
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-3">
+              <button class="btn btn-lg mb-3 btn-outline-dark rounded-pill ml-4 form-font"
+               type="submit" name="email">Subscribe</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <p class="card-text-home">
+          By entering your details, you are agreeing to Kitchen Tales <a class="link-copy"
+            href="https://www.immediate.co.uk/terms-and-conditions/" target="_blank">terms and conditions</a>. You
+          can
+          unsubscribe at any time.
+        </p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <br>
+
+
+
+
+
+
+{% endblock content %}

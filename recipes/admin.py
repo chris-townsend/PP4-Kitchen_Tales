@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Recipe, Comment
+from .models import Recipe, Comment, NewsletterUser
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -26,3 +26,14 @@ class CommentAdmin(admin.ModelAdmin):
 
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
+
+
+class NewsletterAdmin(admin.ModelAdmin):
+    """
+    Displays a users email address and the date they subscribed
+    to the newsletter within the admin panel
+    """
+
+    list_display = ('email', 'date_added')
+
+    admin.site.register(NewsletterUser)

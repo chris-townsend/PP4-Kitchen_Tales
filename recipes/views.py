@@ -6,8 +6,23 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
 from django.utils.datastructures import MultiValueDictKeyError
-from .models import Recipe, Comment
-from .forms import CommentForm, RecipeForm
+from .models import Recipe, Comment, NewsletterUser
+from .forms import CommentForm, RecipeForm, NewsletterForm
+
+
+def newsletter(request):
+    form = NewsletterForm(request.POST)
+    if form.is_valid():
+        instance = form.save(commit=False)
+        if NewsletterUser.objects.filter(email=instance.email).exists():
+            messages.warning(request, 'Your email already exists in our database')
+        else:
+            instance.save()
+            messages.success(self, 'Your email already exists in our database')
+            form = NewsletterForm()
+
+    return render(request=request,
+                  template_name='newsletter.html', context={'form': form})
 
 
 """
