@@ -1,16 +1,17 @@
 # Kitchen Tales
 
+Kitchen Tales is a full-stack project built in Django using Python, HTML and CSS. My goals are to create a functioning and responsive website that allows users to create and share recipes. The website will have full CRUD functionality which will give users the ability to edit and delete their own recipes. On each recipe page, users will be able to communicate with a comments section and the ability to like and save recipes to a favourites page.
 
-
-The live link can be found here - [Kitchen Tales](https://)
+The site should be instantly recognisable following UX design principles, which meets accessibility guidelines, is easy to navigate and allows the user to find information and resources intuitively. The site provides role based permissions for users to interact within a central dataset while integrating Djangos built-in authentication system.
 
 ![Am i responsive]()
+
+The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuapp.com/)
+
 
 ## Contents
 
 - [Kitchen Tales](#kitchen-tales)
-  * [Objective](#objective)
-  * [Brief & Target Audience](#brief)
   * [User Experience (UX)](#user-experience-ux)
     + [Epics](#epics)
     + [User Stories](#user-stories)
@@ -47,19 +48,13 @@ The live link can be found here - [Kitchen Tales](https://)
     + [Media](#media)
   * [Acknowledgments](#acknowledgments)
 
-***
-## Objective
-#
 
-***
-
-## Brief & Target Audience
-#
-A visitor to Kitchen Tales would be someone who is most likely an adult who enjoys their food and trying new recipes
 ***
 
 ## User Experience (UX)
 #
+
+The website is targetted towards users who enjoy their food and would like to share their recipes with others. 
 
 ### Epics 
 #
