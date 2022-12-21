@@ -18,7 +18,7 @@ The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuap
     + [Design](#design)
       - [Colour Scheme](#colour-scheme)
       - [Imagery](#imagery)
-      - [Fonts](#fonts)
+      - [Typography](#typography)
       - [Wireframes](#wireframes)
   * [Agile Methodology](#agile-methodology)
   * [Data Model](#data-model)
@@ -218,8 +218,23 @@ Colour palette from Coolors
 #
 ***
 
-#### Fonts
+#### Typography 
 #
+While deciding on which typefaces I wanted to use, I tried to choose fonts which resemble a  relaxing and elegant theme, this allows for easy reading and doesn't detract from the overall feel and style. To add a little more style, one of the fonts used on the homepage (*Italiana*) has a cursive style, while still being easy to read, it adds elegance and sophistication to the site.
+
+Both fonts are from [Google fonts](https://fonts.google.com/about), meaning they can be imported from their API and give wide coverage to keep the styling maintained across various devices.
+
+**Headings:** *'Karla'*
+
+![Font Karla light 300](static/images/font-karla-300.webp)
+![Font Karla regular 400](static/images/font-karla-400.webp)
+
+
+**Body:** *'Italiana'*
+
+![Font Italiana regular 400](static/images/font-italiana.webp)
+
+
 ***
 
 #### Wireframes
