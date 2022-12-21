@@ -459,7 +459,74 @@ Custom Error Pages were created to give the user more information on the error a
 ### Future Features
 #
 ***
+## Languages Used
+#
 
+  [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+   [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://en.wikipedia.org/wiki/HTML)
+
+   [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://en.wikipedia.org/wiki/CSS)
+
+***
+
+## Programs, Frameworks & Libraries Used
+
+### Programs
+
+[**Balsamiq**](https://balsamiq.com/) - Balsamiq was used to create the basic wireframes during the design process.
+
+[**Pixlr**](https://pixlr.com/x/) - Pixlr was used to resize and change the format of my images.
+
+[**Google DevTools**](https://developer.chrome.com/docs/devtools/) - Once the website was made to a basic deployment level, Google DevTools was used frequently to resize objects within the site, very helpful for making my website responsive.
+
+[**Python Tutor**](https://pythontutor.com/) - Python Tutor was used for helping step through non-functioning code and resolve issues.
+
+[**Git**](https://git-scm.com/) - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
+[**GitHub**](https://github.com/) - GitHub is used to store the project's code after being pushed from Git.
+
+[**Heroku**](http://heroku.com/) - Heroku is a cloud platform that lets people build, deliver, monitor, and scale apps. It supports several programming languages. Heroku was used for the deployment of this project.
+
+[**W3C Markup Validator**](https://validator.w3.org/) - This site was used to ensure that my HTML and CSS were error-free. I had to push my code to ensure it was updated and then add the URL of the website to the address bar which then checked for errors or warnings.
+
+[**Favicon Generator**](https://favicon.io/favicon-converter/) - This was used to create my favicon icon. 
+
+[**JSHint Validator**](https://jshint.com/) - Jshint was used to validate the JavaScript code. It shows any warnings and errors within my code. 
+
+[**PEP8 Validator**](http://pep8online.com/) - The PEP8 validator was used to validate my python code, you can paste your code or upload the file to see the results. It's built with a backend Python framework called Flask. 
+
+[**Cloudinary**](https://imgpile.com/) - A cloud hosting website, used for hosting my images.
+
+[**DrawSQL**](https://drawsql.app/) - DrawSQL is a database diagram tool which was used to visualize relationship diagrams for my databases.
+
+***
+
+### Frameworks
+
+[**Django 3.2**](https://www.djangoproject.com/) - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+
+
+***
+
+### Libraries 
+
+
+[**Bootstrap 4.6**](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Bootstrap provides a popular framework for building responsive mobile-first sites with built-in CSS & Javascript libraries.
+
+[**Psycopg2**](https://pypi.org/project/psycopg2/) - A PostgreSQL database adapter for Python.
+
+[**dj-database-url**](https://pypi.org/project/dj-database-url/) - A simple Django utility that allows you to create an environment variable to configure your Django application.
+
+[**Gunicorn**](https://gunicorn.org/) - Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server.
+
+[**django-all-auth**](https://github.com/pennersr/django-allauth) Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party *social* account authentication.
+
+[**django-crispy-forms**](https://django-crispy-forms.readthedocs.io/en/latest/) Used to control the rendering behaviour of my django forms.
+
+[**django-cloudinary-storage**](https://pypi.org/project/django-cloudinary-storage/) Facillitates integration with  Cloudinary by implementing a Django Storage API. This is to enable storage of static and media files.
+
+***
 
 # Development
 
@@ -468,7 +535,6 @@ This site was made using [GitHub](#github) & [Gitpod](https://www.gitpod.io/). T
 ## GitHub
 
 ### Create the repository
-#
 
 1. Sign into Github and navigate to [Code Institute's Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template).
 ![GitHub Code Institute template](static/images/github-use-this-template.webp)
@@ -496,7 +562,6 @@ The repository has now been created and is ready for editing through the gitpod 
 ## Django
 
 ### Installing Django and supporting libraries
-#
 
 
 To initialise a Django project, first Django must be installed within your Python environment. This is done via the command ``pip3 install 'django<4' gunicorn``
@@ -541,8 +606,10 @@ To initialise a Django project, first Django must be installed within your Pytho
 
 ![Django successful set-up](static/images/django-success.webp)
 
+***
+
 ### Attaching the Database
-#
+
 
 Create a new env.py file at the top level directory - ``env.py``
 
@@ -567,6 +634,8 @@ Create a new env.py file at the top level directory - ``env.py``
 | **4.** Add new ``DATABASES`` Section | ``DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}`` |
 
 - Save all files and now make migrations to complete the changes - ``python3 manage.py migrate``
+
+***
 
 ### Get our static and media files stored on Cloudinary
 #
@@ -615,6 +684,7 @@ Create a new env.py file at the top level directory - ``env.py``
 
 
 ***
+
 # Deployment
 
 ## Heroku
@@ -696,8 +766,9 @@ Heroku announced in September 2022 that they would be ending their free tier hos
 
 As the database provided by Django is only accessible within Gitpod and is not suitable for a production environment. The deployed project on Heroku will not be able to access it. So, you need to create a new database that can be accessed by Heroku. The following steps will create a new PostgreSQL database instance for use within the project.
 
+
 ### Create & attach the Elephant SQL database
-#
+
 
 1. Log in to [ElephantSQL](https://customer.elephantsql.com/instance#) to access your dashboard.
 ![Elephant SQL dashboard](static/images/elephant-sql-dashboard.webp)
@@ -739,7 +810,8 @@ As the database provided by Django is only accessible within Gitpod and is not s
 ***
 
 ### Forking the GitHub Repository
-#
+
+
 By forking the GitHub Repository you can make a copy of the original repository. You can view and/or make changes without affecting the original repository by using the following steps..
 
 **1.** Log in to GitHub and locate the [GitHub Repository](https://github.com/) you would like to fork.
@@ -750,8 +822,10 @@ By forking the GitHub Repository you can make a copy of the original repository.
 
 ![GitHub Fork](static/images/github-fork-repository.webp)
 
+***
+
 ### Cloning this repository
-#
+
 **1.** Log in to GitHub and locate the [GitHub Repository](https://github.com/).
 ![GitHub Repository](static/images/github-select-repository.webp)
 
@@ -772,72 +846,6 @@ By forking the GitHub Repository you can make a copy of the original repository.
 **7.** Press Enter. Your local clone will be created.
 
 ***
-## Languages Used
-#
-
-  [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://en.wikipedia.org/wiki/Python_(programming_language))
-
-   [![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://en.wikipedia.org/wiki/HTML)
-
-   [![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://en.wikipedia.org/wiki/CSS)
-
-***
-
-## Programs, Frameworks & Libraries Used
-#
-
-### Programs
-#
-[**Balsamiq**](https://balsamiq.com/) - Balsamiq was used to create the basic wireframes during the design process.
-
-[**Pixlr**](https://pixlr.com/x/) - Pixlr was used to resize and change the format of my images.
-
-[**Google DevTools**](https://developer.chrome.com/docs/devtools/) - Once the website was made to a basic deployment level, Google DevTools was used frequently to resize objects within the site, very helpful for making my website responsive.
-
-[**Python Tutor**](https://pythontutor.com/) - Python Tutor was used for helping step through non-functioning code and resolve issues.
-
-[**Git**](https://git-scm.com/) - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-
-[**GitHub**](https://github.com/) - GitHub is used to store the project's code after being pushed from Git.
-
-[**Heroku**](http://heroku.com/) - Heroku is a cloud platform that lets people build, deliver, monitor, and scale apps. It supports several programming languages. Heroku was used for the deployment of this project.
-
-[**W3C Markup Validator**](https://validator.w3.org/) - This site was used to ensure that my HTML and CSS were error-free. I had to push my code to ensure it was updated and then add the URL of the website to the address bar which then checked for errors or warnings.
-
-[**Favicon Generator**](https://favicon.io/favicon-converter/) - This was used to create my favicon icon. 
-
-[**JSHint Validator**](https://jshint.com/) - Jshint was used to validate the JavaScript code. It shows any warnings and errors within my code. 
-
-[**PEP8 Validator**](http://pep8online.com/) - The PEP8 validator was used to validate my python code, you can paste your code or upload the file to see the results. It's built with a backend Python framework called Flask. 
-
-[**Cloudinary**](https://imgpile.com/) - A cloud hosting website, used for hosting my images.
-
-[**DrawSQL**](https://drawsql.app/) - DrawSQL is a database diagram tool which was used to visualize relationship diagrams for my databases.
-
-#
-### Frameworks
-#
-
-[**Django 3.2**](https://www.djangoproject.com/) - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
-#
-
-### Libraries 
-#
-
-[**Bootstrap 4.6**](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Bootstrap provides a popular framework for building responsive mobile-first sites with built-in CSS & Javascript libraries.
-
-[**Psycopg2**](https://pypi.org/project/psycopg2/) - A PostgreSQL database adapter for Python.
-
-[**dj-database-url**](https://pypi.org/project/dj-database-url/) - A simple Django utility that allows you to create an environment variable to configure your Django application.
-
-[**Gunicorn**](https://gunicorn.org/) - Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server.
-
-[**django-all-auth**](https://github.com/pennersr/django-allauth) Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party *social* account authentication.
-
-[**django-crispy-forms**](https://django-crispy-forms.readthedocs.io/en/latest/) Used to control the rendering behaviour of my django forms.
-
-[**django-cloudinary-storage**](https://pypi.org/project/django-cloudinary-storage/) Facillitates integration with  Cloudinary by implementing a Django Storage API. This is to enable storage of static and media files.
-
 
 #
 ## Credits
