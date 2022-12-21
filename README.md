@@ -333,7 +333,7 @@ Custom Error Pages were created to give the user more information on the error a
 
 ### Header
 
-![header]()
+![Kitchen Tales logo](static/images/kitchen-tales-logo.webp)
 
 **Logo**
 - A customised logo was created using Hatchful by Shopify which is a free logo generator.
@@ -342,21 +342,26 @@ Custom Error Pages were created to give the user more information on the error a
 **Navigation Bar**
 
 
-![header]()
+![Navigation section](static/images/section-navigation.webp)
+
+
+![Navigation section unauthorized](static/images/section-navigation-unauthorized.webp)
+
+
+![Navigation section authorized](static/images/section-navigation-authorized.webp)
 
 
 ### Footer
 
-![footer]()
-
 - The footer section includes links to Facebook, Instagram, Twitter and Youtube.
+
 - Clicking the links in the footer opens a separate browser tab to avoid pulling the user away from the site.
+
+![footer](static/images/section-footer.webp)
 
 ### Home Page
 
 
-
-![header](docs/readme_images/features/call_out.png)
 
 
 
@@ -364,15 +369,18 @@ Custom Error Pages were created to give the user more information on the error a
 
 **Sign Up**
 
-![sign-up]()
+![Register](static/images/section-register-1.webp)
+![Register form](static/images/section-register-2.webp)
+
+
 
 **Log In**
 
-![header]()
+![Login section](static/images/section-sign-in.webp)
 
 **Log Out**
 
-![header]()
+![Logout section](static/images/section-sign-out.webp)
 
 - Django allauth was installed and used to create the Sign up, Log in and Log out functionality. 
 - Success messages inform the user if they have logged in/ logged out successfully.
