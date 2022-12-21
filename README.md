@@ -53,12 +53,12 @@ The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuap
 ***
 
 ## User Experience (UX)
-#
+
 
 The website is targetted towards users who enjoy their food and would like to share their recipes with others. 
 
 ### Epics 
-#
+
 
 7 Epics were created as Milestones which were then further developed into 42 User Stories. The details on each epic, along with the user stories linked to each one can be found [here](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestones).
 
@@ -222,13 +222,12 @@ The following user stories were scoped out of the project due to time constraint
 ### Design
 #
 The site has a very simple and clean design which was purposely chosen in order to keep in theme with the site's goal. i.e. invoking a sense of calm in the user and reducing stress when it comes to everyday cooking. 
-***
 
 #### Colour Scheme
 #
 Colour palette from Coolors
 
-![Colour Palette]()
+![Colour Palette](static/images/coolers-colour-scheme.webp)
 
 ***
 
