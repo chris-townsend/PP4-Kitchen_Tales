@@ -15,6 +15,7 @@ The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuap
   * [User Experience (UX)](#user-experience-ux)
     + [Epics](#epics)
     + [User Stories](#user-stories)
+      - [Future Stories](#user-stories-not-yet-implemented)
     + [Design](#design)
       - [Colour Scheme](#colour-scheme)
       - [Imagery](#imagery)
@@ -58,27 +59,29 @@ The website is targetted towards users who enjoy their food and would like to sh
 
 ### Epics 
 #
+
 7 Epics were created as Milestones which were then further developed into 42 User Stories. The details on each epic, along with the user stories linked to each one can be found [here](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestones).
 
-[1.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/1) Early Deployment 
 
-[2.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/2) Initial Django Setup
+[1.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/1) **Early Deployment**
 
-[3.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/3) Website Functionality
+[2.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/2) **Initial Django Setup**
 
-[4.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/4) Navigation
+[3.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/3) **Website Functionality**
 
-[5.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/5) User Recipe Management
+[4.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/4) **Navigation**
 
-[6.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/6) User Account Management
+[5.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/5) **User Recipe Management**
 
-[7.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/7) Admin Features & Owner Objectives
+[6.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/6) **User Account Management**
 
+[7.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/7) **Admin Features & Owner Objectives**
+
+#
 ### User Stories
 #
+
 From the Epics, 42 User stories were developed. Some of my initial user stories were based around setting up the environment and deploying early. Each story was assigned a classification of must-have, should-have, could-have or won't have. Each story was also assigned user story points, based on my best estimation of the difficulty/time of completing each story. I gave the project a total of 
-
-
 
 #### EPIC | **Early Deployment**
 #
@@ -93,7 +96,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 [#5](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/5) **Deploy using GitHub** - *As a **developer**, I can **connect my GitHub account for the final deployment stages** so that **I can allow deployment to production***
 
-
+#
 #### EPIC | **Initial Django Setup**
 #
 
@@ -107,7 +110,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 [#40](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/40) **Create a database** - *As a **developer**, I should **set up the necessary database items** so that **the database is viewable through Heroku***
 
-
+#
 #### EPIC | Website Functionality
 #
 
@@ -127,7 +130,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 [#41](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/41) **Create a favicon** - *As a **developer**, I can **add a favicon** so that **the site looks more distinguishable***
 
-
+#
 #### EPIC | Navigation
 #
 
@@ -135,7 +138,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 [#15](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/15) **Search for a recipe** - *As a **User**, I can **search for the desirable recipe by keyword** so that **I can find a specific recipe fast***
 
-
+#
 #### EPIC | User Recipe Management
 #
 
@@ -155,7 +158,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 [#42](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/42) **Like a recipe** - *As a **logged-in User**, I can **like or star a recipe** so that **I can bookmark it for later***
 
-
+#
 #### EPIC | User Account Management
 #
 
@@ -171,7 +174,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 [#27](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/27) **Change my password** - *As a **logged-in User**, I can **change my password** so that **I can keep my account secure***
 
-
+#
 #### EPIC | Admin Features & Owner Objectives
 #
 
@@ -191,13 +194,28 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 [#38](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/38) **Ban a user** - *As a **Site admin**, I can **ban a user** so that **they are blocked if they violate the site rules***
 
-
-***
+# 
 
 #### User stories not yet implemented
 #
 
 The following user stories were scoped out of the project due to time constraints and labelled as "Won't Have" on the project board on Github. It is intended that these user stories will be implemented at a later date. 
+
+[#20](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/20)  **Rate a recipe** - *As a **logged-in User**, I can **give a recipe a rating** so that **I can provide feedback***
+
+[#38](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/38)  **Ban a user** - *As a **Site admin**, I can **ban a user** so that **they are blocked if they violate the site rules***
+
+[#33](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/33)  **Offer a subscription service** - *As a **Site owner**, I can **offer exclusive content** by creating a **subscription service for a small fee***
+
+[#23](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/23)  **Register for an account using my social media** - *As a **User**, I can **register for an account by using one of my social media accounts** so that **I can use an alternative method of signing up***
+
+[#32](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/32) **Populate a recipe database using an API** - *As a **Site owner**, I can **provide a database of existing recipes** so that **I can provide my users with content***
+
+[#30](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/30) **Add a captcha for sign-up** - *As a **Site Admin**, I would like to **ensure that my site users are real** so that **I can prevent any spam content***
+
+[#21](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/21) **Print a recipe** - *As a **User**, I would **like the option to print a recipe** so that **I can have a paper copy***
+
+[#37](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/37) **Contact the site owner** - *As a **User**, I can **contact the site owner** so that **I can offer my feedback***
 
 ***
 
