@@ -224,22 +224,27 @@ The following user stories were scoped out of the project due to time constraint
 The site has a very simple and clean design which was purposely chosen in order to keep in theme with the site's goal. i.e. invoking a sense of calm in the user and reducing stress when it comes to everyday cooking. 
 
 #### Colour Scheme
-#
-Colour palette from Coolors
+
+
+A light colour scheme was chosen to allow good contrast with text and give a clean feel throughout the site. Great care was taken during the design process to establish a good contrast between background colours and text, and also to ensure it met accessibility requirements.
+
 
 ![Colour Palette](static/images/coolers-colour-scheme.webp)
+*Colour palette from* [*Coolors*](https://coolors.co/)
 
 ***
 
 #### Imagery
-#
+
+The imagery used throughout the site is intended to inspire people to cook. All static images are sourced through [Pexels](https://www.pexels.com/) and are royalty-free. There is a list of images used available in the [credits](#credits). At the time of writing, the images within the database have come from [BBC Goodfood](https://www.bbcgoodfood.com/).
+
 ***
 
 #### Typography 
-#
+
 While deciding on which typefaces I wanted to use, I tried to choose fonts which resemble a  relaxing and elegant theme, this allows for easy reading and doesn't detract from the overall feel and style. To add a little more style, one of the fonts used on the homepage (*Italiana*) has a cursive style, while still being easy to read, it adds elegance and sophistication to the site.
 
-Both fonts are from [Google fonts](https://fonts.google.com/about), meaning they can be imported from their API and give wide coverage to keep the styling maintained across various devices.
+Both fonts are from [Google fonts](https://fonts.google.com/about), meaning they can be imported from their API and give wide coverage to keep the styling maintained across various devices. *Sans Serif* is the backup font, incase for any reason the main font isn't being imported into the site correctly.
 
 **Headings:** *'Karla'*
 
