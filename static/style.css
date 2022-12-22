@@ -176,9 +176,6 @@ hr {
 }
 
 
-
-
-
 /* Comments section in recipe_detail template */
 
 .comments {
@@ -416,7 +413,7 @@ hr {
         height: 400px;
     }
 
-    /* Login styling */
+    /* Login/ out styling */
 
     .sign-in {
         margin-left: 10px;
@@ -446,5 +443,107 @@ hr {
 }
 
 
+/* For Small devices (mobiles, less than 320px) */
 
+@media screen and (max-width: 320px) {
+    /* Homepage */
 
+    .logo-image {
+        width: 120%;
+    }
+
+    .page-title {
+        font-size: 22px;
+    }
+    
+    .dropdown-menu a {
+        font-size: 14px;
+    }
+
+    .nav-item a {
+        font-size: 16px;
+    }
+
+    .carousel-inner {
+        height: 200px;
+    }
+
+    .welcome-container {
+        background-color: antiquewhite;
+        width: 80%;
+        height: 180px;
+    }
+    
+    .welcome-title {
+        font-size: 22px;
+    }
+    
+    .welcome-text {
+        font-size: 18px;
+    }
+
+    .welcome-text-mobile {
+        font-size: 18px;
+    }
+
+    .sign-up-container {
+        margin-left: 15px;
+        margin-top: 20px;
+        background-color: antiquewhite;
+        width: 90%;
+        justify-content: center;
+        height: 260px;
+    }
+
+    .card-text-home {
+        font-size: 14px;
+    }
+
+    /* Newsletter page */
+
+    .newsletter-container {
+        width: 80%;
+        height: 440px;
+        margin-left: 30px;
+    }
+
+    /* Login/out styling */
+
+    .sign-in {
+        margin-left: 10px;
+        padding: 12px;
+    }
+    
+    .login-form {
+        text-align: center;
+        align-content: center;
+        width: 255px;
+        height: 280px;
+        padding: 5px;
+        border: 4px double rgb(41, 182, 218);
+        border-radius: 4px;
+    }
+
+    .login-welcome-text {
+        font-size: 16px;
+    }
+
+    .sign-up-form {
+        text-align: center;
+        align-content: center;
+        width: 265px;
+        height: 425px;
+        padding: 25px;
+        border: 4px double rgb(41, 182, 218);
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .logout-form {
+        width: 255px;
+        height: 165px;
+        padding: 25px;
+        border: 4px double rgb(41, 182, 218);
+        border-radius: 4px;
+    }
+}
