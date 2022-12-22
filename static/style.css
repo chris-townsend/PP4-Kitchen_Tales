@@ -318,8 +318,14 @@ hr {
 
 .welcome-container {
     background-color: antiquewhite;
-    width: 60%;
-    height: 250px;
+    width: 80%;
+    height: 370px;
+    
+}
+
+.welcome-image {
+    width: 100%;
+    height: auto;
 }
 
 .welcome-title {
@@ -329,7 +335,7 @@ hr {
 
 .welcome-text {
     font-family: 'Italiana', serif;
-    font-size: 42px;
+    font-size: 36px;
 }
 
 /* Home cards section */
@@ -357,13 +363,18 @@ hr {
 
 /* Home newsletter section */
 
+.welcome-news-text {
+    font-family: 'Italiana', serif;
+    font-size: 41px;
+}
+
 .sign-up-container {
-    margin-left: 60px;
+    margin-left: 115px;
     margin-top: 20px;
     background-color: antiquewhite;
-    width: 90%;
+    width: 75%;
     justify-content: center;
-    height: 260px;
+    height: 280px;
 }
 
 /* newsletter page */
@@ -373,7 +384,7 @@ hr {
     margin-top: 20px;
     background-color: antiquewhite;
     width: 90%;
-    height: 320px;
+    height: 340px;
 }
 
 
