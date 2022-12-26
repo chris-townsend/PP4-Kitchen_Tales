@@ -4,7 +4,7 @@ Kitchen Tales is a full-stack project built in Django using Python, HTML and CSS
 
 The site should be instantly recognisable following UX design principles, which meets accessibility guidelines, is easy to navigate and allows the user to find information and resources intuitively. The site provides role based permissions for users to interact within a central dataset while integrating Djangos built-in authentication system.
 
-![Am i responsive]()
+![Am i responsive](static/images/am-i-responsive.webp)
 
 The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuapp.com/)
 
