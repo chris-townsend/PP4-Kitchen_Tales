@@ -407,16 +407,23 @@ hr {
     .welcome-container {
         background-color: antiquewhite;
         width: 60%;
-        height: 250px;
+        height: 340px;
     }
     
     .welcome-title {
-        font-size: 40px;
+        font-size: 38px;
     }
     
     .welcome-text {
         font-size: 32px;
     }
+
+    .mobile-view {
+        display: none;
+    }
+
+
+
     /* Newsletter page */
 
     .newsletter-container {
@@ -482,7 +489,7 @@ hr {
     .welcome-container {
         background-color: antiquewhite;
         width: 80%;
-        height: 180px;
+        height: 300px;
     }
     
     .welcome-title {
@@ -497,13 +504,17 @@ hr {
         font-size: 18px;
     }
 
+    .mobile-view {
+        display: none;
+    }
+
     .sign-up-container {
         margin-left: 15px;
         margin-top: 20px;
         background-color: antiquewhite;
         width: 90%;
         justify-content: center;
-        height: 260px;
+        height: 400px;
     }
 
     .card-text-home {
