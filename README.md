@@ -248,9 +248,37 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <details>
 
- <summary>Recipes</summary>
+ <summary>All Recipes</summary>
 
 ![Mobile - Recipes](static/images/wireframe-mobile-recipes.webp)
+</details>
+
+<details>
+
+ <summary>Add Recipe</summary>
+
+![Mobile - Add Recipe](static/images/wireframe-mobile-add-recipe.webp)
+</details>
+
+<details>
+
+ <summary>Recipe Detail</summary>
+
+![Mobile - Recipe Detail](static/images/wireframe-mobile-recipe-detail.webp)
+</details>
+
+<details>
+
+ <summary>Recipe Detail for the <i>author</i></summary>
+
+![Mobile - Recipe Detail for the author](static/images/wireframe-mobile-recipe-detail-author.webp)
+</details>
+
+<details>
+
+ <summary>Recipe Detail for the <i>comment author</i></summary>
+
+![Mobile - Recipe Detail for the comment author](static/images/wireframe-mobile-recipe-detail-comment-author.webp)
 </details>
 <br>
 
@@ -282,7 +310,7 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <details>
 
-<summary>Recipe Detail for the <i>Author</i></summary>
+<summary>Recipe Detail for the <i>author</i></summary>
 
 ![Desktop - Recipe Detail for Author](static/images/wireframe-desktop-recipe-detail-author.webp)
 
@@ -290,7 +318,7 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <details>
 
-<summary>Recipe Detail for the <i> Comment Author</i></summary>
+<summary>Recipe Detail for the <i> comment author</i></summary>
 
 ![Desktop Recipe Detail for Comment Author](static/images/wireframe-desktop-recipe-detail-comment-author.webp)
 
