@@ -435,7 +435,7 @@ Github projects was used to manage the development process using an agile approa
 ![GitHub kanban board](static/images/github-kanban-board.webp)
 
 
-The 7 [Epics](#epics) listed above were documented within the Github project as Milestones. A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution.
+A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution.
 
 Towards the end of the project, I knew that there were going to be user stories that would be scoped out of the project. These user stories have been placed within the Future features section on the kanban board and are intended to be implemented at a later date.
 
@@ -445,7 +445,7 @@ Towards the end of the project, I knew that there were going to be user stories 
 
 ## Data Model
 
-I used principles of Object-Oriented Programming throughout this project and Django’s Class-Based Generic Views.  
+I used principles of Object-Oriented Programming throughout this project and Django’s Class-Based Generic Views.
 
 Django AllAuth was used for the user authentication system.
 
@@ -456,8 +456,9 @@ The Comment model allows users to comment on individual recipes and the Recipe i
 
 The diagram below details the database schema.
 
-![Database Schema]()
+![Database Schema](static/images/database-schema.webp)
 
+*Database schema from [drawSQL](https://drawsql.app/)*
 ***
 
 ## Security Features and Defensive Design
