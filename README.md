@@ -234,8 +234,7 @@ The site has a very simple and clean design which was purposely chosen in order 
 
 Initial wireframes were made for the original ideas and as functionality was reduced, these wireframes have also become guidelines for the more basic functions which remain in place for future development. The wireframes were designed using [Balsamiq](#programs), with a mobile-first approach.
 
-<br>
-
+*Please note: To view the wireframe images, please **click** on the arrow next to each title*
 
 #### ***Mobile***
 
@@ -251,13 +250,6 @@ Initial wireframes were made for the original ideas and as functionality was red
  <summary>All Recipes</summary>
 
 ![Mobile - Recipes](static/images/wireframe-mobile-recipes.webp)
-</details>
-
-<details>
-
- <summary>Add Recipe</summary>
-
-![Mobile - Add Recipe](static/images/wireframe-mobile-add-recipe.webp)
 </details>
 
 <details>
@@ -279,6 +271,41 @@ Initial wireframes were made for the original ideas and as functionality was red
  <summary>Recipe Detail for the <i>comment author</i></summary>
 
 ![Mobile - Recipe Detail for the comment author](static/images/wireframe-mobile-recipe-detail-comment-author.webp)
+</details>
+
+<details>
+
+ <summary>My Starred Recipes</summary>
+
+![Mobile - My Starred Recipes](static/images/wireframe-mobile-liked-recipes.webp)
+</details>
+
+<details>
+
+ <summary>Add Recipe</summary>
+
+![Mobile - Add Recipe](static/images/wireframe-mobile-add-recipe.webp)
+</details>
+
+<details>
+
+ <summary>Update Recipe</summary>
+
+![Mobile - Update Recipe](static/images/wireframe-mobile-update-recipe.webp)
+</details>
+
+<details>
+
+ <summary>Delete Recipe</summary>
+
+![Mobile - Delete Recipe](static/images/wireframe-mobile-delete-recipe.webp)
+</details>
+
+<details>
+
+ <summary>Search Recipe</summary>
+
+![Mobile - Search Recipe](static/images/wireframe-mobile-search-recipe.webp)
 </details>
 <br>
 
