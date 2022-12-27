@@ -8,6 +8,7 @@ The site should be instantly recognisable following UX design principles, which 
 
 The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuapp.com/)
 
+*Please note: To open any external links in a new browser tab, please press **CTRL + Click***
 
 ## Contents
 
@@ -78,13 +79,14 @@ The website is targetted towards users who enjoy their food and would like to sh
 [7.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/7) **Admin Features & Owner Objectives**
 
 #
+
 ### User Stories
-#
 
 From the Epics, 42 User stories were developed. Some of my initial user stories were based around setting up the environment and deploying early. Each story was assigned a classification of must-have, should-have, could-have or won't have. Each story was also assigned user story points, based on my best estimation of the difficulty/time of completing each story. I gave the project a total of 
 
-#### EPIC | **Early Deployment**
 #
+
+#### EPIC | **Early Deployment**
 
 [#1](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/1) **Create Heroku App** - *As a **developer**, I can create an account with Heroku to process setting up the app** so that **I can deploy my site to Heroku***
 
@@ -97,8 +99,8 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 [#5](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/5) **Deploy using GitHub** - *As a **developer**, I can **connect my GitHub account for the final deployment stages** so that **I can allow deployment to production***
 
 #
+
 #### EPIC | **Initial Django Setup**
-#
 
 [#6](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/6) **Django Setup** - *As a **developer**, I can **set up Django and supporting libraries** so that **I can start developing the site***
 
@@ -111,8 +113,8 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 [#40](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/40) **Create a database** - *As a **developer**, I should **set up the necessary database items** so that **the database is viewable through Heroku***
 
 #
+
 #### EPIC | Website Functionality
-#
 
 [#10](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/10) **Simple page design** - *As a **first-time user**, I can **immediately understand the purpose of the website**, and I know if it's **what I'm looking for***
 
@@ -131,16 +133,16 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 [#41](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/41) **Create a favicon** - *As a **developer**, I can **add a favicon** so that **the site looks more distinguishable***
 
 #
+
 #### EPIC | Navigation
-#
 
 [#14](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/14) **Site Navigation** - *As a **User**, I can **navigate around the site** so that **I can easily view desired content***
 
 [#15](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/15) **Search for a recipe** - *As a **User**, I can **search for the desirable recipe by keyword** so that **I can find a specific recipe fast***
 
 #
+
 #### EPIC | User Recipe Management
-#
 
 [#16](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/16) **Create a recipe** - *As a **logged-in User**, I can **create recipes** so that **I can add them to the site**
 
@@ -159,8 +161,8 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 [#42](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/42) **Like a recipe** - *As a **logged-in User**, I can **like or star a recipe** so that **I can bookmark it for later***
 
 #
+
 #### EPIC | User Account Management
-#
 
 [#22](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/22) **Register for an account** - *As a **User**, I can **register for an account** so that I can **interact with the site content***
 
@@ -175,8 +177,8 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 [#27](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/27) **Change my password** - *As a **logged-in User**, I can **change my password** so that **I can keep my account secure***
 
 #
+
 #### EPIC | Admin Features & Owner Objectives
-#
 
 [#28](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/28) **Admin CRUD features** - *As a **Site admin**, I can **create, edit and delete recipes and comments** so that **I can control the site content**
 
@@ -197,7 +199,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 # 
 
 #### User stories not yet implemented
-#
+
 
 The following user stories were scoped out of the project due to time constraints and labelled as "Won't Have" on the project board on Github. It is intended that these user stories will be implemented at a later date. 
 
@@ -217,6 +219,9 @@ The following user stories were scoped out of the project due to time constraint
 
 [#37](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/37) **Contact the site owner** - *As a **User**, I can **contact the site owner** so that **I can offer my feedback***
 
+
+[Back to top ⇧](#kitchen-tales)
+
 ***
 
 ### Design
@@ -228,6 +233,8 @@ The site has a very simple and clean design which was purposely chosen in order 
 #### Wireframes
 
 Initial wireframes were made for the original ideas and as functionality was reduced, these wireframes have also become guidelines for the more basic functions which remain in place for future development. The wireframes were designed using [Balsamiq](#programs), with a mobile-first approach.
+
+<br>
 
 
 #### ***Mobile***
@@ -245,6 +252,7 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 ![Mobile - Recipes](static/images/wireframe-mobile-recipes.webp)
 </details>
+<br>
 
 # 
 
@@ -325,7 +333,7 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 </details>
 
-
+<br>
 
 ***
 
@@ -372,6 +380,7 @@ Github projects was used to manage the development process using an agile approa
 
 The 7 Epics listed above were documented within the Github project as Milestones. A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution.
 
+
 ## Data Model
 
 I used principles of Object-Oriented Programming throughout this project and Django’s Class-Based Generic Views.  
@@ -412,6 +421,11 @@ Custom Error Pages were created to give the user more information on the error a
 - 404 Page Not Found - The page you're looking for doesn't exist.
 - 500 Server Error - Kitchen Tales is currently unable to handle this request
 
+[Back to top ⇧](#kitchen-tales)
+
+***
+
+
 ## Features
 #
 
@@ -444,9 +458,6 @@ Custom Error Pages were created to give the user more information on the error a
 ![footer](static/images/section-footer.webp)
 
 ### Home Page
-
-
-
 
 
 ### User Account Pages
@@ -521,6 +532,7 @@ Custom Error Pages were created to give the user more information on the error a
 ### Future Features
 #
 ***
+
 ## Languages Used
 #
 
@@ -626,6 +638,8 @@ This site was made using [GitHub](#github) & [Gitpod](https://www.gitpod.io/). T
 The repository has now been created and is ready for editing through the gitpod terminal.
  
 ***
+
+[Back to top ⇧](#kitchen-tales)
 
 ## Django
 
@@ -752,6 +766,8 @@ Create a new env.py file at the top level directory - ``env.py``
 
 
 ***
+
+[Back to top ⇧](#kitchen-tales)
 
 # Deployment
 
@@ -927,4 +943,7 @@ By forking the GitHub Repository you can make a copy of the original repository.
 
 ## Acknowledgments
 #
+
+
+[Back to top ⇧](#kitchen-tales)
 
