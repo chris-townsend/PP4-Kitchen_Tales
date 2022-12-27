@@ -230,41 +230,84 @@ The site has a very simple and clean design which was purposely chosen in order 
 Initial wireframes were made for the original ideas and as functionality was reduced, these wireframes have also become guidelines for the more basic functions which remain in place for future development. The wireframes were designed using [Balsamiq](#programs), with a mobile-first approach.
 
 
+#### ***Desktop***
+
 <details>
 
- <summary>Landing Page</summary>
+ <summary>Homepage</summary>
 
-![Landing Page]()
+![Homepage](static/images/wireframe-desktop-homepage.webp)
 </details>
 
 <details>
 
 <summary>All Recipes</summary>
 
-![All Recipes]()
+![All Recipes](static/images/wireframe-desktop-recipes.webp)
 </details>
 
+
+<details>
+
+<summary>Recipe Detail</summary>
+
+![Recipe detail](static/images/wireframe-desktop-recipe-detail.webp)
+</details>
+
+<details>
+
+<summary>Recipe Detail for the <i>Author</i></summary>
+
+![Recipe Detail for Author](static/images/wireframe-desktop-recipe-detail-author.webp)
+
+</details>
+
+<details>
+
+<summary>Recipe Detail for the <i> Comment Author</i></summary>
+
+![Recipe Detail for Comment Author](static/images/wireframe-desktop-recipe-detail-comment-author.webp)
+
+</details>
+
+<details>
+
+<summary>My Starred Recipes</summary>
+
+![My Starred Recipes](static/images/wireframe-desktop-liked-recipes.webp)
+</details>
 
 <details>
 
 <summary>Add Recipe</summary>
 
-![Add Recipe]()
+![Add Recipe](static/images/wireframe-desktop-add-recipe.webp)
 </details>
 
 <details>
 
-<summary>My Recipes</summary>
+<summary>Update Recipe</summary>
 
-![My Recipes]()
+![Update Recipe](static/images/wireframe-desktop-update-recipe.webp)
 </details>
 
 <details>
 
-<summary>My Bookmarks</summary>
+<summary>Delete Recipe</summary>
 
-![My Bookmarks]()
+![Delete Recipe](static/images/wireframe-desktop-delete-recipe.webp)
+
 </details>
+
+<details>
+
+<summary>Search Recipe</summary>
+
+![Search Recipe](static/images/wireframe-desktop-search-recipe.webp)
+
+</details>
+
+
 
 ***
 
