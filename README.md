@@ -307,7 +307,6 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 ![Mobile - Search Recipe](static/images/wireframe-mobile-search-recipe.webp)
 </details>
-<br>
 
 # 
 
@@ -431,10 +430,18 @@ Both fonts are from [Google fonts](https://fonts.google.com/about), meaning they
 
 ## Agile Methodology
 
-Github projects was used to manage the development process using an agile approach. Please see link to project board [here](https://github.com/chris-townsend)
+Github projects was used to manage the development process using an agile approach. To view the project kanban board, please click on the link [here](https://github.com/users/chris-townsend/projects/5/views/1).
 
-The 7 Epics listed above were documented within the Github project as Milestones. A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution.
+![GitHub kanban board](static/images/github-kanban-board.webp)
 
+
+The 7 [Epics](#epics) listed above were documented within the Github project as Milestones. A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution.
+
+Towards the end of the project, I knew that there were going to be user stories that would be scoped out of the project. These user stories have been placed within the Future features section on the kanban board and are intended to be implemented at a later date.
+
+![Guthub kanban board future features](static/images/github-kanban-board-future-features.webp)
+
+***
 
 ## Data Model
 
