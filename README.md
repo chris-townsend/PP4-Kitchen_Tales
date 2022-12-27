@@ -230,20 +230,38 @@ The site has a very simple and clean design which was purposely chosen in order 
 Initial wireframes were made for the original ideas and as functionality was reduced, these wireframes have also become guidelines for the more basic functions which remain in place for future development. The wireframes were designed using [Balsamiq](#programs), with a mobile-first approach.
 
 
+#### ***Mobile***
+
+<details>
+
+ <summary>Homepage</summary>
+
+![Mobile - Homepage](static/images/wireframe-mobile-homepage.webp)
+</details>
+
+<details>
+
+ <summary>Recipes</summary>
+
+![Mobile - Recipes](static/images/wireframe-mobile-recipes.webp)
+</details>
+
+# 
+
 #### ***Desktop***
 
 <details>
 
  <summary>Homepage</summary>
 
-![Homepage](static/images/wireframe-desktop-homepage.webp)
+![Desktop - Homepage](static/images/wireframe-desktop-homepage.webp)
 </details>
 
 <details>
 
 <summary>All Recipes</summary>
 
-![All Recipes](static/images/wireframe-desktop-recipes.webp)
+![Desktop - All Recipes](static/images/wireframe-desktop-recipes.webp)
 </details>
 
 
@@ -251,14 +269,14 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <summary>Recipe Detail</summary>
 
-![Recipe detail](static/images/wireframe-desktop-recipe-detail.webp)
+![Desktop - Recipe detail](static/images/wireframe-desktop-recipe-detail.webp)
 </details>
 
 <details>
 
 <summary>Recipe Detail for the <i>Author</i></summary>
 
-![Recipe Detail for Author](static/images/wireframe-desktop-recipe-detail-author.webp)
+![Desktop - Recipe Detail for Author](static/images/wireframe-desktop-recipe-detail-author.webp)
 
 </details>
 
@@ -266,7 +284,7 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <summary>Recipe Detail for the <i> Comment Author</i></summary>
 
-![Recipe Detail for Comment Author](static/images/wireframe-desktop-recipe-detail-comment-author.webp)
+![Desktop Recipe Detail for Comment Author](static/images/wireframe-desktop-recipe-detail-comment-author.webp)
 
 </details>
 
@@ -274,28 +292,28 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <summary>My Starred Recipes</summary>
 
-![My Starred Recipes](static/images/wireframe-desktop-liked-recipes.webp)
+![ Desktop - My Starred Recipes](static/images/wireframe-desktop-liked-recipes.webp)
 </details>
 
 <details>
 
 <summary>Add Recipe</summary>
 
-![Add Recipe](static/images/wireframe-desktop-add-recipe.webp)
+![ Desktop - Add Recipe](static/images/wireframe-desktop-add-recipe.webp)
 </details>
 
 <details>
 
 <summary>Update Recipe</summary>
 
-![Update Recipe](static/images/wireframe-desktop-update-recipe.webp)
+![Desktop - Update Recipe](static/images/wireframe-desktop-update-recipe.webp)
 </details>
 
 <details>
 
 <summary>Delete Recipe</summary>
 
-![Delete Recipe](static/images/wireframe-desktop-delete-recipe.webp)
+![Desktop - Delete Recipe](static/images/wireframe-desktop-delete-recipe.webp)
 
 </details>
 
@@ -303,7 +321,7 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <summary>Search Recipe</summary>
 
-![Search Recipe](static/images/wireframe-desktop-search-recipe.webp)
+![Desktop - Search Recipe](static/images/wireframe-desktop-search-recipe.webp)
 
 </details>
 
