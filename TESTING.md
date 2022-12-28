@@ -26,6 +26,149 @@
 
 ## Testing User Stories from the User Experience (UX) Section
 
+
+### EPIC | *Early Deployment*
+<br>
+
+*[As a developer, I can create an account with Heroku to process setting up the app so that I can deploy my site to Heroku](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/1)*
+
+![Create Heroku account](static/images/heroku-create-account.webp)
+
+
+*[As a developer, I can add my config vars to my app in Heroku so that I can allow deployment to production](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/2)*
+
+![Heroku config vars input](static/images/heroku-config-vars.webp)
+![Add heroku config vars](static/images/heroku-config-var-setup.webp)
+
+
+*[As a developer, I can create a Procfile within my project so that the application will run in Heroku](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/3)*
+
+![Create Procfile](static/images/kitchen-tales-create-procfile.webp)
+
+   - **More information on setting up the Procfile can be found within the [Django](#django) section of the readme**
+
+
+*[As a developer, I can create a Cloudinary account so that I can store my media files](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/4)*
+
+![Create Cloudinary account](static/images/create-cloudinary-account.webp)
+
+
+*[As a developer, I can connect my GitHub account for the final deployment stages so that I can allow deployment to production](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/5)*
+
+![Connect GitHub account](static/images/heroku-deployment-method.webp)
+
+
+#
+
+### EPIC | *Initial Django Setup*
+<br>
+
+*[As a developer, I can set up Django and supporting libraries so that I can start developing the site](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/6)*
+
+
+*[As a developer, I want to set up my environment to secure my private keys so that I do not expose them in an insecure way](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/7)*
+
+
+*[As a developer, I should install the necessary Django components so that I can address authentication, registration, and account management for users](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/8)*
+
+
+*[As a developer, I should install the necessary Django components so that I can display a comments section that is more appealing to the user](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/9)*
+
+
+*[As a developer, I should set up the necessary database items so that the database is viewable through Heroku](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/40)*
+
+#
+
+### EPIC | *Website Functionality*
+<br>
+
+*[As a first-time user, I can immediately understand the purpose of the website, and I know if it's what I'm looking for](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/10)*
+
+
+*[As a User, I can view recipes, without having to sign-up to enjoy the site's content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/11)*
+
+
+*[As a User, I can view the most liked recipes so that I can find inspiration and find out which recipes are the most popular](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/12)*
+
+
+*[As a User, I can view recipes on my mobile so that I don't have to rely on using a computer](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/13)*
+
+
+*[As a User, I can view comments on recipes so that I can read other user's feedback](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/34)*
+
+
+*[As a Logged-in User, I can comment on recipes so that I can leave my feedback for others](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/35)*
+
+
+*[As a User, I can contact the site owner so that I can offer my feedback](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/37)*
+
+
+*[As a developer, I can add a favicon so that the site looks more distinguishable](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/41)*
+
+#
+
+### EPIC | *Navigation*
+<br>
+
+*[As a User, I can navigate around the site so that I can easily view desired content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/14)*
+
+
+*[As a User, I can search for the desirable recipe by keyword so that I can find a specific recipe fast](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/15)*
+
+#
+
+### EPIC | *User Recipe Management*
+<br>
+
+*[As a logged-in User, I can create recipes so that I can add them to the site](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/16)*
+
+
+*[As a logged-in User, I can view all the recipes that I have created so that I can go back to them at a later date](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/17)*
+
+
+*[As a logged-in User, I can update and edit my recipes so that I can update any changes or mistakes that I have made](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/18)*
+
+
+*[As a logged-in User, I can delete any personal recipes so that I can remove them if necessary](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/19)*
+
+
+*[As a logged-in User, I can give a recipe a rating so that I can provide feedback](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/20)*
+
+
+*[As a logged-in User, I can view my liked recipes so that I can return to them easily](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/39)*
+
+*[As a logged-in User, I can like or star a recipe so that I can bookmark it for later](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/42)*
+
+#
+
+### EPIC | *User Account Management*
+<br>
+
+*[As a User, I can register for an account so that I can interact with the site content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/22)*
+
+
+*[As a User, I can log into my account so that I can manage my recipes](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/24)*
+
+
+*[As a User, I can safely log out of my account so that I can disconnect from the site](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/25)*
+
+
+*[As a logged-in User, I can see my login status so that I know if I am logged in or out of my account](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/26)*
+
+#
+
+### EPIC | *Admin Features & Owner Objectives*
+<br>
+
+*[As a Site admin, I can create, edit and delete recipes and comments so that I can control the site content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/28)*
+
+
+*[Authorize recipes and comments - As a Site admin, I can authorize recipes and comments so that I can review the content before it's made public](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/29)*
+
+
+*[As a Site owner, I would like to display my social icons so that I can promote my other channels](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/31)*
+
+
 ***
 
 ## Validator Testing
