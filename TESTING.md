@@ -173,16 +173,30 @@
 
 *[As a logged-in User, I can update and edit my recipes so that I can update any changes or mistakes that I have made](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/18)*
 
+If the logged-in user is the author of the recipe, an edit button is shown next to the recipe image. When a user hovers over the edit button, it is displayed underlined.
+
+![Kichen Tales update button on hover](static/images/kitchen-tales-edit-button.webp)
+
+![Kichen Tales update recipe page](static/images/kitchen-tales-update-recipe.webp)
+
 
 *[As a logged-in User, I can delete any personal recipes so that I can remove them if necessary](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/19)*
 
-
-*[As a logged-in User, I can give a recipe a rating so that I can provide feedback](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/20)*
+![Kichen Tales delete recipe button on hover](static/images/kitchen-tales-delete-button.webp)
+![Kichen Tales delete recipe page](static/images/kitchen-tales-delete-recipe-page.webp)
 
 
 *[As a logged-in User, I can view my liked recipes so that I can return to them easily](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/39)*
 
+![Kichen Tales saved recipes tab](static/images/kitchen-tales-saved-recipes-tab.webp)
+
+![Kichen Tales liked recipes page](static/images/kitchen-tales-liked-recipes-page.webp)
+
 *[As a logged-in User, I can like or star a recipe so that I can bookmark it for later](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/42)*
+
+![Kichen Tales like this recipe text and icon](static/images/kitchen-tales-click-to-bookmark.webp)
+
+![Kichen Tales number of likes](static/images/kitchen-tales-number-of-likes.webp)
 
 #
 
