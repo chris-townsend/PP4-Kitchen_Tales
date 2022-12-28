@@ -437,7 +437,7 @@ Github projects was used to manage the development process using an agile approa
 
 A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution.
 
-Towards the end of the project, I knew that there were going to be user stories that would be scoped out of the project. These user stories have been placed within the Future features section on the kanban board and are intended to be implemented at a later date.
+Towards the end of the project, I knew there would be a few user stories that would be scoped out of the project. These user stories have been placed within the Future features section on the kanban board and are intended to be implemented at a later date.
 
 ![Guthub kanban board future features](static/images/github-kanban-board-future-features.webp)
 
@@ -450,6 +450,8 @@ I used principles of Object-Oriented Programming throughout this project and Dja
 Django AllAuth was used for the user authentication system.
 
 In order for the users to create recipes a custom recipe model was required. The recipe author is a foreign key to the User model given a recipe can only have one author.
+
+![Custom recipe model](static/images/custom-recipe-model.webp)
 
 The Comment model allows users to comment on individual recipes and the Recipe is a foreign key in the comment model given a comment can only be linked to one recipe. 
 
