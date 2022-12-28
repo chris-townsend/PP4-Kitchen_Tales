@@ -65,17 +65,27 @@
 
 *[As a developer, I can set up Django and supporting libraries so that I can start developing the site](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/6)*
 
+![Setup Django](static/images/heroku-connected-app.webp)
+
 
 *[As a developer, I want to set up my environment to secure my private keys so that I do not expose them in an insecure way](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/7)*
+
+***Detailed information of the initial Django setup can be found [here](../PP4-Kitchen_Tales/README.md#installing-django-and-supporting-libraries)***
 
 
 *[As a developer, I should install the necessary Django components so that I can address authentication, registration, and account management for users](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/8)*
 
+***Detailed information of the initial Django setup can be found [here](../PP4-Kitchen_Tales/README.md#installing-django-and-supporting-libraries)***
+
 
 *[As a developer, I should install the necessary Django components so that I can display a comments section that is more appealing to the user](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/9)*
 
+***Detailed information of the initial Django setup can be found [here](../PP4-Kitchen_Tales/README.md#installing-django-and-supporting-libraries)***
 
 *[As a developer, I should set up the necessary database items so that the database is viewable through Heroku](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/40)*
+
+***Detailed information of setting up the ElephantSQL database can be found [here](../PP4-Kitchen_Tales/README.md#elephant-sql)***
+
 
 #
 
@@ -84,26 +94,40 @@
 
 *[As a first-time user, I can immediately understand the purpose of the website, and I know if it's what I'm looking for](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/10)*
 
+![Kichen Tales welcome message](static/images/kitchen-tales-welcome.webp)
+
 
 *[As a User, I can view recipes, without having to sign-up to enjoy the site's content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/11)*
 
+![Kichen Tales recipes tab](static/images/kitchen-tales-recipes-tab.webp)
 
-*[As a User, I can view the most liked recipes so that I can find inspiration and find out which recipes are the most popular](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/12)*
+![Kichen Tales recipes](static/images/kitchen-tales-recipes.webp)
 
 
 *[As a User, I can view recipes on my mobile so that I don't have to rely on using a computer](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/13)*
 
+![Kichen Tales mobile friendly recipe](static/images/kitchen-tales-mobile-recipe.webp)
+
+![Kichen Tales mobile friendly test](static/images/kitchen-tales-mobile-friendly-test.webp)
+
+***For more detailed information about mobile testing, please click [here](#device-testing)***
+
 
 *[As a User, I can view comments on recipes so that I can read other user's feedback](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/34)*
+
+![Kichen Tales comment section](static/images/kitchen-tales-comment-section.webp)
 
 
 *[As a Logged-in User, I can comment on recipes so that I can leave my feedback for others](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/35)*
 
-
-*[As a User, I can contact the site owner so that I can offer my feedback](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/37)*
+![Kichen Tales comment section](static/images/kitchen-tales-leave-comment.webp)
 
 
 *[As a developer, I can add a favicon so that the site looks more distinguishable](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/41)*
+
+![Kichen Tales tab](static/images/kitchen-tales-tab.webp)
+
+![Kichen Tales favicon](static/images/kitchen-tales-favicon-large.webp)
 
 #
 
@@ -112,8 +136,22 @@
 
 *[As a User, I can navigate around the site so that I can easily view desired content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/14)*
 
+![Kichen Tales navbar](static/images/kitchen-tales-navbar.webp)
+
+![Kichen Tales navbar hover](static/images/kitchen-tales-navbar-hover.webp)
+
+- By using CSS's hover effect, the user know's what tab they are clicking on as it underlines the title. 
+
+![Kichen Tales navbar authorized user](static/images/kitchen-tales-navbar-auth-user.webp)
+
+- A logged-in user can see their own dropdown-menu options by clicking on their name with the user icon. This menu gives the option for a user to add a new recipe, see there own created recipes, their favourite starred recipes and an option to logout of their account.
+
 
 *[As a User, I can search for the desirable recipe by keyword so that I can find a specific recipe fast](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/15)*
+
+![Kichen Tales search bar](static/images/kitchen-tales-search-bar.webp)
+
+![Kichen Tales searched results](static/images/kitchen-tales-search-results.webp)
 
 #
 
@@ -122,9 +160,16 @@
 
 *[As a logged-in User, I can create recipes so that I can add them to the site](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/16)*
 
+![Kichen Tales add recipe tab](static/images/kitchen-tales-add-recipe-tab.webp)
+
+![Kichen Tales add recipe page](static/images/kitchen-tales-add-recipe.webp)
+
 
 *[As a logged-in User, I can view all the recipes that I have created so that I can go back to them at a later date](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/17)*
 
+![Kichen Tales my recipes tab](static/images/kitchen-tales-my-recipes-tab.webp)
+
+![Kichen Tales my recipes page](static/images/kitchen-tales-my-recipes.webp)
 
 *[As a logged-in User, I can update and edit my recipes so that I can update any changes or mistakes that I have made](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/18)*
 
