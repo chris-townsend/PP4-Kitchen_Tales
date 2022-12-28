@@ -164,6 +164,8 @@
 
 ![Kichen Tales add recipe page](static/images/kitchen-tales-add-recipe.webp)
 
+![Kichen Tales add recipe text](static/images/kitchen-tales-add-recipe-text.webp)
+
 
 *[As a logged-in User, I can view all the recipes that I have created so that I can go back to them at a later date](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/17)*
 
@@ -205,14 +207,32 @@ If the logged-in user is the author of the recipe, an edit button is shown next 
 
 *[As a User, I can register for an account so that I can interact with the site content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/22)*
 
+![Kichen Tales sign up tab](static/images/kitchen-tales-sign-up-tab.webp)
+
+![Kichen Tales sign up button](static/images/kitchen-tales-sign-up-button.webp)
+
+![Kichen Tales sign up text](static/images/kitchen-tales-sign-up-text.webp)
+
 
 *[As a User, I can log into my account so that I can manage my recipes](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/24)*
+
+![Kichen Tales sign in tab](static/images/kitchen-tales-sign-in.webp)
+
+![Kichen Tales sign in page](static/images/kitchen-tales-sign-in-page.webp)
 
 
 *[As a User, I can safely log out of my account so that I can disconnect from the site](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/25)*
 
+![Kichen Tales sign out tab](static/images/kitchen-tales-sign-out-tab.webp)
+
+![Kichen Tales sign out page](static/images/kitchen-tales-sign-out-page.webp)
+
 
 *[As a logged-in User, I can see my login status so that I know if I am logged in or out of my account](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/26)*
+
+![Kichen Tales login status](static/images/kitchen-tales-login-status.webp)
+
+![Kichen Tales navbar status for logged in user](static/images/kitchen-tales-logged-in-navbar.webp)
 
 #
 
