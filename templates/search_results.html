@@ -1,50 +1,52 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load cloudinary %}
 {% block title %} Kitchen Tales | Search results{% endblock %}
 {% block content %}
-{% load cloudinary %}
 
+
+<!-- Displays the search results as recipe cards-->
+{% if searched %}
 <div class="container">
-    {% if searched %}
-    <h1 class="page-title">You searched for <strong>{{ searched }}</strong></h1>
-    <hr>
-    <br>
+
+  <h1 class="page-title">You searched for <strong>{{ searched }}</strong></h1>
+  <hr>
+  <br>
   <div class="row card-deck">
     {% for result in results %}
     <div class="col-sm-6 col-md-4 col-lg-3 px-1 d-flex align-items-stretch">
       <div class="card recipe-card mb-3 shadow-sm mx-auto mx-sm-2">
-          {% if "placeholder" in result.image.url %}
-          <img src="{% static 'images/placeholder.webp' %}"
-              class="custom-recipe-card" alt="placeholder image">
-          {% else %}
-          <img src=" {{ result.image.url }}" alt="recipe image" class="custom-recipe-card">
-          {% endif %}
-          <div class="card-body mt-1">
-            <h2 class="card-title custom-recipe-title"><a href="{% url 'recipe_detail' result.slug %}">{{ result.title }}</a></h2>
-            <p class="card-text">
-                <span><i class="far fa-clock pr-2"></i></span>
-                <span>Prep Time: {{ result.prep_time }}</span>
-            </p>
-            <p class="card-text">
-                <span><i class="far fa-clock pr-2"></i></span>
-                <span>Cook Time: {{ result.cook_time }}</span>
-            </p> 
-            <p class="card-text">
-              <span><i class="far fa-star"></i></span>
-              <span>{{ recipe.like_recipe.count }} Likes</span>
-          </p>  
-          </div>
+        {% if "placeholder" in result.image.url %}
+        <img src="{% static 'images/placeholder.webp' %}" class="custom-recipe-card" alt="placeholder image">
+        {% else %}
+        <img src=" {{ result.image.url }}" alt="recipe image" class="custom-recipe-card">
+        {% endif %}
+        <div class="card-body mt-1">
+          <h2 class="card-title custom-recipe-title"><a
+              href="{% url 'recipe_detail' result.slug %}">{{ result.title }}</a></h2>
+          <p class="card-text">
+            <span><i class="far fa-clock pr-2"></i></span>
+            <span>Prep Time: {{ result.prep_time }}</span>
+          </p>
+          <p class="card-text">
+            <span><i class="far fa-clock pr-2"></i></span>
+            <span>Cook Time: {{ result.cook_time }}</span>
+          </p>
+          <p class="card-text">
+            <span><i class="far fa-star"></i></span>
+            <span>{{ recipe.like_recipe.count }} Likes</span>
+          </p>
+        </div>
       </div>
     </div>
-  {% endfor %}
+    {% endfor %}
   </div>
 </div>
-{% else %}    
-<h2>No recipes with that keyword</h2>
-{% endif %}    
+{% else %}
+<h2 class="text-title ml-5">No recipes with that keyword</h2>
 <br>
-    
-
+{% endif %}
 
 {% include "recipe_paginator.html" %}
+
 {% endblock content %}

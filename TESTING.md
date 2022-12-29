@@ -272,7 +272,7 @@ The W3C validator was used to test all HTML pages No errors were reported in the
 |404.html                |             |              |             |
 |500.html                |             |              |             |
 |add_recipe.html         |             |   *n/a*      |             |
-|all_recipes.html        |             |              |             |
+|all_recipes.html        |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fall_recipes%2F)*    |
 |base.html               |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    |
 |delete_comment.html     |             |   *n/a*      |             |
 |delete_recipe.html      |             |   *n/a*      |             |
@@ -282,8 +282,8 @@ The W3C validator was used to test all HTML pages No errors were reported in the
 |my_starred_recipes.html |             |   *n/a*      |             |
 |newsletter.html         |             |              |             |
 |recipe_detail.html      |             |              |             |
-|recipe_paginator.html   |             |              |             |
-|search_results.html     |             |              |             |
+|recipe_paginator.html   |   *pass*    |    *pass*    |             |
+|search_results.html     |   *pass*    |    *pass*    | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fsearch_results%2F)* |
 |update_comment.html     |             |    *n/a*     |             |
 |update_recipe.html      |             |    *n/a*     |             |
 |login.html              |             |              |             |
