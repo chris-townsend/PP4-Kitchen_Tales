@@ -271,24 +271,24 @@ The W3C validator was used to test all HTML pages No errors were reported in the
 |                        | *logged-in* | *logged-out* |             |
 |404.html                |             |              |             |
 |500.html                |             |              |             |
-|add_recipe.html         |             |  *n/a*       |             |
+|add_recipe.html         |             |   *n/a*      |             |
 |all_recipes.html        |             |              |             |
-|base.html               |             |              |             |
-|delete_comment.html     |             |  *n/a*       |             |
-|delete_recipe.html      |             |  *n/a*       |             |
-|footer.html             |             |              |             |
-|index.html              |             |              |             |
-|my_recipes.html         |             |  *n/a*       |             |
-|my_starred_recipes.html |             |  *n/a*       |             |
+|base.html               |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    |
+|delete_comment.html     |             |   *n/a*      |             |
+|delete_recipe.html      |             |   *n/a*      |             |
+|footer.html             |   *pass*    |   *pass*     | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    |
+|index.html              |   *pass*    |   *pass*     | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    |
+|my_recipes.html         |             |   *n/a*      |             |
+|my_starred_recipes.html |             |   *n/a*      |             |
 |newsletter.html         |             |              |             |
 |recipe_detail.html      |             |              |             |
 |recipe_paginator.html   |             |              |             |
 |search_results.html     |             |              |             |
-|update_comment.html     |             |  *n/a*       |             |
-|update_recipe.html      |             |  *n/a*       |             |
+|update_comment.html     |             |    *n/a*     |             |
+|update_recipe.html      |             |    *n/a*     |             |
 |login.html              |             |              |             |
-|logout.html             |             |  *n/a*       |             |
-|signup.html             |             |              |             |
+|logout.html             |             |    *n/a*     |             |
+|signup.html             |   *n/a*     |              |             |
 
 
 ***
