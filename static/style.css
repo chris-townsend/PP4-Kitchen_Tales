@@ -46,9 +46,6 @@ hr {
 }
 
 
-
-
-
 /* Navbar */
 
 .login-status {
@@ -316,15 +313,15 @@ hr {
 /* Homepage */
 
 .carousel-inner {
-    height: 400px;
+    margin-top: 30px;
+    height: 380px;
     width: 100%;
 }
 
 .welcome-container {
     background-color: antiquewhite;
     width: 80%;
-    height: 370px;
-    
+    height: 370px;    
 }
 
 .welcome-image {

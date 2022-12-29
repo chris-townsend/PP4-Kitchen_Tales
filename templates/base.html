@@ -30,49 +30,52 @@
 
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-company-red">
-
-    <a class="navbar-brand flex-grow-1 mr-auto" href="{% url 'home' %}">
-      <img class="logo-image"
-        src="https://res.cloudinary.com/diez1cpce/image/upload/v1668872940/pp4/logo_transparent_new_gqeyfq.png"
-        alt="headerlogo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'all_recipes' %}">Recipes</a>
-        </li>
-        {% if user.is_authenticated %}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-            <span class="login-status">{{ user.username }} <i class="fas fa-user"></i></span>
-          </a>
-
-          <div class="dropdown-menu">
-
-            <a class="dropdown-item" href="{% url 'add_recipe' %}">Add-Recipe</a>
-            <a class="dropdown-item" href="{% url 'my_recipes' %}">My-Recipes</a>
-            <a class="dropdown-item" href="{% url 'save_recipe' %}">Saved-Recipes <i class="far fa-star"></i></a>
-            <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
+  <!-- Header start -->
+  <header>
+    <!-- Nav section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-company-red">
+      <a class="navbar-brand flex-grow-1 mr-auto" href="{% url 'home' %}">
+        <img class="logo-image"
+          src="https://res.cloudinary.com/diez1cpce/image/upload/v1668872940/pp4/logo_transparent_new_gqeyfq.png"
+          alt="headerlogo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'all_recipes' %}">Recipes</a>
+          </li>
+          {% if user.is_authenticated %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              <span class="login-status">{{ user.username }} <i class="fas fa-user"></i></span>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="{% url 'add_recipe' %}">Add-Recipe</a>
+              <a class="dropdown-item" href="{% url 'my_recipes' %}">My-Recipes</a>
+              <a class="dropdown-item" href="{% url 'save_recipe' %}">Saved-Recipes <i class="far fa-star"></i></a>
+              <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
+            </div>
             {% else %}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-            MyAccount
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="{% url 'account_login' %}">Sign-in</a>
-            <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
-        </li>
-        {% endif %}
-      </ul>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              MyAccount
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="{% url 'account_login' %}">Sign-in</a>
+              <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
+            </div>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
       <form class="form-inline flex-nowrap mx-0 mx-lg-auto rounded p-1" method="post"
         action="{% url 'search_result' %}">
         {% csrf_token %}
@@ -80,10 +83,14 @@
           name="searched">
         <button class="btn my-sm-0 btn-search mr-1" type="submit"><i class="fas fa-search"></i></button>
       </form>
-    </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
+  <!-- Nav section ends-->
+  <!-- Header ends-->
 
+
+  <!-- The code below is from Code Institute's I Think Therefore I Blog project to
+       handle alert messages -->
   <div class="container">
     <div class="row">
       <div class="col-md-8 offset-md-2">
@@ -101,7 +108,6 @@
   {% block content %}
   {% endblock content %}
 
-
   {% include 'footer.html' %}
 
   <!-- Fontawesome script-->
@@ -114,9 +120,8 @@
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
   </script>
 
-
-  <!--Javascript for switching active pages within navbar &
-    setTimeout to automatically close alerts after 2.8 seconds-->
+  <!-- Javascript for switching active pages within navbar &
+       setTimeout to automatically close alerts after 2.8 seconds -->
   <script>
     $(document).ready(function () {
       $('li.active').removeClass('active').removeAttr('aria-current');
