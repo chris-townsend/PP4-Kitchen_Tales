@@ -241,25 +241,58 @@ If the logged-in user is the author of the recipe, an edit button is shown next 
 
 *[As a Site admin, I can create, edit and delete recipes and comments so that I can control the site content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/28)*
 
+![Kichen Tales admin panel](static/images/django-admin-panel.webp)
 
-*[Authorize recipes and comments - As a Site admin, I can authorize recipes and comments so that I can review the content before it's made public](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/29)*
+![Kichen Tales admin recipe panel](static/images/django-recipe-panel.webp)
+
+![Kichen Tales admin comment panel](static/images/django-comment-panel.webp)
+
+
+*[As a Site admin, I can authorize comments so that I can review the content before it's made public](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/29)*
+
+![Kichen Tales admin panel approve comments](static/images/django-admin-approve-comment.webp)
 
 
 *[As a Site owner, I would like to display my social icons so that I can promote my other channels](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/31)*
+
+![Kichen Tales social icons](static/images/kitchen-tales-social-icons.webp)
 
 
 ***
 
 ## Validator Testing
-#
+
+The W3C validator was used to test all HTML pages No errors were reported in the final deployment.
 
 ### HTML
 
-#### Fixed Errors
+| Page                   | Status      |              | URL         |
+| ---                    |        ---: |  ---         |        ---: |
+|                        | *logged-in* | *logged-out* |             |
+|404.html                |             |              |             |
+|500.html                |             |              |             |
+|add_recipe.html         |             |  *n/a*       |             |
+|all_recipes.html        |             |              |             |
+|base.html               |             |              |             |
+|delete_comment.html     |             |  *n/a*       |             |
+|delete_recipe.html      |             |  *n/a*       |             |
+|footer.html             |             |              |             |
+|index.html              |             |              |             |
+|my_recipes.html         |             |  *n/a*       |             |
+|my_starred_recipes.html |             |  *n/a*       |             |
+|newsletter.html         |             |              |             |
+|recipe_detail.html      |             |              |             |
+|recipe_paginator.html   |             |              |             |
+|search_results.html     |             |              |             |
+|update_comment.html     |             |  *n/a*       |             |
+|update_recipe.html      |             |  *n/a*       |             |
+|login.html              |             |              |             |
+|logout.html             |             |  *n/a*       |             |
+|signup.html             |             |              |             |
 
-#### Unfixed Errors
 
 ***
+
 
 ### CSS 
 
