@@ -318,6 +318,19 @@ The *[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)* was used to vali
 
 ### Python
 
+Code Institutes *[PEP8](https://pep8ci.herokuapp.com/)* linter was used to test the Python files. The below table shows the pages tested and their result:
+
+
+| Page                   | `kitchentales` |  `recipes`   | 
+| ---                    |      :---:     |  ---         |    
+| `admin.py`             |     *n/a*      |              |
+| `apps.py`              |                |              | 
+| `forms.py`             |     *n/a*      |              |
+| `models.py`            |     *n/a*      |              | 
+| `urls.py`              |                |              |
+| `views.py`             |     *n/a*      |              |  
+| `tests.py`             |                |              |
+
 ***
 
 ### Lighthouse 
