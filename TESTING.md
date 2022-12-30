@@ -304,9 +304,17 @@ The *[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)* was used to vali
 
 ***
 
-### Javascript
+### JavaScript
+
+*[JSHint](https://jshint.com/)* was used to check the JavaScript within the base template. The JavaScript code has been placed in `<script>` tags at the bottom of the `base.html` template and as there is very little JavaScript code, I felt it was not worth placing in its own file. The results came back with no errors but a few undefined variables. I have left this as it is with a detailed comment above the variables to explain their function.
+
+![JSHint Logo](static/images/testing-jshint.webp)
+![JavaScript Code to test](static/images/testing-jshint-code.webp)
+![JShint test result](static/images/testing-jshint-result.webp)
+
 
 ***
+
 
 ### Python
 
