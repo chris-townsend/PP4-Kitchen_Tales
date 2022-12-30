@@ -281,8 +281,8 @@ The W3C validator was used to test all HTML pages No errors were reported in the
 |my_recipes.html         |             |   *n/a*      |             |
 |my_starred_recipes.html |             |   *n/a*      |             |
 |newsletter.html         |             |              |             |
-|recipe_detail.html      |             |              |             |
-|recipe_paginator.html   |   *pass*    |    *pass*    |             |
+|recipe_detail.html      |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Frecipe_detail%2Fbutternut-squash-sage-risotto%2F#l189c24)*    |
+|recipe_paginator.html   |   *pass*    |    *pass*    |      -      |
 |search_results.html     |   *pass*    |    *pass*    | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fsearch_results%2F)* |
 |update_comment.html     |             |    *n/a*     |             |
 |update_recipe.html      |             |    *n/a*     |             |
