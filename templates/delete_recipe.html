@@ -4,22 +4,28 @@
 {% load cloudinary %}
 {% load crispy_forms_tags %}
 
+<!-- This page allows a user to delete their own recipe -->
 <div class="container">
     <h1 class="page-title">Delete Recipe</h1>
     <hr>
     <br>
-   
+
     <div class="row text-center justify-content-center mt-4">
-         <h5 class="text-center"><strong>Are you sure you want to delete your {{ recipe.title }} recipe?</strong></h5>
-         <br>
+        <h5 class="text-center"><strong>Are you sure you want to delete your {{ recipe.title }} recipe?</strong></h5>
+        <br>
         <div class="col-lg-8 mb-3 mt-4">
+            <!-- Delete recipe form -->
             <form method="post" class="mb-5 col-12">
                 {% csrf_token %}
-                <a class="btn btn-signup m-2 form-font" href="{%  url 'recipe_detail' recipe.slug %}" >Cancel</a>
+                <!-- If the user cancel deletes a recipe, return back to the recipe detail page -->
+                <a class="btn btn-signup m-2 form-font" href="{%  url 'recipe_detail' recipe.slug %}">Cancel</a>
+                <!-- If the user decides to update their recipe, go to the update recipe page
+                      for that recipe -->
                 <a class="btn btn-signup m-2 form-font" href="{%  url 'update_recipe' recipe.id %}">Update Instead</a>
                 <button class="btn btn-danger m-2 col-lg-4 form-font" input type="submit">Delete Recipe</button>
             </form>
         </div>
     </div>
 </div>
+
 {% endblock %}
