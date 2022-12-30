@@ -2,18 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Karla:wght@300;400&display=swap');
 
 
-
-
 /* Global Styles */
 
 body {
     background-color: bisque;
 }
 
-
 h5 {
     font-family: 'Karla', sans-serif;
-
 }
 
 .page-title {
@@ -32,8 +28,7 @@ hr {
     margin-right: auto;
     width: 34%;
     background-image: linear-gradient(to right, rgb(226, 183, 122), rgba(206, 141, 100, 0.842), rgba(141, 92, 9, 0));
-    }
-
+}
 
 .form-font {
     font-family: 'Karla', sans-serif;
@@ -46,7 +41,7 @@ hr {
 }
 
 
-/* Navbar */
+/* Navigation */
 
 .login-status {
     font-size: 18px;
@@ -142,7 +137,7 @@ hr {
 .custom-recipe-detail-header {
     font-family: 'Karla', sans-serif;
     border: none;
-    background-color:bisque;
+    background-color: bisque;
     color: #886363;
     letter-spacing: 1px;
 }
@@ -192,16 +187,16 @@ hr {
 }
 
 .comment-btn a {
-    color:#4492d1;
+    color: #4492d1;
 }
 
 .comment-btn a:hover,
 .comment-btn a:active {
-    color:rgb(41, 182, 218);
+    color: rgb(41, 182, 218);
 }
 
 
-/* account styling e.g login.html/ logout.html */
+/* Account styling e.g login.html/ logout.html */
 
 .btn-signup {
     background-color: #4492d1;
@@ -236,7 +231,6 @@ hr {
     padding: 12px;
 }
 
-
 .login-form {
     text-align: center;
     align-content: center;
@@ -255,6 +249,7 @@ hr {
     border-radius: 4px;
 }
 
+
 /* Alert messages */
 
 .btn-close {
@@ -272,8 +267,9 @@ hr {
     font-size: 16px;
     border: none;
     background: transparent;
-    color:rgb(34, 50, 54);
+    color: rgb(34, 50, 54);
 }
+
 
 /* footer.html Styling */
 
@@ -283,9 +279,8 @@ hr {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    background-image: linear-gradient(to center, rgb(226, 183, 122), rgba(206, 141, 100, 0.842), rgba(141, 92, 9, 0));
-    }
-    
+    background-image: linear-gradient(rgb(226, 183, 122), rgba(206, 141, 100, 0.842), rgba(141, 92, 9, 0));
+}
 
 .social-icons {
     flex-direction: column;
@@ -302,7 +297,7 @@ hr {
 .social-icons a {
     padding: 0 40px;
     text-decoration: none;
-    color:#4492d1;
+    color: #4492d1;
 }
 
 .social-icons a:hover {
@@ -321,7 +316,7 @@ hr {
 .welcome-container {
     background-color: antiquewhite;
     width: 80%;
-    height: 370px;    
+    height: 370px;
 }
 
 .welcome-image {
@@ -343,13 +338,13 @@ hr {
 
 .text-title {
     font-family: 'Italiana', serif;
-    font-size: 28px; 
+    font-size: 28px;
 }
 
 .card-text-home {
     font-family: 'Karla', serif;
     font-style: italic;
-    font-size: 17px; 
+    font-size: 17px;
 }
 
 .custom-home-card {
@@ -360,7 +355,7 @@ hr {
     clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     transform: scale(0.96);
     transition: all 0.4s;
-    }
+}
 
 /* Home newsletter section */
 
@@ -378,7 +373,8 @@ hr {
     height: 280px;
 }
 
-/* newsletter page */
+
+/* Newsletter Page */
 
 .newsletter-container {
     margin-left: 60px;
@@ -404,17 +400,17 @@ hr {
         height: 300px;
         width: 100%;
     }
-    
+
     .welcome-container {
         background-color: antiquewhite;
         width: 80%;
         height: 320px;
     }
-    
+
     .welcome-title {
         font-size: 38px;
     }
-    
+
     .welcome-text {
         font-size: 32px;
     }
@@ -439,13 +435,13 @@ hr {
         height: 400px;
     }
 
-    /* Login/ out styling */
+    /* Login/out styling */
 
     .sign-in {
         margin-left: 10px;
         padding: 12px;
     }
-    
+
     .login-form {
         text-align: center;
         align-content: center;
@@ -481,7 +477,7 @@ hr {
     .page-title {
         font-size: 22px;
     }
-    
+
     .dropdown-menu a {
         font-size: 14px;
     }
@@ -499,11 +495,11 @@ hr {
         width: 80%;
         height: 325px;
     }
-    
+
     .welcome-title {
         font-size: 26px;
     }
-    
+
     .welcome-text {
         font-size: 18px;
     }
@@ -547,7 +543,7 @@ hr {
         margin-left: 10px;
         padding: 12px;
     }
-    
+
     .login-form {
         text-align: center;
         align-content: center;

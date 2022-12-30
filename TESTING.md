@@ -5,8 +5,6 @@
 - [Testing Stories for UX](#testing-user-stories-from-the-user-experience-ux-section)
 - [Validator Testing](#validator-testing)
   * [HTML](#html)
-    + [Fixed Errors](#fixed-errors)
-    + [Unfixed Errors](#unfixed-errors)
   * [CSS](#css)
   * [Javascript](#javascript)
   * [Python](#python)
@@ -262,7 +260,10 @@ If the logged-in user is the author of the recipe, an edit button is shown next 
 
 ## Validator Testing
 
-The W3C validator was used to test all HTML pages No errors were reported in the final deployment.
+![HTML w3c validator](static/images/HTML-w3c-validation.webp)
+
+The *[W3C HTML validator](https://validator.w3.org/)* was used to test all HTML pages, **no errors** were reported in the final deployment.
+
 
 ### HTML
 
@@ -290,11 +291,16 @@ The W3C validator was used to test all HTML pages No errors were reported in the
 |logout.html             |   *pass*    |    *n/a*     | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Faccounts%2Flogout%2F#l189c24)*            |
 |signup.html             |   *n/a*     |    *pass*    | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Faccounts%2Fsignup#l189c24)*           |
 
-
 ***
 
-
 ### CSS 
+
+The *[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)* was used to validate the project, the results are shown below with **no errors reported.**
+
+![CSS w3c validator](static/images/CSS-w3c-validation.webp)
+![CSS Result](static/images/CSS-validation-pass.webp)
+
+- *[ CSS results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)*
 
 ***
 
