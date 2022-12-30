@@ -4,33 +4,37 @@
 {% block content %}
 
 
+<!-- This page is used to allow a user to sign up & create an account -->
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-2 offset-md-2">
             <h3 class="page-title">{% trans "Sign Up" %}</h3>
             <hr>
             <br>
-
-            <h5 class="text-center form-font login-welcome-text">{% blocktrans %}Welcome to Kitchen Tales | Do you already have an account? Please <a
-              class="link" href="{{ login_url }}">sign in here</a>
-              <br>
-               <br>If not, please make an account below:{% endblocktrans %}</h5>
+            <!-- If the user has an account, link to login page -->
+            <h5 class="text-center form-font login-welcome-text">{% blocktrans %}Welcome to Kitchen Tales | Do you
+                already have an account? Please <a class="link" href="{{ login_url }}">sign in here</a>
+                <br>
+                <br>If not, please make an account below:{% endblocktrans %}</h5>
         </div>
     </div>
+    <!-- Sign up form -->
     <div class="sign-up-form offset-md-3">
         <div class="col-md-8 offset-md-3">
-            <form class="text-center mt-3 col-md-8 form-font" id="signup_form" method="post" action="{% url 'account_signup' %}">
+            <form class="text-center mt-3 col-md-8 form-font" id="signup_form" method="post"
+                action="{% url 'account_signup' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
-                <input type="hidden" class="form-font" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                <input type="hidden" class="form-font" name="{{ redirect_field_name }}"
+                    value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button class="btn btn-signup mt-3 col-md-7 form-font" type="submit">{% trans "Sign Up" %} &raquo;</button>
+                <button class="btn btn-signup mt-3 col-md-7 form-font" type="submit">{% trans "Sign Up" %}
+                    &raquo;</button>
             </form>
         </div>
+    </div>
 </div>
-        </div>
-        <br>
-
+<br>
 
 {% endblock %}

@@ -286,9 +286,9 @@ The W3C validator was used to test all HTML pages No errors were reported in the
 |search_results.html     |   *pass*    |    *pass*    | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fsearch_results%2F)* |
 |update_comment.html     |   *pass*    |    *n/a*     | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fupdate_comment%2F62%2F#l189c24)*            |
 |update_recipe.html      |   *pass*    |    *n/a*     | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fupdate_recipe%2F62%2F#l189c24)* |
-|login.html              |             |              |             |
-|logout.html             |             |    *n/a*     |             |
-|signup.html             |   *n/a*     |              |             |
+|login.html              |   *pass*    |    *pass*    | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Faccounts%2Flogin%2F#l189c24)*           |
+|logout.html             |   *pass*    |    *n/a*     | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Faccounts%2Flogout%2F#l189c24)*            |
+|signup.html             |   *n/a*     |    *pass*    | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Faccounts%2Fsignup#l189c24)*           |
 
 
 ***

@@ -4,38 +4,36 @@
 {% block title %}Kitchen Tales | Sign-in{% endblock %}
 {% block content %}
 
+
+<!-- This page allows a user to login to their account -->
 <div class="container">
   <div class="row">
     <div class="col-md-8 mt-1 offset-md-2">
-
-<h3 class="page-title">{% trans "Sign In" %}</h3>
-<hr>
-<br>
-
-<h5 class="text-center form-font login-welcome-text">{% blocktrans %}Welcome to Kitchen Tales |
-  To leave a like or comment on a recipe, please log in.
-  <br>
-  <br>
-  If you haven't created an account yet, please
-<a href="{{ signup_url }}">sign up here</a>{% endblocktrans %}</h5>
-<br>
-
-
-   
-
-<form class="sign-in text-center login-form mt-1 col-md-8 form-font" method="POST" action="{% url 'account_login' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
-  {% endif %}
-  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-  <button class="btn btn-signup form-font" type="submit">{% trans "Sign In" %}</button>
-</form>
-</div>
-</div>
+      <h3 class="page-title">{% trans "Sign In" %}</h3>
+      <hr>
+      <br>
+      <h5 class="text-center form-font login-welcome-text">{% blocktrans %}Welcome to Kitchen Tales |
+        To leave a like or comment on a recipe, please log in.
+        <br>
+        <br>
+        <!-- If a user has not made an account, link to signup page -->
+        If you haven't created an account yet, please
+        <a href="{{ signup_url }}">sign up here</a>{% endblocktrans %}</h5>
+      <br>
+      <!-- Login form -->
+      <form class="sign-in text-center login-form mt-1 col-md-8 form-font" method="POST"
+        action="{% url 'account_login' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
+        {% endif %}
+        <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+        <button class="btn btn-signup form-font" type="submit">{% trans "Sign In" %}</button>
+      </form>
+    </div>
+  </div>
 </div>
 <br>
-
 
 {% endblock %}
