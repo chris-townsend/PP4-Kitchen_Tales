@@ -4,22 +4,25 @@
 {% load cloudinary %}
 {% load crispy_forms_tags %}
 
+<!-- This page allows a user to update their own comment -->
 <div class="container">
     <h1 class="page-title">Update Comment</h1>
     <hr>
     <br>
     <div class="row justify-content-center ">
-        
         <div class="col-11 col-md-8 col-lg-6 mt-3">
-            <form method="post" action="{% url 'update_comment' comment.id %}" class="mb-5 form-font" enctype="multipart/form-data">
+            <!-- Update comment form -->
+            <form method="post" action="{% url 'update_comment' comment.id %}" class="mb-5 form-font"
+                enctype="multipart/form-data">
                 {{ form | crispy }}
                 {% csrf_token %}
-                <a class="btn btn-signup form-font" href="{%  url 'recipe_detail' comment.post.slug  %}" >Cancel</a>
+                <!-- If a user cancels updating a comment, return back to the recipe detail page 
+                     which the user was going to comment on -->
+                <a class="btn btn-signup form-font" href="{%  url 'recipe_detail' comment.post.slug  %}">Cancel</a>
                 <input type="submit" class="btn btn-signup form-font" value="Update Comment" />
             </form>
         </div>
     </div>
 </div>
-
 
 {% endblock content %}
