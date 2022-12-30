@@ -4,18 +4,21 @@
 {% load cloudinary %}
 {% load crispy_forms_tags %}
 
+
+<!-- This page allows a user to delete their own comment -->
 <div class="container">
     <h1 class="page-title">Delete Comment</h1>
     <hr>
     <br>
-   
     <div class="row text-center justify-content-center mt-4">
-         <h5 class="text-center"><strong>Are you sure you want to delete your {{ comment.body }} comment?</strong></h5>
-         <br>
+        <h5 class="text-center"><strong>Are you sure you want to delete your {{ comment.body }} comment?</strong></h5>
+        <br>
         <div class="col-lg-8 mb-3 mt-4">
+            <!-- Delete comment form -->
             <form method="post" class="mb-5 col-12">
                 {% csrf_token %}
-                <a class="btn btn-signup m-2 form-font" href="{%  url 'recipe_detail' comment.post.slug  %}" >Cancel</a>
+                <!-- If a user cancels deleting their comment, return back to the recipe detail page -->
+                <a class="btn btn-signup m-2 form-font" href="{%  url 'recipe_detail' comment.post.slug  %}">Cancel</a>
                 <button class="btn btn-danger m-2 col-lg-4 form-font" input type="submit">Delete Comment</button>
             </form>
         </div>
