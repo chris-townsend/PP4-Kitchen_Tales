@@ -3,6 +3,7 @@
 {% block title %} Kitchen Tales | My Saved Recipes {% endblock %}
 {% block content %}
 
+<!-- Displays a users bookmarked recipes in the style of recipe cards -->
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -16,26 +17,31 @@
         {% for recipe in recipe_list  %}
         <div class="col-sm-6 col-md-4 col-lg-3 px-1 d-flex align-items-stretch">
             <div class="card recipe-card mb-3 shadow-sm mx-auto mx-sm-2">
+                <!-- Placeholder image if no user uploaded image-->
                 {% if "placeholder" in recipe.image.url %}
-                <img src="{% static 'images/placeholder.webp' %}"
-                    class="custom-recipe-card" alt="placeholder image">
+                <img src="{% static 'images/placeholder.webp' %}" class="custom-recipe-card" alt="placeholder image">
                 {% else %}
                 <img src=" {{ recipe.image.url }}" alt="recipe image" class="custom-recipe-card">
                 {% endif %}
                 <div class="card-body mt-1">
+                    <!-- Recipe title-->
                     <h2 class="card-title custom-recipe-title">{{ recipe.title }}</h2>
                     <p class="card-text">
+                        <!-- Recipe prep time with icon -->
                         <span><i class="far fa-clock pr-2"></i></span>
                         <span>Prep Time: {{ recipe.prep_time }}</span>
                     </p>
                     <p class="card-text">
+                        <!-- Recipe cook time with icon -->
                         <span><i class="far fa-clock pr-2"></i></span>
                         <span>Cook Time: {{ recipe.cook_time }}</span>
                     </p>
                     <p class="card-text">
+                        <!-- Recipe number of likes counter -->
                         <span><i class="far fa-star"></i></span>
                         <span>{{ recipe.like_recipe.count }} Likes</span>
                     </p>
+                    <!-- Link to recipe detail page -->
                     <a href="{% url 'recipe_detail' recipe.slug %}" class="stretched-link"
                         aria-label="recipe-detail"></a>
                 </div>
@@ -43,6 +49,9 @@
         </div>
         {% endfor %}
     </div>
+    <!-- End of recipe card-->
 </div>
+
 {% include "recipe_paginator.html" %}
+
 {% endblock %}

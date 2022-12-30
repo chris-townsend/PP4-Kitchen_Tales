@@ -277,9 +277,9 @@ The W3C validator was used to test all HTML pages No errors were reported in the
 |delete_comment.html     |             |   *n/a*      |             |
 |delete_recipe.html      |             |   *n/a*      |             |
 |footer.html             |   *pass*    |   *pass*     | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    |
-|index.html              |   *pass*    |   *pass*     | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    |
-|my_recipes.html         |             |   *n/a*      |             |
-|my_starred_recipes.html |             |   *n/a*      |             |
+|index.html              |   *pass*    |   *pass*     | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    | 
+|my_recipes.html         |   *pass*    |   *n/a*      | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fmy_recipes%2F#l189c24)* |
+|my_starred_recipes.html |   *pass*    |   *n/a*      |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fmy_starred_recipes%2F#l189c24)*|
 |newsletter.html         |             |              |             |
 |recipe_detail.html      |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Frecipe_detail%2Fbutternut-squash-sage-risotto%2F#l189c24)*    |
 |recipe_paginator.html   |   *pass*    |    *pass*    |      -      |
