@@ -1,18 +1,20 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %} Kitchen Tales | {{ recipe.title }}{% endblock %}
-
+{% load crispy_forms_tags %}
 
 {% block content %}
-{% load crispy_forms_tags %}
+
 <div class="container p-0">
     <div class="container pt-3">
         <div class="card mb-3">
             <div class="row no-gutters">
                 <div class="col-12 col-md-4">
+                    <!-- Uses a placeholder image if the user does not upload there
+                          own image to a recipe -->
                     {% if "placeholder" in recipe.image.url %}
-                    <img src="{% static 'images/placeholder.webp' %}"
-                        class="custom-recipe-detail-img" alt="placeholder image">
+                    <img src="{% static 'images/placeholder.webp' %}" class="custom-recipe-detail-img"
+                        alt="placeholder image">
                     {% else %}
                     <img src="{{ recipe.image.url }}" alt="recipe image" class="custom-recipe-detail-img">
                     {% endif %}
@@ -20,65 +22,76 @@
                 <div class="col-12 col-md-8">
                     <div class="card-body recipe-detail-outer py-2">
                         <div>
+                            <!-- Display recipe title -->
                             <h1 class="page-title text-left">{{ recipe.title }}</h1>
                         </div>
                         <br>
+                        <!-- Display recipe author-->
                         <p class="comment-author"><strong>Author: {{ recipe.author }}</strong></p>
                         <div class="mb-5">
                             <p>
+                                <!-- Display prep time with icon -->
                                 <span><i class="far fa-clock pr-2"> </i></span>
                                 <span class="recipe-text"><strong>Prep Time: {{ recipe.prep_time }}</strong></span>
                             </p>
                             <p>
+                                <!-- Display cook time with icon -->
                                 <span><i class="far fa-clock pr-2"></i></span>
                                 <span class="recipe-text"><strong>Cook Time: {{ recipe.cook_time }}</strong></span>
                             </p>
                             <p>
-                                <span><i class="fas fa-wrench pr-2""></i></span>
-                                <span class="recipe-text"><strong>Last Updated: {{ recipe.updated_date }}</strong></span>
+                                <!-- Display last updated date with icon -->
+                                <span><i class="fas fa-wrench pr-2"></i></span>
+                                <span class="recipe-text"><strong>Last Updated:
+                                        {{ recipe.updated_date }}</strong></span>
                             </p>
                             <p>
-                            </span>
-                            {% if request.user.username == recipe.author.username %}
-                            <p class="recipe-text">
-                             <span>
-                             <a href=" {% url 'update_recipe' recipe.id %}" aria-label="edit recipe"><i
-                             class="fas fa-edit"></i>  Edit</a>  
-                             </span> 
-                            </p>
-                             <p class="recipe-text">
-                            <span>
-                            <a href="{% url 'delete_recipe' recipe.id %}" aria-label="delete recipe"><i
-                             class="fas fa-trash-alt"></i>  Delete</a>
-                             </span>  
-                             </p>
-                           
-                            {% endif %}
-                             <strong>
-                                {% if user.is_authenticated %}
-
-                                <form class=" d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
+                                <!-- If the user is logged-in and is the author of the recipe, 
+                                     display edit & delete icons -->
+                                {% if request.user.username == recipe.author.username %}
+                                <p class="recipe-text">
+                                    <span>
+                                        <a href=" {% url 'update_recipe' recipe.id %}" aria-label="edit recipe"><i
+                                                class="fas fa-edit"></i> Edit</a>
+                                    </span>
+                                </p>
+                                <p class="recipe-text">
+                                    <span>
+                                        <a href="{% url 'delete_recipe' recipe.id %}" aria-label="delete recipe"><i
+                                                class="fas fa-trash-alt"></i> Delete</a>
+                                    </span>
+                                </p>
+                                {% endif %}
+                                <strong>
+                                    <!-- If the user is logged-in display clickable star icon to bookmark a recipe-->
+                                    {% if user.is_authenticated %}
+                                    <form class=" d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
                                         {% csrf_token %}
                                         {% if liked %}
                                         <button type="submit" name="recipepost_id" value="{{ recipe.slug }}"
                                             class="btn-like">
-                                           <i class="fas fa-star"></i></button><span class="like-recipe-text">{{ recipe.like_recipe.count }} likes</span> 
+                                            <i class="fas fa-star"></i></button><span
+                                            class="like-recipe-text">{{ recipe.like_recipe.count }} likes</span>
                                         {% else %}
                                         <button type="submit" name="recipepost_id" value="{{ recipe.slug }}"
                                             class="btn-like">
-                                            <i class="far fa-star"></i></button><span class="like-recipe-text">Click to bookmark this recipe</span> 
+                                            <i class="far fa-star"></i></button><span class="like-recipe-text">Click to
+                                            bookmark this recipe</span>
                                         {% endif %}
-                                        </form>
-                                        {% else %}
-                                        <span class="text-secondary"><i class="far fa-star"></i></span>
-                                        <a href="{% url 'account_signup' %}" class="link recipe-text"><strong>Sign up to star & bookmark recipes</strong></a>
-                                        {% endif %}
-                                        <span class="text-secondary"> {{ recipe.number_of_likes }}</span> 
-                                        </strong>
-                            </p>
-
-
+                                    </form>
+                                    {% else %}
+                                    <!-- If the user is not logged in, display sign up to star recipes text 
+                                         with link to the sign-up page -->
+                                    <span class="text-secondary"><i class="far fa-star"></i>
+                                    </span>
+                                    <a href="{% url 'account_signup' %}" class="link recipe-text"><strong>Sign up to
+                                            star & bookmark recipes</strong></a>
+                                    {% endif %}
+                                    <span class="text-secondary"> {{ recipe.number_of_likes }}
+                                    </span>
+                                </strong>
                         </div>
+                        <!-- Display the recipe description -->
                         <div class="container text-center">
                             <div class="row">
                                 <div class="col">
@@ -93,108 +106,122 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="card mb-3">
-                                        <h5 class="card-header custom-recipe-detail-header">
-                                            Ingredients
-                                        </h5>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item form-font">{{ recipe.ingredients | safe }}</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card mb-3">
-                                        <h5 class="card-header custom-recipe-detail-header">Method</h5>
-                                        <div class="card-body form-font">
-                                            <div class="card-text form-font">{{ recipe.method | safe }}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col">
-                                <div class="card mb-3">
-                                    <h5 class="card-header custom-recipe-detail-header">
-                                        Notes
-                                    </h5>
-                                    <div class="card-body form-font">
-                                        <p class="card-text">{{ recipe.notes | safe }}</p>
-                                    </div>
-                                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Display recipe ingredients list -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <h5 class="card-header custom-recipe-detail-header">
+                        Ingredients
+                    </h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item form-font">{{ recipe.ingredients | safe }}</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End of ingredients list -->
+
+            <!-- Display recipe method section -->
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <h5 class="card-header custom-recipe-detail-header">Method</h5>
+                    <div class="card-body form-font">
+                        <div class="card-text form-font">{{ recipe.method | safe }}</div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of recipe method-->
+        </div>
+    </div>
+</div>
+
+<!-- Display the recipe notes section -->
+<div class="container text-center">
+    <div class="row">
+        <div class="col">
+            <div class="card mb-3">
+                <h5 class="card-header custom-recipe-detail-header">
+                    Notes
+                </h5>
+                <div class="card-body form-font">
+                    <p class="card-text"> {{ recipe.notes | safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of recipe notes-->
+
+<!-- Displays the comment section -->
+<div class="container text-center">
+    <div class="row">
+        <div class="col">
+            <div class="card mb-3">
+                <h4 class="card-header custom-recipe-detail-header">Comments</h4>
+                <div class="card-body form-font">
+                    <!-- a for loop to iterate through each comment in comments -->
+                    {% for comment in comments %}
+                    <div class="comments" style="padding: 5px;">
+                        {% if user.is_authenticated and user.username == comment.name %}
+                        <span class="comment-btn">
+                            <a href="{% url 'update_comment' comment.id %}" aria-label="edit comment"><i
+                                    class="fas fa-edit"></i></a>
+                            <a href="{% url 'delete_comment' comment.id %}" aria-label="delete comment"><i
+                                    class="fas fa-trash-alt"></i></a>
+                        </span>
+                        {% endif %}
+                        <p class="font-weight-normal form-font">
+                            {{ comment.created_date }}
+                            <span class="text-muted font-weight-bold comment-author">
+                                {{ comment.name | safe }}
+                            </span>
+                            <span class="form-font"> commented:
+                            </span>
+                            <br>
+                            {{ comment.body | safe }}
+                        </p>
+                    </div>
+                    <!-- for loop ends here -->
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            {% if commented %}
+                            <div class="alert alert-success" role="alert">
+                                Your comment is awaiting approval
                             </div>
+                            {% else %}
+                            {% if user.is_authenticated %}
+                            <div class="card mb-3">
+                                <h5 class="card-header custom-recipe-detail-header">Leave a comment:
+                                </h5>
+                                <p class="comments font-weight-normal comment-author">Posting as:</p>
+                                <span class="font-weight-bold">{{ user.username }}</span>
+                                <form method="post" style="margin-top: 1.1em; padding: 20px" class="form-font">
+                                    {{ comment_form | crispy }}
+                                    {% csrf_token %}
+                                    <button type="submit" class="btn btn-signup btn-md form-font">Submit</button>
+                                </form>
+                            </div>
+                            {% endif %}
+                            {% endif %}
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of comment section-->
 
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col">
-                                <div class="card mb-3">
-                                    <h4 class="card-header custom-recipe-detail-header">Comments</h4>
-                                    <div class="card-body form-font">
-                                        
-                                        <!-- a for loop to iterate through each comment in comments -->
-                                        {% for comment in comments %}
-                                         <div class="comments" style="padding: 5px;">
-                                            {% if user.is_authenticated and user.username == comment.name %}
-                                             <span class="comment-btn">
-                                             <a href="{% url 'update_comment' comment.id %}" aria-label="edit comment"><i
-                                              class="fas fa-edit"></i></a>
-                                             <a href="{% url 'delete_comment' comment.id %}" aria-label="delete comment"><i
-                                                
-                                              class="fas fa-trash-alt"></i></a>
-                                            </span>
-                                               {% endif %}
-                                               <p class="font-weight-normal form-font">
-                                                {{ comment.created_date }}
-                                                <span class=" text-muted font-weight-bold comment-author">
-                                                    {{ comment.name | safe }}
-                                                    
-                                                </span class="form-font"> commented:
-                                                <br>
-                                                {{ comment.body | safe }}
-                                            </p>
-                                        </div>
-                                        <!-- for loop ends here -->
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container text-center">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="card mb-3">
-                                            <div class="card-body">
-                                                {% if commented %}
-                                                <div class="alert alert-success" role="alert">
-                                                    Your comment is awaiting approval
-                                                </div>
-                                                {% else %}
-                                                {% if user.is_authenticated %}
-                                                <div class="card mb-3">
-
-                                                <h5 class="card-header custom-recipe-detail-header">Leave a comment:</h5>
-                                                <p class="comments font-weight-normal comment-author">Posting as: <span class="font-weight-bold">{{ user.username }}</span></p>
-                                                <form method="post" style="margin-top: 1.1em; padding: 20px" class="form-font">
-                                                    {{ comment_form | crispy }}
-                                                    {% csrf_token %}
-                                                    <button type="submit" class="btn btn-signup btn-md form-font">Submit</button>
-                                                </form>
-                                                </div>
-                                                {% endif %}
-                                                {% endif %}
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {% endblock content %}
+{% endblock content %}
