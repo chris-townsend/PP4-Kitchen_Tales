@@ -6,6 +6,8 @@
 {% load crispy_forms_tags %}
 
 
+<!-- This page allows a user to submit an email address which
+      stores the email address in the database -->
 <section>
   <div class="newsletter-container">
     <br>
@@ -13,47 +15,40 @@
       <div class="row">
         <div class="col-md-8 offset-md-2">
           <h2 class="welcome-text"> Never miss a recipe from Kitchen Tales</h2>
-          <p class="card-text-home mb-sm">
+          <p class="card-text-home mb-sm ml-4">
             Sign up to receive our monthly newsletter.
           </p>
         </div>
       </div>
-
-
-<div class="row">
-    <div class="col">
-      <form class="validate-form" method="POST">
-        {% csrf_token %}
-        {{ form|crispy  }}
-
-
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-3">
-              <button class="btn btn-lg mb-3 btn-outline-dark rounded-pill ml-4 form-font"
-               type="submit" name="email">Subscribe</button>
+      <div class="row">
+        <div class="col">
+          <form class="validate-form" method="POST">
+            {% csrf_token %}
+            {{ form|crispy  }}
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-3">
+                <button class="btn btn-lg mb-3 btn-outline-dark rounded-pill ml-4 form-font" type="submit"
+                  name="email">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p class="card-text-home">
+              By entering your details, you are agreeing to Kitchen Tales <a class="link-copy"
+                href="https://www.immediate.co.uk/terms-and-conditions/" target="_blank">terms and conditions</a>. You
+              can
+              unsubscribe at any time.
+            </p>
           </div>
         </div>
-      </form>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-12">
-        <p class="card-text-home">
-          By entering your details, you are agreeing to Kitchen Tales <a class="link-copy"
-            href="https://www.immediate.co.uk/terms-and-conditions/" target="_blank">terms and conditions</a>. You
-          can
-          unsubscribe at any time.
-        </p>
       </div>
     </div>
   </div>
-  </section>
-  <br>
-
-
-
-
-
+</section>
+<br>
 
 {% endblock content %}
