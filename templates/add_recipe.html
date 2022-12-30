@@ -3,6 +3,8 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
+
+<!-- This page allows a user to add a new recipe to the database-->
 <div class="container">
     <h1 class="page-title">Add Recipe</h1>
     <hr>
@@ -15,6 +17,7 @@
             <form method="post" class="mb-5 form-font" enctype="multipart/form-data">
                 {{ form | crispy }}
                 {% csrf_token %}
+                <!-- Returns back to all recipes page if a user cancels adding a recipe -->
                 <a class="btn btn-signup form-font" href="{% url 'all_recipes' %}">Cancel</a>
                 <button type="submit" class="btn btn-signup">Add recipe</button>
             </form>

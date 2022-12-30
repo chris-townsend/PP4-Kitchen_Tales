@@ -271,7 +271,7 @@ The W3C validator was used to test all HTML pages No errors were reported in the
 |                        | *logged-in* | *logged-out* |             |
 |404.html                |             |              |             |
 |500.html                |             |              |             |
-|add_recipe.html         |             |   *n/a*      |             |
+|add_recipe.html         |   *pass*    |   *n/a*      |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fadd_recipe%2F#l189c24)*           |
 |all_recipes.html        |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fall_recipes%2F)*    |
 |base.html               |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    |
 |delete_comment.html     |             |   *n/a*      |             |
