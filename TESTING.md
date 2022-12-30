@@ -285,7 +285,7 @@ The W3C validator was used to test all HTML pages No errors were reported in the
 |recipe_paginator.html   |   *pass*    |    *pass*    |      -      |
 |search_results.html     |   *pass*    |    *pass*    | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fsearch_results%2F)* |
 |update_comment.html     |             |    *n/a*     |             |
-|update_recipe.html      |             |    *n/a*     |             |
+|update_recipe.html      |   *pass*    |    *n/a*     |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fupdate_recipe%2F62%2F#l189c24)* |
 |login.html              |             |              |             |
 |logout.html             |             |    *n/a*     |             |
 |signup.html             |   *n/a*     |              |             |

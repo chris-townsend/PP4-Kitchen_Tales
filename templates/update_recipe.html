@@ -4,18 +4,21 @@
 {% load cloudinary %}
 {% load crispy_forms_tags %}
 
+
+<!-- This page allows a user to update their own recipe -->
 <div class="container">
     <h1 class="page-title">Update Recipe</h1>
     <hr>
     <br>
     <div class="row justify-content-center ">
-        
         <div class="col-11 col-md-8 col-lg-6 mt-3">
-            <!--  Add Recipe Form -->
-            <form method="post" action="{% url 'update_recipe' recipe.id %}" class="mb-5 form-font" enctype="multipart/form-data">
+            <!-- Update recipe form -->
+            <form method="post" action="{% url 'update_recipe' recipe.id %}" class="mb-5 form-font"
+                enctype="multipart/form-data">
                 {{ form | crispy }}
                 {% csrf_token %}
-                <a class="btn btn-signup form-font" href="{%  url 'recipe_detail' recipe.slug %}" >Cancel</a>
+                <!-- Returns back to the recipe detail page which the user was last viewing -->
+                <a class="btn btn-signup form-font" href="{%  url 'recipe_detail' recipe.slug %}">Cancel</a>
                 <input type="submit" class="btn btn-signup form-font" value="Update Recipe" />
             </form>
         </div>
