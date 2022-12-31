@@ -346,11 +346,11 @@ I have run the website through Google Chrome's Lighthouse audit application and 
 | ---                      |      :---:     |    :---:     |    
 | `404.html`               |                |              |
 | `500.html`               |                |              | 
-| `add_recipe.html`        |                |              |
-| `all_recipes.html`       |![lighthouse result desktop all recipes](static/images/lighthouse-desktop-all-recipes.webp)                |              |
-| `index.html`             |![lighthouse result desktop index](static/images/lighthouse-desktop-index.webp)  |              | 
+| `add_recipe.html`        |![lighthouse result desktop add recipe](static/images/lighthouse-desktop-add-recipe.webp)         |              |
+| `all_recipes.html`       |![lighthouse result desktop all recipes](static/images/lighthouse-desktop-all-recipes.webp)        |              |
+| `index.html`             |![lighthouse result desktop index](static/images/lighthouse-desktop-index.webp)              |              | 
 | `delete_comment.html`    |                |              |
-| `my-recipes.html`        |                |              |  
+| `my-recipes.html`        |![lighthouse result desktop my recipes](static/images/lighthouse-desktop-my-recipes.webp)         |              |  
 | `my_starred_recipes.html`|                |              |
 | `newsletter.html`        |                |              |
 | `recipe_detail.html`     |                |              |
