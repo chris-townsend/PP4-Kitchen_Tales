@@ -322,12 +322,12 @@ Code Institutes *[PEP8](https://pep8ci.herokuapp.com/)* linter was used to test 
 
 
 | Page                   | `kitchentales` |  `recipes`   | 
-| ---                    |      :---:     |  ---         |    
-| `admin.py`             |     *n/a*      |              |
-| `apps.py`              |                |              | 
+| ---                    |      :---:     |    :---:     |    
+| `admin.py`             |     *n/a*      |    *pass*    |
+| `apps.py`              |                |    *pass*    | 
 | `forms.py`             |     *n/a*      |              |
 | `models.py`            |     *n/a*      |              | 
-| `urls.py`              |                |              |
+| `urls.py`              |     *pass*     |    *pass*    |
 | `views.py`             |     *n/a*      |              |  
 | `tests.py`             |                |              |
 
