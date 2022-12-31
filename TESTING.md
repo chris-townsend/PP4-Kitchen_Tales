@@ -268,7 +268,7 @@ The *[W3C HTML validator](https://validator.w3.org/)* was used to test all HTML 
 ### HTML
 
 | Page                   | Status      |              | URL         |
-| ---                    |        ---: |  ---         |        ---: |
+| ---                    |   :---:     |    :---:     |    :---:    |
 |                        | *logged-in* | *logged-out* |             |
 |404.html                |             |              |             |
 |500.html                |             |              |             |
@@ -326,9 +326,9 @@ Code Institutes *[PEP8](https://pep8ci.herokuapp.com/)* linter was used to test 
 | `admin.py`             |     *n/a*      |    *pass*    |
 | `apps.py`              |     *n/a*      |    *pass*    | 
 | `forms.py`             |     *n/a*      |    *pass*    |
-| `models.py`            |     *n/a*      |              | 
+| `models.py`            |     *n/a*      |    *pass*    | 
 | `urls.py`              |     *pass*     |    *pass*    |
-| `views.py`             |     *n/a*      |              |  
+| `views.py`             |     *n/a*      |    *pass*    |  
 | `tests.py`             |                |              |
 
 ***

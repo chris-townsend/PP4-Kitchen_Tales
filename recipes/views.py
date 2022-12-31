@@ -11,30 +11,35 @@ from .forms import CommentForm, RecipeForm, NewsletterForm
 
 
 def newsletter(request):
+    """
+    This function is used to add a users email address &
+    save it to the database, if their email address already exists
+    they should recieve an alert stating it already exists
+    """
     form = NewsletterForm(request.POST)
     if form.is_valid():
         instance = form.save(commit=False)
         if NewsletterUser.objects.filter(email=instance.email).exists():
-            messages.warning(request, 'Your email already exists in our database')
+            messages.warning(request,
+                             'Your email already exists in our database')
         else:
             instance.save()
-            messages.success(self, 'Your email already exists in our database')
+            messages.success(self,
+                             'Your email already exists in our database')
             form = NewsletterForm()
 
     return render(request=request,
                   template_name='newsletter.html', context={'form': form})
 
 
-"""
-The search_results function is used to search for a recipe
-"""
-
-
 def search_results(request):
+    """
+    The search_results function is used to search for a recipe
+    """
     if request.method == "POST":
         """
-         when a POST request is made this method is called which
-         renders the search results based on recipe title
+        When a POST request is made this method is called which
+        renders the search results based on recipe title
         """
         searched = request.POST['searched']
         results = Recipe.objects.filter(title__contains=searched)
@@ -42,14 +47,13 @@ def search_results(request):
         return render(request, 'search_results.html',
                       {'searched': searched,
                        'results': results})
-
     else:
         return render(request, 'search_results.html',)
 
 
 class Home(generic.TemplateView):
     """
-    The main site homepage view
+    The main homepage view for the site
     """
     template_name = 'index.html'
 
