@@ -255,7 +255,9 @@ If the logged-in user is the author of the recipe, an edit button is shown next 
 
 ![Kichen Tales social icons](static/images/kitchen-tales-social-icons.webp)
 
+<br>
 
+[Back to top ⇧](#contents)
 ***
 
 ## Validator Testing
@@ -320,6 +322,9 @@ The *[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)* was used to vali
 
 Code Institutes *[PEP8](https://pep8ci.herokuapp.com/)* linter was used to test the Python files. The table below shows the pages tested and their result, all pages are **error free** in the final deployment.
 
+![Code Institute's Python linter](static/images/CI-python-linter.webp)
+
+
 
 | Page                   | `kitchentales` |  `recipes`   | 
 | ---                    |      :---:     |    :---:     |    
@@ -335,6 +340,30 @@ Code Institutes *[PEP8](https://pep8ci.herokuapp.com/)* linter was used to test 
 
 ### Lighthouse 
 
+I have run the website through Google Chrome's Lighthouse audit application and the results are shown below:
+ 
+| Page                     |    Desktop     |    Mobile    | 
+| ---                      |      :---:     |    :---:     |    
+| `404.html`               |                |              |
+| `500.html`               |                |              | 
+| `add_recipe.html`        |                |              |
+| `index.html`             |                |              | 
+| `delete_comment.html`    |                |              |
+| `my-recipes.html`        |                |              |  
+| `my_starred_recipes.html`|                |              |
+| `newsletter.html`        |                |              |
+| `recipe_detail.html`     |                |              |
+| `search_results.html`    |                |              |
+| `update_comment.html`    |                |              |
+| `update_recipe.html`     |                |              |
+| `login.html`             |                |              |
+| `logout.html`            |                |              | 
+| `signup.html`            |                |              |
+
+
+<br>
+
+[Back to top ⇧](#contents)
 ***
 
 ## Browser Testing
@@ -365,8 +394,13 @@ Code Institutes *[PEP8](https://pep8ci.herokuapp.com/)* linter was used to test 
 ## Automated Testing
 #
 
-[Back to top ⇧](#contents)
 
+
+
+<br>
+
+[Back to top ⇧](#contents)
+***
 
 
 
