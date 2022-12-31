@@ -347,7 +347,7 @@ I have run the website through Google Chrome's Lighthouse audit application and 
 | `404.html`               |                |              |
 | `500.html`               |                |              | 
 | `add_recipe.html`        |                |              |
-| `index.html`             |                |              | 
+| `index.html`             |![lighthouse result desktop index](static/images/lighthouse-desktop-index.webp)  |              | 
 | `delete_comment.html`    |                |              |
 | `my-recipes.html`        |                |              |  
 | `my_starred_recipes.html`|                |              |

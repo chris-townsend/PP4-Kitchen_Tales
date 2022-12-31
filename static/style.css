@@ -49,7 +49,7 @@ hr {
 
 .logo-image {
     width: 95%;
-    height: auto;
+    height: 100px;
     margin-left: -40px;
 }
 
@@ -320,8 +320,8 @@ hr {
 }
 
 .welcome-image {
-    width: 100%;
-    height: 250px;
+    width: 360px;
+    height: 300px;
 }
 
 .welcome-title {
