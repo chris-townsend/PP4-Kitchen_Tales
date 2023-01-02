@@ -353,13 +353,13 @@ I have run the website through Google Chrome's Lighthouse audit application and 
 | `my-recipes.html`        |![lighthouse result desktop my recipes](static/images/lighthouse-desktop-my-recipes.webp)         |              |  
 | `my_starred_recipes.html`|![lighthouse result desktop my starred recipes](static/images/lighthouse-desktop-my-liked-recipes.webp)                |              |
 | `newsletter.html`        |![lighthouse result desktop newsletter](static/images/lighthouse-desktop-newsletter.webp)                 |              |
-| `recipe_detail.html`     |                |              |
-| `search_results.html`    |                |              |
-| `update_comment.html`    |                |              |
-| `update_recipe.html`     |                |              |
-| `login.html`             |                |              |
-| `logout.html`            |                |              | 
-| `signup.html`            |                |              |
+| `recipe_detail.html`     |![lighthouse result desktop recipe detail](static/images/lighthouse-desktop-recipe-detail.webp)                |              |
+| `search_results.html`    |![lighthouse result desktop search results](static/images/lighthouse-desktop-search-results.webp)                |              |
+| `update_comment.html`    |![lighthouse result desktop update comment](static/images/lighthouse-desktop-update-comment.webp)                |              |
+| `update_recipe.html`     |![lighthouse result desktop update recipe](static/images/lighthouse-desktop-update-recipe.webp)                |              |
+| `login.html`             |![lighthouse result desktop login](static/images/lighthouse-desktop-login.webp)                |              |
+| `logout.html`            |![lighthouse result desktop logout](static/images/lighthouse-desktop-signout.webp)                |              | 
+| `signup.html`            |![lighthouse result desktop signup](static/images/lighthouse-desktop-signup.webp)                |              |
 
 
 <br>

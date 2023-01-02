@@ -15,8 +15,8 @@
             <!-- Update recipe form -->
             <form method="post" action="{% url 'update_recipe' recipe.id %}" class="mb-5 form-font"
                 enctype="multipart/form-data">
-                {{ form | crispy }}
                 {% csrf_token %}
+                {{ form | crispy }}
                 <!-- Returns back to the recipe detail page which the user was last viewing -->
                 <a class="btn btn-signup form-font" href="{%  url 'recipe_detail' recipe.slug %}">Cancel</a>
                 <input type="submit" class="btn btn-signup form-font" value="Update Recipe" />
