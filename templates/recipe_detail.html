@@ -96,7 +96,7 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="card mb-3">
-                                        <h5 class="card-header custom-recipe-detail-header">
+                                        <h5 class="card-header custom-recipe-detail-header description">
                                             Description
                                         </h5>
                                         <div class="card-body form-font">
@@ -116,7 +116,7 @@
             <!-- Display recipe ingredients list -->
             <div class="col-md-6">
                 <div class="card mb-3">
-                    <h5 class="card-header custom-recipe-detail-header">
+                    <h5 class="card-header custom-recipe-detail-header title-underlined">
                         Ingredients
                     </h5>
                     <ul class="list-group list-group-flush">
@@ -129,7 +129,7 @@
             <!-- Display recipe method section -->
             <div class="col-md-6">
                 <div class="card mb-3">
-                    <h5 class="card-header custom-recipe-detail-header">Method</h5>
+                    <h5 class="card-header custom-recipe-detail-header title-underlined">Method</h5>
                     <div class="card-body form-font">
                         <div class="card-text form-font">{{ recipe.method | safe }}</div>
                     </div>
@@ -145,7 +145,7 @@
     <div class="row">
         <div class="col">
             <div class="card mb-3">
-                <h5 class="card-header custom-recipe-detail-header">
+                <h5 class="card-header custom-recipe-detail-header title-underlined">
                     Notes
                 </h5>
                 <div class="card-body form-font">
@@ -162,7 +162,7 @@
     <div class="row">
         <div class="col">
             <div class="card mb-3">
-                <h4 class="card-header custom-recipe-detail-header">Comments</h4>
+                <h4 class="card-header custom-recipe-detail-header title-underlined">Comments</h4>
                 <div class="card-body form-font">
                     <!-- a for loop to iterate through each comment in comments -->
                     {% for comment in comments %}

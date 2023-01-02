@@ -137,9 +137,17 @@ hr {
 .custom-recipe-detail-header {
     font-family: 'Karla', sans-serif;
     border: none;
-    background-color: bisque;
+    background-color: white;
     color: #886363;
     letter-spacing: 1px;
+}
+
+.description {
+    background-color: bisque;
+}
+
+.title-underlined {
+    text-decoration: underline;
 }
 
 .comment-author {
