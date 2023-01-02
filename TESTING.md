@@ -346,11 +346,11 @@ I have run the website through Google Chrome's Lighthouse audit application and 
 | ---                      |      :---:     |    :---:     |    
 | `404.html`               |                |              |
 | `500.html`               |                |              | 
-| `add_recipe.html`        |![lighthouse result desktop add recipe](static/images/lighthouse-desktop-add-recipe.webp)         |              |
-| `all_recipes.html`       |![lighthouse result desktop all recipes](static/images/lighthouse-desktop-all-recipes.webp)        |              |
-| `index.html`             |![lighthouse result desktop index](static/images/lighthouse-desktop-index.webp)              |              | 
-| `delete_comment.html`    |![lighthouse result desktop delete comment](static/images/lighthouse-desktop-delete-comment.webp)                 |              |
-| `my-recipes.html`        |![lighthouse result desktop my recipes](static/images/lighthouse-desktop-my-recipes.webp)         |              |  
+| `add_recipe.html`        |![lighthouse result desktop add recipe](static/images/lighthouse-desktop-add-recipe.webp)         |![lighthouse result mobile add recipe](static/images/lighthouse-mobile-add-recipe.webp)          |
+| `all_recipes.html`       |![lighthouse result desktop all recipes](static/images/lighthouse-desktop-all-recipes.webp)        |![lighthouse result mobile all recipes](static/images/lighthouse-mobile-all-recipes.webp)  |
+| `index.html`             |![lighthouse result desktop index](static/images/lighthouse-desktop-index.webp)              |![lighthouse result mobile index](static/images/lighthouse-mobile-index.webp)               | 
+| `delete_comment.html`    |![lighthouse result desktop delete comment](static/images/lighthouse-desktop-delete-comment.webp)     |![lighthouse result mobile delete comment](static/images/lighthouse-mobile-delete-comment.webp)              |
+| `my-recipes.html`        |![lighthouse result desktop my recipes](static/images/lighthouse-desktop-my-recipes.webp)         |![lighthouse result mobile my recipes](static/images/lighthouse-mobile-my-recipes.webp)          |  
 | `my_starred_recipes.html`|![lighthouse result desktop my starred recipes](static/images/lighthouse-desktop-my-liked-recipes.webp)                |              |
 | `newsletter.html`        |![lighthouse result desktop newsletter](static/images/lighthouse-desktop-newsletter.webp)                 |              |
 | `recipe_detail.html`     |![lighthouse result desktop recipe detail](static/images/lighthouse-desktop-recipe-detail.webp)                |              |
