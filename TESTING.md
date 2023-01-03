@@ -361,10 +361,16 @@ I have run the website through Google Chrome's Lighthouse audit application and 
 | `logout.html`            |![lighthouse result desktop logout](static/images/lighthouse-desktop-signout.webp)|![lighthouse result mobile logout](static/images/lighthouse-mobile-signout.webp)              | 
 | `signup.html`            |![lighthouse result desktop signup](static/images/lighthouse-desktop-signup.webp) |![lighthouse result mobile signup](static/images/lighthouse-mobile-signup.webp)              |
 
+<br>
+
+The results are satisfactory and the suggested modification with regards to the issue within the console appears to give a lower score for *Best Practices* throughout mobile and desktop tests. Please see *[issue #64]([#64](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/64))* for further information regarding Audit usage of navigator.userAgent, navigator.appVersion & navigator.platform and a potential future issue to fix the current warning. The other suggestion is relating to the sizing of the site logo. This is a design choice, the image looks much better when it hasn't been cropped. If more time were available, image editing software could be utilised to edit the image but the effect is negligble. Overall the site runs better on desktop, the performace is low for mobile when adding and updating a recipe, this is mostly due to using summernote widgets for certain fields. This has been left as it is for now as the overall performace for the site is good. 
+
+![lighthouse low score](static/images/lighthouse-enable-text-compression.webp)
 
 <br>
 
 [Back to top ⇧](#contents)
+
 ***
 
 ## Browser Testing
