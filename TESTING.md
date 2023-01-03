@@ -351,15 +351,15 @@ I have run the website through Google Chrome's Lighthouse audit application and 
 | `index.html`             |![lighthouse result desktop index](static/images/lighthouse-desktop-index.webp)              |![lighthouse result mobile index](static/images/lighthouse-mobile-index.webp)               | 
 | `delete_comment.html`    |![lighthouse result desktop delete comment](static/images/lighthouse-desktop-delete-comment.webp)     |![lighthouse result mobile delete comment](static/images/lighthouse-mobile-delete-comment.webp)              |
 | `my-recipes.html`        |![lighthouse result desktop my recipes](static/images/lighthouse-desktop-my-recipes.webp)         |![lighthouse result mobile my recipes](static/images/lighthouse-mobile-my-recipes.webp)          |  
-| `my_starred_recipes.html`|![lighthouse result desktop my starred recipes](static/images/lighthouse-desktop-my-liked-recipes.webp)                |              |
-| `newsletter.html`        |![lighthouse result desktop newsletter](static/images/lighthouse-desktop-newsletter.webp)                 |              |
-| `recipe_detail.html`     |![lighthouse result desktop recipe detail](static/images/lighthouse-desktop-recipe-detail.webp)                |              |
-| `search_results.html`    |![lighthouse result desktop search results](static/images/lighthouse-desktop-search-results.webp)                |              |
-| `update_comment.html`    |![lighthouse result desktop update comment](static/images/lighthouse-desktop-update-comment.webp)                |              |
-| `update_recipe.html`     |![lighthouse result desktop update recipe](static/images/lighthouse-desktop-update-recipe.webp)                |              |
-| `login.html`             |![lighthouse result desktop login](static/images/lighthouse-desktop-login.webp)                |              |
-| `logout.html`            |![lighthouse result desktop logout](static/images/lighthouse-desktop-signout.webp)                |              | 
-| `signup.html`            |![lighthouse result desktop signup](static/images/lighthouse-desktop-signup.webp)                |              |
+| `my_starred_recipes.html`|![lighthouse result desktop my starred recipes](static/images/lighthouse-desktop-my-liked-recipes.webp)   |![lighthouse result mobile my starred recipes](static/images/lighthouse-mobile-my-liked-recipes.webp)              |
+| `newsletter.html`        |![lighthouse result desktop newsletter](static/images/lighthouse-desktop-newsletter.webp)         |![lighthouse result mobile newsletter](static/images/lighthouse-mobile-newsletter.webp)              |
+| `recipe_detail.html`     |![lighthouse result desktop recipe detail](static/images/lighthouse-desktop-recipe-detail.webp)      |![lighthouse result mobile recipe detail](static/images/lighthouse-mobile-recipe-detail.webp)              |
+| `search_results.html`    |![lighthouse result desktop search results](static/images/lighthouse-desktop-search-results.webp)    |![lighthouse result mobile search results](static/images/lighthouse-mobile-search-results.webp)              |
+| `update_comment.html`    |![lighthouse result desktop update comment](static/images/lighthouse-desktop-update-comment.webp)    |![lighthouse result mobile update comment](static/images/lighthouse-mobile-update-comment.webp)              |
+| `update_recipe.html`     |![lighthouse result desktop update recipe](static/images/lighthouse-desktop-update-recipe.webp)     |![lighthouse result mobile update recipe](static/images/lighthouse-mobile-update-recipe.webp)              |
+| `login.html`             |![lighthouse result desktop login](static/images/lighthouse-desktop-login.webp)  |![lighthouse result mobile login](static/images/lighthouse-mobile-login.webp)              |
+| `logout.html`            |![lighthouse result desktop logout](static/images/lighthouse-desktop-signout.webp)|![lighthouse result mobile logout](static/images/lighthouse-mobile-signout.webp)              | 
+| `signup.html`            |![lighthouse result desktop signup](static/images/lighthouse-desktop-signup.webp) |![lighthouse result mobile signup](static/images/lighthouse-mobile-signup.webp)              |
 
 
 <br>
