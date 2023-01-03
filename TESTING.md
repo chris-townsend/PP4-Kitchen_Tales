@@ -363,7 +363,7 @@ I have run the website through Google Chrome's Lighthouse audit application and 
 
 <br>
 
-The results are satisfactory and the suggested modification with regards to the issue within the console appears to give a lower score for *Best Practices* throughout mobile and desktop tests. Please see *[issue #64]([#64](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/64))* for further information regarding Audit usage of navigator.userAgent, navigator.appVersion & navigator.platform and a potential future issue to fix the current warning. The other suggestion is relating to the sizing of the site logo. This is a design choice, the image looks much better when it hasn't been cropped. If more time were available, image editing software could be utilised to edit the image but the effect is negligble. Overall the site runs better on desktop, the performace is low for mobile when adding and updating a recipe, this is mostly due to using summernote widgets for certain fields. This has been left as it is for now as the overall performace for the site is good. 
+The results are satisfactory and the suggested modification with regards to the issue within the console appears to give a lower score for *Best Practices* throughout mobile and desktop tests. Please see *[issue #64](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/64)* for further information regarding Audit usage of navigator.userAgent, navigator.appVersion & navigator.platform and a potential future issue to fix the current warning. The other suggestion is relating to the sizing of the site logo. This is a design choice, the image looks much better when it hasn't been cropped. If more time were available, image editing software could be utilised to edit the image but the effect is negligble. Overall the site runs better on desktop, the performace is low for mobile when adding and updating a recipe, this is mostly due to using summernote widgets for certain fields. This has been left as it is for now as the overall performace for the site is good. 
 
 ![lighthouse low score](static/images/lighthouse-enable-text-compression.webp)
 
@@ -376,11 +376,13 @@ The results are satisfactory and the suggested modification with regards to the 
 ## Browser Testing
 #
 
-
 ***
+
 
 ## Device Testing
 #
+
+
 
 ***
 
@@ -390,10 +392,91 @@ The results are satisfactory and the suggested modification with regards to the 
 
 
 ## Bugs
-#
+
+Bugs were noted with a `bug` label on GitHub.
+<br>
+
 ### Fixed Bugs
 
+1. [auth.User.None displayed next to the 'star' icon](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/43)
+
+*resolved - [593fc8e](https://github.com/chris-townsend/PP4-Kitchen_Tales/commit/593fc8e319ec4791a2098c2a25d226258d64b89c) The wrong item was being rendered
+into the template*
+
+`{{ recipe.like_recipe }` --> `{{ recipe.number_of_likes }}`
+
+2. [Alert message not being displayed within coloured alert box](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/44)
+
+*resolved - [5e7e796](https://github.com/chris-townsend/PP4-Kitchen_Tales/commit/5e7e796bee681e03ead4b4b709886dc166542865) Missing closing div tag*
+
+3. [IntegrityError when a logged-in user attempts to submit a comment](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/45)
+
+*resolved - missing line of code within the if/else statement of the post function*
+
+`comment.post_id = recipe.id` in `views.py`
+
+4. [Comment approval alert not being displayed in the correct place](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/46)
+
+*resolved - [62976b1](https://github.com/chris-townsend/PP4-Kitchen_Tales/commit/62976b1af0ec5fe870a5f92f0817c221d44ac1d5)*
+
+ *Import messages from django.contrib -*  `from django.contrib import messages`
+
+ *Add success message to post variable after the comment gets saved -* 
+
+  `messages.success(self.request, 'Your comment is awaiting approval')`
+
+5. [FieldError within Recipe model form](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/47)
+
+*resolved - Follow error code and remove `created_date` from the fields*
+
+6. [NameError: 'self' is not defined within MyRecipesView](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/49)
+
+*resolved - Create a function that modifies the original queryset to only display recipes created by the logged-in user*
+
+7. [Incorrect link from 'Sign up to star & bookmark recipes'](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/48)
+
+*resolved - [93eaa72](https://github.com/chris-townsend/PP4-Kitchen_Tales/commit/93eaa7205849792b3e41595496f019574fcf062f)*
+
+*Change the link to the correct location - `<a href="{% url 'account_signup' %}"`*
+
+8. [The search icon is not being displayed correctly](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/50)
+
+*resolved - [bbd95c7](https://github.com/chris-townsend/PP4-Kitchen_Tales/commit/bbd95c76d0b86f47692c8d768e7f6b2e56a592aa)*
+
+*Create a form and style with bootstrap classes*
+
+9. [NoReverseMatch error after setting an incorrect URL to cancel deleting a comment on a recipe](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/51)
+
+*resolved - [3a01ac0](https://github.com/chris-townsend/PP4-Kitchen_Tales/commit/3a01ac05a1eff73fb020401b637e8d154e9d33c4)*
+
+*Change the href within the `delete_comment.html` template to cancel deleting a comment.* Add missing code `.post` from the Comment model.
+
+10. [Navbar 'active' class not working correctly after page change](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/52)
+
+*resolved - Remove the current **active** class from Home in the base template. Add JavaScript to manage the `<li>` items when active and remove them when a user changes the page.*
+
+*Credit - [Bootstrap navbar Active State not working](https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working)*
+
+11. [Placeholder image automatically added to a new recipe instead of the user uploaded image](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/53)
+
+*resolved - [09f9c79](https://github.com/chris-townsend/PP4-Kitchen_Tales/commit/09f9c79793272f6c000d202c9f3f30df8cb2f6bd)*
+
+*Missing code within `AddRecipeView` in `views.py` - `recipe.image = request.FILES['image']`*
+
+12. [MultiValueDictKeyError when a user goes to update a recipe](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/54)
+
+*resolved - [aa6c9f8](https://github.com/chris-townsend/PP4-Kitchen_Tales/commit/aa6c9f8e8344f044ba26c53f23bbb3b82e9ed7e3)*
+
+*Add correct line of code and remove commented out unused code*
+
+#
+
 ### Unfixed Bugs
+
+1. [Placeholder image automatically set when updating a recipe](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/55)
+
+*When a user goes to update their recipe, the placeholder image replaces their own image unless it has been specified again. This should be an easy fix by adding to the if/else statement*
+
 
 ***
 
