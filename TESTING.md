@@ -480,8 +480,11 @@ into the template*
 
 ***
 
-
 ## Automated Testing
+
+A number of unit tests were written to test key interactions between the views and the database models. These can be found in the [`tests`](https://github.com/chris-townsend/PP4-Kitchen_Tales/blob/main/tests/) folder.
+
+
 #
 
 
