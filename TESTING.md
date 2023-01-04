@@ -18,9 +18,11 @@
   * [Fixed Bugs](#fixed-bugs)
   * [Unfixed Bugs](#unfixed-bugs)
 - [Automated Testing](#automated-testing)
+<br>
+
+*Please note: To open any external links in a new browser tab, please press **CTRL + Click***
 
 ***
-
 
 ## Testing User Stories from the User Experience (UX) Section
 
@@ -374,26 +376,27 @@ The results are satisfactory and the suggested modification with regards to the 
 ***
 
 ## Browser Testing
-#
+
+The Website was tested on Google Chrome, Internet Explorer and Microsoft Edge with no issues reported. Family members and friends were asked to review the site and point out any bugs or problems if encountered.
 
 ***
 
-
 ## Device Testing
-#
 
-
+The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 5t, iPhone SE, iPhone 8, iPad & Samsung Galaxy S21 to ensure that the responsive design worked as intended. [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to test the responsiveness on different devices.
 
 ***
 
 ## Manual Testing
-#
+
+
+
 ***
 
 
 ## Bugs
 
-Bugs were noted with a `bug` label on GitHub.
+Issues were created on GitHub and noted with a `bug` label.
 <br>
 
 ### Fixed Bugs
