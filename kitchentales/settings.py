@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import sys
 import dj_database_url
 from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
@@ -131,6 +132,13 @@ WSGI_APPLICATION = 'kitchentales.wsgi.application'
 DATABASES = {
      'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
+
+# Database for testing using imported sys
+if 'test' in sys.argv:
+    DATABASES['default'] = {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase'
+    }
 
 
 # Password validation
