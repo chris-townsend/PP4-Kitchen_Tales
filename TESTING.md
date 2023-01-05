@@ -419,20 +419,20 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 | Page/Status     | Element             |   Action    | Expected Result     |   Pass/Fail     |
 | ---             | ---                 |   :---:     |    :---:            |    :---:        |
 |**Homepage**     |**Welcome to KT section**|         |                     |                 |
-|                 | *image*             | *display*   |*Image displayed*    | **pass**        |
+|                 | *Image*             | *display*   |*Image displayed*    | **pass**        |
 |**logged-out**   |*Sign up today link* | *click*     |*Open `signup` page* | **pass**        |
 |                 |                     | *hover*     |*Dark background/light text*| **pass** |
 |**logged-in**    |*Welcome text*       | *display*   |*Welcome text with username*| **pass** |
 |                 |*Add recipe link*    | *click*     |*Open `add_recipe` page* | **pass**    |
 |                 |                     | *hover*     |*Dark background/light text*| **pass** | 
 | **All users**   |**Image carousel section**|        |                     |                 |
-|                 | *images*            | *display*   |*Image displayed*    | **pass**        |
+|                 | *Images*            | *display*   |*Image displayed*    | **pass**        |
 |                 |                     |*aria-label check*|*Display aria-labels* |           |
-|                 | *carousel-control button*| *click*|*Go to next image*   | **pass**        |
+|                 | *Carousel-control button*| *click*|*Go to next image*   | **pass**        |
 | **All users**   |**Card section**     |             |                     |                 |
-|                 | *images*            | *display*   |*Image displayed*    | **pass**        |
+|                 | *Images*            | *display*   |*Image displayed*    | **pass**        |
 |                 |                     | *aria-label check*|*Display aria-labels*|           |
-|                 |*Recipe App/Cheese Club images*|*hover*|*Flip image 180°*| **pass**        |
+|                 |*Recipe App/Cheese Club images*|*hover*|*Rotate image 180°*| **pass**        |
 | **All users**   |**Newsletter section**|            |                     |                 |
 |                 | *Subscribe button*  | *click*     |*Open `newsletter` page* | **pass**    |
 |                 |                     | *hover*     |*Dark background/light text*| **pass** |
@@ -445,8 +445,33 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 | Page/Status     | Element             |   Action    | Expected Result     |   Pass/Fail     |
 | ---             | ---                 |   :---:     |    :---:            |    :---:        |
 |**Homepage**     |**Social Icons**     | *click*     | *Open in a new tab* |  **pass**       |
-|                 |                     | *hover*     | *change scale **1.2***  |  **pass**       |
+|                 |                     | *hover*     | *Change scale **1.2***  |  **pass**   |
 |                 |                     | *aria-label check*| *Display aria-labels*|          |
+
+
+### Desktop Recipes
+<br>
+
+
+| Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
+| ---             | ---               |   :---:       |    :---:                   |    :---:    |
+|`all_recipes`    |**Navbar**         | *display*     | *Display navbar*           |   **pass**  |
+|                 |**Recipe card**    |*display image*| *Correct recipe image clipped*|**pass**  |
+|                 |  *Image*          |*hover*        | *Rotate image 180°*        | **pass**    |
+|                 |  *Content*     |*display*|*Title, Cook & Prep time, Like counter*| **pass**  |
+|                 |                   | *order display*|*Order from newest to oldest*| **pass**  |
+|                 |**Paginator buttons**  | *display*     |*Display pagination buttons if more than 8 recipes* | **pass**         |
+|                 | ***Next** button* | *click*       |*Display next page of recipes*| **pass**   |
+|                 |                   | *if clicked display*|*First/Previous buttons*| **pass**   |
+|                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+|                 | ***Last** button* | *click*       |*Display last page of recipes*| **pass**   |
+|                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+|                 | ***First** button*| *click*       |*Display first page of recipes*| **pass**  |
+|                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+|                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
+|                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+
+
 
 
 
