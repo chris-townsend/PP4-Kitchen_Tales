@@ -34,28 +34,36 @@
 
 ![Create Heroku account](static/images/heroku-create-account.webp)
 
+- ***Detailed information about setting up Heroku can be found [here](/README.md#heroku)***
+
 
 *[As a developer, I can add my config vars to my app in Heroku so that I can allow deployment to production](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/2)*
 
 ![Heroku config vars input](static/images/heroku-config-vars.webp)
 ![Add heroku config vars](static/images/heroku-config-var-setup.webp)
 
+- ***Information about setting up the config vars within Heroku can be found [here](/README.md#create-the-heroku-app)***
+
 
 *[As a developer, I can create a Procfile within my project so that the application will run in Heroku](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/3)*
 
 ![Create Procfile](static/images/kitchen-tales-create-procfile.webp)
 
-   - **More information on setting up the Procfile can be found within the [Django](#django) section of the readme**
+- ***Information about setting up the Procfile can be found within the [Django](/README.md#within-gitpod) section of the readme***
 
 
 *[As a developer, I can create a Cloudinary account so that I can store my media files](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/4)*
 
 ![Create Cloudinary account](static/images/create-cloudinary-account.webp)
 
+- ***Information about setting up the Cloudinary account can be found [here](/README.md#installing-django-and-supporting-libraries)***
+
 
 *[As a developer, I can connect my GitHub account for the final deployment stages so that I can allow deployment to production](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/5)*
 
 ![Connect GitHub account](static/images/heroku-deployment-method.webp)
+
+- ***Information about connecting my GitHub account through Heroku can be found [here](/README.md#installing-django-and-supporting-libraries)***
 
 
 #
@@ -67,24 +75,26 @@
 
 ![Setup Django](static/images/heroku-connected-app.webp)
 
+- ***Detailed information about the initial Django setup can be found [here](/README.md#installing-django-and-supporting-libraries) within the Django section of the README.md***
+
 
 *[As a developer, I want to set up my environment to secure my private keys so that I do not expose them in an insecure way](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/7)*
 
-***Detailed information of the initial Django setup can be found [here](../PP4-Kitchen_Tales/README.md#installing-django-and-supporting-libraries)***
+- ***Information about setting up the environment safely can be found [here](/README.md#installing-django-and-supporting-libraries)***
 
 
 *[As a developer, I should install the necessary Django components so that I can address authentication, registration, and account management for users](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/8)*
 
-***Detailed information of the initial Django setup can be found [here](../PP4-Kitchen_Tales/README.md#installing-django-and-supporting-libraries)***
+- ***Information about installing Django and supporting libraries can be found [here](/README.md#installing-django-and-supporting-libraries)***
 
 
 *[As a developer, I should install the necessary Django components so that I can display a comments section that is more appealing to the user](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/9)*
 
-***Detailed information of the initial Django setup can be found [here](../PP4-Kitchen_Tales/README.md#installing-django-and-supporting-libraries)***
+- ***Information about installing Django components can be found [here](/README.md#installing-django-and-supporting-libraries)***
 
 *[As a developer, I should set up the necessary database items so that the database is viewable through Heroku](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/40)*
 
-***Detailed information of setting up the ElephantSQL database can be found [here](../PP4-Kitchen_Tales/README.md#elephant-sql)***
+- ***Information about setting up the ElephantSQL database can be found [here](/README.md#elephant-sql)***
 
 
 #
