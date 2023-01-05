@@ -63,7 +63,7 @@
 
 ![Connect GitHub account](static/images/heroku-deployment-method.webp)
 
-- ***Information about connecting my GitHub account through Heroku can be found [here](/README.md#installing-django-and-supporting-libraries)***
+- ***Information about connecting my GitHub account through Heroku can be found [here](/README.md#create-the-heroku-app)***
 
 
 #
@@ -106,10 +106,14 @@
 
 ![Kichen Tales welcome message](static/images/kitchen-tales-welcome.webp)
 
+- The 'Welcome to Kitchen Tales' section when you first arrive on the homepage should be enough for users to understand the concept of the website, there is a button to sign up to create an account and share recipes. There is also an image of some cooked dishes and a menu.
+
 
 *[As a User, I can view recipes, without having to sign-up to enjoy the site's content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/11)*
 
 ![Kichen Tales recipes tab](static/images/kitchen-tales-recipes-tab.webp)
+
+- Any user can view all recipes from the recipes tab in the nav section at the top of every page.
 
 ![Kichen Tales recipes](static/images/kitchen-tales-recipes.webp)
 
@@ -117,6 +121,8 @@
 *[As a User, I can view recipes on my mobile so that I don't have to rely on using a computer](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/13)*
 
 ![Kichen Tales mobile friendly recipe](static/images/kitchen-tales-mobile-recipe.webp)
+
+- The site was tested on a variety of devices to ensure it was mobile friendly, please click [here](/TESTING.md#device-testing) to view a full list of tested devices.
 
 ![Kichen Tales mobile friendly test](static/images/kitchen-tales-mobile-friendly-test.webp)
 
@@ -127,10 +133,14 @@
 
 ![Kichen Tales comment section](static/images/kitchen-tales-comment-section.webp)
 
+- The comments section is displayed below each recipe on a recipe detail page. Any user can view comments but you must be logged in to post, edit and delete comments.
+
 
 *[As a Logged-in User, I can comment on recipes so that I can leave my feedback for others](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/35)*
 
 ![Kichen Tales comment section](static/images/kitchen-tales-leave-comment.webp)
+
+- When a user is logged in, a text field will be displayed for the user to post a comment below each recipe on a recipe detail page.
 
 
 *[As a developer, I can add a favicon so that the site looks more distinguishable](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/41)*
@@ -138,6 +148,8 @@
 ![Kichen Tales tab](static/images/kitchen-tales-tab.webp)
 
 ![Kichen Tales favicon](static/images/kitchen-tales-favicon-large.webp)
+
+- A favicon has been created using [favicon.io](https://favicon.io/) to make the site look more distinguishable and professional. The image is hosted on Cloudinary and linked in the head of the `base` template.
 
 #
 
@@ -150,11 +162,11 @@
 
 ![Kichen Tales navbar hover](static/images/kitchen-tales-navbar-hover.webp)
 
-- By using CSS's hover effect, the user know's what tab they are clicking on as it underlines the title. 
+- Utilizing *CSS's* hover effect, the user know's what tab they are clicking on as it underlines the title. 
 
 ![Kichen Tales navbar authorized user](static/images/kitchen-tales-navbar-auth-user.webp)
 
-- A logged-in user can see their own dropdown-menu options by clicking on their name with the user icon. This menu gives the option for a user to add a new recipe, see there own created recipes, their favourite starred recipes and an option to logout of their account.
+- A logged-in user can see their own dropdown-menu options by clicking on their name with the user icon. This menu gives the option for a user to add a new recipe, see there created recipes, their favourite starred recipes, and an option to log out of their account.
 
 
 *[As a User, I can search for the desirable recipe by keyword so that I can find a specific recipe fast](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/15)*
