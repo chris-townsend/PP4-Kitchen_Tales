@@ -399,7 +399,8 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |*Home link*          |   *click*   | *Redirect to homepage*    |  **pass**   |
 |                 |*Recipes link*       |   *click*   | *Open `all_recipes` page* |  **pass**   |
 |                 |*Kitchen Tales logo* |   *click*   | *Redirect to homepage*    |  **pass**   |
-|                 |*Search Recipes icon*|   *click*   | *Open `search_results` page*| **pass**  |
+|                 |*Search Recipes button*|   *click* | *Open `search_results` page*| **pass**  |
+|                 |                     |   *hover*   | *Display lighter colour* |**pass**|
 | **logged out**  |*MyAccount drop-down*|   *click*   | *Open drop-down menu*     |  **pass**   |  
 |                 |*Sign-in link*       |   *click*   | *Open `login` page*       |  **pass**   |
 |                 |*Register link*      |   *click*   | *Open `signup` page*      |  **pass**   |
@@ -409,14 +410,46 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |*Saved-Recipes link* |   *click*   | *Open `my_starred_recipes` page*|**pass**|
 |                 |*Logout link*        |   *click*   | *Open `logout` page*      |  **pass**   |
 |                 |*All nav headings*   |   *hover*  |*Display darker text & underlined*| **pass** |
-|                 |*Search Recipes button*|   *hover*   | *Display enlightened colour* |**pass**|
+
 
 
 ### Desktop Homepage - *Content*
+<br>
 
-| Page/Status     | Element             |   Action    | Expected Result     | Pass/Fail   |
-| ---             | ---                 |   :---:     |    :---:            |    :---:    |
-|**Homepage**     |**Main Content**     |             |                     |             |
+| Page/Status     | Element             |   Action    | Expected Result     |   Pass/Fail     |
+| ---             | ---                 |   :---:     |    :---:            |    :---:        |
+|**Homepage**     |**Welcome to KT section**|         |                     |                 |
+|                 | *image*             | *display*   |*Image displayed*    | **pass**        |
+|**logged-out**   |*Sign up today link* | *click*     |*Open `signup` page* | **pass**        |
+|                 |                     | *hover*     |*Dark background/light text*| **pass** |
+|**logged-in**    |*Welcome text*       | *display*   |*Welcome text with username*| **pass** |
+|                 |*Add recipe link*    | *click*     |*Open `add_recipe` page* | **pass**    |
+|                 |                     | *hover*     |*Dark background/light text*| **pass** | 
+| **All users**   |**Image carousel section**|        |                     |                 |
+|                 | *images*            | *display*   |*Image displayed*    | **pass**        |
+|                 |                     |*aria-label check*|*Display aria-labels* |           |
+|                 | *carousel-control button*| *click*|*Go to next image*   | **pass**        |
+| **All users**   |**Card section**     |             |                     |                 |
+|                 | *images*            | *display*   |*Image displayed*    | **pass**        |
+|                 |                     | *aria-label check*|*Display aria-labels*|           |
+|                 |*Recipe App/Cheese Club images*|*hover*|*Flip image 180°*| **pass**        |
+| **All users**   |**Newsletter section**|            |                     |                 |
+|                 | *Subscribe button*  | *click*     |*Open `newsletter` page* | **pass**    |
+|                 |                     | *hover*     |*Dark background/light text*| **pass** |
+|                 |
+
+
+### Desktop Homepage - *Footer*
+<br>
+
+| Page/Status     | Element             |   Action    | Expected Result     |   Pass/Fail     |
+| ---             | ---                 |   :---:     |    :---:            |    :---:        |
+|**Homepage**     |**Social Icons**     | *click*     | *Open in a new tab* |  **pass**       |
+|                 |                     | *hover*     | *change scale **1.2***  |  **pass**       |
+|                 |                     | *aria-label check*| *Display aria-labels*|          |
+
+
+
 
 
 
