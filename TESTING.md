@@ -389,6 +389,37 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 
 ## Manual Testing
 
+### Desktop Homepage - *Navigation*
+<br>
+
+
+| Page/Status     | Element             |   Action    | Expected Result           | Pass/Fail   |
+| ---             | ---                 |   :---:     |    :---:                  |    :---:    |
+|**Homepage**     |**Navbar**           |             |                           |             |
+|                 |*Home link*          |   *click*   | *Redirect to homepage*    |  **pass**   |
+|                 |*Recipes link*       |   *click*   | *Open `all_recipes` page* |  **pass**   |
+|                 |*Kitchen Tales logo* |   *click*   | *Redirect to homepage*    |  **pass**   |
+|                 |*Search Recipes icon*|   *click*   | *Open `search_results` page*| **pass**  |
+| **logged out**  |*MyAccount drop-down*|   *click*   | *Open drop-down menu*     |  **pass**   |  
+|                 |*Sign-in link*       |   *click*   | *Open `login` page*       |  **pass**   |
+|                 |*Register link*      |   *click*   | *Open `signup` page*      |  **pass**   |
+| **logged in**   |*MyAccount drop-down*|  *display*  | *Change to username & user icon*|**pass**|
+|                 |*Add-Recipe link*    |   *click*   | *Open `add_recipe` page*  |  **pass**   |
+|                 |*My-Recipes link*    |   *click*   | *Open `my_recipes` page*  |  **pass**   |
+|                 |*Saved-Recipes link* |   *click*   | *Open `my_starred_recipes` page*|**pass**|
+|                 |*Logout link*        |   *click*   | *Open `logout` page*      |  **pass**   |
+|                 |*All nav headings*   |   *hover*  |*Display darker text & underlined*| **pass** |
+|                 |*Search Recipes button*|   *hover*   | *Display enlightened colour* |**pass**|
+
+
+### Desktop Homepage - *Content*
+
+| Page/Status     | Element             |   Action    | Expected Result     | Pass/Fail   |
+| ---             | ---                 |   :---:     |    :---:            |    :---:    |
+|**Homepage**     |**Main Content**     |             |                     |             |
+
+
+
 
 
 ***
