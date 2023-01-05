@@ -438,7 +438,6 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                     | *hover*     |*Dark background/light text*| **pass** |
 |                 |
 
-
 ### Desktop Homepage - *Footer*
 <br>
 
@@ -470,6 +469,43 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
 |                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+
+
+### Desktop Recipe Detail
+<br>
+
+
+| Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
+| ---             | ---               |   :---:       |    :---:                   |    :---:    |
+|`recipe_detail`  |**Navbar**         | *display*     | *Display navbar*           |   **pass**  |
+|                 |**Recipe Content** | *display*     | *Display image, title, author, Prep & Cook time, Last updated date and Like status*| **pass**    |
+|                 |                    | *display*    |*Display ingredients & method side by side*| **pass**          |
+|                 |**Comments**        | *display*    | *Comments from other users including date & comment author*| **pass**    |
+|                 |                  | *display*     | *Comments are ordered from oldest to newest*|
+|                 |**Social icons**    | *display*    | *Display social icons*     | **pass**    |
+|                 |                    | *hover*      | *Change scale **1.2***     | **pass**    |
+|**logged-out**   |*Star button & sign up link* |*click*| *Open `signup` page*     | **pass**    |
+|                 |                           |*hover*| <u>*Underline text*</u>           | **pass**    |
+|**logged-in**    |*Star button outline & text*| *click*| *Clicking the outlined star changes it to a solid star and displays number of likes*     | **pass** |
+|                 |                    | *click*       | *Recipe saved to a logged-in users `my_starred_recipes`* | **pass**   | 
+|                 |          | *click*| *Success message to alert the user that the recipe has been saved* | **pass**     |
+|                 |*Star button solid state* | *click* | *Clicking the solid star changes it to an outline star*     | **pass** | 
+|                 |                    |*click*        | *Remove saved recipe from a logged-in users `my_starred_recipes`* | **pass**   | 
+|                 |                    |*click* | *Success message to alert the user that the recipe has been removed from their `my_starred_recipes`* | **pass**     |
+|                 | **Comments**    | *display*    | *Text input box with submit button*| **pass**|
+|                 | *Submit button* | *hover*    | *Lighter background colour* | **pass**     |
+|                 |                 | *click*    |  *Form submits and the page updates* | **pass**  |
+|                 |                 | *click*    | *Success message to alert the user that their comment is under review* | **pass**     |
+|                 | No data         | *click*   | *Error message displayed and form won't submit* | **pass** | 
+|**logged-in *author***|               | *display*       | **Edit** *&* **Delete** *buttons* | **pass**   |
+|                      |*Edit & Delete buttons* | *hover*| *<u>Underline</u> & make text darker*| **pass**|
+|                      | *Edit button*       |  *click*  | *Open `update_recipe` page* | **pass**|
+|                      | *Delete button*     |  *click*  | *Open `delete_recipe` page* | **pass**|
+|**logged-in *comment author*** |      | *display*       | **Edit** *&* **Delete** *buttons* | **pass**    |
+|                      |*Edit & Delete Icons* | *hover*| *Display lighter colour*| **pass**   | 
+|                      | *Edit comment button*       |  *click*  | *Open `update_comment` page* | **pass**|
+|    | *Delete comment button*     |  *click*  | *Open `delete_comment` page*|**pass**|                     
+
 
 
 
