@@ -581,6 +581,58 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
 
 
+### Desktop *Django All Auth Pages*
+<br>
+
+| Page/Status     | Element           |   Action          | Expected Result            | Pass/Fail   |
+| ---             | ---               |   :---:           |    :---:                   |    :---:    |
+|`signup`         |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
+|                 | *Login link*      | *click*           | *Redirect to `login` page*  |   **pass**  |
+|                 | ***Username field***  | *leave empty*     |  *Error message*           | **pass**    |
+|                 |                   | *enter valid data*| *Form submits*             |  **pass**   |
+|                 |                   | *enter invalid format* | *Form won't submit*   | **pass**    | 
+|                 |                   | *enter invalid format* | *Error message*       | **pass**    |
+|                 | ***Email field***     | *leave empty*       | *Form submits*           | **pass**    | 
+|                 |                   | *enter invalid format*|  *Error message*       | **pass**    |
+|                 |                   | *enter invalid format*| *Form won't submit*    | **pass**    |
+|                 |                   | *enter valid data*| *Form submits*             | **pass**    |
+|                 | ***Password field***  | *leave empty*       | *Error message*          | **pass**    |
+|                 |                   | *enter valid data*| *Form submits*             |  **pass**   |
+|                 |                   | *password not match* | *Error message*         | **pass**    |
+|                 |                   | *password not match* | *Form won't submit*     | **pass**    |
+|                 | ***Signup button*** | *hover*            |*Lighter background colour*|**pass**   |
+|                 |                   | *valid data*         | *Form submits*          | **pass**    |
+|                 |                   | *valid data*         | *Return to homepage*    | **pass**    |
+|                 |                   | *valid data*         | *Success message to alert the user of a successful login* | **pass** |
+|                 |                   |                     | *Automatically close alert after 2.8sec*| **pass**  |
+|`login`         |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
+|                 | *Sign up link*      | *click*           | *Redirect to `signup` page*  |   **pass**  |
+|                 | ***Username field***  | *leave empty*     |  *Error message*           | **pass**    |
+|                 |                   | *enter valid data*| *Form submits*             |  **pass**   |
+|                 |                   | *enter invalid format* | *Form won't submit*   | **pass**    | 
+|                 |                   | *enter invalid format* | *Error message*       | **pass**    |
+|                 | ***Password field***  | *leave empty*       | *Error message*          | **pass**    |
+|                 |                   | *enter valid data*| *Form submits*             |  **pass**   |
+|                 |                   | *password not match* | *Error message*         | **pass**    |
+|                 |                   | *password not match* | *Form won't submit*     | **pass**    |
+|                 | ***Sign-in button***| *hover*            | *Lighter background colour* | **pass**|
+|                 |                         | *valid data*    | *Form submits*          | **pass**    |
+|                 |                   | *valid data*         | *Return to homepage*    | **pass**    |
+|                 |                   | *valid data*         | *Success message to alert the user of a successful login* | **pass** |
+|                 |                   |                      | *Automatically close alert after 2.8sec*| **pass**  |
+|`logout`         |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
+|                 |***Signout button***| *hover*          | *Lighter background colour*| **pass**    |
+|                 |                   | *click*    | *Form submits*               | **pass**    |
+|                 |                   | *click*         | *Return to homepage*    | **pass**    |
+|                 |                   | *click*         | *Success message to alert the user of a successful logout* | **pass** |
+|                 |                   |                 | *Automatically close alert after 2.8sec*| **pass**  |
+
+
+
+
+
+
+
 
 ***
 
