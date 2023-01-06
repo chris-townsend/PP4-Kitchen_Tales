@@ -414,7 +414,6 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 ### Desktop Homepage - *Navigation*
 <br>
 
-
 | Page/Status     | Element             |   Action    | Expected Result           | Pass/Fail   |
 | ---             | ---                 |   :---:     |    :---:                  |    :---:    |
 |**Homepage**     |**Navbar**           |             |                           |             |
@@ -432,7 +431,6 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |*Saved-Recipes link* |   *click*   | *Open `my_starred_recipes` page*|**pass**|
 |                 |*Logout link*        |   *click*   | *Open `logout` page*      |  **pass**   |
 |                 |*All nav headings*   |   *hover*  |*Display darker text & underlined*| **pass** |
-
 
 
 ### Desktop Homepage - *Content*
@@ -460,6 +458,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                     | *hover*     |*Dark background/light text*| **pass** |
 |                 |
 
+
 ### Desktop Homepage - *Footer*
 <br>
 
@@ -470,9 +469,8 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                     | *aria-label check*| *Display aria-labels*|          |
 
 
-### Desktop Recipes
+### Desktop *Recipes*
 <br>
-
 
 | Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
 | ---             | ---               |   :---:       |    :---:                   |    :---:    |
@@ -481,6 +479,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |  *Image*          |*hover*        | *Rotate image 180°*        | **pass**    |
 |                 |  *Content*     |*display*|*Title, Cook & Prep time, Like counter*| **pass**  |
 |                 |                   | *order display*|*Order from newest to oldest*| **pass**  |
+|                 |                   | *click*       | *Open recipe detail page*    | **pass**  |
 |                 |**Paginator buttons**  | *display*     |*Display pagination buttons if more than 8 recipes* | **pass**         |
 |                 | ***Next** button* | *click*       |*Display next page of recipes*| **pass**   |
 |                 |                   | *if clicked display*|*First/Previous buttons*| **pass**   |
@@ -493,9 +492,8 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
 
 
-### Desktop Recipe Detail
+### Desktop *Recipe Detail*
 <br>
-
 
 | Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
 | ---             | ---               |   :---:       |    :---:                   |    :---:    |
@@ -526,15 +524,61 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |**logged-in *comment author*** |      | *display*       | **Edit** *&* **Delete** *buttons* | **pass**    |
 |                      |*Edit & Delete Icons* | *hover*| *Display lighter colour*| **pass**   | 
 |                      | *Edit comment button*       |  *click*  | *Open `update_comment` page* | **pass**|
-|    | *Delete comment button*     |  *click*  | *Open `delete_comment` page*|**pass**|                     
+|    | *Delete comment button*     |  *click*  | *Open `delete_comment` page*|**pass**|     
 
 
+### Desktop *My Recipes*
+<br>
+
+| Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
+| ---             | ---               |   :---:       |    :---:                   |    :---:    |
+|`my_recipes`     |**Navbar**         | *display*     | *Display navbar*           |   **pass**  |
+| **logged-in**   |`my_recipes` page  | *display*     | *Only display a logged-in users created recipes*| **pass**|
+|                 |                   | *access*      | *If an unauthorized user tries to access this page by changing the URL, redirect to sign-in page*| **pass** |
+|                 |**Recipe card**    |*display image*| *Correct recipe image clipped*|**pass**  |
+|                 |  *Image*          |*hover*        | *Rotate image 180°*        | **pass**    |
+|                 |  *Content*     |*display*|*Title, Cook & Prep time, Like counter*| **pass**  |
+|                 |                   | *order display*|*Order from newest to oldest*| **pass**  |
+|                 |                   | *click*        | *Open recipe detail page*   | **pass**  |
+|                 |**Paginator buttons**  | *display*     |*Display pagination buttons if more than 8 recipes* | **pass**         |
+|                 | ***Next** button* | *click*       |*Display next page of recipes*| **pass**   |
+|                 |                   | *if clicked display*|*First/Previous buttons*| **pass**   |
+|                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+|                 | ***Last** button* | *click*       |*Display last page of recipes*| **pass**   |
+|                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+|                 | ***First** button*| *click*       |*Display first page of recipes*| **pass**  |
+|                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+|                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
+|                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+|                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
+|                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |        
 
 
+### Desktop *My Starred Recipes*
+<br>
 
-
-
-
+| Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
+| ---             | ---               |   :---:       |    :---:                   |    :---:    |
+|`my_starred_recipes`|**Navbar**         | *display*     | *Display navbar*        |   **pass**  |
+| **logged-in**   |`my_starred_recipes` page  | *display*     | *Only display a logged-in users starred recipes*| **pass**|
+|                 |                   | *access*      | *If an unauthorized user tries to access this page by changing the URL, redirect to sign-in page*| **pass** |
+|                 |**Recipe card**    |*display image*| *Correct recipe image clipped*|**pass**  |
+|                 |  *Image*          |*hover*        | *Rotate image 180°*        | **pass**    |
+|                 |  *Content*     |*display*|*Title, Cook & Prep time, Like counter*| **pass**  |
+|                 |                   | *order display*|*Order from newest to oldest*| **pass**  |
+|                 |                   | *click*        | *Open recipe detail page*   | **pass**  |
+|                 |**Paginator buttons**  | *display*     |*Display pagination buttons if more than 8 recipes* | **pass**         |
+|                 | ***Next** button* | *click*       |*Display next page of recipes*| **pass**   |
+|                 |                   | ***if** clicked display*|*First/Previous buttons*| **pass**   |
+|                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+|                 | ***Last** button* | *click*       |*Display last page of recipes*| **pass**   |
+|                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+|                 | ***First** button*| *click*       |*Display first page of recipes*| **pass**  |
+|                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+|                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
+|                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+|                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
+|                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
 
 
 
