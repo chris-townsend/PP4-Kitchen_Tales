@@ -695,7 +695,10 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                     | *hover* | *Darker background colour*     |      **pass**    |
 |                 |                     | *click* | *Recipe removed from database* | **pass**
 |                 |                     | *click* | *Redirct to `my_recipes` page*| **pass**  |
-
+| |   |*click* | *Success message to alert the user of successfully deleting their recipe* | **pass** |
+|                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
+|                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
+|                 |  
 
 ***
 

@@ -248,7 +248,7 @@ class DeleteRecipeView(LoginRequiredMixin, generic.DeleteView):
     """
     model = Recipe
     template_name = 'delete_recipe.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('my_recipes')
     success_message = 'Your recipe has been deleted successfully'
 
     def delete(self, request, *args, **kwargs):
