@@ -188,11 +188,13 @@
 
 ![Kichen Tales add recipe tab](static/images/kitchen-tales-add-recipe-tab.webp)
 
+- Creating a new recipe is fairly straight forward, go to your personal drop-down menu from the nav section and select the 'Add-Recipe' tab. This will then redirect you to the `add_recipe` page which will allow a user to fill out the form and create the recipe. 
+
 ![Kichen Tales add recipe page](static/images/kitchen-tales-add-recipe.webp)
 
 ![Kichen Tales add recipe text](static/images/kitchen-tales-add-recipe-text.webp)
 
-- Creating a new recipe is fairly straight forward, go to your personal drop-down menu from the nav section and select the 'Add-Recipe' tab. This will then redirect you to the `add_recipe` page which will allow a user to fill out the form and create the recipe. 
+- A logged-in user can also add a new recipe from the homepage.
 
 
 *[As a logged-in User, I can view all the recipes that I have created so that I can go back to them at a later date](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/17)*
@@ -207,28 +209,41 @@
 
 ![Kichen Tales update button on hover](static/images/kitchen-tales-edit-button.webp)
 
-![Kichen Tales update recipe page](static/images/kitchen-tales-update-recipe.webp)
-
 - If the logged-in user is the author of the recipe, an edit button is shown next to the recipe image. When a user hovers over the edit button, it is displayed underlined.
 
+![Kichen Tales update recipe page](static/images/kitchen-tales-update-recipe.webp)
+
+- Clicking the Edit tab will open the `update_recipe` page with the prepopulated data displayed.
 
 *[As a logged-in User, I can delete any personal recipes so that I can remove them if necessary](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/19)*
 
 ![Kichen Tales delete recipe button on hover](static/images/kitchen-tales-delete-button.webp)
+
+- If the logged-in user is the author of the recipe, a delete button is shown next to the recipe image. When a user hovers over the delete button, it is displayed underlined.
+
 ![Kichen Tales delete recipe page](static/images/kitchen-tales-delete-recipe-page.webp)
+
+- Clicking the Delete tab will open the `delete_recipe` page which will give the user three options, Cancel - which will take you back to the recipe detail page. Update Instead - which will take you to the `update_recipe` page with the prepopulated data for that recipe and last, Delete Recipe, which will remove the recipe from the database and return you back to a users recipes.
 
 
 *[As a logged-in User, I can view my liked recipes so that I can return to them easily](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/39)*
 
 ![Kichen Tales saved recipes tab](static/images/kitchen-tales-saved-recipes-tab.webp)
 
+- My liked recipes can be found by clicking on the drop-down-menu within the nav section. After clicking on the Saved-Recipes tab, this will open up a logged-in users starred recipes.
+
 ![Kichen Tales liked recipes page](static/images/kitchen-tales-liked-recipes-page.webp)
+
 
 *[As a logged-in User, I can like or star a recipe so that I can bookmark it for later](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/42)*
 
 ![Kichen Tales like this recipe text and icon](static/images/kitchen-tales-click-to-bookmark.webp)
 
+- Click to bookmark this recipe and an outline of a star is displayed next to the recipe image and just below the image for mobile. A user can click the star icon and it will save the recipe to their saved recipes list. 
+
 ![Kichen Tales number of likes](static/images/kitchen-tales-number-of-likes.webp)
+
+- After a user has clicked the star icon, the recipe displays the total amount of stars received from all users.
 
 #
 
