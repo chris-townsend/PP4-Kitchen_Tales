@@ -679,6 +679,22 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |  
 
 
+### Desktop *Delete recipe*
+<br>
+
+| Page/Status     | Element           |   Action          | Expected Result            | Pass/Fail   |
+| ---             | ---               |   :---:           |    :---:                   |    :---:    |
+|`delete_recipe`     |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
+|                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to sign-in page*| **pass** |
+|                 | ***Text***           | *display*   |  *Display recipe_title within text*| **pass** | 
+|                 | ***Cancel button*** | *hover* | *Lighter background colour*     |      **pass**   |
+|                 |                     | *click* | *Redirct to last `recipe_detail` page*| **pass**  |
+|                 |***Update instead button*** | *hover* | *Lighter background colour* | **pass**     |
+|                 |                     | *click* | *Go to `update_recipe` page with populated data*| **pass**      |
+|                 | ***Delete button*** | *display*| *Warning red coloured box*| **pass**             |
+|                 |                     | *hover* | *Darker background colour*     |      **pass**    |
+|                 |                     | *click* | *Recipe removed from database* | **pass**
+|                 |                     | *click* | *Redirct to `my_recipes` page*| **pass**  |
 
 
 ***
