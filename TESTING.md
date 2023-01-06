@@ -649,7 +649,6 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |***Prep & Cook time field***| *display*          | *default 0 mins*             |**pass**     |   
 |                 |                 | *max length*|*No more than 8 characters long* | **pass**     |
 |                 | ***Cancel button*** | *hover* | *Lighter background colour*     | **pass**     |
-|                 |                     | *click* | *Form submits*                  | **pass**     |
 |                 |                     | *click* | *Redirct to `all_recipes`*      | **pass**     |
 |                 | ***Add recipe button*** | *hover* | *Lighter background colour* | **pass**     |
 |                 |                     | *click* | *Form submits*                  | **pass**     |
@@ -660,6 +659,24 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
 
 
+### Desktop *Update recipe*
+<br>
+
+| Page/Status     | Element           |   Action          | Expected Result            | Pass/Fail   |
+| ---             | ---               |   :---:           |    :---:                   |    :---:    |
+|`update_recipe`     |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
+|                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to sign-in page*| **pass** |
+|                 |  ***Form***       | *display*         |*Prepopulated data with last recipe content*| **pass** |
+|                 |                   | *leave field empty* | *Form won't submit* | **pass**        |
+|                 | ***Cancel button*** | *hover* | *Lighter background colour*     |      **pass**   |
+|                 |                     | *click* | *Redirct to last `recipe_detail` page*| **pass**  |
+|                 |***Update recipe button*** | *hover* | *Lighter background colour* | **pass**     |
+|                 |                     | *click* | *Form submits*                  | **pass**     |
+|                 |                     | *click* | *Go to updated `all_recipes` page*| **pass**     |
+|                 |                     | *click* | *Success message to alert the user of successful update of their recipe* | **pass** |
+|                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
+|                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
+|                 |  
 
 
 
