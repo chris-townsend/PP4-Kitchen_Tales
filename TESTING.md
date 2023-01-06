@@ -173,7 +173,11 @@
 
 ![Kichen Tales search bar](static/images/kitchen-tales-search-bar.webp)
 
+- Any user can search for a recipe by using the search bar feature within the nav bar at the top of every page. 
+
 ![Kichen Tales searched results](static/images/kitchen-tales-search-results.webp)
+
+- The search results are fairly specific and its currently set to search results by title so you might get slightly different results from using a capital letter vs not. With more time, I would like to add more searchable features to the site.
 
 #
 
@@ -188,6 +192,8 @@
 
 ![Kichen Tales add recipe text](static/images/kitchen-tales-add-recipe-text.webp)
 
+- Creating a new recipe is fairly straight forward, go to your personal drop-down menu from the nav section and select the 'Add-Recipe' tab. This will then redirect you to the `add_recipe` page which will allow a user to fill out the form and create the recipe. 
+
 
 *[As a logged-in User, I can view all the recipes that I have created so that I can go back to them at a later date](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/17)*
 
@@ -195,13 +201,15 @@
 
 ![Kichen Tales my recipes page](static/images/kitchen-tales-my-recipes.webp)
 
-*[As a logged-in User, I can update and edit my recipes so that I can update any changes or mistakes that I have made](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/18)*
+- User created recipes can be found easily by clicking on the drop-down-menu within the nav section. After clicking on the My-Recipes tab, this will open up recipes created by the user.
 
-If the logged-in user is the author of the recipe, an edit button is shown next to the recipe image. When a user hovers over the edit button, it is displayed underlined.
+*[As a logged-in User, I can update and edit my recipes so that I can update any changes or mistakes that I have made](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/18)*
 
 ![Kichen Tales update button on hover](static/images/kitchen-tales-edit-button.webp)
 
 ![Kichen Tales update recipe page](static/images/kitchen-tales-update-recipe.webp)
+
+- If the logged-in user is the author of the recipe, an edit button is shown next to the recipe image. When a user hovers over the edit button, it is displayed underlined.
 
 
 *[As a logged-in User, I can delete any personal recipes so that I can remove them if necessary](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/19)*
