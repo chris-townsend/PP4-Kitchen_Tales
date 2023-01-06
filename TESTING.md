@@ -601,9 +601,9 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *password not match* | *Error message*         | **pass**    |
 |                 |                   | *password not match* | *Form won't submit*     | **pass**    |
 |                 | ***Signup button*** | *hover*            |*Lighter background colour*|**pass**   |
-|                 |                   | *valid data*         | *Form submits*          | **pass**    |
-|                 |                   | *valid data*         | *Return to homepage*    | **pass**    |
-|                 |                   | *valid data*         | *Success message to alert the user of a successful login* | **pass** |
+|                 |                   | *click*         | *Form submits*          | **pass**    |
+|                 |                   | *click*         | *Return to homepage*    | **pass**    |
+|                 |                   | *click*         | *Success message to alert the user of a successful login* | **pass** |
 |                 |                   |                     | *Automatically close alert after 2.8sec*| **pass**  |
 |`login`         |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
 |                 | *Sign up link*      | *click*           | *Redirect to `signup` page*  |   **pass**  |
@@ -616,9 +616,9 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *password not match* | *Error message*         | **pass**    |
 |                 |                   | *password not match* | *Form won't submit*     | **pass**    |
 |                 | ***Sign-in button***| *hover*            | *Lighter background colour* | **pass**|
-|                 |                         | *valid data*    | *Form submits*          | **pass**    |
-|                 |                   | *valid data*         | *Return to homepage*    | **pass**    |
-|                 |                   | *valid data*         | *Success message to alert the user of a successful login* | **pass** |
+|                 |                         | *click*    | *Form submits*          | **pass**    |
+|                 |                   | *click*         | *Return to homepage*    | **pass**    |
+|                 |                   | *click*         | *Success message to alert the user of a successful login* | **pass** |
 |                 |                   |                      | *Automatically close alert after 2.8sec*| **pass**  |
 |`logout`         |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
 |                 |***Signout button***| *hover*          | *Lighter background colour*| **pass**    |
@@ -626,8 +626,38 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *click*         | *Return to homepage*    | **pass**    |
 |                 |                   | *click*         | *Success message to alert the user of a successful logout* | **pass** |
 |                 |                   |                 | *Automatically close alert after 2.8sec*| **pass**  |
+|                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
+|                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
 
 
+
+### Desktop *Add recipe*
+<br>
+
+| Page/Status     | Element           |   Action          | Expected Result            | Pass/Fail   |
+| ---             | ---               |   :---:           |    :---:                   |    :---:    |
+|`add_recipe`     |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
+|                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to sign-in page*| **pass** |
+|  **logged-in**  | **Form**          | *leave empty*     |  *Form won't submit*       | **pass**    |
+|                 |                   | *display*      | *Summernote display for ingredients, method and notes*| **pass**  | 
+|                 | *Image **Choose file** button*| *click*        | *Open device storage*      | **pass**    |
+|                 |                | *display*      | *Placeholder image if no image selected*| **pass**|
+|                 |                  | *display*      | *selected image name displayed*| **pass** |
+|                 | ***Title field*** |  *no duplicates*   | *Error message*            | **pass**    |
+|                 |                  |  *no duplicates*   | *Form won't submit*        | **pass**    |
+|                 |                  | *max length* |*No more than 48 characters long* | **pass**    |
+|                 |***Prep & Cook time field***| *display*          | *default 0 mins*             |**pass**     |   
+|                 |                 | *max length*|*No more than 8 characters long* | **pass**     |
+|                 | ***Cancel button*** | *hover* | *Lighter background colour*     | **pass**     |
+|                 |                     | *click* | *Form submits*                  | **pass**     |
+|                 |                     | *click* | *Redirct to `all_recipes`*      | **pass**     |
+|                 | ***Add recipe button*** | *hover* | *Lighter background colour* | **pass**     |
+|                 |                     | *click* | *Form submits*                  | **pass**     |
+|                 |                     | *click* | *Go to newly created `recipe_detail` page*| **pass**     |
+|                 |                     | *click* | *Success message to alert the user of a successfully added new recipe* | **pass** |
+|                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
+|                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
+|                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
 
 
 
