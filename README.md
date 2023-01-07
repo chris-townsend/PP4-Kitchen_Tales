@@ -435,7 +435,7 @@ Github projects was used to manage the development process using an agile approa
 ![GitHub kanban board](static/images/github-kanban-board.webp)
 
 
-A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution.
+A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution. The issues were closed automatically when the pull request was linked to the issue. I have done this for most user stories but some have been closed manually.
 
 Towards the end of the project, I knew there would be a few user stories that would be scoped out of the project. These user stories have been placed within the Future features section on the kanban board and are intended to be implemented at a later date.
 
@@ -996,9 +996,31 @@ By forking the GitHub Repository you can make a copy of the original repository.
 
 ***
 
-#
 ## Credits
-#
+
+### Media
+
+- Photo by *Cottonbro Studio*: https://www.pexels.com/photo/person-in-blue-t-shirt-sitting-on-chair-in-front-of-table-with-foods-4877863/
+
+- Photo by *Victoria Shes*: https://unsplash.com/photos/UC0HZdUitWY
+
+- Photo by *Lily Banse*: https://unsplash.com/photos/-YHSwy6uqvk
+
+- Photo by *May Gauthier*: https://unsplash.com/photos/sRevlaFs2u4
+
+- Photo by *Jeff Sheldon*: https://unsplash.com/photos/6MT4_Ut8a3Y
+
+- Photo by *Roman Odintsov*: https://www.pexels.com/photo/vegetable-salad-served-on-table-with-beef-steak-in-restaurant-4551832/
+
+- Photo by *Calum Lewis*: https://unsplash.com/photos/vA1L1jRTM70
+
+- Photo by *Alfred Kenneally*: https://unsplash.com/photos/QkyRG0bB_xg
+
+- Photo by *Rebecca Orlov*: https://unsplash.com/photos/rfI4MmZXZOk
+
+
+
+### Content 
 
 - [Django Docs](https://docs.djangoproject.com/en/4.0/)
 - [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
