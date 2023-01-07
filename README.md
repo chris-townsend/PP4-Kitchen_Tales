@@ -588,11 +588,13 @@ Custom Error Pages were created to give the user more information on the error a
 
 Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
 
+- ***403** Page Forbidden* -
 
-- 400 Bad Request - unable to handle this request.
-- 403 Page Forbidden -
-- 404 Page Not Found - 
-- 500 Server Error - 
+- ***404** Page Not Found* - The page your trying to access doesn't exist.
+![404 error](static/images/kitchen-tales-error-404.webp)
+
+- ***500** Server Error* - Unable to handle this request.
+![500 error](static/images/kitchen-tales-error-500.webp)
 
 ***
 
