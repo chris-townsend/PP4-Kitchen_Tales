@@ -417,8 +417,8 @@ I have run the website through Google Chrome's Lighthouse audit application and 
  
 | Page                     |    Desktop     |    Mobile    | 
 | ---                      |      :---:     |    :---:     |    
-| `404.html`               |                |              |
-| `500.html`               |                |              | 
+| `404.html`               |![lighthouse result desktop 404](static/images/lighthouse-desktop-404.webp)                      |![lighthouse result mobile 404](static/images/lighthouse-mobile-404.webp)                      |
+| `500.html`               |![lighthouse result desktop 500](static/images/lighthouse-desktop-500.webp)                      |![lighthouse result mobile 500](static/images/lighthouse-mobile-500.webp)              | 
 | `add_recipe.html`        |![lighthouse result desktop add recipe](static/images/lighthouse-desktop-add-recipe.webp)         |![lighthouse result mobile add recipe](static/images/lighthouse-mobile-add-recipe.webp)          |
 | `all_recipes.html`       |![lighthouse result desktop all recipes](static/images/lighthouse-desktop-all-recipes.webp)        |![lighthouse result mobile all recipes](static/images/lighthouse-mobile-all-recipes.webp)  |
 | `index.html`             |![lighthouse result desktop index](static/images/lighthouse-desktop-index.webp)              |![lighthouse result mobile index](static/images/lighthouse-mobile-index.webp)               | 
