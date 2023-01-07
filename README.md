@@ -525,7 +525,9 @@ Custom Error Pages were created to give the user more information on the error a
 ![footer](static/images/section-footer.webp)
 
 ### Home Page
-
+![Homepage](static/images/features-homepage.webp)
+![Homepage bootstrap carousel](static/images/features-bootstrap-carousel.webp)
+![Homepage card section](static/images/features-card-section.webp)
 
 ### User Account Pages
 
@@ -549,41 +551,42 @@ Custom Error Pages were created to give the user more information on the error a
 
 ### Browse Recipes
 
-![header]()
+![All recipes page](static/images/features-recipes.webp)
 
 
 ### Recipe Detail Page
 
 **Recipe Header Section**
-
+![Recipe detail](static/images/features-recipe-detail.webp)
 
 **Recipe Action Buttons**
+![Recipe action buttons](static/images/features-action-button.webp)
 
 
 **Recipe Details Section**
 
-
-
+![Recipe detail method](static/images/features-method.webp)
+![Recipe detail notes](static/images/features-notes.webp)
 
 **Comments Section**
-
+![Comments section](static/images/features-comments.webp)
+![Comments section](static/images/features-comment-body.webp)
 
 
 ### Add Recipe Form
-
+![Add recipe page](static/images/features-add-recipe.webp)
 
 ### Update Recipe Form
+![Update recipe page](static/images/features-update-recipe.webp)
 
 ### Delete Recipe
-
+![Delete recipe page](static/images/features-delete-recipe.webp)
 
 ### My Recipes Page
 ![My recipes page](static/images/features-my-recipes.webp)
 
-
 ### My Bookmarks Page
 ![My bookmarks page](static/images/features-my-liked-recipes.webp)
-
 
 
 ### Error Pages
