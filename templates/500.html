@@ -1,15 +1,17 @@
 {% extends 'base.html'%}
 {% block content %}
 
-<div class="container">
+<div class="container banner-500">
     <div class="row justify-content-center">
         <div class="col-md-8 mt-4 text-center">
             <h1 class="page-title">500 error</h1>
             <h3 class="mt-3 welcome-title">Server Error</h3>
-            <p class="welcome-text">Unable to handle this request. Return to the homepage below</p>
+            <p class="welcome-text">Unable to handle this request..</p>
+            <p class="page-title">Return to the homepage below</p>
             <a href="{% url 'home' %}" class="btn btn-signup form-font">Home</a>
         </div>
     </div>
 </div>
+<br>
 
 {% endblock %}
