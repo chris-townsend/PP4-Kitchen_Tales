@@ -335,7 +335,7 @@
 
 ## Validator Testing
 
-![HTML w3c validator](static/images/HTML-w3c-validation.webp)
+![HTML w3c validator](static/images/html-w3c-validation.webp)
 
 The *[W3C HTML validator](https://validator.w3.org/)* was used to test all HTML pages, **no errors** were reported in the final deployment.
 
@@ -372,8 +372,8 @@ The *[W3C HTML validator](https://validator.w3.org/)* was used to test all HTML 
 
 The *[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)* was used to validate the project, the results are shown below with **no errors reported.**
 
-![CSS w3c validator](static/images/CSS-w3c-validation.webp)
-![CSS Result](static/images/CSS-validation-pass.webp)
+![CSS w3c validator](static/images/css-w3c-validation.webp)
+![CSS Result](static/images/css-validation-pass.webp)
 
 - *[ CSS results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)*
 
@@ -395,7 +395,7 @@ The *[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)* was used to vali
 
 Code Institutes *[PEP8](https://pep8ci.herokuapp.com/)* linter was used to test the Python files. The table below shows the pages tested and their result, all pages are **error free** in the final deployment.
 
-![Code Institute's Python linter](static/images/CI-python-linter.webp)
+![Code Institute's Python linter](static/images/ci-python-linter.webp)
 
 
 
