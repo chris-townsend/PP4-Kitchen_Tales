@@ -88,9 +88,9 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 #### EPIC | **Early Deployment**
 
-[#1](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/1) **Create Heroku App** - *As a **developer**, I can create an account with Heroku to process setting up the app** so that **I can deploy my site to Heroku***
+[#1](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/1) **Create Heroku App** - *As a **developer**, I can **create an account with Heroku to process setting up the app** so that **I can deploy my site to Heroku***
 
-[#2](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/2) **Create Config Vars & static files** - *As a **developer**, I can **add my config vars to my app in Heroku** so that **I can allow deployment to production**
+[#2](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/2) **Create Config Vars & static files** - *As a **developer**, I can **add my config vars to my app in Heroku** so that **I can allow deployment to production***
 
 [#3](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/3) **Create Procfile** - *As a **developer**, I can **create a Procfile within my project** so that **the application will run in Heroku***
 
@@ -144,7 +144,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 #### EPIC | User Recipe Management
 
-[#16](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/16) **Create a recipe** - *As a **logged-in User**, I can **create recipes** so that **I can add them to the site**
+[#16](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/16) **Create a recipe** - *As a **logged-in User**, I can **create recipes** so that **I can add them to the site***
 
 [#17](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/17) **View my recipes** - *As a **logged-in User**, I can **view all the recipes that I have created** so that **I can go back to them at a later date***
 
@@ -180,7 +180,7 @@ From the Epics, 42 User stories were developed. Some of my initial user stories 
 
 #### EPIC | Admin Features & Owner Objectives
 
-[#28](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/28) **Admin CRUD features** - *As a **Site admin**, I can **create, edit and delete recipes and comments** so that **I can control the site content**
+[#28](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/28) **Admin CRUD features** - *As a **Site admin**, I can **create, edit and delete recipes and comments** so that **I can control the site content***
 
 [#29](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/29) **Authorize recipes and comments** - *As a **Site admin**, I can **authorize recipes and comments** so that **I can review the content before it's made public***
 
