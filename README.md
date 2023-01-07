@@ -578,9 +578,11 @@ Custom Error Pages were created to give the user more information on the error a
 
 
 ### My Recipes Page
+![My recipes page](static/images/features-my-recipes.webp)
 
 
 ### My Bookmarks Page
+![My bookmarks page](static/images/features-my-liked-recipes.webp)
 
 
 
