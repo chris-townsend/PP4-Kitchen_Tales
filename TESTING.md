@@ -140,7 +140,7 @@
 
 ![Kichen Tales comment section](static/images/kitchen-tales-leave-comment.webp)
 
-- When a user is logged in, a text field will be displayed for the user to post a comment below each recipe on a recipe detail page.
+- When a user is logged in, a text field will be displayed for the user to post a comment.
 
 
 *[As a developer, I can add a favicon so that the site looks more distinguishable](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/41)*
@@ -254,30 +254,46 @@
 
 ![Kichen Tales sign up tab](static/images/kitchen-tales-sign-up-tab.webp)
 
+- Users can sign-up for an account by clicking on the drop down menu My-Account and then selecting **Register** from the list.
+
 ![Kichen Tales sign up button](static/images/kitchen-tales-sign-up-button.webp)
+
+- For users which are not logged-in, a banner is displayed on the homepage which intices people to register to share recipes.
 
 ![Kichen Tales sign up text](static/images/kitchen-tales-sign-up-text.webp)
 
+- A user can also sign up by clicking on the text above which is displayed on a recipe detail page next to the star icon. 
 
 *[As a User, I can log into my account so that I can manage my recipes](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/24)*
 
 ![Kichen Tales sign in tab](static/images/kitchen-tales-sign-in.webp)
 
+- Users can sign-in to their account by clicking on the MyAccount dropdown menu and after clicking on Sign-in.
+
 ![Kichen Tales sign in page](static/images/kitchen-tales-sign-in-page.webp)
+
+- This will take the user to the sign-in page where a username and password is requested. You can select a small tick box to remember login credentials to make it easier for future sign-ins.
 
 
 *[As a User, I can safely log out of my account so that I can disconnect from the site](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/25)*
 
 ![Kichen Tales sign out tab](static/images/kitchen-tales-sign-out-tab.webp)
 
+- Users can safetly sign-out of their account by clicking on their personal drop-down menu and after selecting Logout from the bottom of the list.
+
 ![Kichen Tales sign out page](static/images/kitchen-tales-sign-out-page.webp)
 
+- Clicking on Logout will take the user to a confirmation page to confirm signing out. 
 
 *[As a logged-in User, I can see my login status so that I know if I am logged in or out of my account](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/26)*
 
 ![Kichen Tales login status](static/images/kitchen-tales-login-status.webp)
 
+- At first, I left the MyAccount tab as it was for signed-in users but soon realised this was not as intuitive for the user to realize their login status unless they clicked on their MyAccount menu. I have now changed this heading to the users name and a profile icon so that a user will instantly know when there logged-in as they will be able to see there profile name in the nav-section.
+
 ![Kichen Tales navbar status for logged in user](static/images/kitchen-tales-logged-in-navbar.webp)
+
+- I have organized the items within the drop-down menu of hierarchy, with Logout being the least likely page a user will want to navigate to when signed in.
 
 #
 
@@ -822,16 +838,10 @@ A number of unit tests were written to test key interactions between the views a
 
 #
 
-
-
-
 <br>
 
 [Back to top ⇧](#contents)
 
 [Back to *README.md*](/README.md#testing)
 ***
-
-
-
 
