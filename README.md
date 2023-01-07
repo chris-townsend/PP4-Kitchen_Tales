@@ -55,8 +55,8 @@ The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuap
 
 ## User Experience (UX)
 
-
-The website is targetted towards users who enjoy their food and would like to share their recipes with others. 
+The website is targetted towards users who enjoy their food and would like to share their recipes with others. Features are designed to be intuitive so that a wide age demographic can use the site. Food is loved by most and Kitchen Tales is designed to be a place to bring food and people together. 
+<br>
 
 ### Epics 
 
@@ -64,19 +64,19 @@ The website is targetted towards users who enjoy their food and would like to sh
 7 Epics were created as Milestones which were then further developed into 42 User Stories. The details on each epic, along with the user stories linked to each one can be found [here](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestones).
 
 
-[1.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/1) **Early Deployment**
+[EPIC 1](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/1) **Early Deployment**
 
-[2.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/2) **Initial Django Setup**
+[EPIC 2](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/2) **Initial Django Setup**
 
-[3.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/3) **Website Functionality**
+[EPIC 3](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/3) **Website Functionality**
 
-[4.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/4) **Navigation**
+[EPIC 4](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/4) **Navigation**
 
-[5.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/5) **User Recipe Management**
+[EPIC 5](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/5) **User Recipe Management**
 
-[6.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/6) **User Account Management**
+[EPIC 6](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/6) **User Account Management**
 
-[7.](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/7) **Admin Features & Owner Objectives**
+[EPIC 7](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestone/7) **Admin Features & Owner Objectives**
 
 #
 
