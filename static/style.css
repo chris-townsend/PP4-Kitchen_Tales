@@ -385,6 +385,18 @@ hr {
     height: 280px;
 }
 
+/* Error pages */
+
+.banner-404 {
+    align-content: center;
+    width: 750px;
+    height: 450px;
+    padding: 10px;
+    border: 4px double rgb(41, 182, 218);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
 
 /* Newsletter Page */
 
