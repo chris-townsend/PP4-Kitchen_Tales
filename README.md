@@ -455,6 +455,8 @@ In order for the users to create recipes a custom recipe model was required. The
 
 The Comment model allows users to comment on individual recipes and the Recipe is a foreign key in the comment model given a comment can only be linked to one recipe. 
 
+![Custom comment model](static/images/custom-comment-model.webp)
+
 
 The diagram below details the database schema.
 
