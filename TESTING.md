@@ -106,7 +106,7 @@
 
 ![Kichen Tales welcome message](static/images/kitchen-tales-welcome.webp)
 
-- The 'Welcome to Kitchen Tales' section when you first arrive on the homepage should be enough for users to understand the concept of the website, there is a button to sign up to create an account and share recipes. There is also an image of some cooked dishes and a menu.
+- The 'Welcome to Kitchen Tales' section when you first arrive on the homepage should be enough for users to understand the concept of the website. There is a button to sign up to create an account and share recipes and also a relatable image of some cooked dishes and a menu.
 
 
 *[As a User, I can view recipes, without having to sign-up to enjoy the site's content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/11)*
@@ -162,7 +162,7 @@
 
 ![Kichen Tales navbar hover](static/images/kitchen-tales-navbar-hover.webp)
 
-- Utilizing *CSS's* hover effect, the user know's what tab they are clicking on as it underlines the title. 
+- Utilizing *CSS's* hover effect, the user know's what tab they are clicking on as it underlines the heading when it's being hovered over. 
 
 ![Kichen Tales navbar authorized user](static/images/kitchen-tales-navbar-auth-user.webp)
 
@@ -188,7 +188,7 @@
 
 ![Kichen Tales add recipe tab](static/images/kitchen-tales-add-recipe-tab.webp)
 
-- Creating a new recipe is fairly straight forward, go to your personal drop-down menu from the nav section and select the 'Add-Recipe' tab. This will then redirect you to the `add_recipe` page which will allow a user to fill out the form and create the recipe. 
+- Creating a new recipe is easy, go to your personal drop-down menu from the nav section and select the 'Add-Recipe' tab. This will then redirect you to the `add_recipe` page which will allow a user to fill out the form and create a recipe. 
 
 ![Kichen Tales add recipe page](static/images/kitchen-tales-add-recipe.webp)
 
@@ -230,7 +230,7 @@
 
 ![Kichen Tales saved recipes tab](static/images/kitchen-tales-saved-recipes-tab.webp)
 
-- My liked recipes can be found by clicking on the drop-down-menu within the nav section. After clicking on the Saved-Recipes tab, this will open up a logged-in users starred recipes.
+- My liked recipes can be found by clicking on the drop-down-menu within the nav section. After clicking on the Saved-Recipes tab, this will open a logged-in users starred recipes.
 
 ![Kichen Tales liked recipes page](static/images/kitchen-tales-liked-recipes-page.webp)
 
@@ -254,7 +254,7 @@
 
 ![Kichen Tales sign up tab](static/images/kitchen-tales-sign-up-tab.webp)
 
-- Users can sign-up for an account by clicking on the drop down menu My-Account and then selecting **Register** from the list.
+- Users can sign-up for an account by clicking on the drop down menu MyAccount and then selecting **Register** from the list.
 
 ![Kichen Tales sign up button](static/images/kitchen-tales-sign-up-button.webp)
 
@@ -304,19 +304,29 @@
 
 ![Kichen Tales admin panel](static/images/django-admin-panel.webp)
 
+- Admins have full access to CRUD functionality for all recipes and comments within the Django admin panel.
+
 ![Kichen Tales admin recipe panel](static/images/django-recipe-panel.webp)
 
+- The *'Recipes'* admin panel has been created within `admin.py`. Recipes are sorted by status and created date for organization.
+
 ![Kichen Tales admin comment panel](static/images/django-comment-panel.webp)
+
+- The *Comment* admin panel has been set up in a similar way to *Recipes* and displays comments by created date with newest comments to be approved at the top.
 
 
 *[As a Site admin, I can authorize comments so that I can review the content before it's made public](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/29)*
 
 ![Kichen Tales admin panel approve comments](static/images/django-admin-approve-comment.webp)
 
+- Comments have to be approved by a site admin before they are published publically. The user should receive an alert when a comment has been posted stating that the comment is under review. 
+
 
 *[As a Site owner, I would like to display my social icons so that I can promote my other channels](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/31)*
 
 ![Kichen Tales social icons](static/images/kitchen-tales-social-icons.webp)
+
+- Social Icons are displayed at the bottom of every page, this includes links to Facebook, Instagram, Youtube and Twitter. All links open in a new tab for user convenience.
 
 <br>
 
