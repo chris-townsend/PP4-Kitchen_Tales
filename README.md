@@ -566,6 +566,8 @@ Custom Error Pages were created to give the user more information on the error a
 **Recipe Action Buttons**
 ![Recipe action buttons](static/images/features-action-button.webp)
 
+- If the logged-in user is the author of the recipe, an edit icon will appear near the top of the recipe detail page.
+- If the logged-in user is the author of the recipe, a delete icon will appear near the top the recipe detail page.
 
 **Recipe Details Section**
 
@@ -580,23 +582,37 @@ Custom Error Pages were created to give the user more information on the error a
 ### Add Recipe Form
 ![Add recipe page](static/images/features-add-recipe.webp)
 
+- This page is accessible by logging in, clicking on the dropdown menu at the top of the page and selecting 'Add-Recipe'.
+
 ### Update Recipe Form
 ![Update recipe page](static/images/features-update-recipe.webp)
+
+- Clicking on the edit icon within the recipe detail page will take the user to the update recipe page. The data is prepopulated from the time it was added or updated and this has been done for ease of use for the user when updating their recipes.
 
 ### Delete Recipe
 ![Delete recipe page](static/images/features-delete-recipe.webp)
 
+- Clicking on the delete icon will take the user to the confirmation page for deleting a recipe. The title of the recipe is included in the confirmation message and the user has three options; Cancel, which will take the user back to the recipe detail page, update instead - which will take the user to the update recipe page for that recipe and finally delete - to completly remove the recipe from the database.
+
 ### My Recipes Page
 ![My recipes page](static/images/features-my-recipes.webp)
+
+- Personally created recipes can be found by clicking on the users dropdown bar and selecting My-Recipes. The recipes are paginated eight to a page.
 
 ### My Bookmarks Page
 ![My bookmarks page](static/images/features-my-liked-recipes.webp)
 
+- The bookmarks page is a users starred recipes, this is denoted by a star icon displayed on a recipe detail page and any user which clicks the star icon will have the recipe saved to their personal starred recipes page. The style is the same as other recipe card pages in the fact that the recipes are paginated by eight. 
+
 ### Update Comment
 ![Update comment page](static/images/features-update-comment.webp)
 
+- This page is displayed if a user has posted a comment and wants to update their comment. The update comment icon is only displayed if its the author of the comment and the data comes prepopulated from the last add or update.
+
 ### Delete Comment
 ![Delete comment page](static/images/features-delete-comment.webp)
+
+- A user can delete there own comment by clicking on the bin icon next to where their comment is being displayed. A confirmation page gives the user the option to cancel or delete.
 
 ### Error Pages
 
