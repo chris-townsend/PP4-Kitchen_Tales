@@ -508,11 +508,12 @@ Custom Error Pages were created to give the user more information on the error a
 
 ![Navigation section](static/images/section-navigation.webp)
 
-
 ![Navigation section unauthorized](static/images/section-navigation-unauthorized.webp)
 
 
-![Navigation section authorized](static/images/features-auth-navbar.webp)
+![Navigation section authorized users](static/images/features-auth-navbar.webp)
+
+![Navigation dropdown authorized users](static/images/features-auth-dropdown.webp)
 
 
 ### Footer
