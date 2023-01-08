@@ -430,8 +430,7 @@ Both fonts are from [Google fonts](https://fonts.google.com/about), meaning they
 
 ## Agile Methodology
 
-Github projects was used to manage the development process using an agile approach. To view the project kanban board, please click on the link [here](https://github.com/users/chris-townsend/projects/5/views/1).
-
+Github projects was used to manage the development process using an agile approach. To view the project kanban board, please click on the link [here](https://github.com/users/chris-townsend/projects/5/views/1)
 ![GitHub kanban board](static/images/github-kanban-board.webp)
 
 
@@ -599,7 +598,6 @@ Custom Error Pages were created to give the user more information on the error a
 ### Delete Comment
 ![Delete comment page](static/images/features-delete-comment.webp)
 
-
 ### Error Pages
 
 Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
@@ -616,11 +614,20 @@ Custom Error Pages were created to give the user more information on the error a
 ***
 
 ### Future Features
-#
+
+In the future, there are a number of functionalities that I would like to implement. I've left the initial user stories that were created in the project kanban board as potential areas for future improvement and these have been left in the [Future Features](https://github.com/users/chris-townsend/projects/5) section of the kanban board. The key areas I would like to add to the site are:
+
+- [#23](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/23) The ability for users to login via social networks such as facebook or google.
+
+- [#32](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/32) Find an appropriate api to prepopulate recipes.
+
+- Create a model profiles and give users the ability to create and edit their own profile.
+
+Some of the funtionality for [#23](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/23) is provided by Django allauth. As this is already implemented for the site, it only requires being setup and seems fairly straight forward. The other functionality would need developing but also seems easily completable with more time.
+
 ***
 
 ## Languages Used
-#
 
   [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://en.wikipedia.org/wiki/Python_(programming_language))
 
@@ -666,11 +673,9 @@ Custom Error Pages were created to give the user more information on the error a
 
 [**Django 3.2**](https://www.djangoproject.com/) - A high-level Python web framework that encourages rapid development and clean, pragmatic design.
 
-
 ***
 
 ### Libraries 
-
 
 [**Bootstrap 4.6**](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Bootstrap provides a popular framework for building responsive mobile-first sites with built-in CSS & Javascript libraries.
 
@@ -688,7 +693,7 @@ Custom Error Pages were created to give the user more information on the error a
 
 ***
 
-## Testing
+# Testing
 
 Testing and results can be found [here](/TESTING.md)
 
@@ -730,7 +735,6 @@ The repository has now been created and is ready for editing through the gitpod 
 ## Django
 
 ### Installing Django and supporting libraries
-
 
 To initialise a Django project, first Django must be installed within your Python environment. This is done via the command ``pip3 install 'django<4' gunicorn``
 
@@ -777,7 +781,6 @@ To initialise a Django project, first Django must be installed within your Pytho
 ***
 
 ### Attaching the Database
-
 
 Create a new env.py file at the top level directory - ``env.py``
 
@@ -849,7 +852,6 @@ Create a new env.py file at the top level directory - ``env.py``
 **The Procfile must live in your app’s root directory. It does not function if placed anywhere else.**
 
 *The purpose of the Procfile is a mechanism for declaring what commands are run by your application’s dynos on the Heroku platform.*
-
 
 ***
 
@@ -930,6 +932,7 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 ![Heroku successful deploy](static/images/heroku-successful-deploy.webp)
 
 ***
+
 ## Elephant SQL
 
 Heroku announced in September 2022 that they would be ending their free tier hosting at the end of November 2022. As I am a student who is currently registered with the GitHub Student Developer Pack, I can apply for the Heroku credits. The Heroku credits allowed me to transfer my projects from free dynos to Eco dynos to ensure that they continue to work. Unfortunately the student offer does not include the postgres add-on being used to host my postgres database. Code Insitute therefore have recommended students to migrate their databases to a new provider. In this case its ElephantSQL, as they are free. The ``DATABASE_URL`` value now points to the elephantSQL database in my Heroku Config Vars.
@@ -938,7 +941,6 @@ As the database provided by Django is only accessible within Gitpod and is not s
 
 
 ### Create & attach the Elephant SQL database
-
 
 1. Log in to [ElephantSQL](https://customer.elephantsql.com/instance#) to access your dashboard.
 ![Elephant SQL dashboard](static/images/elephant-sql-dashboard.webp)
@@ -980,7 +982,6 @@ As the database provided by Django is only accessible within Gitpod and is not s
 ***
 
 ### Forking the GitHub Repository
-
 
 By forking the GitHub Repository you can make a copy of the original repository. You can view and/or make changes without affecting the original repository by using the following steps..
 
@@ -1039,8 +1040,6 @@ By forking the GitHub Repository you can make a copy of the original repository.
 
 - Photo by *Rebecca Orlov*: https://unsplash.com/photos/rfI4MmZXZOk
 
-
-
 ### Content 
 
 - [Django Docs](https://docs.djangoproject.com/en/4.0/)
@@ -1057,8 +1056,6 @@ By forking the GitHub Repository you can make a copy of the original repository.
 
 **Dario** for the continued support and advice throughout the project.
 
-
-
+<br>
 
 [Back to top ⇧](#kitchen-tales)
-
