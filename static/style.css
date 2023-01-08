@@ -377,10 +377,9 @@ hr {
 }
 
 .sign-up-container {
-    margin-left: 115px;
     margin-top: 20px;
     background-color: antiquewhite;
-    width: 75%;
+    width: 100%;
     justify-content: center;
     height: 280px;
 }
