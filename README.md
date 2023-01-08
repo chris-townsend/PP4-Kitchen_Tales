@@ -1050,7 +1050,14 @@ By forking the GitHub Repository you can make a copy of the original repository.
 ***
 
 ## Acknowledgments
-#
+
+**Sean** from *CI tutor support* for helping with setting up the `UpdateRecipeView` and for his overall solid advice regarding the project.
+
+**Rebecca** from *CI tutor support* for the helpful information when trying to add a profanity filter.
+
+**Dario** for the continued support and advice throughout the project.
+
+
 
 
 [Back to top ⇧](#kitchen-tales)
