@@ -483,8 +483,7 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 
 Custom Error Pages were created to give the user more information on the error and to provide them with buttons to guide them back to the site.
 
-- 400 Bad Request - unable to handle this request.
-- 403 Page Forbidden - Looks like you're trying to access forbidden content. Please log out and sign in to the correct account.
+- 403 Page Forbidden - Looks like you're trying to access forbidden content. Please sign in to the correct account.
 - 404 Page Not Found - The page you're looking for doesn't exist.
 - 500 Server Error - Kitchen Tales is currently unable to handle this request
 
@@ -513,7 +512,7 @@ Custom Error Pages were created to give the user more information on the error a
 ![Navigation section unauthorized](static/images/section-navigation-unauthorized.webp)
 
 
-![Navigation section authorized](static/images/section-navigation-authorized.webp)
+![Navigation section authorized](static/images/features-auth-navbar.webp)
 
 
 ### Footer
@@ -528,6 +527,11 @@ Custom Error Pages were created to give the user more information on the error a
 ![Homepage](static/images/features-homepage.webp)
 ![Homepage bootstrap carousel](static/images/features-bootstrap-carousel.webp)
 ![Homepage card section](static/images/features-card-section.webp)
+![Homepage newsletter section](static/images/features-newsletter-section.webp)
+
+
+### Newsletter Page
+![Newsletter page](static/images/features-newsletter-page.webp)
 
 ### User Account Pages
 
@@ -588,12 +592,19 @@ Custom Error Pages were created to give the user more information on the error a
 ### My Bookmarks Page
 ![My bookmarks page](static/images/features-my-liked-recipes.webp)
 
+### Update Comment
+![Update comment page](static/images/features-update-comment.webp)
+
+### Delete Comment
+![Delete comment page](static/images/features-delete-comment.webp)
+
 
 ### Error Pages
 
 Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
 
-- ***403** Page Forbidden* -
+- ***403** Page Forbidden* - You don't have access to this page.
+![403 error](static/images/kitchen-tales-error-403.webp)
 
 - ***404** Page Not Found* - The page your trying to access doesn't exist.
 ![404 error](static/images/kitchen-tales-error-404.webp)
