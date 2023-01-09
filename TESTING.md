@@ -721,7 +721,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                     | *click* | *Redirct to last `recipe_detail` page*| **pass**  |
 |                 |***Update recipe button*** | *hover* | *Lighter background colour* | **pass**     |
 |                 |                     | *click* | *Form submits*                  | **pass**     |
-|                 |                     | *click* | *Go to updated `all_recipes` page*| **pass**     |
+|                 |                     | *click* | *Go to updated `recipe_detail` page*| **pass**     |
 |                 |                     | *click* | *Success message to alert the user of successful update of their recipe* | **pass** |
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
@@ -763,7 +763,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                     | *click* | *Redirect to last `recipe_detail` page*| **pass**  |
 |                 |***Update comment button*** | *hover* | *Lighter background colour* | **pass**     |
 |                 |                     | *click* | *Form submits*                | **pass**     |
-|                 |                     | *click* | *Redirect to `recipe_detail` page*| **pass**     |
+|                 |                     | *click* | *Redirect to updated `recipe_detail` page*| **pass**     |
 |                 |                     | *click* | *Success message to alert the user of a successful update of their comment* | **pass** |
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
@@ -782,7 +782,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   |  *hover*      | *Lighter background colour* | **pass**    |
 |                 |***Delete button***|  *hover*      | *Darker background colour*  | **pass**    |
 |                 |                   | *click*       | *Remove recipe from database*| **pass**   |
-|                 |                   | *click*       | *Return to `recipe_detail` page*|**pass**|
+|                 |                   | *click*       | *Return to `my_recipes` page*|**pass**|
 |                 |                     | *click* | *Success message to alert the user of successful deletion of their comment* | **pass** |
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
