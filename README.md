@@ -465,18 +465,18 @@ The diagram below details the database schema.
 ***
 
 ## Security Features and Defensive Design
-#
+
 ### User Authentication
-#
-- Django's LoginRequiredMixin is used to make sure
+
+- Django's LoginRequiredMixin is used to ensure that any requests to access secure pages by unauthenticated users are forwarded to the login page.
 
 ### Form Validation
-If incorrect or empty data is added to a form, the form won't submit and a warning will appear to the user informing them what field raised the error. 
+A warning will appear to the user advising them of the field that caused the issue if inaccurate or empty data is added to a form, which will prevent the form from submitting.
 
 ### Database Security
-The database url and secret key are stored in the env.py file to prevent unwanted connections to the database and this was set up before the first push to Github.
+The secret keys and Database url are stored in the env.py file to prevent any unwanted connections to the database and this was set up prior to the first push to Github to ensure security was met.
 
-Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site.
+Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site. The purpose of the CSRF tokens help protect against CSRF attacks by making it difficult for an attacker to construct a valid request on behalf of the victim. As the attacker has no way of predicting the correct value for the CSRF token, they won't be able to include it in the malicious request.
 
 ### Custom error pages:
 
