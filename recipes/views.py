@@ -265,7 +265,7 @@ class DeleteCommentView(LoginRequiredMixin, generic.DeleteView):
     """
     model = Comment
     template_name = 'delete_comment.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('my_recipes')
     success_message = 'Your comment has been deleted successfully'
 
     def delete(self, request, *args, **kwargs):
