@@ -252,6 +252,9 @@ class DeleteRecipeView(LoginRequiredMixin, generic.DeleteView):
     success_message = 'Your recipe has been deleted successfully'
 
     def delete(self, request, *args, **kwargs):
+        """
+        delete function is used to display success message
+        """
         messages.success(self.request, self.success_message)
         return super(DeleteRecipeView, self).delete(request, *args, **kwargs)
 
@@ -266,6 +269,9 @@ class DeleteCommentView(LoginRequiredMixin, generic.DeleteView):
     success_message = 'Your comment has been deleted successfully'
 
     def delete(self, request, *args, **kwargs):
+        """
+        delete function is used to display success message
+        """
         messages.success(self.request, self.success_message)
         return super(DeleteCommentView, self).delete(request, *args, **kwargs)
 
@@ -279,6 +285,9 @@ class MyRecipesView(LoginRequiredMixin, generic.ListView):
     paginate_by = 8
 
     def get_queryset(self):
+        """
+        Display results by author
+        """
         return Recipe.objects.filter(author=self.request.user)
 
 
