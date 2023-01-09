@@ -333,4 +333,4 @@ class UpdateCommentView(LoginRequiredMixin, View):
                 self.request,
                 'Your comment has been updated')
 
-        return redirect(reverse('all_recipes'))
+        return redirect(reverse('recipe_detail', args={comment.post.slug}))
