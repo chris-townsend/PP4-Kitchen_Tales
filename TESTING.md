@@ -686,7 +686,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 | Page/Status     | Element           |   Action          | Expected Result            | Pass/Fail   |
 | ---             | ---               |   :---:           |    :---:                   |    :---:    |
 |`add_recipe`     |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
-|                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to sign-in page*| **pass** |
+|                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to 403 error page*| **pass** |
 |  **logged-in**  | **Form**          | *leave empty*     |  *Form won't submit*       | **pass**    |
 |                 |                   | *display*      | *Summernote display for ingredients, method and notes*| **pass**  | 
 |                 | *Image **Choose file** button*| *click*        | *Open device storage*      | **pass**    |
@@ -714,7 +714,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 | Page/Status     | Element           |   Action          | Expected Result            | Pass/Fail   |
 | ---             | ---               |   :---:           |    :---:                   |    :---:    |
 |`update_recipe`     |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
-|                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to sign-in page*| **pass** |
+|                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to 403 error page*| **pass** |
 |                 |  ***Form***       | *display*         |*Prepopulated data with last recipe content*| **pass** |
 |                 |                   | *leave field empty* | *Form won't submit* | **pass**        |
 |                 | ***Cancel button*** | *hover* | *Lighter background colour*     |      **pass**   |
@@ -725,7 +725,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                     | *click* | *Success message to alert the user of successful update of their recipe* | **pass** |
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
-|                 |  
+|                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
 
 
 ### Desktop *Delete recipe*
@@ -734,7 +734,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 | Page/Status     | Element           |   Action          | Expected Result            | Pass/Fail   |
 | ---             | ---               |   :---:           |    :---:                   |    :---:    |
 |`delete_recipe`     |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
-|                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to sign-in page*| **pass** |
+|                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to 403 error page*| **pass** |
 |                 | ***Text***           | *display*   |  *Display recipe_title within text*| **pass** | 
 |                 | ***Cancel button*** | *hover* | *Lighter background colour*     |      **pass**   |
 |                 |                     | *click* | *Redirct to last `recipe_detail` page*| **pass**  |
@@ -747,10 +747,49 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 | |   |*click* | *Success message to alert the user of successfully deleting their recipe* | **pass** |
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
-|                 |  
+|                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
+
+
+### Desktop *Update comment*
+<br>
+
+| Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
+| ---             | ---               |   :---:       |    :---:                   |    :---:    |
+|`update_comment`     |**Navbar**         | *display* | *Display navbar*           |   **pass**  |
+|                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to 403 error page*| **pass** |
+|                 |  ***Form***       | *display*         |*Prepopulated data with last recipe content*| **pass** |
+|                 |                   | *leave field empty* | *Form won't submit* | **pass**        |
+|                 | ***Cancel button*** | *hover* | *Lighter background colour*     |      **pass**   |
+|                 |                     | *click* | *Redirect to last `recipe_detail` page*| **pass**  |
+|                 |***Update comment button*** | *hover* | *Lighter background colour* | **pass**     |
+|                 |                     | *click* | *Form submits*                | **pass**     |
+|                 |                     | *click* | *Redirect to `recipe_detail` page*| **pass**     |
+|                 |                     | *click* | *Success message to alert the user of a successful update of their comment* | **pass** |
+|                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
+|                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
+|                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
+
+
+### Desktop *Delete comment*
+<br>
+
+| Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
+| ---             | ---               |   :---:       |    :---:                   |    :---:    |
+|`delete_comment`     |**Navbar**         | *display* | *Display navbar*           |   **pass**  |
+|                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to 403 error page*| **pass** |
+| **logged-in**   |`delete_comment` page  | *display* | *Recipe title in confirmation message*| **pass**|
+|                 |***Cancel button***| *click*       | *Return to `recipe_detail` page*   | **pass**    |
+|                 |                   |  *hover*      | *Lighter background colour* | **pass**    |
+|                 |***Delete button***|  *hover*      | *Darker background colour*  | **pass**    |
+|                 |                   | *click*       | *Remove recipe from database*| **pass**   |
+|                 |                   | *click*       | *Return to `recipe_detail` page*|**pass**|
+|                 |                     | *click* | *Success message to alert the user of successful deletion of their comment* | **pass** |
+|                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
+|                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
+|                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
+
 
 ***
-
 
 ## Bugs
 
