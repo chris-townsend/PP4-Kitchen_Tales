@@ -238,7 +238,7 @@ class UpdateRecipeView(LoginRequiredMixin, View):
                 self.request,
                 'Your recipe has been updated')
 
-        return redirect(reverse('all_recipes'))
+        return redirect(reverse('recipe_detail', args={recipe.slug}))
 
 
 class DeleteRecipeView(LoginRequiredMixin, generic.DeleteView):
