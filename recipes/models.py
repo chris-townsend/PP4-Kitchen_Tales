@@ -23,6 +23,7 @@ class Recipe(models.Model):
     method = models.TextField()
     notes = models.TextField()
     image = CloudinaryField('image', default='placeholder')
+    image_url = models.URLField(blank=True)
     status = models.IntegerField(choices=STATUS, default=1)
     like_recipe = models.ManyToManyField(
         User, related_name='recipe_likes', default=None, blank=True)

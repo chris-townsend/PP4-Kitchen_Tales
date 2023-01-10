@@ -12,11 +12,11 @@
                 <div class="col-12 col-md-4">
                     <!-- Uses a placeholder image if the user does not upload there
                           own image to a recipe -->
-                    {% if "placeholder" in recipe.image.url %}
+                    {% if "placeholder" not in recipe.image.url %}
+                    <img src="{{ recipe.image.url }}" alt="recipe image" class="custom-recipe-detail-img">
+                    {% else %}
                     <img src="{% static 'images/placeholder.webp' %}" class="custom-recipe-detail-img"
                         alt="placeholder image">
-                    {% else %}
-                    <img src="{{ recipe.image.url }}" alt="recipe image" class="custom-recipe-detail-img">
                     {% endif %}
                 </div>
                 <div class="col-12 col-md-8">
@@ -68,13 +68,13 @@
                                     <form class=" d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
                                         {% csrf_token %}
                                         {% if liked %}
-                                        <button type="submit" aria-label="like-button" name="recipepost_id" value="{{ recipe.slug }}"
-                                            class="btn-like">
+                                        <button type="submit" aria-label="like-button" name="recipepost_id"
+                                            value="{{ recipe.slug }}" class="btn-like">
                                             <i class="fas fa-star"></i></button><span
                                             class="like-recipe-text">{{ recipe.like_recipe.count }} likes</span>
                                         {% else %}
-                                        <button type="submit" aria-label="like-button" name="recipepost_id" value="{{ recipe.slug }}"
-                                            class="btn-like">
+                                        <button type="submit" aria-label="like-button" name="recipepost_id"
+                                            value="{{ recipe.slug }}" class="btn-like">
                                             <i class="far fa-star"></i></button><span class="like-recipe-text">Click to
                                             bookmark this recipe</span>
                                         {% endif %}
@@ -85,7 +85,7 @@
                                     <span class="text-secondary"><i class="far fa-star"></i>
                                     </span>
                                     <a href="{% url 'account_signup' %}" class="link recipe-text">Sign up to
-                                            star & bookmark recipes</a>
+                                        star & bookmark recipes</a>
                                     {% endif %}
                                     <span class="text-secondary"> {{ recipe.number_of_likes }}
                                     </span>
