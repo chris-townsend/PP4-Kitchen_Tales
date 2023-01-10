@@ -460,6 +460,9 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 
 ## Manual Testing
 
+I haven't been able to implement a lot of automated testing because of time restrictions. As a result, the process and outcomes of manual testing are described in depth in the following section.
+
+
 ### *Navigation*
 <br>
 
@@ -496,7 +499,6 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |*My-Recipes link*    |   *click*   | *Open `my_recipes` page*  |  **pass**   |
 |                 |*Saved-Recipes link* |   *click*   | *Open `my_starred_recipes` page*|**pass**|
 |                 |*Logout link*        |   *click*   | *Open `logout` page*      |  **pass**   |
-
 
 
 ### Homepage - *Content*
@@ -548,7 +550,6 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |**Mobile view**  |                     |             |                      |                |
 |                 |                     | *display*   | *Responsive layout*   | **pass**      |
 |                 |                     | *click*     | *Open in a new tab* |  **pass**       |
-
 
 
 ### *Recipes*
@@ -624,7 +625,6 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                    | *display*    |*Display ingredients & method side by side*| **pass**          |
 |                 |  **Comments**      | *display*     | *Comments are ordered from oldest to newest*| **pass**           |
 |                 |**Social icons**    | *display*    | *Responsive design*     | **pass**    |  
-| 
 
 
 ### *My Recipes*
@@ -816,6 +816,15 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
+|**Mobile view**  |                   |              |                            |              |
+|`add_recipe`     |**Navbar**         | *display*         | *Hamburger menu*      |   **pass**  |
+|                 | `add_recipe` page | *display*         | *Responsive*          |  **pass**   |
+|                 | ***Cancel button***| *click* | *Redirct to `all_recipes`*      | **pass**     |
+|                 |***Add recipe button*** | *click* | *Form submits*                  | **pass**     |
+|                 |                     | *click* | *Go to newly created `recipe_detail` page*| **pass**     |
+|                 |                     | *click* | *Success message to alert the user of a successfully added new recipe* | **pass** |
+|                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
+|                 |**Footer**         | *display*     | *Responsive layout* | **pass**|
 
 
 ### *Update recipe*
@@ -836,6 +845,15 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
+|**Mobile view**  |                   |              |                            |              |
+|`update_recipe`     |**Navbar**         | *display*         | *Hamburger menu*      |   **pass**  |
+|                 | `update_recipe` page | *display*         | *Responsive*          |  **pass**   |
+|                 | ***Cancel button***| *click* | *Redirct to last `recipe_detail` page* | **pass**     |
+|                 |***Update recipe button*** | *click* | *Form submits*                  | **pass**     |
+|                 |                     | *click* | *Go to updated `recipe_detail` page*| **pass**     |
+|                 |                     | *click* | *Success message to alert the user of successfully updating their recipe* | **pass** |
+|                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
+|                 |**Footer**         | *display*     | *Responsive layout* | **pass**             |
 
 
 ### *Delete recipe*
@@ -858,7 +876,16 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
-
+|**Mobile view**  |                   |              |                            |              |
+|`delete_recipe`     |**Navbar**         | *display*         | *Hamburger menu*      |   **pass**  |
+|                 | `delete_recipe` page | *display*         | *Responsive*          |  **pass**   |
+|                 | ***Cancel button***| *click* | *Redirct to last `recipe_detail` page* | **pass**     |
+|                 |***Update Instead button*** | *click* | *Go to `update_recipe` page*  | **pass**     |
+|                 | ***Delete button*** | *click* | *Recipe removed from database* | **pass** |
+|                 |                     | *click* | *Redirct to `my_recipes` page*| **pass**  |
+|                 |                     |*click*  | *Success message to alert the user of successfully deleting their recipe* | **pass**|
+|                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
+|                 |**Footer**         | *display*     | *Responsive layout* | **pass**|
 
 ### *Update comment*
 <br>
@@ -878,6 +905,10 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
+|**Mobile view**  |                   |              |                            |              |
+|`update_comment`     |**Navbar**         | *display*         | *Hamburger menu*      |   **pass**  |
+|                 | `update_comment` page | *display*         | *Responsive*          |  **pass**   |
+|                 |**Footer**         | *display*     | *Responsive layout* | **pass**|
 
 
 ### *Delete comment*
@@ -897,6 +928,10 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
+|**Mobile view**  |                   |              |                            |              |
+|`delete_comment`     |**Navbar**         | *display*         | *Hamburger menu*      |   **pass**  |
+|                 | `delete_comment` page | *display*         | *Responsive*          |  **pass**   |
+|                 |**Footer**         | *display*     | *Responsive layout* | **pass**              |
 
 
 ***
