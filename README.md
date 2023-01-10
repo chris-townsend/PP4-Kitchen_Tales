@@ -226,7 +226,7 @@ The following user stories were scoped out of the project due to time constraint
 
 ### Design
 
-The site has a very simple and clean design which was purposely chosen in order to keep in theme with the site's goal. i.e. invoking a sense of calm in the user and reducing stress when it comes to everyday cooking.
+The website was intentionally given a very straightforward and minimalistic style in order to stay on theme with the site's objectives. The simple design allows the user to intuitively navigate around the site.
 
 ***
 
