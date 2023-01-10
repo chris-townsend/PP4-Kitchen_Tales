@@ -460,7 +460,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 
 ## Manual Testing
 
-### Desktop Homepage - *Navigation*
+### *Navigation*
 <br>
 
 | Page/Status     | Element             |   Action    | Expected Result           | Pass/Fail   |
@@ -480,9 +480,26 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |*Saved-Recipes link* |   *click*   | *Open `my_starred_recipes` page*|**pass**|
 |                 |*Logout link*        |   *click*   | *Open `logout` page*      |  **pass**   |
 |                 |*All nav headings*   |   *hover*  |*Display darker text & underlined*| **pass** |
+|                 |                     |             |                                 |            |
+|**Mobile view**  |                     |             |                                 |           |
+|                 |**Navbar**           |  *display*   |*Hamburger menu when screen size is less than 900px*  | **pass**            |
+|                 |*Home link*          |   *click*   | *Redirect to homepage*    |  **pass**   |
+|                 |*Recipes link*       |   *click*   | *Open `all_recipes` page* |  **pass**   |
+|                 |*Kitchen Tales logo* |   *click*   | *Redirect to homepage*    |  **pass**   |
+|                 |*Search Recipes button*|   *click* | *Open `search_results` page*| **pass**  |
+|                 |*MyAccount drop-down*| *display*   | *Display in hamburger menu* | **pass**  |
+| **logged out**  |                     |   *click*   | *Open drop-down menu*     |  **pass**   |  
+|                 |*Sign-in link*       |   *click*   | *Open `login` page*       |  **pass**   |
+|                 |*Register link*      |   *click*   | *Open `signup` page*      |  **pass**   |
+| **logged in**   |*MyAccount drop-down*|  *display*  | *Change to username & user icon*|**pass**|
+|                 |*Add-Recipe link*    |   *click*   | *Open `add_recipe` page*  |  **pass**   |
+|                 |*My-Recipes link*    |   *click*   | *Open `my_recipes` page*  |  **pass**   |
+|                 |*Saved-Recipes link* |   *click*   | *Open `my_starred_recipes` page*|**pass**|
+|                 |*Logout link*        |   *click*   | *Open `logout` page*      |  **pass**   |
 
 
-### Desktop Homepage - *Content*
+
+### Homepage - *Content*
 <br>
 
 | Page/Status     | Element             |   Action    | Expected Result     |   Pass/Fail     |
@@ -501,14 +518,26 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 | **All users**   |**Card section**     |             |                     |                 |
 |                 | *Images*            | *display*   |*Image displayed*    | **pass**        |
 |                 |                     | *aria-label check*|*Display aria-labels*|           |
-|                 |*Recipe App/Cheese Club images*|*hover*|*Rotate image 180°*| **pass**        |
+|                 |*Recipe App/Cheese Club images*|*hover*|*Rotate image 180°*| **pass**      |
 | **All users**   |**Newsletter section**|            |                     |                 |
 |                 | *Subscribe button*  | *click*     |*Open `newsletter` page* | **pass**    |
 |                 |                     | *hover*     |*Dark background/light text*| **pass** |
-|                 |
+|**Mobile view**  |                     |             |                       |               |
+|                 |**Welcome to KT section**|         |                     |                 |
+|                 | *Image*             | *display*   |*Image not displayed*    | **pass**    |
+|**logged-out**   |*Sign up today link* | *click*     |*Open `signup` page* | **pass**        |
+|**logged-in**    |*Welcome text*       | *display*   |*Welcome text with username*| **pass** |
+|                 |*Add recipe link*    | *click*     |*Open `add_recipe` page* | **pass**    |
+| **All users**   |**Image carousel section**|        |                     |                 |
+|                 | *Images*            | *display*   |*Image displayed*    | **pass**        |
+|                 | *Carousel-control button*| *click*|*Go to next image*   | **pass**        |
+| **All users**   |                     |             |                     |                 |
+|                 | **Card section**    | *display*   |*Responsive*| **pass**   |
+| **All users**   |**Newsletter section**|            |                     |                 |
+|                 | *Subscribe button*  | *click*     |*Open `newsletter` page* | **pass**    |
 
 
-### Desktop Homepage - *Footer*
+### Homepage - *Footer*
 <br>
 
 | Page/Status     | Element             |   Action    | Expected Result     |   Pass/Fail     |
@@ -516,9 +545,13 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |**Homepage**     |**Social Icons**     | *click*     | *Open in a new tab* |  **pass**       |
 |                 |                     | *hover*     | *Change scale **1.2***  |  **pass**   |
 |                 |                     | *aria-label check*| *Display aria-labels*|          |
+|**Mobile view**  |                     |             |                      |                |
+|                 |                     | *display*   | *Responsive layout*   | **pass**      |
+|                 |                     | *click*     | *Open in a new tab* |  **pass**       |
 
 
-### Desktop *Recipes*
+
+### *Recipes*
 <br>
 
 | Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
@@ -539,9 +572,20 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
 |                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
+| **Mobile view** |                   |               |                              |            |
+|                 |**Navbar**         | *display*     | *Hamburger menu*             | **pass**   |
+|                 |**Recipe card**    |*display*      |        *Responsive layout*|**pass**     |
+|                 |                   | *click*       | *Open recipe detail page*    | **pass**  |
+|                 |**Paginator buttons**  | *display*     |*Display pagination buttons if more than 8 recipes* | **pass**         |
+|                 | ***Next** button* | *click*       |*Display next page of recipes*| **pass**   |
+|                 |                   | *if clicked display*|*First/Previous buttons*| **pass**   |
+|                 | ***Last** button* | *click*       |*Display last page of recipes*| **pass**   |
+|                 | ***First** button*| *click*       |*Display first page of recipes*| **pass**  |
+|                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
+|                 |**Footer**           | *display*   | *Responsive layout*              | **pass**|
 
 
-### Desktop *Recipe Detail*
+### *Recipe Detail*
 <br>
 
 | Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
@@ -574,9 +618,16 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                      |*Edit & Delete Icons* | *hover*| *Display lighter colour*| **pass**   | 
 |                      | *Edit comment button*       |  *click*  | *Open `update_comment` page* | **pass**|
 |    | *Delete comment button*     |  *click*  | *Open `delete_comment` page*|**pass**|     
+| **Mobile view**      |             |         |                             |                      |   
+|                      |**Navbar**         | *display*     | *Hamburger menu*           |   **pass**  |
+|                      |**Recipe Content** | *display*     | *Display responsive layout*| **pass**    |
+|                 |                    | *display*    |*Display ingredients & method side by side*| **pass**          |
+|                 |  **Comments**      | *display*     | *Comments are ordered from oldest to newest*| **pass**           |
+|                 |**Social icons**    | *display*    | *Responsive design*     | **pass**    |  
+| 
 
 
-### Desktop *My Recipes*
+### *My Recipes*
 <br>
 
 | Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
@@ -600,16 +651,27 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
-|                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |        
+|                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |  
+| **Mobile view**  |             |         |                             |                      |   
+|                      |**Navbar**         | *display*     | *Hamburger menu*             |   **pass**  |
+| **logged-in**   |`my_recipes` page  | *display*     |      *Responsive layout*              | **pass**|
+|                 |                   | *order display*|*Order from newest to oldest*| **pass**  |
+|                 | **Recipe Card**   | *click*        | *Open recipe detail page*   | **pass**  |
+|                 |**Paginator buttons**  | *display*     |*Display pagination buttons if more than 8 recipes* | **pass**         |
+|                 | ***Next** button* | *click*       |*Display next page of recipes*| **pass**   |
+|                 | ***Last** button* | *click*       |*Display last page of recipes*| **pass**   |
+|                 | ***First** button*| *click*       |*Display first page of recipes*| **pass**  |
+|                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
+|                 |**Footer**         | *display*     | *Social icons responsive* | **pass**|
 
 
-### Desktop *My Starred Recipes*
+### *My Starred Recipes*
 <br>
 
 | Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
 | ---             | ---               |   :---:       |    :---:                   |    :---:    |
 |`my_starred_recipes`|**Navbar**         | *display*     | *Display navbar*        |   **pass**  |
-| **logged-in**   |`my_starred_recipes` page  | *display*     | *Only display a logged-in users starred recipes*| **pass**|
+| **logged-in**   |`my_starred_recipes` | *display*     | *Only display a logged-in users starred recipes*| **pass**|
 |                 |                   | *access*      | *If an unauthorized user tries to access this page by changing the URL, redirect to sign-in page*| **pass** |
 |                 |**Recipe card**    |*display image*| *Correct recipe image clipped*|**pass**  |
 |                 |  *Image*          |*hover*        | *Rotate image 180°*        | **pass**    |
@@ -628,9 +690,20 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
+| **Mobile view**  |             |         |                             |                      |   
+|                      |**Navbar**         | *display*     | *Hamburger menu*             |   **pass**  |
+| **logged-in**   |`my_starred_recipes` page  | *display*     |      *Responsive layout*              | **pass**|
+|                 |                   | *order display*|*Order from newest to oldest*| **pass**  |
+|                 | **Recipe Card**   | *click*        | *Open recipe detail page*   | **pass**  |
+|                 |**Paginator buttons**  | *display*     |*Display pagination buttons if more than 8 recipes* | **pass**         |
+|                 | ***Next** button* | *click*       |*Display next page of recipes*| **pass**   |
+|                 | ***Last** button* | *click*       |*Display last page of recipes*| **pass**   |
+|                 | ***First** button*| *click*       |*Display first page of recipes*| **pass**  |
+|                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
+|                 |**Footer**         | *display*     | *Social icons responsive* | **pass**|
 
 
-### Desktop *Django All Auth Pages*
+### *Django All Auth Pages*
 <br>
 
 | Page/Status     | Element           |   Action          | Expected Result            | Pass/Fail   |
@@ -654,6 +727,22 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *click*         | *Return to homepage*    | **pass**    |
 |                 |                   | *click*         | *Success message to alert the user of a successful login* | **pass** |
 |                 |                   |                     | *Automatically close alert after 2.8sec*| **pass**  |
+|**Mobile view**  |                   |                    |                            |            |    
+|                 | `signup` page     | *display*        | *Responsive*               |**pass**     |
+|                 | **Navbar**        | *display*        | *Hamburger menu*           | **pass**    |
+|                 | *Login link*      | *click*           | *Redirect to `login` page*  |   **pass**  |
+|                 | ***Username field***  | *leave empty*     |  *Error message*           | **pass**    |
+|                 |                   | *enter valid data*| *Form submits*             |  **pass**   |
+|                 |                   | *enter invalid format* | *Form won't submit*   | **pass**    | 
+|                 |                   | *enter invalid format* | *Error message*       | **pass**    |
+|                 | ***Email field***     | *leave empty*       | *Form submits*           | **pass**    | 
+|                 |                   | *enter invalid format*|  *Error message*       | **pass**    |
+|                 |                   | *enter invalid format*| *Form won't submit*    | **pass**    |
+|                 |                   | *enter valid data*| *Form submits*             | **pass**    |
+|                 | ***Password field***  | *leave empty*       | *Error message*          | **pass**    |
+|                 |                   | *enter valid data*| *Form submits*             |  **pass**   |
+|                 |                   | *password not match* | *Error message*         | **pass**    |
+|                 |                   | *password not match* | *Form won't submit*     | **pass**    |
 |`login`         |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
 |                 | *Sign up link*      | *click*           | *Redirect to `signup` page*  |   **pass**  |
 |                 | ***Username field***  | *leave empty*     |  *Error message*           | **pass**    |
@@ -669,6 +758,22 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *click*         | *Return to homepage*    | **pass**    |
 |                 |                   | *click*         | *Success message to alert the user of a successful login* | **pass** |
 |                 |                   |                      | *Automatically close alert after 2.8sec*| **pass**  |
+|**Mobile view**   |                  |                   |                           |             |
+|                  | `login` page     | *display*        | *Responsive*               |**pass**     |
+|                 | **Navbar**        | *display*        | *Hamburger menu*           | **pass**    |
+|                 | *Sign up link*      | *click*           | *Redirect to `signup` page*  |   **pass**  |
+|                 | ***Username field***  | *leave empty*     |  *Error message*           | **pass**    |
+|                 |                   | *enter valid data*| *Form submits*             |  **pass**   |
+|                 |                   | *enter invalid format* | *Form won't submit*   | **pass**    | 
+|                 |                   | *enter invalid format* | *Error message*       | **pass**    |
+|                 | ***Password field***  | *leave empty*       | *Error message*          | **pass**    |
+|                 |                   | *enter valid data*| *Form submits*             |  **pass**   |
+|                 |                   | *password not match* | *Error message*         | **pass**    |
+|                 |                   | *password not match* | *Form won't submit*     | **pass**    |
+|                 | ***Sign-in button***|*click*    | *Form submits*          | **pass**    |
+|                 |                   | *click*         | *Return to homepage*    | **pass**    |
+|                 |                   | *click*         | *Success message to alert the user of a successful login* | **pass** |
+|                 |                   |                      | *Automatically close alert after 2.8sec*| **pass**  |
 |`logout`         |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
 |                 |***Signout button***| *hover*          | *Lighter background colour*| **pass**    |
 |                 |                   | *click*    | *Form submits*               | **pass**    |
@@ -677,10 +782,15 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   |                 | *Automatically close alert after 2.8sec*| **pass**  |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
+|**Mobile view**       |                   |              |                            |              |
+|`logout`         |**Navbar**         | *display*    | *Display hamburger menu*   |   **pass**  |
+|                 |***Signout button*** | *click*    | *Form submits*               | **pass**    |
+|                 |                   | *click*         | *Return to homepage*    | **pass**    |
+|                 |                   | *click*         | *Success message to alert the user of a successful logout* | **pass** |
+|                 |                   |                 | *Automatically close alert after 2.8sec*| **pass**  |
 
 
-
-### Desktop *Add recipe*
+### *Add recipe*
 <br>
 
 | Page/Status     | Element           |   Action          | Expected Result            | Pass/Fail   |
@@ -708,7 +818,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
 
 
-### Desktop *Update recipe*
+### *Update recipe*
 <br>
 
 | Page/Status     | Element           |   Action          | Expected Result            | Pass/Fail   |
@@ -728,7 +838,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
 
 
-### Desktop *Delete recipe*
+### *Delete recipe*
 <br>
 
 | Page/Status     | Element           |   Action          | Expected Result            | Pass/Fail   |
@@ -750,7 +860,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
 
 
-### Desktop *Update comment*
+### *Update comment*
 <br>
 
 | Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
@@ -770,7 +880,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
 
 
-### Desktop *Delete comment*
+### *Delete comment*
 <br>
 
 | Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
