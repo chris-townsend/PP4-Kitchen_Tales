@@ -416,7 +416,8 @@ Code Institutes *[PEP8](https://pep8ci.herokuapp.com/)* linter was used to test 
 I have run the website through Google Chrome's Lighthouse audit application and the results are shown below:
  
 | Page                     |    Desktop     |    Mobile    | 
-| ---                      |      :---:     |    :---:     |    
+| ---                      |      :---:     |    :---:     | 
+| `403.html`               |![lighthouse result desktop 403](static/images/lighthouse-desktop-403.webp)                      |![lighthouse result mobile 403](static/images/lighthouse-mobile-403.webp)                      |   
 | `404.html`               |![lighthouse result desktop 404](static/images/lighthouse-desktop-404.webp)                      |![lighthouse result mobile 404](static/images/lighthouse-mobile-404.webp)                      |
 | `500.html`               |![lighthouse result desktop 500](static/images/lighthouse-desktop-500.webp)                      |![lighthouse result mobile 500](static/images/lighthouse-mobile-500.webp)              | 
 | `add_recipe.html`        |![lighthouse result desktop add recipe](static/images/lighthouse-desktop-add-recipe.webp)         |![lighthouse result mobile add recipe](static/images/lighthouse-mobile-add-recipe.webp)          |
