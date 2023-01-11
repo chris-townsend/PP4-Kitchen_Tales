@@ -345,8 +345,9 @@ The *[W3C HTML validator](https://validator.w3.org/)* was used to test all HTML 
 | Page                   | Status      |              | URL         |
 | ---                    |   :---:     |    :---:     |    :---:    |
 |                        | *logged-in* | *logged-out* |             |
-|404.html                |             |              |             |
-|500.html                |             |              |             |
+|403.html                |   *pass*    |   *pass*     |      -      |  
+|404.html                |   *pass*    |   *pass*     |      -      |
+|500.html                |   *pass*    |   *pass*     |      -      |
 |add_recipe.html         |   *pass*    |   *n/a*      |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fadd_recipe%2F#l189c24)*           |
 |all_recipes.html        |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fall_recipes%2F)*    |
 |base.html               |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    |
