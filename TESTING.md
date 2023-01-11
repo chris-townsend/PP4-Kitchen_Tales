@@ -936,6 +936,24 @@ I haven't been able to implement a lot of automated testing because of time rest
 |                 |**Footer**         | *display*     | *Responsive layout* | **pass**              |
 
 
+### *Newsletter*
+<br>
+
+| Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
+| ---             | ---               |   :---:       |    :---:                   |    :---:    |
+|`newsletter`     |**Navbar**         | *display*     | *Display navbar*           |   **pass**  |
+|                 |**Form**           | *display*     | *Email field*              |  **pass**   |
+|                 |                   | *leave empty* | *Error message*            | **pass**    |
+|                 |                   |*invalid format*| *Error message*           | **pass**    |
+|                 |**Subscribe button**| *hover*       | *Alternate colour*        | **pass**    |
+|                 |                    | *click*       | *Email saved to database*  | **pass**    |
+|                 |                    | *click*       | *Redirect to homepage*     | **pass**    |
+|                 |                    | *click*       | *Success message of successfully subscribing* | **pass** |
+|                 |                     |          | *Automatically close alert after 2.8sec*  | **pass**     |
+|                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
+|                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
+
+
 ***
 
 ## Bugs
