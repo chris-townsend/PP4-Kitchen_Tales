@@ -14,6 +14,8 @@
                           own image to a recipe -->
                     {% if "placeholder" not in recipe.image.url %}
                     <img src="{{ recipe.image.url }}" alt="recipe image" class="custom-recipe-detail-img">
+                    {% elif recipe.image_url %}
+                    <img src="{{ recipe.image_url }}" alt="recipe image" class="custom-recipe-detail-img">
                     {% else %}
                     <img src="{% static 'images/placeholder.webp' %}" class="custom-recipe-detail-img"
                         alt="placeholder image">
