@@ -64,7 +64,7 @@ class Comment(models.Model):
 class NewsletterUser(models.Model):
     """Model used for adding a users email address to the database
         to signup to the newsletter"""
-    email = models.EmailField()
+    email = models.EmailField(null=True)
     date_added = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

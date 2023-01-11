@@ -6,8 +6,8 @@
 {% load crispy_forms_tags %}
 
 
-<!-- This page allows a user to submit an email address which
-      stores the email address in the database -->
+<!-- This page allows a user to submit an email address to sign up
+        to the newsletter -->
 <section>
   <div class="newsletter-container">
     <br>
@@ -22,13 +22,13 @@
       </div>
       <div class="row">
         <div class="col">
-          <form class="validate-form" method="POST">
+          <form class="validate-form" enctype="multipart/form-data" method="post" action="{% url 'newsletter' %}">
             {% csrf_token %}
-            {{ form|crispy  }}
+            {{ form | crispy  }}
             <div class="row d-flex justify-content-center">
               <div class="col-md-3">
-                <a class="btn btn-lg mb-3 btn-outline-dark rounded-pill ml-4 form-font" type="submit"
-                  name="email">Subscribe</a>
+                <button class="btn btn-lg mb-3 btn-outline-dark rounded-pill ml-4 form-font" type="submit"
+                  name="id_email" id="id_email">Subscribe</button>
               </div>
             </div>
           </form>

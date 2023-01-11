@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 from .views import (RecipeListHome, AddRecipeView,
                     UpdateRecipeView, DeleteRecipeView, RecipeLike,
-                    DeleteCommentView, UpdateCommentView)
+                    DeleteCommentView, UpdateCommentView, newsletter_signup)
 
 
 """ URL Patterns """
@@ -26,5 +26,5 @@ urlpatterns = [
          name='delete_comment'),
     path('update_comment/<int:comment_id>/', UpdateCommentView.as_view(),
          name='update_comment'),
-    path("newsletter", views.newsletter, name="newsletter"),
+    path("newsletter", views.newsletter_signup, name="newsletter"),
 ]

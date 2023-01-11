@@ -11,6 +11,16 @@ class NewsletterForm(forms.ModelForm):
         model = NewsletterUser
         fields = ('email',)
 
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, **kwargs)
+            placeholders = {
+                'email': 'Email',
+            }
+
+        class Meta:
+            model = NewsletterUser
+            fields = ('email',)
+
 
 class CommentForm(forms.ModelForm):
     """Create a comment form"""

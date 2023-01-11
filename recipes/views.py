@@ -6,30 +6,37 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
 from django.utils.datastructures import MultiValueDictKeyError
+from django.core.exceptions import ValidationError
+from django.core.validators import validate_email
 from .models import Recipe, Comment, NewsletterUser
 from .forms import CommentForm, RecipeForm, NewsletterForm
 
 
-def newsletter(request):
+def newsletter_signup(request):
     """
-    This function is used to add a users email address &
-    save it to the database, if their email address already exists
-    they should recieve an alert stating it already exists
+    This function allows a user to sign up to the newsletter,
+    if a valid email address is input, the email will save to the
+    database and a success message notifying the user.
     """
-    form = NewsletterForm(request.POST)
-    if form.is_valid():
-        instance = form.save(commit=False)
-        if NewsletterUser.objects.filter(email=instance.email).exists():
-            messages.warning(request,
-                             'Your email already exists in our database')
+    newsletter_form = NewsletterForm()
+    if request.method == 'POST':
+        newsletter_form = NewsletterForm(request.POST)
+        print(newsletter_form)
+        if newsletter_form.is_valid():
+            newsletter_form.save()
+            messages.success(request,
+                             'You have successfully subscribed')
+            return redirect('home')
         else:
-            instance.save()
-            messages.success(self,
-                             'Your email already exists in our database')
-            form = NewsletterForm()
+            messages.error(request, "Request failed")
+    else:
+        newsletter_form = NewsletterForm()
 
-    return render(request=request,
-                  template_name='newsletter.html', context={'form': form})
+    context = {
+            'form': newsletter_form,
+             }
+
+    return render(request, 'newsletter.html', context)
 
 
 def search_results(request):
