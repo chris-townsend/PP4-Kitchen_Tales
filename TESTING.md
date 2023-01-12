@@ -335,7 +335,7 @@
 
 ## Validator Testing
 
-![HTML w3c validator](static/images/html-w3c-validation.webp)
+![HTML w3c validator](README_docs/testing/html/html-w3c-validation.webp)
 
 The *[W3C HTML validator](https://validator.w3.org/)* was used to test all HTML pages, **no errors** were reported in the final deployment.
 

@@ -4,7 +4,7 @@ Kitchen Tales is a full-stack project built in Django using Python, HTML and CSS
 
 The site should be instantly recognisable following UX design principles, which meets accessibility guidelines, is easy to navigate and allows the user to find information and resources intuitively. The site provides role based permissions for users to interact within a central dataset while integrating Djangos built-in authentication system.
 
-![Am i responsive](static/images/am-i-responsive.webp)
+![Am i responsive](README_docs/features/am-i-responsive/am-i-responsive.webp)
 
 The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuapp.com/)
 
@@ -397,7 +397,7 @@ Initial wireframes were made for the original ideas and as functionality was red
 A light colour scheme was chosen to allow good contrast with text and give a clean feel throughout the site. Great care was taken during the design process to establish a good contrast between background colours and text, and also to ensure it met accessibility requirements.
 
 
-![Colour Palette](static/images/coolers-colour-scheme.webp)
+![Colour Palette](README_docs/features/colour-scheme/coolers-colour-scheme.webp)
 *Colour palette from* [*Coolors*](https://coolors.co/)
 
 ***
@@ -416,13 +416,13 @@ Both fonts are from [Google fonts](https://fonts.google.com/about), meaning they
 
 **Headings:** *'Karla'*
 
-![Font Karla light 300](static/images/font-karla-300.webp)
-![Font Karla regular 400](static/images/font-karla-400.webp)
+![Font Karla light 300](README_docs/features/typography/font-karla-300.webp)
+![Font Karla regular 400](README_docs/features/typography/font-karla-400.webp)
 
 
 **Body:** *'Italiana'*
 
-![Font Italiana regular 400](static/images/font-italiana.webp)
+![Font Italiana regular 400](README_docs/features/typography/font-italiana.webp)
 
 
 ***
@@ -431,14 +431,14 @@ Both fonts are from [Google fonts](https://fonts.google.com/about), meaning they
 ## Agile Methodology
 
 Github projects was used to manage the development process using an agile approach. To view the project kanban board, please click on the link [here](https://github.com/users/chris-townsend/projects/5/views/1)
-![GitHub kanban board](static/images/github-kanban-board.webp)
+![GitHub kanban board](README_docs/features/agile/github-kanban-board.webp)
 
 
 A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution. The issues were closed automatically when the pull request was linked to the issue. I have done this for most user stories but some have been closed manually.
 
 Towards the end of the project, I knew there would be some user stories that would be scoped out of the project. These user stories have been placed within the Future features section on the kanban board and are intended to be implemented at a later date.
 
-![Guthub kanban board future features](static/images/github-kanban-board-future-features.webp)
+![Guthub kanban board future features](README_docs/features/agile/github-kanban-board-future-features.webp)
 
 ***
 
@@ -450,16 +450,16 @@ Django AllAuth was used for the user authentication system.
 
 In order for the users to create recipes a custom recipe model was required. The recipe author is a foreign key to the User model given a recipe can only have one author.
 
-![Custom recipe model](static/images/custom-recipe-model.webp)
+![Custom recipe model](README_docs/features/data-model/custom-recipe-model.webp)
 
 The Comment model allows users to comment on individual recipes and the Recipe is a foreign key in the comment model given a comment can only be linked to one recipe. 
 
-![Custom comment model](static/images/custom-comment-model.webp)
+![Custom comment model](README_docs/features/data-model/custom-comment-model.webp)
 
 
 The diagram below details the database schema.
 
-![Database Schema](static/images/database-schema.webp)
+![Database Schema](README_docs/features/data-model/database-schema.webp)
 
 *Database schema from [drawSQL](https://drawsql.app/)*
 ***
@@ -813,7 +813,7 @@ To initialise a Django project, first Django must be installed within your Pytho
 
 **8.** Run the server and you should see the basic skeleton project up and running - ``python3 manage.py runserver``
 
-![Django successful set-up](static/images/django-success.webp)
+![Django successful set-up](README_docs/development/django/django-success.webp)
 
 ***
 
@@ -1091,7 +1091,7 @@ By forking the GitHub Repository you can make a copy of the original repository.
 
 **Rebecca** from *CI tutor support* for the helpful information when trying to add a profanity filter.
 
-**Dario** for the continued support and advice throughout the project.
+**Dario** for his continued support and advice throughout the project.
 
 <br>
 
