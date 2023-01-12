@@ -242,70 +242,70 @@ Initial wireframes were made for the original ideas and as functionality was red
 
  <summary>Homepage</summary>
 
-![Mobile - Homepage](static/images/wireframe-mobile-homepage.webp)
+![Mobile - Homepage](README_docs/wireframes/wireframe-mobile-homepage.webp)
 </details>
 
 <details>
 
  <summary>All Recipes</summary>
 
-![Mobile - Recipes](static/images/wireframe-mobile-recipes.webp)
+![Mobile - Recipes](README_docs/wireframes/wireframe-mobile-recipes.webp)
 </details>
 
 <details>
 
  <summary>Recipe Detail</summary>
 
-![Mobile - Recipe Detail](static/images/wireframe-mobile-recipe-detail.webp)
+![Mobile - Recipe Detail](README_docs/wireframes/wireframe-mobile-recipe-detail.webp)
 </details>
 
 <details>
 
  <summary>Recipe Detail for the <i>author</i></summary>
 
-![Mobile - Recipe Detail for the author](static/images/wireframe-mobile-recipe-detail-author.webp)
+![Mobile - Recipe Detail for the author](README_docs/wireframes/wireframe-mobile-recipe-detail-author.webp)
 </details>
 
 <details>
 
  <summary>Recipe Detail for the <i>comment author</i></summary>
 
-![Mobile - Recipe Detail for the comment author](static/images/wireframe-mobile-recipe-detail-comment-author.webp)
+![Mobile - Recipe Detail for the comment author](README_docs/wireframes/wireframe-mobile-recipe-detail-comment-author.webp)
 </details>
 
 <details>
 
  <summary>My Starred Recipes</summary>
 
-![Mobile - My Starred Recipes](static/images/wireframe-mobile-liked-recipes.webp)
+![Mobile - My Starred Recipes](README_docs/wireframes/wireframe-mobile-liked-recipes.webp)
 </details>
 
 <details>
 
  <summary>Add Recipe</summary>
 
-![Mobile - Add Recipe](static/images/wireframe-mobile-add-recipe.webp)
+![Mobile - Add Recipe](README_docs/wireframes/wireframe-mobile-add-recipe.webp)
 </details>
 
 <details>
 
  <summary>Update Recipe</summary>
 
-![Mobile - Update Recipe](static/images/wireframe-mobile-update-recipe.webp)
+![Mobile - Update Recipe](README_docs/wireframes/wireframe-mobile-update-recipe.webp)
 </details>
 
 <details>
 
  <summary>Delete Recipe</summary>
 
-![Mobile - Delete Recipe](static/images/wireframe-mobile-delete-recipe.webp)
+![Mobile - Delete Recipe](README_docs/wireframes/wireframe-mobile-delete-recipe.webp)
 </details>
 
 <details>
 
  <summary>Search Recipe</summary>
 
-![Mobile - Search Recipe](static/images/wireframe-mobile-search-recipe.webp)
+![Mobile - Search Recipe](README_docs/wireframes/wireframe-mobile-search-recipe.webp)
 </details>
 
 # 
@@ -316,14 +316,14 @@ Initial wireframes were made for the original ideas and as functionality was red
 
  <summary>Homepage</summary>
 
-![Desktop - Homepage](static/images/wireframe-desktop-homepage.webp)
+![Desktop - Homepage](README_docs/wireframes/wireframe-desktop-homepage.webp)
 </details>
 
 <details>
 
 <summary>All Recipes</summary>
 
-![Desktop - All Recipes](static/images/wireframe-desktop-recipes.webp)
+![Desktop - All Recipes](README_docs/wireframes/wireframe-desktop-recipes.webp)
 </details>
 
 
@@ -331,14 +331,14 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <summary>Recipe Detail</summary>
 
-![Desktop - Recipe detail](static/images/wireframe-desktop-recipe-detail.webp)
+![Desktop - Recipe detail](README_docs/wireframes/wireframe-desktop-recipe-detail.webp)
 </details>
 
 <details>
 
 <summary>Recipe Detail for the <i>author</i></summary>
 
-![Desktop - Recipe Detail for Author](static/images/wireframe-desktop-recipe-detail-author.webp)
+![Desktop - Recipe Detail for Author](README_docs/wireframes/wireframe-desktop-recipe-detail-author.webp)
 
 </details>
 
@@ -346,7 +346,7 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <summary>Recipe Detail for the <i> comment author</i></summary>
 
-![Desktop Recipe Detail for Comment Author](static/images/wireframe-desktop-recipe-detail-comment-author.webp)
+![Desktop Recipe Detail for Comment Author](README_docs/wireframes/wireframe-desktop-recipe-detail-comment-author.webp)
 
 </details>
 
@@ -354,28 +354,28 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <summary>My Starred Recipes</summary>
 
-![ Desktop - My Starred Recipes](static/images/wireframe-desktop-liked-recipes.webp)
+![ Desktop - My Starred Recipes](README_docs/wireframes/wireframe-desktop-liked-recipes.webp)
 </details>
 
 <details>
 
 <summary>Add Recipe</summary>
 
-![ Desktop - Add Recipe](static/images/wireframe-desktop-add-recipe.webp)
+![ Desktop - Add Recipe](README_docs/wireframes/wireframe-desktop-add-recipe.webp)
 </details>
 
 <details>
 
 <summary>Update Recipe</summary>
 
-![Desktop - Update Recipe](static/images/wireframe-desktop-update-recipe.webp)
+![Desktop - Update Recipe](README_docs/wireframes/wireframe-desktop-update-recipe.webp)
 </details>
 
 <details>
 
 <summary>Delete Recipe</summary>
 
-![Desktop - Delete Recipe](static/images/wireframe-desktop-delete-recipe.webp)
+![Desktop - Delete Recipe](README_docs/wireframes/wireframe-desktop-delete-recipe.webp)
 
 </details>
 
@@ -383,7 +383,7 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <summary>Search Recipe</summary>
 
-![Desktop - Search Recipe](static/images/wireframe-desktop-search-recipe.webp)
+![Desktop - Search Recipe](README_docs/wireframes/wireframe-desktop-search-recipe.webp)
 
 </details>
 
@@ -904,18 +904,18 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 #
 
 1. Log in to [Heroku](https://dashboard.heroku.com/apps) or create an account.
-![Heroku Signup](README_docs/deployment/heroku-signup.webp)
+![Heroku Signup](README_docs/deployment/heroku/heroku-signup.webp)
 
 2. On your Heroku dashboard, click the button labelled **New** in the top right corner and from the drop-down menu select **Create new app**.
-![Heroku Dashboard](README_docs/deployment/heroku-dashboard.webp)
-![Create new app](README_docs/deployment/heroku-create-app.webp)
+![Heroku Dashboard](README_docs/deployment/heroku/heroku-dashboard.webp)
+![Create new app](README_docs/deployment/heroku/heroku-create-app.webp)
 
 3. Enter a **unique and meaningful app name** and **choose the region** which is best suited to your location.
-![Meaningful app-name](README_docs/deployment/heroku-meaningful-name.webp)
+![Meaningful app-name](README_docs/deployment/heroku/heroku-meaningful-name.webp)
 - Click on the **Create app** button.
 
 4. Select **Settings** from the tabs at the top of the app page.
-![Heroku app settings](README_docs/deployment/heroku-dashboard-settings.webp)
+![Heroku app settings](README_docs/deployment/heroku/heroku-dashboard-settings.webp)
 
 5. Click **Reveal Config Vars**.    
 ![Heroku app settings](README_docs/testing/user-testing/heroku-config-vars.webp)
@@ -933,23 +933,23 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 
 
 7. Below your Config Vars in your app settings, click **Add buildpack**.
-![Heroku add buildpack](README_docs/deployment/heroku-add-buildpack.webp)
+![Heroku add buildpack](README_docs/deployment/heroku/heroku-add-buildpack.webp)
 
 8. Select **Python** from the list of buildpacks.
-![Heroku select buildpack](README_docs/deployment/heroku-select-buildpack.webp)
+![Heroku select buildpack](README_docs/deployment/heroku/heroku-select-buildpack.webp)
 - Remember to click **Save changes**.
 
 9. Select **Deploy** from the tabs at the top of the app page.
-![Heroku deploy](README_docs/deployment/heroku-deploy.webp)
+![Heroku deploy](README_docs/deployment/heroku/heroku-deploy.webp)
 
 10. Select **Connect to GitHub** from the deployment methods.
 ![Heroku deployment method](README_docs/testing/user-testing/heroku-deployment-method.webp)
 
 11. Search for the repository to connect to by name.
-![Heroku select repository](README_docs/deployment/heroku-select-repository.webp)
+![Heroku select repository](README_docs/deployment/heroku/heroku-select-repository.webp)
 
 12. Click **Connect**.
-![Heroku click connect](README_docs/deployment/heroku-connect-to-github.webp)
+![Heroku click connect](README_docs/deployment/heroku/heroku-connect-to-github.webp)
 
  - Your app should now be connected to your GitHub account.
 
@@ -957,16 +957,16 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 
  13. Select **Enable Automatic Deploys** for automatic deployments.
 
-![Heroku automatic deploy](README_docs/deployment/heroku-automatic-deploys.webp)
+![Heroku automatic deploy](README_docs/deployment/heroku/heroku-automatic-deploys.webp)
 
 - If you would like to deploy manually, select **Deploy Branch**. If you manually deploy, you will need to re-deploy each time the repository is updated.
 
-![Heroku manual deploy](README_docs/deployment/heroku-manual-deploy.webp)
+![Heroku manual deploy](README_docs/deployment/heroku/heroku-manual-deploy.webp)
 
 - For the first time deploying to Heroku you may have to deploy manually but if you select automatic deploys it will update from then onwards.
 
 14. Click **View** to view the deployed site.
-![Heroku successful deploy](README_docs/deployment/heroku-successful-deploy.webp)
+![Heroku successful deploy](README_docs/deployment/heroku/heroku-successful-deploy.webp)
 
 ***
 
@@ -980,41 +980,41 @@ As the database provided by Django is only accessible within Gitpod and is not s
 ### Create & attach the Elephant SQL database
 
 1. Log in to [ElephantSQL](https://customer.elephantsql.com/instance#) to access your dashboard.
-![Elephant SQL dashboard](static/images/elephant-sql-dashboard.webp)
+![Elephant SQL dashboard](README_docs/deployment/elephant-sql/elephant-sql-dashboard.webp)
 
 2. Click **Create New Instance** at the top right of the page.        
-![Elephant SQL new instance](static/images/elephant-create-new-instance.webp)
+![Elephant SQL new instance](README_docs/deployment/elephant-sql/elephant-create-new-instance.webp)
 
 3. Set up your **plan**.
 - Give your plan a **Name** (this is commonly the name of the project)
 - Select the **Tiny Turtle (Free)** plan
 - You can leave the **Tags** field blank
 
-![Elephant SQL setup plan](static/images/elephant-setup-plan.webp)
+![Elephant SQL setup plan](README_docs/deployment/elephant-sql/elephant-setup-plan.webp)
 
 4. Click **Select Region**.        
-![Elephant SQL select region](static/images/elephant-select-region.webp)
+![Elephant SQL select region](README_docs/deployment/elephant-sql/elephant-select-region.webp)
 
 5. Select a **data center** near you.
-![Elephant SQL select data center](static/images/elephant-select-data-center.webp)
+![Elephant SQL select data center](README_docs/deployment/elephant-sql/elephant-select-data-center.webp)
 
 6. Click **Review**.                 
-![Elephant SQL review data center](static/images/elephant-review-data.webp)
+![Elephant SQL review data center](README_docs/deployment/elephant-sql/elephant-review-data.webp)
 
 7. Ensure your details are correct and then click **Create instance**.
-![Elephant SQL confirm instance](static/images/elephant-confirm-instance.webp)
+![Elephant SQL confirm instance](README_docs/deployment/elephant-sql/elephant-confirm-instance.webp)
 
 8. Return to the **ElephantSQL dashboard** and you should see your **database instance name** for this project.
-![Elephant SQL dashboard instance](static/images/elephant-dashboard-instance.webp)
+![Elephant SQL dashboard instance](README_docs/deployment/elephant-sql/elephant-dashboard-instance.webp)
 
 9. On your **ElephantSQL dashboard**, click on the **database instance name** for this project.  
-![Elephant SQL click instance](static/images/elephant-click-instance.webp)
+![Elephant SQL click instance](README_docs/deployment/elephant-sql/elephant-click-instance.webp)
 
 10. In the **URL section**, click the **copy icon** to copy the **database URL**.
-![Elephant SQL copy URL](static/images/elephant-copy-url.webp)
+![Elephant SQL copy URL](README_docs/deployment/elephant-sql/elephant-copy-url.webp)
 
 11. Within your **Heroku app**, add `DATABASE_URL` as the `KEY` and paste the URL you just copied in **ElephantSQL** into the `VALUE` column. Your **ElephantSQL** database should now be connected to your **Heroku** app.
-![Elephant SQL add database URL ](static/images/elephant-add-database-url.webp)
+![Elephant SQL add database URL ](README_docs/deployment/elephant-sql/elephant-add-database-url.webp)
 
 ***
 
@@ -1024,26 +1024,26 @@ By forking the GitHub Repository you can make a copy of the original repository.
 
 **1.** Log in to GitHub and locate the [GitHub Repository](https://github.com/) you would like to fork.
 
-![GitHub Repository](static/images/github-select-repository.webp)
+![GitHub Repository](README_docs/deployment/github/github-select-repository.webp)
 
 **2.** At the top of the Repository, just above the **Tabs**, locate the **Fork** Button and you should now have a copy of the repository in your account.
 
-![GitHub Fork](static/images/github-fork-repository.webp)
+![GitHub Fork](README_docs/deployment/github/github-fork-repository.webp)
 
 ***
 
 ### Cloning this repository
 
 **1.** Log in to GitHub and locate the [GitHub Repository](https://github.com/).
-![GitHub Repository](static/images/github-select-repository.webp)
+![GitHub Repository](README_docs/deployment/github/github-select-repository.webp)
 
 **2.** On the repository main page, click the drop-down menu called Code.
 
-![GitHub Code Drowndown menu](static/images/github-clone-repository.webp)
+![GitHub Code Drowndown menu](README_docs/deployment/github/github-clone-repository.webp)
 
 **3.** To clone the repository using HTTPS, copy the link.
 
-![GitHub copy URL](static/images/github-copy-url.webp)
+![GitHub copy URL](README_docs/deployment/github/github-copy-url.webp)
 
 **4.** Open Git Bash
 
