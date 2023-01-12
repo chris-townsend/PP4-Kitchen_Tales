@@ -494,7 +494,7 @@ Custom Error Pages were created to give the user more information on the error a
 
 ### Header
 
-![Kitchen Tales logo](static/images/kitchen-tales-logo.webp)
+![Kitchen Tales logo](README_docs/features/images/kitchen-tales-logo.webp)
 
 **Logo**
 - A customised logo was created using Hatchful by Shopify which is a free logo generator.
@@ -506,37 +506,37 @@ Custom Error Pages were created to give the user more information on the error a
 
 #### *User not logged-in Navbar*
 
-![Navigation section](static/images/section-navigation.webp)
+![Navigation section](README_docs/features/images/section-navigation.webp)
 
-![Navigation section unauthorized](static/images/section-navigation-unauthorized.webp)
+![Navigation section unauthorized](README_docs/features/images/section-navigation-unauthorized.webp)
 
 #### *User logged-in Navbar*
 
 - If a user is logged in it will display their profile name in the navbar as part of a drop-down menu. The drop-down menu gives logged-in users the ability to manage and save recipes and the option to sign out of their account.
 
-![Navigation section authorized users](static/images/features-auth-navbar.webp)
+![Navigation section authorized users](README_docs/features/images/features-auth-navbar.webp)
 
-![Navigation dropdown authorized users](static/images/features-auth-dropdown.webp)
+![Navigation dropdown authorized users](README_docs/features/images/features-auth-dropdown.webp)
 
 ### Footer
 
 - The footer section includes links to Facebook, Instagram, Twitter and Youtube.
 - Clicking the links in the footer opens a separate browser tab to avoid pulling the user away from the site.
 
-![footer](static/images/section-footer.webp)
+![footer](README_docs/features/images/section-footer.webp)
 
 ### Home Page
-![Homepage](static/images/features-homepage.webp)
-![Homepage bootstrap carousel](static/images/features-bootstrap-carousel.webp)
-![Homepage card section](static/images/features-card-section.webp)
-![Homepage newsletter section](static/images/features-newsletter-section.webp)
+![Homepage](README_docs/features/images/features-homepage.webp)
+![Homepage bootstrap carousel](README_docs/features/images/features-bootstrap-carousel.webp)
+![Homepage card section](README_docs/features/images/features-card-section.webp)
+![Homepage newsletter section](README_docs/features/images/features-newsletter-section.webp)
 
 ### Newsletter Page
-![Newsletter page](static/images/features-newsletter-page.webp)
+![Newsletter page](README_docs/features/images/features-newsletter-page.webp)
 
 - The newsletter section was a late addition to the site, I wanted to fill the homepage with more content and a newsletter seemed like a sensible option. The database currently saves the email address but more code is needed to set up the email side. Next time with more planning I would make the newsletter its own app instead of having it in with the *Recipes* app and it would be set up better with a name field to make it easier to differentiate logged-in users and users who have only signed up to the newsletter. The newsletter currently doesn't have an unsubscibe button which would be needed in the future. The code to perform this is very similiar to adding a newsletter user and the purpose of setting this up one sided was to show a little more functionality to the site. A success message alerts the user when they have submitted a valid email address.
 
-![Newsletter success message](static/images/kitchen-tales-alert-newsletter.webp)
+![Newsletter success message](README_docs/features/images/kitchen-tales-alert-newsletter.webp)
 
 ### User Account Pages
 
@@ -544,94 +544,94 @@ Custom Error Pages were created to give the user more information on the error a
 
 **Sign Up**
 
-![Register form](static/images/features-signup.webp)
+![Register form](README_docs/features/images/features-signup.webp)
 
 **Log In**
 
-![Login section](static/images/section-sign-in.webp)
+![Login section](README_docs/features/images/section-sign-in.webp)
 
 **Log Out**
 
-![Logout section](static/images/section-sign-out.webp)
+![Logout section](README_docs/features/images/section-sign-out.webp)
 
 - Success messages inform the user if they have logged in/ logged out successfully.
 
-![Success message login](static/images/kitchen-tales-alert-login.webp)
-![Success message logout](static/images/kitchen-tales-alert-logout.webp)
+![Success message login](README_docs/features/images/kitchen-tales-alert-login.webp)
+![Success message logout](README_docs/features/images/kitchen-tales-alert-logout.webp)
 
 ### Browse Recipes
 
-![All recipes page](static/images/features-recipes.webp)
+![All recipes page](README_docs/features/images/features-recipes.webp)
 
 ### Recipe Detail Page
 
 **Recipe Header Section**
-![Recipe detail](static/images/features-recipe-detail.webp)
+![Recipe detail](README_docs/features/images/features-recipe-detail.webp)
 
 - At the top of every recipe detail page, the title, author, prep and cook time, last updated date and star icon is displayed. The star icon is a way of bookmarking a recipe and its displayed as a total likes counter on recipe card pages.
 
 **Recipe Action Buttons**
-![Recipe action buttons](static/images/features-action-button.webp)
+![Recipe action buttons](README_docs/features/images/features-action-button.webp)
 
 - If the logged-in user is the author of the recipe, edit and delete icons will appear near the top of the recipe detail page.
 
 **Recipe Details Section**
 
-![Recipe detail method](static/images/features-method.webp)
-![Recipe detail notes](static/images/features-notes.webp)
+![Recipe detail method](README_docs/features/images/features-method.webp)
+![Recipe detail notes](README_docs/features/images/features-notes.webp)
 
 - Recipe ingredients, method and notes are displayed using Summernote which gives the user more freedom to style their content. 
 
 **Comments Section**
-![Comments section](static/images/features-comments.webp)
-![Comments section](static/images/features-comment-body.webp)
+![Comments section](README_docs/features/images/features-comments.webp)
+![Comments section](README_docs/features/images/features-comment-body.webp)
 
 - The comments section is displayed at the bottom of every `recipe_detail` page, If the user is logged-in a *body* text input box will be displayed for the user to post a comment. If a user submits a comment, a success message will alert the user that their comment is awaiting approval. 
 
-![Comment alert approval](static/images/kitchen-tales-alert-add-comment.webp)
+![Comment alert approval](README_docs/features/images/kitchen-tales-alert-add-comment.webp)
 
 ### Update Comment
-![Update comment page](static/images/features-update-comment.webp)
+![Update comment page](README_docs/features/images/features-update-comment.webp)
 
 - This page is displayed if a user has posted a comment and wants to update their comment. The update comment icon is only displayed if they are the author of the comment and the data comes prepopulated from the last add or update. A success message alerts the user when they have updated their comment. 
 
-![Update comment alert](static/images/kitchen-tales-alert-update-comment.webp)
+![Update comment alert](README_docs/features/images/kitchen-tales-alert-update-comment.webp)
 
 ### Delete Comment
-![Delete comment page](static/images/features-delete-comment.webp)
+![Delete comment page](README_docs/features/images/features-delete-comment.webp)
 
 - A user can delete their comment by clicking on the bin icon next to where the comment is being displayed. A confirmation page gives the user the option to cancel or delete. A success message will alert the user if they delete a comment. 
 
-![Delete comment alert](static/images/kitchen-tales-alert-delete-comment.webp)
+![Delete comment alert](README_docs/features/images/kitchen-tales-alert-delete-comment.webp)
 
 ### Add Recipe Form
-![Add recipe page](static/images/features-add-recipe.webp)
+![Add recipe page](README_docs/features/images/features-add-recipe.webp)
 
 - This page is accessible by logging in, clicking on the dropdown menu at the top of the page and selecting *'Add-Recipe'*. After adding a new recipe, the user should be taken to their newly created recipe detail page and if the form has been filled out correctly, the user will recieve a success message of a successful add. 
 
-![Add recipe alert](static/images/kitchen-tales-success-add-recipe.webp)
+![Add recipe alert](README_docs/features/images/kitchen-tales-alert-add-recipe.webp)
 
 ### Update Recipe Form
-![Update recipe page](static/images/features-update-recipe.webp)
+![Update recipe page](README_docs/features/images/features-update-recipe.webp)
 
 - Clicking on the edit icon will take the user to the update recipe page. The data is prepopulated from the time it was added or updated and this has been done for ease of use for when updating recipes. Success messages are used to notify the user when they successfully update their recipe.
 
-![Update recipe alert](static/images/kitchen-tales-alert-update-recipe.webp)
+![Update recipe alert](README_docs/features/images/kitchen-tales-alert-update-recipe.webp)
 
 ### Delete Recipe
-![Delete recipe page](static/images/features-delete-recipe.webp)
+![Delete recipe page](README_docs/features/images/features-delete-recipe.webp)
 
 - Clicking on the delete icon will take the user to the confirmation page for deleting a recipe. The title of the recipe is included in the confirmation message and the user has three options; Cancel, which will take the user back to the recipe detail page, update instead - which will take the user to the update recipe page for that recipe and finally delete - to completly remove the recipe from the database. A success message alerts the user if they remove a recipe from the database. 
 
-![Delete recipe success message](static/images/kitchen-tales-success-delete-recipe.webp)
+![Delete recipe success message](README_docs/features/images/kitchen-tales-alert-delete-recipe.webp)
 
 ### My Recipes Page
-![My recipes page](static/images/features-my-recipes.webp)
+![My recipes page](README_docs/features/images/features-my-recipes.webp)
 
 - Personally created recipes can be found by clicking on the users dropdown bar and selecting My-Recipes. The recipes are paginated eight to a page.
 
 ### My Bookmarks Page
-![My bookmarks page](static/images/features-my-liked-recipes.webp)
+![My bookmarks page](README_docs/features/images/features-my-liked-recipes.webp)
 
 - The bookmarks page is a users starred recipes, this is denoted by a star icon displayed on a recipe detail page and any user which clicks the star icon will have the recipe saved to their personal starred recipes page. The style is the same as other recipe card pages in the fact that the recipes are paginated by eight. 
 
@@ -640,13 +640,13 @@ Custom Error Pages were created to give the user more information on the error a
 - Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
 
 - ***403** Page Forbidden* - You don't have access to this page.
-![403 error](static/images/kitchen-tales-error-403.webp)
+![403 error](README_docs/features/images/kitchen-tales-error-403.webp)
 
 - ***404** Page Not Found* - The page your trying to access doesn't exist.
-![404 error](static/images/kitchen-tales-error-404.webp)
+![404 error](README_docs/features/images/kitchen-tales-error-404.webp)
 
 - ***500** Server Error* - Unable to handle this request.
-![500 error](static/images/kitchen-tales-error-500.webp)
+![500 error](README_docs/features/images/kitchen-tales-error-500.webp)
 
 ***
 
@@ -745,23 +745,23 @@ This site was made using [GitHub](#github) & [Gitpod](https://www.gitpod.io/). T
 ### Create the repository
 
 1. Sign into Github and navigate to [Code Institute's Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template).
-![GitHub Code Institute template](static/images/github-use-this-template.webp)
+![GitHub Code Institute template](README_docs/development/github/github-use-this-template.webp)
  - At the top of the repository click **Use this template** followed by **Create a new repository**.
- ![GitHub Code Institute template](static/images/github-create-new-repository.webp)
+ ![GitHub Code Institute template](README_docs/development/github/github-create-new-repository.webp)
 
 *Alternatively:*
 
 1. Click the GitHub label in the top left of the nav section.
-![GitHub create repository](static/images/github-label.webp)
+![GitHub create repository](README_docs/development/github/github-label.webp)
 
 2. Select **New** next to **Top Repositories**.     
-![GitHub click new repository](static/images/github-new.webp)
+![GitHub click new repository](README_docs/development/github/github-new.webp)
 
 3. Select the **template** you wish to use.                
-![GitHub select template](static/images/github-select-template.webp)
+![GitHub select template](README_docs/development/github/github-select-template.webp)
 
 4. Give the repository a name and description and then click **Create repository**.
-![GitHub create repository](static/images/github-create-repository.webp)
+![GitHub create repository](README_docs/development/github/github-create-repository.webp)
 
 The repository has now been created and is ready for editing through the gitpod terminal.
  
