@@ -256,7 +256,7 @@ class DeleteRecipeView(LoginRequiredMixin, generic.DeleteView):
     model = Recipe
     template_name = 'delete_recipe.html'
     success_url = reverse_lazy('my_recipes')
-    success_message = 'Your recipe has been deleted successfully'
+    success_message = 'Your recipe has been removed from the database'
 
     def delete(self, request, *args, **kwargs):
         """
@@ -273,7 +273,7 @@ class DeleteCommentView(LoginRequiredMixin, generic.DeleteView):
     model = Comment
     template_name = 'delete_comment.html'
     success_url = reverse_lazy('my_recipes')
-    success_message = 'Your comment has been deleted successfully'
+    success_message = 'Your comment has been removed'
 
     def delete(self, request, *args, **kwargs):
         """
