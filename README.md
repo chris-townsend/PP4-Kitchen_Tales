@@ -436,7 +436,7 @@ Github projects was used to manage the development process using an agile approa
 
 A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution. The issues were closed automatically when the pull request was linked to the issue. I have done this for most user stories but some have been closed manually.
 
-Towards the end of the project, I knew there would be a few user stories that would be scoped out of the project. These user stories have been placed within the Future features section on the kanban board and are intended to be implemented at a later date.
+Towards the end of the project, I knew there would be some user stories that would be scoped out of the project. These user stories have been placed within the Future features section on the kanban board and are intended to be implemented at a later date.
 
 ![Guthub kanban board future features](static/images/github-kanban-board-future-features.webp)
 
@@ -490,9 +490,7 @@ Custom Error Pages were created to give the user more information on the error a
 
 ***
 
-
 ## Features
-#
 
 ### Header
 
@@ -504,21 +502,25 @@ Custom Error Pages were created to give the user more information on the error a
 
 **Navigation Bar**
 
+- The Navbar is displayed on all pages of the website and allows users to navigate the site with ease. The navbar is comprised of a logo, links to navigate the site and a search bar. The links on the navbar will vary depending on whether a user is logged into their account.
+
+#### *User not logged-in Navbar*
 
 ![Navigation section](static/images/section-navigation.webp)
 
 ![Navigation section unauthorized](static/images/section-navigation-unauthorized.webp)
 
+#### *User logged-in Navbar*
+
+- If a user is logged in it will display their profile name in the navbar as part of a drop-down menu. The drop-down menu gives logged-in users the ability to manage and save recipes and the option to sign out of their account.
 
 ![Navigation section authorized users](static/images/features-auth-navbar.webp)
 
 ![Navigation dropdown authorized users](static/images/features-auth-dropdown.webp)
 
-
 ### Footer
 
 - The footer section includes links to Facebook, Instagram, Twitter and Youtube.
-
 - Clicking the links in the footer opens a separate browser tab to avoid pulling the user away from the site.
 
 ![footer](static/images/section-footer.webp)
@@ -529,18 +531,20 @@ Custom Error Pages were created to give the user more information on the error a
 ![Homepage card section](static/images/features-card-section.webp)
 ![Homepage newsletter section](static/images/features-newsletter-section.webp)
 
-
 ### Newsletter Page
 ![Newsletter page](static/images/features-newsletter-page.webp)
 
+- The newsletter section was a late addition to the site, I wanted to fill the homepage with more content and a newsletter seemed like a sensible option. The database currently saves the email address but more code is needed to set up the email side. Next time with more planning I would make the newsletter its own app instead of having it in with the *Recipes* app and it would be set up better with a name field to make it easier to differentiate logged-in users and users who have only signed up to the newsletter. The newsletter currently doesn't have an unsubscibe button which would be needed in the future. The code to perform this is very similiar to adding a newsletter user and the purpose of setting this up one sided was to show a little more functionality to the site. A success message alerts the user when they have submitted a valid email address.
+
+![Newsletter success message](static/images/kitchen-tales-alert-newsletter.webp)
+
 ### User Account Pages
+
+- Django allauth was installed and used to create the Sign up, Log in and Log out functionality. 
 
 **Sign Up**
 
-![Register](static/images/section-register-1.webp)
-![Register form](static/images/section-register-2.webp)
-
-
+![Register form](static/images/features-signup.webp)
 
 **Log In**
 
@@ -550,49 +554,76 @@ Custom Error Pages were created to give the user more information on the error a
 
 ![Logout section](static/images/section-sign-out.webp)
 
-- Django allauth was installed and used to create the Sign up, Log in and Log out functionality. 
 - Success messages inform the user if they have logged in/ logged out successfully.
+
+![Success message login](static/images/kitchen-tales-alert-login.webp)
+![Success message logout](static/images/kitchen-tales-alert-logout.webp)
 
 ### Browse Recipes
 
 ![All recipes page](static/images/features-recipes.webp)
-
 
 ### Recipe Detail Page
 
 **Recipe Header Section**
 ![Recipe detail](static/images/features-recipe-detail.webp)
 
+- At the top of every recipe detail page, the title, author, prep and cook time, last updated date and star icon is displayed. The star icon is a way of bookmarking a recipe and its displayed as a total likes counter on recipe card pages.
+
 **Recipe Action Buttons**
 ![Recipe action buttons](static/images/features-action-button.webp)
 
-- If the logged-in user is the author of the recipe, an edit icon will appear near the top of the recipe detail page.
-- If the logged-in user is the author of the recipe, a delete icon will appear near the top the recipe detail page.
+- If the logged-in user is the author of the recipe, edit and delete icons will appear near the top of the recipe detail page.
 
 **Recipe Details Section**
 
 ![Recipe detail method](static/images/features-method.webp)
 ![Recipe detail notes](static/images/features-notes.webp)
 
+- Recipe ingredients, method and notes are displayed using Summernote which gives the user more freedom to style their content. 
+
 **Comments Section**
 ![Comments section](static/images/features-comments.webp)
 ![Comments section](static/images/features-comment-body.webp)
 
+- The comments section is displayed at the bottom of every `recipe_detail` page, If the user is logged-in a *body* text input box will be displayed for the user to post a comment. If a user submits a comment, a success message will alert the user that their comment is awaiting approval. 
+
+![Comment alert approval](static/images/kitchen-tales-alert-add-comment.webp)
+
+### Update Comment
+![Update comment page](static/images/features-update-comment.webp)
+
+- This page is displayed if a user has posted a comment and wants to update their comment. The update comment icon is only displayed if they are the author of the comment and the data comes prepopulated from the last add or update. A success message alerts the user when they have updated their comment. 
+
+![Update comment alert](static/images/kitchen-tales-alert-update-comment.webp)
+
+### Delete Comment
+![Delete comment page](static/images/features-delete-comment.webp)
+
+- A user can delete their comment by clicking on the bin icon next to where the comment is being displayed. A confirmation page gives the user the option to cancel or delete. A success message will alert the user if they delete a comment. 
+
+![Delete comment alert](static/images/kitchen-tales-alert-delete-comment.webp)
 
 ### Add Recipe Form
 ![Add recipe page](static/images/features-add-recipe.webp)
 
-- This page is accessible by logging in, clicking on the dropdown menu at the top of the page and selecting 'Add-Recipe'.
+- This page is accessible by logging in, clicking on the dropdown menu at the top of the page and selecting *'Add-Recipe'*. After adding a new recipe, the user should be taken to their newly created recipe detail page and if the form has been filled out correctly, the user will recieve a success message of a successful add. 
+
+![Add recipe alert](static/images/kitchen-tales-success-add-recipe.webp)
 
 ### Update Recipe Form
 ![Update recipe page](static/images/features-update-recipe.webp)
 
-- Clicking on the edit icon within the recipe detail page will take the user to the update recipe page. The data is prepopulated from the time it was added or updated and this has been done for ease of use for the user when updating their recipes.
+- Clicking on the edit icon will take the user to the update recipe page. The data is prepopulated from the time it was added or updated and this has been done for ease of use for when updating recipes. Success messages are used to notify the user when they successfully update their recipe.
+
+![Update recipe alert](static/images/kitchen-tales-alert-update-recipe.webp)
 
 ### Delete Recipe
 ![Delete recipe page](static/images/features-delete-recipe.webp)
 
-- Clicking on the delete icon will take the user to the confirmation page for deleting a recipe. The title of the recipe is included in the confirmation message and the user has three options; Cancel, which will take the user back to the recipe detail page, update instead - which will take the user to the update recipe page for that recipe and finally delete - to completly remove the recipe from the database.
+- Clicking on the delete icon will take the user to the confirmation page for deleting a recipe. The title of the recipe is included in the confirmation message and the user has three options; Cancel, which will take the user back to the recipe detail page, update instead - which will take the user to the update recipe page for that recipe and finally delete - to completly remove the recipe from the database. A success message alerts the user if they remove a recipe from the database. 
+
+![Delete recipe success message](static/images/kitchen-tales-success-delete-recipe.webp)
 
 ### My Recipes Page
 ![My recipes page](static/images/features-my-recipes.webp)
@@ -604,19 +635,9 @@ Custom Error Pages were created to give the user more information on the error a
 
 - The bookmarks page is a users starred recipes, this is denoted by a star icon displayed on a recipe detail page and any user which clicks the star icon will have the recipe saved to their personal starred recipes page. The style is the same as other recipe card pages in the fact that the recipes are paginated by eight. 
 
-### Update Comment
-![Update comment page](static/images/features-update-comment.webp)
-
-- This page is displayed if a user has posted a comment and wants to update their comment. The update comment icon is only displayed if its the author of the comment and the data comes prepopulated from the last add or update.
-
-### Delete Comment
-![Delete comment page](static/images/features-delete-comment.webp)
-
-- A user can delete there own comment by clicking on the bin icon next to where their comment is being displayed. A confirmation page gives the user the option to cancel or delete.
-
 ### Error Pages
 
-Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
+- Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
 
 - ***403** Page Forbidden* - You don't have access to this page.
 ![403 error](static/images/kitchen-tales-error-403.webp)
