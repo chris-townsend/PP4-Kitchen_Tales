@@ -32,36 +32,36 @@
 
 *[As a developer, I can create an account with Heroku to process setting up the app so that I can deploy my site to Heroku](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/1)*
 
-![Create Heroku account](README_docs/testing/user-testing/heroku-create-account.webp)
+![Create Heroku account](docs/testing/user-testing/heroku-create-account.webp)
 
 - ***Detailed information about setting up Heroku can be found [here](/README.md#heroku)***
 
 
 *[As a developer, I can add my config vars to my app in Heroku so that I can allow deployment to production](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/2)*
 
-![Heroku config vars input](README_docs/testing/user-testing/heroku-config-vars.webp)
-![Add heroku config vars](README_docs/testing/user-testing/heroku-config-var-setup.webp)
+![Heroku config vars input](docs/testing/user-testing/heroku-config-vars.webp)
+![Add heroku config vars](docs/testing/user-testing/heroku-config-var-setup.webp)
 
 - ***Information about setting up the config vars within Heroku can be found [here](/README.md#create-the-heroku-app)***
 
 
 *[As a developer, I can create a Procfile within my project so that the application will run in Heroku](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/3)*
 
-![Create Procfile](README_docs/testing/user-testing/kitchen-tales-create-procfile.webp)
+![Create Procfile](docs/testing/user-testing/kitchen-tales-create-procfile.webp)
 
 - ***Information about setting up the Procfile can be found within the [Django](/README.md#within-gitpod) section of the readme***
 
 
 *[As a developer, I can create a Cloudinary account so that I can store my media files](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/4)*
 
-![Create Cloudinary account](README_docs/testing/user-testing/create-cloudinary-account.webp)
+![Create Cloudinary account](docs/testing/user-testing/create-cloudinary-account.webp)
 
 - ***Information about setting up the Cloudinary account can be found [here](/README.md#installing-django-and-supporting-libraries)***
 
 
 *[As a developer, I can connect my GitHub account for the final deployment stages so that I can allow deployment to production](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/5)*
 
-![Connect GitHub account](README_docs/testing/user-testing/heroku-deployment-method.webp)
+![Connect GitHub account](docs/testing/user-testing/heroku-deployment-method.webp)
 
 - ***Information about connecting my GitHub account through Heroku can be found [here](/README.md#create-the-heroku-app)***
 
@@ -73,7 +73,7 @@
 
 *[As a developer, I can set up Django and supporting libraries so that I can start developing the site](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/6)*
 
-![Setup Django](README_docs/testing/user-testing/heroku-connected-app.webp)
+![Setup Django](docs/testing/user-testing/heroku-connected-app.webp)
 
 - ***Detailed information about the initial Django setup can be found [here](/README.md#installing-django-and-supporting-libraries) within the Django section of the README.md***
 
@@ -104,50 +104,50 @@
 
 *[As a first-time user, I can immediately understand the purpose of the website, and I know if it's what I'm looking for](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/10)*
 
-![Kichen Tales welcome message](README_docs/testing/user-testing/kitchen-tales-welcome.webp)
+![Kichen Tales welcome message](docs/testing/user-testing/kitchen-tales-welcome.webp)
 
 - The 'Welcome to Kitchen Tales' section when you first arrive on the homepage should be enough for users to understand the concept of the website. There is a button to sign up to create an account and share recipes and also a relatable image of some cooked dishes and a menu.
 
 
 *[As a User, I can view recipes, without having to sign-up to enjoy the site's content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/11)*
 
-![Kichen Tales recipes tab](README_docs/testing/user-testing/kitchen-tales-recipes-tab.webp)
+![Kichen Tales recipes tab](docs/testing/user-testing/kitchen-tales-recipes-tab.webp)
 
 - Any user can view all recipes from the recipes tab in the nav section at the top of every page.
 
-![Kichen Tales recipes](README_docs/testing/user-testing/kitchen-tales-recipes.webp)
+![Kichen Tales recipes](docs/testing/user-testing/kitchen-tales-recipes.webp)
 
 
 *[As a User, I can view recipes on my mobile so that I don't have to rely on using a computer](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/13)*
 
-![Kichen Tales mobile friendly recipe](README_docs/testing/user-testing/kitchen-tales-mobile-recipe.webp)
+![Kichen Tales mobile friendly recipe](docs/testing/user-testing/kitchen-tales-mobile-recipe.webp)
 
 - The site was tested on a variety of devices to ensure it was mobile friendly, please click [here](/TESTING.md#device-testing) to view a full list of tested devices.
 
-![Kichen Tales mobile friendly test](README_docs/testing/user-testing/kitchen-tales-mobile-friendly-test.webp)
+![Kichen Tales mobile friendly test](docs/testing/user-testing/kitchen-tales-mobile-friendly-test.webp)
 
 ***For more detailed information about mobile testing, please click [here](#device-testing)***
 
 
 *[As a User, I can view comments on recipes so that I can read other user's feedback](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/34)*
 
-![Kichen Tales comment section](README_docs/testing/user-testing/kitchen-tales-comment-section.webp)
+![Kichen Tales comment section](docs/testing/user-testing/kitchen-tales-comment-section.webp)
 
 - The comments section is displayed below each recipe on a recipe detail page. Any user can view comments but you must be logged in to post, edit and delete comments.
 
 
 *[As a Logged-in User, I can comment on recipes so that I can leave my feedback for others](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/35)*
 
-![Kichen Tales comment section](README_docs/testing/user-testing/kitchen-tales-leave-comment.webp)
+![Kichen Tales comment section](docs/testing/user-testing/kitchen-tales-leave-comment.webp)
 
 - When a user is logged in, a text field will be displayed for the user to post a comment.
 
 
 *[As a developer, I can add a favicon so that the site looks more distinguishable](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/41)*
 
-![Kichen Tales tab](README_docs/testing/user-testing/kitchen-tales-tab.webp)
+![Kichen Tales tab](docs/testing/user-testing/kitchen-tales-tab.webp)
 
-![Kichen Tales favicon](README_docs/testing/user-testing/kitchen-tales-favicon-large.webp)
+![Kichen Tales favicon](docs/testing/user-testing/kitchen-tales-favicon-large.webp)
 
 - A favicon has been created using [favicon.io](https://favicon.io/) to make the site look more distinguishable and professional. The image is hosted on Cloudinary and linked in the head of the `base` template.
 
@@ -158,24 +158,24 @@
 
 *[As a User, I can navigate around the site so that I can easily view desired content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/14)*
 
-![Kichen Tales navbar](README_docs/testing/user-testing/kitchen-tales-navbar.webp)
+![Kichen Tales navbar](docs/testing/user-testing/kitchen-tales-navbar.webp)
 
-![Kichen Tales navbar hover](README_docs/testing/user-testing/kitchen-tales-navbar-hover.webp)
+![Kichen Tales navbar hover](docs/testing/user-testing/kitchen-tales-navbar-hover.webp)
 
 - Utilizing *CSS's* hover effect, the user know's what tab they are clicking on as it underlines the heading when it's being hovered over. 
 
-![Kichen Tales navbar authorized user](README_docs/testing/user-testing/kitchen-tales-navbar-auth-user.webp)
+![Kichen Tales navbar authorized user](docs/testing/user-testing/kitchen-tales-navbar-auth-user.webp)
 
 - A logged-in user can see their own dropdown-menu options by clicking on their name with the user icon. This menu gives the option for a user to add a new recipe, see there created recipes, their favourite starred recipes, and an option to log out of their account.
 
 
 *[As a User, I can search for the desirable recipe by keyword so that I can find a specific recipe fast](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/15)*
 
-![Kichen Tales search bar](README_docs/testing/user-testing/kitchen-tales-search-bar.webp)
+![Kichen Tales search bar](docs/testing/user-testing/kitchen-tales-search-bar.webp)
 
 - Any user can search for a recipe by using the search bar feature within the nav bar at the top of every page. 
 
-![Kichen Tales searched results](README_docs/testing/user-testing/kitchen-tales-search-results.webp)
+![Kichen Tales searched results](docs/testing/user-testing/kitchen-tales-search-results.webp)
 
 - The search results are fairly specific and its currently set to search results by title so you might get slightly different results from using a capital letter vs not. With more time, I would like to add more searchable features to the site.
 
@@ -186,62 +186,62 @@
 
 *[As a logged-in User, I can create recipes so that I can add them to the site](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/16)*
 
-![Kichen Tales add recipe tab](README_docs/testing/user-testing/kitchen-tales-add-recipe-tab.webp)
+![Kichen Tales add recipe tab](docs/testing/user-testing/kitchen-tales-add-recipe-tab.webp)
 
 - Creating a new recipe is easy, go to your personal drop-down menu from the nav section and select the 'Add-Recipe' tab. This will then redirect you to the `add_recipe` page which will allow a user to fill out the form and create a recipe. 
 
-![Kichen Tales add recipe page](README_docs/testing/user-testing/kitchen-tales-add-recipe.webp)
+![Kichen Tales add recipe page](docs/testing/user-testing/kitchen-tales-add-recipe.webp)
 
-![Kichen Tales add recipe text](README_docs/testing/user-testing/kitchen-tales-add-recipe-text.webp)
+![Kichen Tales add recipe text](docs/testing/user-testing/kitchen-tales-add-recipe-text.webp)
 
 - A logged-in user can also add a new recipe from the homepage.
 
 
 *[As a logged-in User, I can view all the recipes that I have created so that I can go back to them at a later date](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/17)*
 
-![Kichen Tales my recipes tab](README_docs/testing/user-testing/kitchen-tales-my-recipes-tab.webp)
+![Kichen Tales my recipes tab](docs/testing/user-testing/kitchen-tales-my-recipes-tab.webp)
 
-![Kichen Tales my recipes page](README_docs/testing/user-testing/kitchen-tales-my-recipes.webp)
+![Kichen Tales my recipes page](docs/testing/user-testing/kitchen-tales-my-recipes.webp)
 
 - User created recipes can be found easily by clicking on the drop-down-menu within the nav section. After clicking on the My-Recipes tab, this will open up recipes created by the user.
 
 *[As a logged-in User, I can update and edit my recipes so that I can update any changes or mistakes that I have made](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/18)*
 
-![Kichen Tales update button on hover](README_docs/testing/user-testing/kitchen-tales-edit-button.webp)
+![Kichen Tales update button on hover](docs/testing/user-testing/kitchen-tales-edit-button.webp)
 
 - If the logged-in user is the author of the recipe, an edit button is shown next to the recipe image. When a user hovers over the edit button, it is displayed underlined.
 
-![Kichen Tales update recipe page](README_docs/testing/user-testing/kitchen-tales-update-recipe.webp)
+![Kichen Tales update recipe page](docs/testing/user-testing/kitchen-tales-update-recipe.webp)
 
 - Clicking the Edit tab will open the `update_recipe` page with the prepopulated data displayed.
 
 *[As a logged-in User, I can delete any personal recipes so that I can remove them if necessary](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/19)*
 
-![Kichen Tales delete recipe button on hover](README_docs/testing/user-testing/kitchen-tales-delete-button.webp)
+![Kichen Tales delete recipe button on hover](docs/testing/user-testing/kitchen-tales-delete-button.webp)
 
 - If the logged-in user is the author of the recipe, a delete button is shown next to the recipe image. When a user hovers over the delete button, it is displayed underlined.
 
-![Kichen Tales delete recipe page](README_docs/testing/user-testing/kitchen-tales-delete-recipe-page.webp)
+![Kichen Tales delete recipe page](docs/testing/user-testing/kitchen-tales-delete-recipe-page.webp)
 
 - Clicking the Delete tab will open the `delete_recipe` page which will give the user three options, Cancel - which will take you back to the recipe detail page. Update Instead - which will take you to the `update_recipe` page with the prepopulated data for that recipe and last, Delete Recipe, which will remove the recipe from the database and return you back to a users recipes.
 
 
 *[As a logged-in User, I can view my liked recipes so that I can return to them easily](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/39)*
 
-![Kichen Tales saved recipes tab](README_docs/testing/user-testing/kitchen-tales-saved-recipes-tab.webp)
+![Kichen Tales saved recipes tab](docs/testing/user-testing/kitchen-tales-saved-recipes-tab.webp)
 
 - My liked recipes can be found by clicking on the drop-down-menu within the nav section. After clicking on the Saved-Recipes tab, this will open a logged-in users starred recipes.
 
-![Kichen Tales liked recipes page](README_docs/testing/user-testing/kitchen-tales-liked-recipes-page.webp)
+![Kichen Tales liked recipes page](docs/testing/user-testing/kitchen-tales-liked-recipes-page.webp)
 
 
 *[As a logged-in User, I can like or star a recipe so that I can bookmark it for later](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/42)*
 
-![Kichen Tales like this recipe text and icon](README_docs/testing/user-testing/kitchen-tales-click-to-bookmark.webp)
+![Kichen Tales like this recipe text and icon](docs/testing/user-testing/kitchen-tales-click-to-bookmark.webp)
 
 - Click to bookmark this recipe and an outline of a star is displayed next to the recipe image and just below the image for mobile. A user can click the star icon and it will save the recipe to their saved recipes list. 
 
-![Kichen Tales number of likes](README_docs/testing/user-testing/kitchen-tales-number-of-likes.webp)
+![Kichen Tales number of likes](docs/testing/user-testing/kitchen-tales-number-of-likes.webp)
 
 - After a user has clicked the star icon, the recipe displays the total amount of stars received from all users.
 
@@ -252,46 +252,46 @@
 
 *[As a User, I can register for an account so that I can interact with the site content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/22)*
 
-![Kichen Tales sign up tab](README_docs/testing/user-testing/kitchen-tales-sign-up-tab.webp)
+![Kichen Tales sign up tab](docs/testing/user-testing/kitchen-tales-sign-up-tab.webp)
 
 - Users can sign-up for an account by clicking on the drop down menu MyAccount and then selecting **Register** from the list.
 
-![Kichen Tales sign up button](README_docs/testing/user-testing/kitchen-tales-sign-up-button.webp)
+![Kichen Tales sign up button](docs/testing/user-testing/kitchen-tales-sign-up-button.webp)
 
 - For users which are not logged-in, a banner is displayed on the homepage which intices people to register to share recipes.
 
-![Kichen Tales sign up text](README_docs/testing/user-testing/kitchen-tales-sign-up-text.webp)
+![Kichen Tales sign up text](docs/testing/user-testing/kitchen-tales-sign-up-text.webp)
 
 - A user can also sign up by clicking on the text above which is displayed on a recipe detail page next to the star icon. 
 
 *[As a User, I can log into my account so that I can manage my recipes](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/24)*
 
-![Kichen Tales sign in tab](README_docs/testing/user-testing/kitchen-tales-sign-in.webp)
+![Kichen Tales sign in tab](docs/testing/user-testing/kitchen-tales-sign-in.webp)
 
 - Users can sign-in to their account by clicking on the MyAccount dropdown menu and after clicking on Sign-in.
 
-![Kichen Tales sign in page](README_docs/testing/user-testing/kitchen-tales-sign-in-page.webp)
+![Kichen Tales sign in page](docs/testing/user-testing/kitchen-tales-sign-in-page.webp)
 
 - This will take the user to the sign-in page where a username and password is requested. You can select a small tick box to remember login credentials to make it easier for future sign-ins.
 
 
 *[As a User, I can safely log out of my account so that I can disconnect from the site](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/25)*
 
-![Kichen Tales sign out tab](README_docs/testing/user-testing/kitchen-tales-sign-out-tab.webp)
+![Kichen Tales sign out tab](docs/testing/user-testing/kitchen-tales-sign-out-tab.webp)
 
 - Users can safetly sign-out of their account by clicking on their personal drop-down menu and after selecting Logout from the bottom of the list.
 
-![Kichen Tales sign out page](README_docs/testing/user-testing/kitchen-tales-sign-out-page.webp)
+![Kichen Tales sign out page](docs/testing/user-testing/kitchen-tales-sign-out-page.webp)
 
 - Clicking on Logout will take the user to a confirmation page to confirm signing out. 
 
 *[As a logged-in User, I can see my login status so that I know if I am logged in or out of my account](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/26)*
 
-![Kichen Tales login status](README_docs/testing/user-testing/kitchen-tales-login-status.webp)
+![Kichen Tales login status](docs/testing/user-testing/kitchen-tales-login-status.webp)
 
 - At first, I left the MyAccount tab as it was for signed-in users but soon realised this was not as intuitive for the user to realize their login status unless they clicked on their MyAccount menu. I have now changed this heading to the users name and a profile icon so that a user will instantly know when there logged-in as they will be able to see there profile name in the nav-section.
 
-![Kichen Tales navbar status for logged in user](README_docs/testing/user-testing/kitchen-tales-logged-in-navbar.webp)
+![Kichen Tales navbar status for logged in user](docs/testing/user-testing/kitchen-tales-logged-in-navbar.webp)
 
 - I have organized the items within the drop-down menu of hierarchy, with Logout being the least likely page a user will want to navigate to when signed in.
 
@@ -302,29 +302,29 @@
 
 *[As a Site admin, I can create, edit and delete recipes and comments so that I can control the site content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/28)*
 
-![Kichen Tales admin panel](README_docs/testing/user-testing/django-admin-panel.webp)
+![Kichen Tales admin panel](docs/testing/user-testing/django-admin-panel.webp)
 
 - Admins have full access to CRUD functionality for all recipes and comments within the Django admin panel.
 
-![Kichen Tales admin recipe panel](README_docs/testing/user-testing/django-recipe-panel.webp)
+![Kichen Tales admin recipe panel](docs/testing/user-testing/django-recipe-panel.webp)
 
 - The *'Recipes'* admin panel has been created within `admin.py`. Recipes are sorted by status and created date for organization.
 
-![Kichen Tales admin comment panel](README_docs/testing/user-testing/django-comment-panel.webp)
+![Kichen Tales admin comment panel](docs/testing/user-testing/django-comment-panel.webp)
 
 - The *Comment* admin panel has been set up in a similar way to *Recipes* and displays comments by created date with newest comments to be approved at the top.
 
 
 *[As a Site admin, I can authorize comments so that I can review the content before it's made public](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/29)*
 
-![Kichen Tales admin panel approve comments](README_docs/testing/user-testing/django-admin-approve-comment.webp)
+![Kichen Tales admin panel approve comments](docs/testing/user-testing/django-admin-approve-comment.webp)
 
 - Comments have to be approved by a site admin before they are published publically. The user should receive an alert when a comment has been posted stating that the comment is under review. 
 
 
 *[As a Site owner, I would like to display my social icons so that I can promote my other channels](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/31)*
 
-![Kichen Tales social icons](README_docs/testing/user-testing/kitchen-tales-social-icons.webp)
+![Kichen Tales social icons](docs/testing/user-testing/kitchen-tales-social-icons.webp)
 
 - Social Icons are displayed at the bottom of every page, this includes links to Facebook, Instagram, Youtube and Twitter. All links open in a new tab for user convenience.
 
@@ -335,7 +335,7 @@
 
 ## Validator Testing
 
-![HTML w3c validator](README_docs/testing/html/html-w3c-validation.webp)
+![HTML w3c validator](docs/testing/html/html-w3c-validation.webp)
 
 The *[W3C HTML validator](https://validator.w3.org/)* was used to test all HTML pages, **no errors** were reported in the final deployment.
 
@@ -373,8 +373,8 @@ The *[W3C HTML validator](https://validator.w3.org/)* was used to test all HTML 
 
 The *[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)* was used to validate the project, the results are shown below with **no errors reported.**
 
-![CSS w3c validator](README_docs/testing/css/css-w3c-validation.webp)
-![CSS Result](README_docs/testing/css/css-validation-pass.webp)
+![CSS w3c validator](docs/testing/css/css-w3c-validation.webp)
+![CSS Result](docs/testing/css/css-validation-pass.webp)
 
 - *[ CSS results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)*
 
@@ -384,9 +384,9 @@ The *[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)* was used to vali
 
 *[JSHint](https://jshint.com/)* was used to check the JavaScript within the base template. The JavaScript code has been placed in `<script>` tags at the bottom of the `base.html` template and as there is very little JavaScript code, I felt it was not worth placing in its own file. The results came back with no errors but a few undefined variables. I have left this as it is with a detailed comment above the variables to explain their function.
 
-![JSHint Logo](README_docs/testing/javascript/testing-jshint.webp)
-![JavaScript Code to test](README_docs/testing/javascript/testing-jshint-code.webp)
-![JShint test result](README_docs/testing/javascript/testing-jshint-result.webp)
+![JSHint Logo](docs/testing/javascript/testing-jshint.webp)
+![JavaScript Code to test](docs/testing/javascript/testing-jshint-code.webp)
+![JShint test result](docs/testing/javascript/testing-jshint-result.webp)
 
 
 ***
@@ -396,7 +396,7 @@ The *[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)* was used to vali
 
 Code Institutes *[PEP8](https://pep8ci.herokuapp.com/)* linter was used to test the Python files. The table below shows the pages tested and their result, all pages are **error free** in the final deployment.
 
-![Code Institute's Python linter](README_docs/testing/python/ci-python-linter.webp)
+![Code Institute's Python linter](docs/testing/python/ci-python-linter.webp)
 
 
 
@@ -418,29 +418,29 @@ I have run the website through Google Chrome's Lighthouse audit application and 
  
 | Page                     |    Desktop     |    Mobile    | 
 | ---                      |      :---:     |    :---:     | 
-| `403.html`               |![lighthouse result desktop 403](README_docs/testing/lighthouse/lighthouse-desktop-403.webp)                      |![lighthouse result mobile 403](README_docs/testing/lighthouse/lighthouse-mobile-403.webp)                      |   
-| `404.html`               |![lighthouse result desktop 404](README_docs/testing/lighthouse/lighthouse-desktop-404.webp)                      |![lighthouse result mobile 404](README_docs/testing/lighthouse/lighthouse-mobile-404.webp)                      |
-| `500.html`               |![lighthouse result desktop 500](README_docs/testing/lighthouse/lighthouse-desktop-500.webp)                      |![lighthouse result mobile 500](README_docs/testing/lighthouse/lighthouse-mobile-500.webp)              | 
-| `add_recipe.html`        |![lighthouse result desktop add recipe](README_docs/testing/lighthouse/lighthouse-desktop-add-recipe.webp)         |![lighthouse result mobile add recipe](README_docs/testing/lighthouse/lighthouse-mobile-add-recipe.webp)          |
-| `all_recipes.html`       |![lighthouse result desktop all recipes](README_docs/testing/lighthouse/lighthouse-desktop-all-recipes.webp)        |![lighthouse result mobile all recipes](README_docs/testing/lighthouse/lighthouse-mobile-all-recipes.webp)  |
+| `403.html`               |![lighthouse result desktop 403](docs/testing/lighthouse/lighthouse-desktop-403.webp)                      |![lighthouse result mobile 403](docs/testing/lighthouse/lighthouse-mobile-403.webp)                      |   
+| `404.html`               |![lighthouse result desktop 404](docs/testing/lighthouse/lighthouse-desktop-404.webp)                      |![lighthouse result mobile 404](docs/testing/lighthouse/lighthouse-mobile-404.webp)                      |
+| `500.html`               |![lighthouse result desktop 500](docs/testing/lighthouse/lighthouse-desktop-500.webp)                      |![lighthouse result mobile 500](docs/testing/lighthouse/lighthouse-mobile-500.webp)              | 
+| `add_recipe.html`        |![lighthouse result desktop add recipe](docs/testing/lighthouse/lighthouse-desktop-add-recipe.webp)         |![lighthouse result mobile add recipe](docs/testing/lighthouse/lighthouse-mobile-add-recipe.webp)          |
+| `all_recipes.html`       |![lighthouse result desktop all recipes](docs/testing/lighthouse/lighthouse-desktop-all-recipes.webp)        |![lighthouse result mobile all recipes](docs/testing/lighthouse/lighthouse-mobile-all-recipes.webp)  |
 | `index.html`             |![lighthouse result desktop index](README_docs/testing/lighthouse/lighthouse-desktop-index.webp)              |![lighthouse result mobile index](README_docs/testing/lighthouse/lighthouse-mobile-index.webp)               | 
-| `delete_comment.html`    |![lighthouse result desktop delete comment](README_docs/testing/lighthouse/lighthouse-desktop-delete-comment.webp)     |![lighthouse result mobile delete comment](README_docs/testing/lighthouse/lighthouse-mobile-delete-comment.webp)              |
-| `my-recipes.html`        |![lighthouse result desktop my recipes](README_docs/testing/lighthouse/lighthouse-desktop-my-recipes.webp)         |![lighthouse result mobile my recipes](README_docs/testing/lighthouse/lighthouse-mobile-my-recipes.webp)          |  
-| `my_starred_recipes.html`|![lighthouse result desktop my starred recipes](README_docs/testing/lighthouse/lighthouse-desktop-my-liked-recipes.webp)   |![lighthouse result mobile my starred recipes](README_docs/testing/lighthouse/lighthouse-mobile-my-liked-recipes.webp)              |
-| `newsletter.html`        |![lighthouse result desktop newsletter](README_docs/testing/lighthouse/lighthouse-desktop-newsletter.webp)         |![lighthouse result mobile newsletter](README_docs/testing/lighthouse/lighthouse-mobile-newsletter.webp)              |
-| `recipe_detail.html`     |![lighthouse result desktop recipe detail](README_docs/testing/lighthouse/lighthouse-desktop-recipe-detail.webp)      |![lighthouse result mobile recipe detail](README_docs/testing/lighthouse/lighthouse-mobile-recipe-detail.webp)              |
-| `search_results.html`    |![lighthouse result desktop search results](README_docs/testing/lighthouse/lighthouse-desktop-search-results.webp)    |![lighthouse result mobile search results](README_docs/testing/lighthouse/lighthouse-mobile-search-results.webp)              |
-| `update_comment.html`    |![lighthouse result desktop update comment](README_docs/testing/lighthouse/lighthouse-desktop-update-comment.webp)    |![lighthouse result mobile update comment](README_docs/testing/lighthouse/lighthouse-mobile-update-comment.webp)              |
-| `update_recipe.html`     |![lighthouse result desktop update recipe](README_docs/testing/lighthouse/lighthouse-desktop-update-recipe.webp)     |![lighthouse result mobile update recipe](README_docs/testing/lighthouse/lighthouse-mobile-update-recipe.webp)              |
-| `login.html`             |![lighthouse result desktop login](README_docs/testing/lighthouse/lighthouse-desktop-login.webp)  |![lighthouse result mobile login](README_docs/testing/lighthouse/lighthouse-mobile-login.webp)              |
-| `logout.html`            |![lighthouse result desktop logout](README_docs/testing/lighthouse/lighthouse-desktop-signout.webp)|![lighthouse result mobile logout](README_docs/testing/lighthouse/lighthouse-mobile-signout.webp)              | 
-| `signup.html`            |![lighthouse result desktop signup](README_docs/testing/lighthouse/lighthouse-desktop-signup.webp) |![lighthouse result mobile signup](README_docs/testing/lighthouse/lighthouse-mobile-signup.webp)              |
+| `delete_comment.html`    |![lighthouse result desktop delete comment](docs/testing/lighthouse/lighthouse-desktop-delete-comment.webp)     |![lighthouse result mobile delete comment](docs/testing/lighthouse/lighthouse-mobile-delete-comment.webp)              |
+| `my-recipes.html`        |![lighthouse result desktop my recipes](docs/testing/lighthouse/lighthouse-desktop-my-recipes.webp)         |![lighthouse result mobile my recipes](docs/testing/lighthouse/lighthouse-mobile-my-recipes.webp)          |  
+| `my_starred_recipes.html`|![lighthouse result desktop my starred recipes](docs/testing/lighthouse/lighthouse-desktop-my-liked-recipes.webp)   |![lighthouse result mobile my starred recipes](docs/testing/lighthouse/lighthouse-mobile-my-liked-recipes.webp)              |
+| `newsletter.html`        |![lighthouse result desktop newsletter](docs/testing/lighthouse/lighthouse-desktop-newsletter.webp)         |![lighthouse result mobile newsletter](docs/testing/lighthouse/lighthouse-mobile-newsletter.webp)              |
+| `recipe_detail.html`     |![lighthouse result desktop recipe detail](docs/testing/lighthouse/lighthouse-desktop-recipe-detail.webp)      |![lighthouse result mobile recipe detail](docs/testing/lighthouse/lighthouse-mobile-recipe-detail.webp)              |
+| `search_results.html`    |![lighthouse result desktop search results](docs/testing/lighthouse/lighthouse-desktop-search-results.webp)    |![lighthouse result mobile search results](docs/testing/lighthouse/lighthouse-mobile-search-results.webp)              |
+| `update_comment.html`    |![lighthouse result desktop update comment](docs/testing/lighthouse/lighthouse-desktop-update-comment.webp)    |![lighthouse result mobile update comment](docs/testing/lighthouse/lighthouse-mobile-update-comment.webp)              |
+| `update_recipe.html`     |![lighthouse result desktop update recipe](docs/testing/lighthouse/lighthouse-desktop-update-recipe.webp)     |![lighthouse result mobile update recipe](docs/testing/lighthouse/lighthouse-mobile-update-recipe.webp)              |
+| `login.html`             |![lighthouse result desktop login](docs/testing/lighthouse/lighthouse-desktop-login.webp)  |![lighthouse result mobile login](docs/testing/lighthouse/lighthouse-mobile-login.webp)              |
+| `logout.html`            |![lighthouse result desktop logout](docs/testing/lighthouse/lighthouse-desktop-signout.webp)|![lighthouse result mobile logout](docs/testing/lighthouse/lighthouse-mobile-signout.webp)              | 
+| `signup.html`            |![lighthouse result desktop signup](docs/testing/lighthouse/lighthouse-desktop-signup.webp) |![lighthouse result mobile signup](docs/testing/lighthouse/lighthouse-mobile-signup.webp)              |
 
 <br>
 
 The results are satisfactory and the suggested modification with regards to the issue within the console appears to give a lower score for *Best Practices* throughout mobile and desktop tests. Please see *[issue #64](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/64)* for further information regarding Audit usage of navigator.userAgent, navigator.appVersion & navigator.platform and a potential future issue to fix the current warning. The other suggestion is relating to the sizing of the site logo. This is a design choice, the image looks much better when it hasn't been cropped. If more time were available, image editing software could be utilised to edit the image but the effect is negligble. Overall the site runs better on desktop, the performace is low for mobile when adding and updating a recipe, this is mostly due to using summernote widgets for certain fields. This has been left as it is for now as the overall performace for the site is good. 
 
-![lighthouse low score](README_docs/testing/lighthouse/lighthouse-enable-text-compression.webp)
+![lighthouse low score](docs/testing/lighthouse/lighthouse-enable-text-compression.webp)
 
 <br>
 
@@ -1058,4 +1058,3 @@ A number of unit tests were written to test key interactions between the views a
 
 [Back to *README.md*](/README.md#testing)
 ***
-

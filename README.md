@@ -4,7 +4,7 @@ Kitchen Tales is a full-stack project built in Django using Python, HTML and CSS
 
 The site should be instantly recognisable following UX design principles, which meets accessibility guidelines, is easy to navigate and allows the user to find information and resources intuitively. The site provides role based permissions for users to interact within a central dataset while integrating Djangos built-in authentication system.
 
-![Am i responsive](README_docs/features/am-i-responsive/am-i-responsive.webp)
+![Am i responsive](docs/features/am-i-responsive/am-i-responsive.webp)
 
 The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuapp.com/)
 
@@ -242,70 +242,70 @@ Initial wireframes were made for the original ideas and as functionality was red
 
  <summary>Homepage</summary>
 
-![Mobile - Homepage](README_docs/wireframes/wireframe-mobile-homepage.webp)
+![Mobile - Homepage](docs/wireframes/wireframe-mobile-homepage.webp)
 </details>
 
 <details>
 
  <summary>All Recipes</summary>
 
-![Mobile - Recipes](README_docs/wireframes/wireframe-mobile-recipes.webp)
+![Mobile - Recipes](docs/wireframes/wireframe-mobile-recipes.webp)
 </details>
 
 <details>
 
  <summary>Recipe Detail</summary>
 
-![Mobile - Recipe Detail](README_docs/wireframes/wireframe-mobile-recipe-detail.webp)
+![Mobile - Recipe Detail](docs/wireframes/wireframe-mobile-recipe-detail.webp)
 </details>
 
 <details>
 
  <summary>Recipe Detail for the <i>author</i></summary>
 
-![Mobile - Recipe Detail for the author](README_docs/wireframes/wireframe-mobile-recipe-detail-author.webp)
+![Mobile - Recipe Detail for the author](docs/wireframes/wireframe-mobile-recipe-detail-author.webp)
 </details>
 
 <details>
 
  <summary>Recipe Detail for the <i>comment author</i></summary>
 
-![Mobile - Recipe Detail for the comment author](README_docs/wireframes/wireframe-mobile-recipe-detail-comment-author.webp)
+![Mobile - Recipe Detail for the comment author](docs/wireframes/wireframe-mobile-recipe-detail-comment-author.webp)
 </details>
 
 <details>
 
  <summary>My Starred Recipes</summary>
 
-![Mobile - My Starred Recipes](README_docs/wireframes/wireframe-mobile-liked-recipes.webp)
+![Mobile - My Starred Recipes](docs/wireframes/wireframe-mobile-liked-recipes.webp)
 </details>
 
 <details>
 
  <summary>Add Recipe</summary>
 
-![Mobile - Add Recipe](README_docs/wireframes/wireframe-mobile-add-recipe.webp)
+![Mobile - Add Recipe](docs/wireframes/wireframe-mobile-add-recipe.webp)
 </details>
 
 <details>
 
  <summary>Update Recipe</summary>
 
-![Mobile - Update Recipe](README_docs/wireframes/wireframe-mobile-update-recipe.webp)
+![Mobile - Update Recipe](docs/wireframes/wireframe-mobile-update-recipe.webp)
 </details>
 
 <details>
 
  <summary>Delete Recipe</summary>
 
-![Mobile - Delete Recipe](README_docs/wireframes/wireframe-mobile-delete-recipe.webp)
+![Mobile - Delete Recipe](docs/wireframes/wireframe-mobile-delete-recipe.webp)
 </details>
 
 <details>
 
  <summary>Search Recipe</summary>
 
-![Mobile - Search Recipe](README_docs/wireframes/wireframe-mobile-search-recipe.webp)
+![Mobile - Search Recipe](docs/wireframes/wireframe-mobile-search-recipe.webp)
 </details>
 
 # 
@@ -316,14 +316,14 @@ Initial wireframes were made for the original ideas and as functionality was red
 
  <summary>Homepage</summary>
 
-![Desktop - Homepage](README_docs/wireframes/wireframe-desktop-homepage.webp)
+![Desktop - Homepage](docs/wireframes/wireframe-desktop-homepage.webp)
 </details>
 
 <details>
 
 <summary>All Recipes</summary>
 
-![Desktop - All Recipes](README_docs/wireframes/wireframe-desktop-recipes.webp)
+![Desktop - All Recipes](docs/wireframes/wireframe-desktop-recipes.webp)
 </details>
 
 
@@ -331,14 +331,14 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <summary>Recipe Detail</summary>
 
-![Desktop - Recipe detail](README_docs/wireframes/wireframe-desktop-recipe-detail.webp)
+![Desktop - Recipe detail](docs/wireframes/wireframe-desktop-recipe-detail.webp)
 </details>
 
 <details>
 
 <summary>Recipe Detail for the <i>author</i></summary>
 
-![Desktop - Recipe Detail for Author](README_docs/wireframes/wireframe-desktop-recipe-detail-author.webp)
+![Desktop - Recipe Detail for Author](docs/wireframes/wireframe-desktop-recipe-detail-author.webp)
 
 </details>
 
@@ -346,7 +346,7 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <summary>Recipe Detail for the <i> comment author</i></summary>
 
-![Desktop Recipe Detail for Comment Author](README_docs/wireframes/wireframe-desktop-recipe-detail-comment-author.webp)
+![Desktop Recipe Detail for Comment Author](docs/wireframes/wireframe-desktop-recipe-detail-comment-author.webp)
 
 </details>
 
@@ -354,28 +354,28 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <summary>My Starred Recipes</summary>
 
-![ Desktop - My Starred Recipes](README_docs/wireframes/wireframe-desktop-liked-recipes.webp)
+![ Desktop - My Starred Recipes](docs/wireframes/wireframe-desktop-liked-recipes.webp)
 </details>
 
 <details>
 
 <summary>Add Recipe</summary>
 
-![ Desktop - Add Recipe](README_docs/wireframes/wireframe-desktop-add-recipe.webp)
+![ Desktop - Add Recipe](docs/wireframes/wireframe-desktop-add-recipe.webp)
 </details>
 
 <details>
 
 <summary>Update Recipe</summary>
 
-![Desktop - Update Recipe](README_docs/wireframes/wireframe-desktop-update-recipe.webp)
+![Desktop - Update Recipe](docs/wireframes/wireframe-desktop-update-recipe.webp)
 </details>
 
 <details>
 
 <summary>Delete Recipe</summary>
 
-![Desktop - Delete Recipe](README_docs/wireframes/wireframe-desktop-delete-recipe.webp)
+![Desktop - Delete Recipe](docs/wireframes/wireframe-desktop-delete-recipe.webp)
 
 </details>
 
@@ -383,7 +383,7 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 <summary>Search Recipe</summary>
 
-![Desktop - Search Recipe](README_docs/wireframes/wireframe-desktop-search-recipe.webp)
+![Desktop - Search Recipe](docs/wireframes/wireframe-desktop-search-recipe.webp)
 
 </details>
 
@@ -397,7 +397,7 @@ Initial wireframes were made for the original ideas and as functionality was red
 A light colour scheme was chosen to allow good contrast with text and give a clean feel throughout the site. Great care was taken during the design process to establish a good contrast between background colours and text, and also to ensure it met accessibility requirements.
 
 
-![Colour Palette](README_docs/features/colour-scheme/coolers-colour-scheme.webp)
+![Colour Palette](docs/features/colour-scheme/coolers-colour-scheme.webp)
 *Colour palette from* [*Coolors*](https://coolors.co/)
 
 ***
@@ -416,13 +416,13 @@ Both fonts are from [Google fonts](https://fonts.google.com/about), meaning they
 
 **Headings:** *'Karla'*
 
-![Font Karla light 300](README_docs/features/typography/font-karla-300.webp)
-![Font Karla regular 400](README_docs/features/typography/font-karla-400.webp)
+![Font Karla light 300](docs/features/typography/font-karla-300.webp)
+![Font Karla regular 400](docs/features/typography/font-karla-400.webp)
 
 
 **Body:** *'Italiana'*
 
-![Font Italiana regular 400](README_docs/features/typography/font-italiana.webp)
+![Font Italiana regular 400](docs/features/typography/font-italiana.webp)
 
 
 ***
@@ -431,14 +431,14 @@ Both fonts are from [Google fonts](https://fonts.google.com/about), meaning they
 ## Agile Methodology
 
 Github projects was used to manage the development process using an agile approach. To view the project kanban board, please click on the link [here](https://github.com/users/chris-townsend/projects/5/views/1)
-![GitHub kanban board](README_docs/features/agile/github-kanban-board.webp)
+![GitHub kanban board](docs/features/agile/github-kanban-board.webp)
 
 
 A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution. The issues were closed automatically when the pull request was linked to the issue. I have done this for most user stories but some have been closed manually.
 
 Towards the end of the project, I knew there would be some user stories that would be scoped out of the project. These user stories have been placed within the Future features section on the kanban board and are intended to be implemented at a later date.
 
-![Guthub kanban board future features](README_docs/features/agile/github-kanban-board-future-features.webp)
+![Guthub kanban board future features](docs/features/agile/github-kanban-board-future-features.webp)
 
 ***
 
@@ -450,16 +450,16 @@ Django AllAuth was used for the user authentication system.
 
 In order for the users to create recipes a custom recipe model was required. The recipe author is a foreign key to the User model given a recipe can only have one author.
 
-![Custom recipe model](README_docs/features/data-model/custom-recipe-model.webp)
+![Custom recipe model](docs/features/data-model/custom-recipe-model.webp)
 
 The Comment model allows users to comment on individual recipes and the Recipe is a foreign key in the comment model given a comment can only be linked to one recipe. 
 
-![Custom comment model](README_docs/features/data-model/custom-comment-model.webp)
+![Custom comment model](docs/features/data-model/custom-comment-model.webp)
 
 
 The diagram below details the database schema.
 
-![Database Schema](README_docs/features/data-model/database-schema.webp)
+![Database Schema](docs/features/data-model/database-schema.webp)
 
 *Database schema from [drawSQL](https://drawsql.app/)*
 ***
@@ -494,7 +494,7 @@ Custom Error Pages were created to give the user more information on the error a
 
 ### Header
 
-![Kitchen Tales logo](README_docs/features/images/kitchen-tales-logo.webp)
+![Kitchen Tales logo](docs/features/images/kitchen-tales-logo.webp)
 
 **Logo**
 - A customised logo was created using Hatchful by Shopify which is a free logo generator.
@@ -506,37 +506,37 @@ Custom Error Pages were created to give the user more information on the error a
 
 #### *User not logged-in Navbar*
 
-![Navigation section](README_docs/features/images/section-navigation.webp)
+![Navigation section](docs/features/images/section-navigation.webp)
 
-![Navigation section unauthorized](README_docs/features/images/section-navigation-unauthorized.webp)
+![Navigation section unauthorized](docs/features/images/section-navigation-unauthorized.webp)
 
 #### *User logged-in Navbar*
 
 - If a user is logged in it will display their profile name in the navbar as part of a drop-down menu. The drop-down menu gives logged-in users the ability to manage and save recipes and the option to sign out of their account.
 
-![Navigation section authorized users](README_docs/features/images/features-auth-navbar.webp)
+![Navigation section authorized users](docs/features/images/features-auth-navbar.webp)
 
-![Navigation dropdown authorized users](README_docs/features/images/features-auth-dropdown.webp)
+![Navigation dropdown authorized users](docs/features/images/features-auth-dropdown.webp)
 
 ### Footer
 
 - The footer section includes links to Facebook, Instagram, Twitter and Youtube.
 - Clicking the links in the footer opens a separate browser tab to avoid pulling the user away from the site.
 
-![footer](README_docs/features/images/section-footer.webp)
+![footer](docs/features/images/section-footer.webp)
 
 ### Home Page
-![Homepage](README_docs/features/images/features-homepage.webp)
-![Homepage bootstrap carousel](README_docs/features/images/features-bootstrap-carousel.webp)
-![Homepage card section](README_docs/features/images/features-card-section.webp)
-![Homepage newsletter section](README_docs/features/images/features-newsletter-section.webp)
+![Homepage](docs/features/images/features-homepage.webp)
+![Homepage bootstrap carousel](docs/features/images/features-bootstrap-carousel.webp)
+![Homepage card section](docs/features/images/features-card-section.webp)
+![Homepage newsletter section](docs/features/images/features-newsletter-section.webp)
 
 ### Newsletter Page
-![Newsletter page](README_docs/features/images/features-newsletter-page.webp)
+![Newsletter page](docs/features/images/features-newsletter-page.webp)
 
 - The newsletter section was a late addition to the site, I wanted to fill the homepage with more content and a newsletter seemed like a sensible option. The database currently saves the email address but more code is needed to set up the email side. Next time with more planning I would make the newsletter its own app instead of having it in with the *Recipes* app and it would be set up better with a name field to make it easier to differentiate logged-in users and users who have only signed up to the newsletter. The newsletter currently doesn't have an unsubscibe button which would be needed in the future. The code to perform this is very similiar to adding a newsletter user and the purpose of setting this up one sided was to show a little more functionality to the site. A success message alerts the user when they have submitted a valid email address.
 
-![Newsletter success message](README_docs/features/images/kitchen-tales-alert-newsletter.webp)
+![Newsletter success message](docs/features/images/kitchen-tales-alert-newsletter.webp)
 
 ### User Account Pages
 
@@ -544,94 +544,94 @@ Custom Error Pages were created to give the user more information on the error a
 
 **Sign Up**
 
-![Register form](README_docs/features/images/features-signup.webp)
+![Register form](docs/features/images/features-signup.webp)
 
 **Log In**
 
-![Login section](README_docs/features/images/section-sign-in.webp)
+![Login section](docs/features/images/section-sign-in.webp)
 
 **Log Out**
 
-![Logout section](README_docs/features/images/section-sign-out.webp)
+![Logout section](docs/features/images/section-sign-out.webp)
 
 - Success messages inform the user if they have logged in/ logged out successfully.
 
-![Success message login](README_docs/features/images/kitchen-tales-alert-login.webp)
-![Success message logout](README_docs/features/images/kitchen-tales-alert-logout.webp)
+![Success message login](docs/features/images/kitchen-tales-alert-login.webp)
+![Success message logout](docs/features/images/kitchen-tales-alert-logout.webp)
 
 ### Browse Recipes
 
-![All recipes page](README_docs/features/images/features-recipes.webp)
+![All recipes page](docs/features/images/features-recipes.webp)
 
 ### Recipe Detail Page
 
 **Recipe Header Section**
-![Recipe detail](README_docs/features/images/features-recipe-detail.webp)
+![Recipe detail](docs/features/images/features-recipe-detail.webp)
 
 - At the top of every recipe detail page, the title, author, prep and cook time, last updated date and star icon is displayed. The star icon is a way of bookmarking a recipe and its displayed as a total likes counter on recipe card pages.
 
 **Recipe Action Buttons**
-![Recipe action buttons](README_docs/features/images/features-action-button.webp)
+![Recipe action buttons](docs/features/images/features-action-button.webp)
 
 - If the logged-in user is the author of the recipe, edit and delete icons will appear near the top of the recipe detail page.
 
 **Recipe Details Section**
 
-![Recipe detail method](README_docs/features/images/features-method.webp)
-![Recipe detail notes](README_docs/features/images/features-notes.webp)
+![Recipe detail method](docs/features/images/features-method.webp)
+![Recipe detail notes](docs/features/images/features-notes.webp)
 
 - Recipe ingredients, method and notes are displayed using Summernote which gives the user more freedom to style their content. 
 
 **Comments Section**
-![Comments section](README_docs/features/images/features-comments.webp)
-![Comments section](README_docs/features/images/features-comment-body.webp)
+![Comments section](docs/features/images/features-comments.webp)
+![Comments section](docs/features/images/features-comment-body.webp)
 
 - The comments section is displayed at the bottom of every `recipe_detail` page, If the user is logged-in a *body* text input box will be displayed for the user to post a comment. If a user submits a comment, a success message will alert the user that their comment is awaiting approval. 
 
-![Comment alert approval](README_docs/features/images/kitchen-tales-alert-add-comment.webp)
+![Comment alert approval](docs/features/images/kitchen-tales-alert-add-comment.webp)
 
 ### Update Comment
-![Update comment page](README_docs/features/images/features-update-comment.webp)
+![Update comment page](docs/features/images/features-update-comment.webp)
 
 - This page is displayed if a user has posted a comment and wants to update their comment. The update comment icon is only displayed if they are the author of the comment and the data comes prepopulated from the last add or update. A success message alerts the user when they have updated their comment. 
 
-![Update comment alert](README_docs/features/images/kitchen-tales-alert-update-comment.webp)
+![Update comment alert](docs/features/images/kitchen-tales-alert-update-comment.webp)
 
 ### Delete Comment
-![Delete comment page](README_docs/features/images/features-delete-comment.webp)
+![Delete comment page](docs/features/images/features-delete-comment.webp)
 
 - A user can delete their comment by clicking on the bin icon next to where the comment is being displayed. A confirmation page gives the user the option to cancel or delete. A success message will alert the user if they delete a comment. 
 
-![Delete comment alert](README_docs/features/images/kitchen-tales-alert-delete-comment.webp)
+![Delete comment alert](docs/features/images/kitchen-tales-alert-delete-comment.webp)
 
 ### Add Recipe Form
-![Add recipe page](README_docs/features/images/features-add-recipe.webp)
+![Add recipe page](docs/features/images/features-add-recipe.webp)
 
 - This page is accessible by logging in, clicking on the dropdown menu at the top of the page and selecting *'Add-Recipe'*. After adding a new recipe, the user should be taken to their newly created recipe detail page and if the form has been filled out correctly, the user will recieve a success message of a successful add. 
 
-![Add recipe alert](README_docs/features/images/kitchen-tales-alert-add-recipe.webp)
+![Add recipe alert](docs/features/images/kitchen-tales-alert-add-recipe.webp)
 
 ### Update Recipe Form
-![Update recipe page](README_docs/features/images/features-update-recipe.webp)
+![Update recipe page](docs/features/images/features-update-recipe.webp)
 
 - Clicking on the edit icon will take the user to the update recipe page. The data is prepopulated from the time it was added or updated and this has been done for ease of use for when updating recipes. Success messages are used to notify the user when they successfully update their recipe.
 
-![Update recipe alert](README_docs/features/images/kitchen-tales-alert-update-recipe.webp)
+![Update recipe alert](docs/features/images/kitchen-tales-alert-update-recipe.webp)
 
 ### Delete Recipe
-![Delete recipe page](README_docs/features/images/features-delete-recipe.webp)
+![Delete recipe page](docs/features/images/features-delete-recipe.webp)
 
 - Clicking on the delete icon will take the user to the confirmation page for deleting a recipe. The title of the recipe is included in the confirmation message and the user has three options; Cancel, which will take the user back to the recipe detail page, update instead - which will take the user to the update recipe page for that recipe and finally delete - to completly remove the recipe from the database. A success message alerts the user if they remove a recipe from the database. 
 
-![Delete recipe success message](README_docs/features/images/kitchen-tales-alert-delete-recipe.webp)
+![Delete recipe success message](docs/features/images/kitchen-tales-alert-delete-recipe.webp)
 
 ### My Recipes Page
-![My recipes page](README_docs/features/images/features-my-recipes.webp)
+![My recipes page](docs/features/images/features-my-recipes.webp)
 
 - Personally created recipes can be found by clicking on the users dropdown bar and selecting My-Recipes. The recipes are paginated eight to a page.
 
 ### My Bookmarks Page
-![My bookmarks page](README_docs/features/images/features-my-liked-recipes.webp)
+![My bookmarks page](docs/features/images/features-my-liked-recipes.webp)
 
 - The bookmarks page is a users starred recipes, this is denoted by a star icon displayed on a recipe detail page and any user which clicks the star icon will have the recipe saved to their personal starred recipes page. The style is the same as other recipe card pages in the fact that the recipes are paginated by eight. 
 
@@ -640,13 +640,13 @@ Custom Error Pages were created to give the user more information on the error a
 - Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
 
 - ***403** Page Forbidden* - You don't have access to this page.
-![403 error](README_docs/features/images/kitchen-tales-error-403.webp)
+![403 error](docs/features/images/kitchen-tales-error-403.webp)
 
 - ***404** Page Not Found* - The page your trying to access doesn't exist.
-![404 error](README_docs/features/images/kitchen-tales-error-404.webp)
+![404 error](docs/features/images/kitchen-tales-error-404.webp)
 
 - ***500** Server Error* - Unable to handle this request.
-![500 error](README_docs/features/images/kitchen-tales-error-500.webp)
+![500 error](docs/features/images/kitchen-tales-error-500.webp)
 
 ***
 
@@ -745,23 +745,23 @@ This site was made using [GitHub](#github) & [Gitpod](https://www.gitpod.io/). T
 ### Create the repository
 
 1. Sign into Github and navigate to [Code Institute's Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template).
-![GitHub Code Institute template](README_docs/development/github/github-use-this-template.webp)
+![GitHub Code Institute template](docs/development/github/github-use-this-template.webp)
  - At the top of the repository click **Use this template** followed by **Create a new repository**.
- ![GitHub Code Institute template](README_docs/development/github/github-create-new-repository.webp)
+ ![GitHub Code Institute template](docs/development/github/github-create-new-repository.webp)
 
 *Alternatively:*
 
 1. Click the GitHub label in the top left of the nav section.
-![GitHub create repository](README_docs/development/github/github-label.webp)
+![GitHub create repository](docs/development/github/github-label.webp)
 
 2. Select **New** next to **Top Repositories**.     
-![GitHub click new repository](README_docs/development/github/github-new.webp)
+![GitHub click new repository](docs/development/github/github-new.webp)
 
 3. Select the **template** you wish to use.                
-![GitHub select template](README_docs/development/github/github-select-template.webp)
+![GitHub select template](docs/development/github/github-select-template.webp)
 
 4. Give the repository a name and description and then click **Create repository**.
-![GitHub create repository](README_docs/development/github/github-create-repository.webp)
+![GitHub create repository](docs/development/github/github-create-repository.webp)
 
 The repository has now been created and is ready for editing through the gitpod terminal.
  
@@ -813,7 +813,7 @@ To initialise a Django project, first Django must be installed within your Pytho
 
 **8.** Run the server and you should see the basic skeleton project up and running - ``python3 manage.py runserver``
 
-![Django successful set-up](README_docs/development/django/django-success.webp)
+![Django successful set-up](docs/development/django/django-success.webp)
 
 ***
 
@@ -904,24 +904,24 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 #
 
 1. Log in to [Heroku](https://dashboard.heroku.com/apps) or create an account.
-![Heroku Signup](README_docs/deployment/heroku/heroku-signup.webp)
+![Heroku Signup](docs/deployment/heroku/heroku-signup.webp)
 
 2. On your Heroku dashboard, click the button labelled **New** in the top right corner and from the drop-down menu select **Create new app**.
-![Heroku Dashboard](README_docs/deployment/heroku/heroku-dashboard.webp)
-![Create new app](README_docs/deployment/heroku/heroku-create-app.webp)
+![Heroku Dashboard](docs/deployment/heroku/heroku-dashboard.webp)
+![Create new app](docs/deployment/heroku/heroku-create-app.webp)
 
 3. Enter a **unique and meaningful app name** and **choose the region** which is best suited to your location.
-![Meaningful app-name](README_docs/deployment/heroku/heroku-meaningful-name.webp)
+![Meaningful app-name](docs/deployment/heroku/heroku-meaningful-name.webp)
 - Click on the **Create app** button.
 
 4. Select **Settings** from the tabs at the top of the app page.
-![Heroku app settings](README_docs/deployment/heroku/heroku-dashboard-settings.webp)
+![Heroku app settings](docs/deployment/heroku/heroku-dashboard-settings.webp)
 
 5. Click **Reveal Config Vars**.    
-![Heroku app settings](README_docs/testing/user-testing/heroku-config-vars.webp)
+![Heroku app settings](docs/testing/user-testing/heroku-config-vars.webp)
 
 6. Input all key-value pairs from the `env.py` file. Ensure `DEBUG` and `DISABLE_COLLECTSTATIC` are not included in the final production.
-![Heroku app settings](README_docs/testing/user-testing/heroku-config-var-setup.webp)
+![Heroku app settings](docs/testing/user-testing/heroku-config-var-setup.webp)
 
 | KEY | VALUE |
 | --- | --- |
@@ -933,40 +933,40 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 
 
 7. Below your Config Vars in your app settings, click **Add buildpack**.
-![Heroku add buildpack](README_docs/deployment/heroku/heroku-add-buildpack.webp)
+![Heroku add buildpack](docs/deployment/heroku/heroku-add-buildpack.webp)
 
 8. Select **Python** from the list of buildpacks.
-![Heroku select buildpack](README_docs/deployment/heroku/heroku-select-buildpack.webp)
+![Heroku select buildpack](docs/deployment/heroku/heroku-select-buildpack.webp)
 - Remember to click **Save changes**.
 
 9. Select **Deploy** from the tabs at the top of the app page.
-![Heroku deploy](README_docs/deployment/heroku/heroku-deploy.webp)
+![Heroku deploy](docs/deployment/heroku/heroku-deploy.webp)
 
 10. Select **Connect to GitHub** from the deployment methods.
-![Heroku deployment method](README_docs/testing/user-testing/heroku-deployment-method.webp)
+![Heroku deployment method](docs/testing/user-testing/heroku-deployment-method.webp)
 
 11. Search for the repository to connect to by name.
-![Heroku select repository](README_docs/deployment/heroku/heroku-select-repository.webp)
+![Heroku select repository](docs/deployment/heroku/heroku-select-repository.webp)
 
 12. Click **Connect**.
-![Heroku click connect](README_docs/deployment/heroku/heroku-connect-to-github.webp)
+![Heroku click connect](docs/deployment/heroku/heroku-connect-to-github.webp)
 
  - Your app should now be connected to your GitHub account.
 
-![Heroku connected app](README_docs/testing/user-testing/heroku-connected-app.webp)
+![Heroku connected app](docs/testing/user-testing/heroku-connected-app.webp)
 
  13. Select **Enable Automatic Deploys** for automatic deployments.
 
-![Heroku automatic deploy](README_docs/deployment/heroku/heroku-automatic-deploys.webp)
+![Heroku automatic deploy](docs/deployment/heroku/heroku-automatic-deploys.webp)
 
 - If you would like to deploy manually, select **Deploy Branch**. If you manually deploy, you will need to re-deploy each time the repository is updated.
 
-![Heroku manual deploy](README_docs/deployment/heroku/heroku-manual-deploy.webp)
+![Heroku manual deploy](docs/deployment/heroku/heroku-manual-deploy.webp)
 
 - For the first time deploying to Heroku you may have to deploy manually but if you select automatic deploys it will update from then onwards.
 
 14. Click **View** to view the deployed site.
-![Heroku successful deploy](README_docs/deployment/heroku/heroku-successful-deploy.webp)
+![Heroku successful deploy](docs/deployment/heroku/heroku-successful-deploy.webp)
 
 ***
 
@@ -980,41 +980,41 @@ As the database provided by Django is only accessible within Gitpod and is not s
 ### Create & attach the Elephant SQL database
 
 1. Log in to [ElephantSQL](https://customer.elephantsql.com/instance#) to access your dashboard.
-![Elephant SQL dashboard](README_docs/deployment/elephant-sql/elephant-sql-dashboard.webp)
+![Elephant SQL dashboard](docs/deployment/elephant-sql/elephant-sql-dashboard.webp)
 
 2. Click **Create New Instance** at the top right of the page.        
-![Elephant SQL new instance](README_docs/deployment/elephant-sql/elephant-create-new-instance.webp)
+![Elephant SQL new instance](docs/deployment/elephant-sql/elephant-create-new-instance.webp)
 
 3. Set up your **plan**.
 - Give your plan a **Name** (this is commonly the name of the project)
 - Select the **Tiny Turtle (Free)** plan
 - You can leave the **Tags** field blank
 
-![Elephant SQL setup plan](README_docs/deployment/elephant-sql/elephant-setup-plan.webp)
+![Elephant SQL setup plan](docs/deployment/elephant-sql/elephant-setup-plan.webp)
 
 4. Click **Select Region**.        
-![Elephant SQL select region](README_docs/deployment/elephant-sql/elephant-select-region.webp)
+![Elephant SQL select region](docs/deployment/elephant-sql/elephant-select-region.webp)
 
 5. Select a **data center** near you.
-![Elephant SQL select data center](README_docs/deployment/elephant-sql/elephant-select-data-center.webp)
+![Elephant SQL select data center](docs/deployment/elephant-sql/elephant-select-data-center.webp)
 
 6. Click **Review**.                 
-![Elephant SQL review data center](README_docs/deployment/elephant-sql/elephant-review-data.webp)
+![Elephant SQL review data center](docs/deployment/elephant-sql/elephant-review-data.webp)
 
 7. Ensure your details are correct and then click **Create instance**.
-![Elephant SQL confirm instance](README_docs/deployment/elephant-sql/elephant-confirm-instance.webp)
+![Elephant SQL confirm instance](docs/deployment/elephant-sql/elephant-confirm-instance.webp)
 
 8. Return to the **ElephantSQL dashboard** and you should see your **database instance name** for this project.
-![Elephant SQL dashboard instance](README_docs/deployment/elephant-sql/elephant-dashboard-instance.webp)
+![Elephant SQL dashboard instance](docs/deployment/elephant-sql/elephant-dashboard-instance.webp)
 
 9. On your **ElephantSQL dashboard**, click on the **database instance name** for this project.  
-![Elephant SQL click instance](README_docs/deployment/elephant-sql/elephant-click-instance.webp)
+![Elephant SQL click instance](docs/deployment/elephant-sql/elephant-click-instance.webp)
 
 10. In the **URL section**, click the **copy icon** to copy the **database URL**.
-![Elephant SQL copy URL](README_docs/deployment/elephant-sql/elephant-copy-url.webp)
+![Elephant SQL copy URL](docs/deployment/elephant-sql/elephant-copy-url.webp)
 
 11. Within your **Heroku app**, add `DATABASE_URL` as the `KEY` and paste the URL you just copied in **ElephantSQL** into the `VALUE` column. Your **ElephantSQL** database should now be connected to your **Heroku** app.
-![Elephant SQL add database URL ](README_docs/deployment/elephant-sql/elephant-add-database-url.webp)
+![Elephant SQL add database URL ](docs/deployment/elephant-sql/elephant-add-database-url.webp)
 
 ***
 
@@ -1024,26 +1024,26 @@ By forking the GitHub Repository you can make a copy of the original repository.
 
 **1.** Log in to GitHub and locate the [GitHub Repository](https://github.com/) you would like to fork.
 
-![GitHub Repository](README_docs/deployment/github/github-select-repository.webp)
+![GitHub Repository](docs/deployment/github/github-select-repository.webp)
 
 **2.** At the top of the Repository, just above the **Tabs**, locate the **Fork** Button and you should now have a copy of the repository in your account.
 
-![GitHub Fork](README_docs/deployment/github/github-fork-repository.webp)
+![GitHub Fork](docs/deployment/github/github-fork-repository.webp)
 
 ***
 
 ### Cloning this repository
 
 **1.** Log in to GitHub and locate the [GitHub Repository](https://github.com/).
-![GitHub Repository](README_docs/deployment/github/github-select-repository.webp)
+![GitHub Repository](docs/deployment/github/github-select-repository.webp)
 
 **2.** On the repository main page, click the drop-down menu called Code.
 
-![GitHub Code Drowndown menu](README_docs/deployment/github/github-clone-repository.webp)
+![GitHub Code Drowndown menu](docs/deployment/github/github-clone-repository.webp)
 
 **3.** To clone the repository using HTTPS, copy the link.
 
-![GitHub copy URL](README_docs/deployment/github/github-copy-url.webp)
+![GitHub copy URL](docs/deployment/github/github-copy-url.webp)
 
 **4.** Open Git Bash
 
