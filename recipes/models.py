@@ -10,7 +10,8 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Recipe(models.Model):
     """Model for adding recipes to the database"""
-    title = models.CharField(max_length=48, unique=True)
+    title = models.CharField(max_length=48, unique=True,
+                             null=False, blank=False)
     slug = AutoSlugField(populate_from='title', unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE,
                                related_name='recipe_posts')

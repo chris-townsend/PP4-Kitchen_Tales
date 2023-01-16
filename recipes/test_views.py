@@ -205,7 +205,7 @@ class TestViews(TestCase):
         """
         Testing email can be added to the database
         """
-        self.client.post(f'/newsletter/', {
+        self.client.post(f'/newsletter', {
                         'email': 'Test email',
                         'date_added': 'Test date_added'
                          })
