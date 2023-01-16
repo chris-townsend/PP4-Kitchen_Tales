@@ -13,7 +13,7 @@ class TestViews(TestCase):
         user = User.objects.create_user(username='testuser',
                                         password='test1')
         self.recipe = Recipe.objects.create(title='Test', author=user)
-        login = self.client.login(username='testuser', password='test')
+        login = self.client.login(username='testuser', password='test1')
 
     def testLogin(self):
         """
@@ -62,16 +62,63 @@ class TestViews(TestCase):
 
     def test_get_add_recipes_page(self):
         """
-        Test to ensure add recipes page is displayed
+        Test add recipe page load
         """
         self.client.login(username='testuser', password='test1')
         response = self.client.get('/add_recipe/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'add_recipe.html')
 
+    def test_can_add_recipe(self):
+        """
+        Testing recipe can be added to the database
+        """
+        self.client.post(f'/add_recipe/', {
+                        'title': 'Test Title',
+                        'description': 'Test Description',
+                        'ingredients': 'Test Ingredients',
+                        'method': 'Test method'
+                         })
+        add_new_recipe = Recipe.objects.filter(title='Test Title')
+        self.assertEqual(len(add_new_recipe), 0)
+
+    @property
+    def test_can_update_recipe(self):
+        """
+        Testing recipe can be updated
+        """
+        response = self.client.get(f'/update_recipe/{self.recipe.pk}/', {
+                                   'title': 'Updated Title',
+                                   'description': 'Updated description',
+                                   'ingredients': 'Updated ingredients',
+                                   'method': 'Test method'
+                                   })
+        update_recipe = Recipe.objects.first()
+        self.assertEqual(update_recipe, "Updated Title")
+
+    def test_edit_recipe_page(self):
+        """
+        Edit recipe page display as expected
+        """
+        recipes = Recipe.objects.all()
+        for recipe in recipes:
+            response = self.client.get(f'/update_recipe/{self.recipe.pk}/')
+            self.assertEqual(response.status_code, 200)
+            self.assertTemplateUsed(response, 'update_recipe.html')
+
+    def test_delete_recipe_page(self):
+        """
+        Delete recipe page display as expected
+        """
+        recipes = Recipe.objects.all()
+        for recipe in recipes:
+            response = self.client.get(f'/delete_recipe/{self.recipe.pk}/')
+            self.assertEqual(response.status_code, 200)
+            self.assertTemplateUsed(response, 'delete_recipe.html')
+
     def test_get_my_recipes_page(self):
         """
-        Test to ensure your recipes page is displayed
+        Test user created recipes page load
         """
         self.client.login(username='testuser', password='test1')
         response = self.client.get('/my_recipes/')
@@ -80,15 +127,68 @@ class TestViews(TestCase):
 
     def test_get_recipe_detail_page(self):
         """
-        Test to ensure recipe detail page is displayed
+        Test recipe detail page load
         """
         self.client.login(username='testuser', password='test1')
         response = self.client.get(f'/recipe_detail/{self.recipe.slug}/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'recipe_detail.html')
 
-    def test_get_update_recipes_page(self):
-        self.client.login(username='testuser', password='test1')
-        response = self.client.get(f'/update_recipe/{self.recipe.id}/')
+    def test_get_newsletter_page(self):
+        """
+        Test newsletter page load
+        """
+        response = self.client.get('/newsletter')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'update_recipe.html')
+        self.assertTemplateUsed(response, 'newsletter.html')
+
+    def test_get_search_results(self):
+        """
+        Test search results page load
+        """
+        response = self.client.get('/search_results/')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'search_results.html')
+
+    def test_update_comment_page(self):
+        """
+        Edit comment page display as expected
+        """
+        comments = Comment.objects.all()
+        for comment in comments:
+            response = self.client.get(f'/update_comment/{self.comment.id}')
+            self.assertEqual(response.status_code, 200)
+            self.assertTemplateUsed(response, 'update_comment.html')
+
+    def test_delete_comment_page(self):
+        """
+        Delete comment page display as expected
+        """
+        comments = Comment.objects.all()
+        for comment in comments:
+            response = self.client.get(f'/delete_comment/{self.comment.pk}')
+            self.assertEqual(response.status_code, 200)
+            self.assertTemplateUsed(response, 'delete_comment.html')
+
+    def test_can_add_comment(self):
+        """
+        Testing comments can be added to database
+        """
+        comments = Comment.objects.all()
+        for comment in comments:
+            response = self.client.post(f'/{self.comment.pk}/',
+                                        {'body': 'Test Comment'})
+            self.assertEqual(Comment.objects.last().body, "Test Comment")
+            self.assertTemplateUsed(response, 'recipe_detail.html')
+
+    def test_can_update_comment(self):
+        """
+        Testing comments can be updated
+        """
+        comments = Comment.objects.all()
+        for comment in comments:
+            response = self.client.post(f'/update_comment/{self.comment.pk}',
+                                        {'body': 'Updated Comment'})
+            self.assertRedirects(response, f'/{self.comment.recipe.slug}/')
+            updated_comment = Comment.objects.last().body
+            self.assertEqual(updated_comment, "Updated Comment")
