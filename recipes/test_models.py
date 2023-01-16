@@ -1,6 +1,5 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
-from django.urls import reverse
 from .models import Recipe, Comment, NewsletterUser
 
 """ Unit testing for models """
@@ -14,5 +13,14 @@ class TestModels(TestCase):
         """
         Testing when calling the string method, it returns the correct string
         """
-        recipe = Recipe.objects.create(title='Recipe test')
-        self.assertEqual(str(Title), 'Recipe test')
+        recipe = Recipe(title='Test Recipe')
+        self.assertEqual(str(recipe), recipe.title)
+
+    def test_comment_model_str(self):
+        """
+        Testing when calling the string method, it returns the correct string
+        """
+        comment = Comment(body='Test Comment',
+                          name='testuser'
+                          )
+        self.assertEqual(str(comment), 'Comment Test Comment by testuser')
