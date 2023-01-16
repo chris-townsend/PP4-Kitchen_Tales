@@ -192,3 +192,22 @@ class TestViews(TestCase):
             self.assertRedirects(response, f'/{self.comment.recipe.slug}/')
             updated_comment = Comment.objects.last().body
             self.assertEqual(updated_comment, "Updated Comment")
+
+    def test_get_newsletter_page(self):
+        """
+        Test newsletter page load
+        """
+        response = self.client.get('/newsletter')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'newsletter.html')
+
+    def test_can_add_newsletter_user(self):
+        """
+        Testing email can be added to the database
+        """
+        self.client.post(f'/newsletter/', {
+                        'email': 'Test email',
+                        'date_added': 'Test date_added'
+                         })
+        add_new_email = NewsletterUser.objects.filter(email='Test email')
+        self.assertEqual(len(add_new_email), 0)
