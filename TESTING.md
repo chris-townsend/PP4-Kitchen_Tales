@@ -9,6 +9,7 @@
   * [Javascript](#javascript)
   * [Python](#python)
   * [Lighthouse](#lighthouse)
+  * [WAVE accessability tool](#wave-accessability-evaluation-tool)
 - [Browser Testing](#browser-testing)
 - [Device Testing](#device-testing)
 - [Manual Testing](#manual-testing)
@@ -423,7 +424,7 @@ I have run the website through Google Chrome's Lighthouse audit application and 
 | `500.html`               |![lighthouse result desktop 500](docs/testing/lighthouse/lighthouse-desktop-500.webp)                      |![lighthouse result mobile 500](docs/testing/lighthouse/lighthouse-mobile-500.webp)              | 
 | `add_recipe.html`        |![lighthouse result desktop add recipe](docs/testing/lighthouse/lighthouse-desktop-add-recipe.webp)         |![lighthouse result mobile add recipe](docs/testing/lighthouse/lighthouse-mobile-add-recipe.webp)          |
 | `all_recipes.html`       |![lighthouse result desktop all recipes](docs/testing/lighthouse/lighthouse-desktop-all-recipes.webp)        |![lighthouse result mobile all recipes](docs/testing/lighthouse/lighthouse-mobile-all-recipes.webp)  |
-| `index.html`             |![lighthouse result desktop index](README_docs/testing/lighthouse/lighthouse-desktop-index.webp)              |![lighthouse result mobile index](README_docs/testing/lighthouse/lighthouse-mobile-index.webp)               | 
+| `index.html`             |![lighthouse result desktop index](docs/testing/lighthouse/lighthouse-desktop-index.webp)              |![lighthouse result mobile index](docs/testing/lighthouse/lighthouse-mobile-index.webp)               | 
 | `delete_comment.html`    |![lighthouse result desktop delete comment](docs/testing/lighthouse/lighthouse-desktop-delete-comment.webp)     |![lighthouse result mobile delete comment](docs/testing/lighthouse/lighthouse-mobile-delete-comment.webp)              |
 | `my-recipes.html`        |![lighthouse result desktop my recipes](docs/testing/lighthouse/lighthouse-desktop-my-recipes.webp)         |![lighthouse result mobile my recipes](docs/testing/lighthouse/lighthouse-mobile-my-recipes.webp)          |  
 | `my_starred_recipes.html`|![lighthouse result desktop my starred recipes](docs/testing/lighthouse/lighthouse-desktop-my-liked-recipes.webp)   |![lighthouse result mobile my starred recipes](docs/testing/lighthouse/lighthouse-mobile-my-liked-recipes.webp)              |
@@ -444,9 +445,25 @@ The results are satisfactory and the suggested modification with regards to the 
 
 <br>
 
+***
+
+### WAVE accessability evaluation tool
+
+Most pages of the site were tested with the [WAVE evaluation tool](https://wave.webaim.org/), the following results are detailed below:
+
+| Page                  |      Image                                    | Result       | 
+| ---                   |      :---:                                    |    :---:     | 
+|**Homepage**           | ![WAVE result homepage](docs/testing/accessibility/wave-homepage.webp)                                          | The overall result is good and the two alerts are for Adjacent links which go to the same URL. One of these is for the *'Home'* tab in the nav section and the second one is the sign up button on the homepage in the welcome section, the signup button allows the user to intutivly sign-up without having to open the *MyAccount* tab in the nav section.       |  
+|                 |                                                                             |   
+ 
+
+
+
+
 [Back to top ⇧](#contents)
 
 ***
+
 
 ## Browser Testing
 
