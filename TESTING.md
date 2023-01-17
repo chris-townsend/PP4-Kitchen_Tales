@@ -409,7 +409,10 @@ Code Institutes *[PEP8](https://pep8ci.herokuapp.com/)* linter was used to test 
 | `models.py`            |     *n/a*      |    *pass*    | 
 | `urls.py`              |     *pass*     |    *pass*    |
 | `views.py`             |     *n/a*      |    *pass*    |  
-| `tests.py`             |                |              |
+| `test_forms.py`        |     *n/a*      |    *pass*    |
+| `test_models.py`       |     *n/a*      |    *pass*    |
+| `test_views.py`        |     *n/a*      |    *pass*    |
+
 
 ***
 
