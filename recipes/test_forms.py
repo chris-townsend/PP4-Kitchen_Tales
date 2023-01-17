@@ -57,7 +57,7 @@ class TestForms(TestCase):
         self.assertEqual(form.errors['notes'][0],
                          'This field is required.')
 
-    def test_fields_are_explicit_in_form_metaclass(self):
+    def test_fields_are_explicit_in_recipe_form_metaclass(self):
         """
         Test to ensure fields listed in the meta class are present
         """
@@ -65,3 +65,38 @@ class TestForms(TestCase):
         self.assertEqual(form.Meta.fields, (
             'title', 'prep_time', 'cook_time', 'description', 'ingredients',
             'method', 'notes', 'image', 'status'))
+
+    def test_field_is_explicit_in_comment_form_metaclass(self):
+        """
+        Test to ensure the body field is listed in the meta class
+        """
+        form = CommentForm()
+        self.assertEqual(form.Meta.fields, ('body',))
+
+    def test_comment_body_is_required(self):
+        """
+        Test to ensure comment body is required
+        """
+        form = CommentForm(({'body': ''}))
+        self.assertFalse(form.is_valid())
+        self.assertIn('body', form.errors.keys())
+        self.assertEqual(form.errors['body'][0],
+                         'This field is required.')
+
+    def test_newsletter_email_is_required(self):
+        """
+        Test to ensure newsletter email address is required
+        """
+        form = NewsletterForm(({'email': ''}))
+        self.assertFalse(form.is_valid())
+        self.assertIn('email', form.errors.keys())
+        self.assertEqual(form.errors['email'][0],
+                         'This field is required.')
+
+    def test_fields_are_explicit_in_newsletter_form_metaclass(self):
+        """
+        Test to ensure fields listed in the meta class
+         are present for the Newsletter
+        """
+        form = NewsletterForm()
+        self.assertEqual(form.Meta.fields, ('email',))
