@@ -452,7 +452,7 @@ The results are satisfactory and the suggested modification with regards to the 
 
 ### WAVE accessability evaluation tool
 
-All pages of the site were tested through the [WAVE evaluation tool](https://wave.webaim.org/), The results are documented as images in the [`docs/testing/accessibility/` directory](https://github.com/chris-townsend/PP4-Kitchen_Tales/tree/main/docs/testing/accessibility).
+All pages of the site were tested through the [WAVE evaluation tool](https://wave.webaim.org/), The results are documented as images in the [`docs/testing/accessibility/`](https://github.com/chris-townsend/PP4-Kitchen_Tales/tree/main/docs/testing/accessibility) directory.
 
 The overall result is good and the two alerts are for Adjacent links which go to the same URL. One of these is for the *'Home'* tab in the nav section and the second one is the sign up button on the homepage in the welcome section, the signup button allows the user to intutivly sign-up without having to open the *MyAccount* tab in the nav section.      
 
@@ -1061,8 +1061,7 @@ into the template*
 
 ## Automated Testing
 
-A number of unit tests were written to test key interactions between the views and the database models. These can be found in the [`tests`](https://github.com/chris-townsend/PP4-Kitchen_Tales/blob/main/tests/) folder.
-
+A number of unit tests were written to test the views, forms and database models. These can be found in the [`recipes`](https://github.com/chris-townsend/PP4-Kitchen_Tales/tree/main/recipes) folder and test files begin with `test_`.
 
 #
 
