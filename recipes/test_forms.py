@@ -4,9 +4,9 @@ from .forms import RecipeForm, CommentForm, NewsletterForm
 """ Unit testing for forms """
 
 
-class TestForms(TestCase):
+class TestRecipeForm(TestCase):
     """
-    Testing for forms
+    Testing for recipe form
     """
     def test_recipe_title_is_required(self):
         """
@@ -66,6 +66,11 @@ class TestForms(TestCase):
             'title', 'prep_time', 'cook_time', 'description', 'ingredients',
             'method', 'notes', 'image', 'status'))
 
+
+class TestCommentForm(TestCase):
+    """
+    Testing for comment form
+    """
     def test_field_is_explicit_in_comment_form_metaclass(self):
         """
         Test to ensure the body field is listed in the meta class
@@ -83,6 +88,11 @@ class TestForms(TestCase):
         self.assertEqual(form.errors['body'][0],
                          'This field is required.')
 
+
+class TestNewsletterForm(TestCase):
+    """
+    Testing for newsletter form
+    """
     def test_newsletter_email_is_required(self):
         """
         Test to ensure newsletter email address is required
