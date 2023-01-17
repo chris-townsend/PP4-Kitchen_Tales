@@ -9,7 +9,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 mt-1 offset-md-2">
-      <h3 class="page-title">{% trans "Sign In" %}</h3>
+      <h1 class="page-title">{% trans "Sign In" %}</h1>
       <hr>
       <br>
       <h5 class="text-center form-font login-welcome-text">{% blocktrans %}Welcome to Kitchen Tales |
@@ -18,7 +18,7 @@
         <br>
         <!-- If a user has not made an account, link to signup page -->
         If you haven't created an account yet, please
-        <a href="{{ signup_url }}">sign up here</a>{% endblocktrans %}</h5>
+        <b><a href="{{ signup_url }}">sign up here</a></b>{% endblocktrans %}</h5>
       <br>
       <!-- Login form -->
       <form class="sign-in text-center login-form mt-1 col-md-8 form-font" method="POST"
