@@ -150,6 +150,18 @@ class TestViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'search_results.html')
 
+    def test_search_bar_returns_searched_word(self):
+        """
+        Testing that the search bar returns results for the word 'searched'
+        """
+        searched = 'Test'
+        recipes = Recipe.objects.filter(title__icontains=searched)
+        response = self.client.post('/search_results/', {
+            'searched': searched,
+            'recipes': recipes
+        })
+        self.assertEqual(response.context['searched'], 'Test')
+
     def test_update_comment_page(self):
         """
         Edit comment page display as expected
