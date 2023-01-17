@@ -452,21 +452,15 @@ The results are satisfactory and the suggested modification with regards to the 
 
 ### WAVE accessability evaluation tool
 
-Most pages of the site were tested with the [WAVE evaluation tool](https://wave.webaim.org/), the following results are detailed below:
+All pages of the site were tested through the [WAVE evaluation tool](https://wave.webaim.org/), The results are documented as images in the [`docs/testing/accessibility/` directory](https://github.com/chris-townsend/PP4-Kitchen_Tales/tree/main/docs/testing/accessibility).
 
-| Page                  |      Image                                    | Result       | 
-| ---                   |      :---:                                    |    :---:     | 
-|**Homepage**           | ![WAVE result homepage](docs/testing/accessibility/wave-homepage.webp)                                          | The overall result is good and the two alerts are for Adjacent links which go to the same URL. One of these is for the *'Home'* tab in the nav section and the second one is the sign up button on the homepage in the welcome section, the signup button allows the user to intutivly sign-up without having to open the *MyAccount* tab in the nav section.       |  
-|                 |                                                                             |   
- 
+The overall result is good and the two alerts are for Adjacent links which go to the same URL. One of these is for the *'Home'* tab in the nav section and the second one is the sign up button on the homepage in the welcome section, the signup button allows the user to intutivly sign-up without having to open the *MyAccount* tab in the nav section.      
 
-
-
+ <br>
 
 [Back to top ⇧](#contents)
 
 ***
-
 
 ## Browser Testing
 
