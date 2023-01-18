@@ -491,8 +491,7 @@ The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 
 
 ## Manual Testing
 
-I haven't been able to implement a lot of automated testing because of time restrictions. As a result, the process and outcomes of manual testing are described in depth in the following section.
-
+The process and outcomes of manual testing are described in depth in the following section:
 
 ### *Navigation*
 <br>
@@ -546,7 +545,7 @@ I haven't been able to implement a lot of automated testing because of time rest
 |                 |                     | *hover*     |*Dark background/light text*| **pass** | 
 | **All users**   |**Image carousel section**|        |                     |                 |
 |                 | *Images*            | *display*   |*Image displayed*    | **pass**        |
-|                 |                     |*aria-label check*|*Display aria-labels* |           |
+|                 |                     |*aria-label check*|*Display aria-labels* |**pass**   |
 |                 | *Carousel-control button*| *click*|*Go to next image*   | **pass**        |
 | **All users**   |**Card section**     |             |                     |                 |
 |                 | *Images*            | *display*   |*Image displayed*    | **pass**        |
@@ -577,7 +576,7 @@ I haven't been able to implement a lot of automated testing because of time rest
 | ---             | ---                 |   :---:     |    :---:            |    :---:        |
 |**Homepage**     |**Social Icons**     | *click*     | *Open in a new tab* |  **pass**       |
 |                 |                     | *hover*     | *Change scale **1.2***  |  **pass**   |
-|                 |                     | *aria-label check*| *Display aria-labels*|          |
+|                 |                     | *aria-label check*| *Display aria-labels*| **pass** |
 |**Mobile view**  |                     |             |                      |                |
 |                 |                     | *display*   | *Responsive layout*   | **pass**      |
 |                 |                     | *click*     | *Open in a new tab* |  **pass**       |
