@@ -191,7 +191,7 @@ class AddRecipeView(LoginRequiredMixin, generic.CreateView):
                 self.request,
                 'Your recipe has been added successfully')
 
-            return redirect(reverse('recipe_detail', args=[recipe]))
+            return redirect(reverse('recipe_detail', args={recipe.slug}))
 
         else:
             messages.error(self.request, 'Please complete all required fields')
