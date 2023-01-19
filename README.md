@@ -55,7 +55,8 @@ The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuap
 
 ## User Experience (UX)
 
-The website is targetted towards users who enjoy their food and would like to share their recipes with others. Features are designed to be intuitive so that a wide age demographic can use the site. Food is loved by most and Kitchen Tales is designed to be a place to bring food and people together. 
+The target audience for Kitchen Tales would likely be individuals who are interested in cooking and looking for new recipe ideas or inspiration. This can include home cooks, food enthusiasts, and those who enjoy experimenting with different ingredients and flavors. As food is loved by most, Kitchen Tales is designed to be a place to bring food and people together. Features are designed to be intuitive so that a wide age demographic can easily use the site.
+
 <br>
 
 ### Epics 
