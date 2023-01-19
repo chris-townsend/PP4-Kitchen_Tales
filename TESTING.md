@@ -1,6 +1,5 @@
 # Testing
 
-
 ### Contents
 - [Testing Stories for UX](#testing-user-stories-from-the-user-experience-ux-section)
 - [Validator Testing](#validator-testing)
@@ -9,7 +8,7 @@
   * [Javascript](#javascript)
   * [Python](#python)
   * [Lighthouse](#lighthouse)
-  * [WAVE accessability tool](#wave-accessability-evaluation-tool)
+  * [WAVE accessibility tool](#wave-accessibility-evaluation-tool)
 - [Browser Testing](#browser-testing)
 - [Device Testing](#device-testing)
 - [Manual Testing](#manual-testing)
@@ -42,7 +41,6 @@
 
 ## Testing User Stories from the User Experience (UX) Section
 
-
 ### EPIC | *Early Deployment*
 <br>
 
@@ -52,7 +50,6 @@
 
 - ***Detailed information about setting up Heroku can be found [here](/README.md#heroku)***
 
-
 *[As a developer, I can add my config vars to my app in Heroku so that I can allow deployment to production](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/2)*
 
 ![Heroku config vars input](docs/testing/user-testing/heroku-config-vars.webp)
@@ -60,13 +57,11 @@
 
 - ***Information about setting up the config vars within Heroku can be found [here](/README.md#create-the-heroku-app)***
 
-
 *[As a developer, I can create a Procfile within my project so that the application will run in Heroku](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/3)*
 
 ![Create Procfile](docs/testing/user-testing/kitchen-tales-create-procfile.webp)
 
 - ***Information about setting up the Procfile can be found within the [Django](/README.md#within-gitpod) section of the readme***
-
 
 *[As a developer, I can create a Cloudinary account so that I can store my media files](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/4)*
 
@@ -74,13 +69,11 @@
 
 - ***Information about setting up the Cloudinary account can be found [here](/README.md#installing-django-and-supporting-libraries)***
 
-
 *[As a developer, I can connect my GitHub account for the final deployment stages so that I can allow deployment to production](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/5)*
 
 ![Connect GitHub account](docs/testing/user-testing/heroku-deployment-method.webp)
 
 - ***Information about connecting my GitHub account through Heroku can be found [here](/README.md#create-the-heroku-app)***
-
 
 #
 
@@ -93,16 +86,13 @@
 
 - ***Detailed information about the initial Django setup can be found [here](/README.md#installing-django-and-supporting-libraries) within the Django section of the README.md***
 
-
 *[As a developer, I want to set up my environment to secure my private keys so that I do not expose them in an insecure way](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/7)*
 
 - ***Information about setting up the environment safely can be found [here](/README.md#installing-django-and-supporting-libraries)***
 
-
 *[As a developer, I should install the necessary Django components so that I can address authentication, registration, and account management for users](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/8)*
 
 - ***Information about installing Django and supporting libraries can be found [here](/README.md#installing-django-and-supporting-libraries)***
-
 
 *[As a developer, I should install the necessary Django components so that I can display a comments section that is more appealing to the user](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/9)*
 
@@ -111,7 +101,6 @@
 *[As a developer, I should set up the necessary database items so that the database is viewable through Heroku](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/40)*
 
 - ***Information about setting up the ElephantSQL database can be found [here](/README.md#elephant-sql)***
-
 
 #
 
@@ -124,7 +113,6 @@
 
 - The 'Welcome to Kitchen Tales' section when you first arrive on the homepage should be enough for users to understand the concept of the website. There is a button to sign up to create an account and share recipes and also a relatable image of some cooked dishes and a menu.
 
-
 *[As a User, I can view recipes, without having to sign-up to enjoy the site's content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/11)*
 
 ![Kichen Tales recipes tab](docs/testing/user-testing/kitchen-tales-recipes-tab.webp)
@@ -133,17 +121,15 @@
 
 ![Kichen Tales recipes](docs/testing/user-testing/kitchen-tales-recipes.webp)
 
-
 *[As a User, I can view recipes on my mobile so that I don't have to rely on using a computer](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/13)*
 
 ![Kichen Tales mobile friendly recipe](docs/testing/user-testing/kitchen-tales-mobile-recipe.webp)
 
-- The site was tested on a variety of devices to ensure it was mobile friendly, please click [here](/TESTING.md#device-testing) to view a full list of tested devices.
+- The site was tested on a variety of devices to ensure it was mobile-friendly, please click [here](/TESTING.md#device-testing) to view a full list of tested devices.
 
 ![Kichen Tales mobile friendly test](docs/testing/user-testing/kitchen-tales-mobile-friendly-test.webp)
 
 ***For more detailed information about mobile testing, please click [here](#device-testing)***
-
 
 *[As a User, I can view comments on recipes so that I can read other user's feedback](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/34)*
 
@@ -151,13 +137,11 @@
 
 - The comments section is displayed below each recipe on a recipe detail page. Any user can view comments but you must be logged in to post, edit and delete comments.
 
-
 *[As a Logged-in User, I can comment on recipes so that I can leave my feedback for others](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/35)*
 
 ![Kichen Tales comment section](docs/testing/user-testing/kitchen-tales-leave-comment.webp)
 
 - When a user is logged in, a text field will be displayed for the user to post a comment.
-
 
 *[As a developer, I can add a favicon so that the site looks more distinguishable](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/41)*
 
@@ -178,12 +162,11 @@
 
 ![Kichen Tales navbar hover](docs/testing/user-testing/kitchen-tales-navbar-hover.webp)
 
-- Utilizing *CSS's* hover effect, the user know's what tab they are clicking on as it underlines the heading when it's being hovered over. 
+- Utilizing *CSS's* hover effect, the user knows what tab they are clicking on as it underlines the heading when it's being hovered over. 
 
 ![Kichen Tales navbar authorized user](docs/testing/user-testing/kitchen-tales-navbar-auth-user.webp)
 
-- A logged-in user can see their own dropdown-menu options by clicking on their name with the user icon. This menu gives the option for a user to add a new recipe, see there created recipes, their favourite starred recipes, and an option to log out of their account.
-
+- A logged-in user can see their dropdown-menu options by clicking on their name with the user icon. This menu gives the option for a user to add a new recipe, see their created recipes, and their favourite starred recipes, and an option to log out of their account.
 
 *[As a User, I can search for the desirable recipe by keyword so that I can find a specific recipe fast](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/15)*
 
@@ -193,7 +176,7 @@
 
 ![Kichen Tales searched results](docs/testing/user-testing/kitchen-tales-search-results.webp)
 
-- The search results are fairly specific and its currently set to search results by title so you might get slightly different results from using a capital letter vs not. With more time, I would like to add more searchable features to the site.
+- The search results are fairly specific and it's currently set to search results by title so you might get slightly different results from using a capital letter vs not. With more time, I would like to add more searchable features to the site.
 
 #
 
@@ -204,7 +187,7 @@
 
 ![Kichen Tales add recipe tab](docs/testing/user-testing/kitchen-tales-add-recipe-tab.webp)
 
-- Creating a new recipe is easy, go to your personal drop-down menu from the nav section and select the 'Add-Recipe' tab. This will then redirect you to the `add_recipe` page which will allow a user to fill out the form and create a recipe. 
+- To create a new recipe, go to your drop-down menu from the nav section and select the 'Add-Recipe' tab. This will then redirect you to the `add_recipe` page which will allow a user to fill out the form and create a recipe. 
 
 ![Kichen Tales add recipe page](docs/testing/user-testing/kitchen-tales-add-recipe.webp)
 
@@ -212,14 +195,13 @@
 
 - A logged-in user can also add a new recipe from the homepage.
 
-
 *[As a logged-in User, I can view all the recipes that I have created so that I can go back to them at a later date](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/17)*
 
 ![Kichen Tales my recipes tab](docs/testing/user-testing/kitchen-tales-my-recipes-tab.webp)
 
 ![Kichen Tales my recipes page](docs/testing/user-testing/kitchen-tales-my-recipes.webp)
 
-- User created recipes can be found easily by clicking on the drop-down-menu within the nav section. After clicking on the My-Recipes tab, this will open up recipes created by the user.
+- User-created recipes can be found easily by clicking on the drop-down menu within the nav section. After clicking on the My-Recipes tab, this will open up recipes created by the user.
 
 *[As a logged-in User, I can update and edit my recipes so that I can update any changes or mistakes that I have made](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/18)*
 
@@ -239,17 +221,15 @@
 
 ![Kichen Tales delete recipe page](docs/testing/user-testing/kitchen-tales-delete-recipe-page.webp)
 
-- Clicking the Delete tab will open the `delete_recipe` page which will give the user three options, Cancel - which will take you back to the recipe detail page. Update Instead - which will take you to the `update_recipe` page with the prepopulated data for that recipe and last, Delete Recipe, which will remove the recipe from the database and return you back to a users recipes.
-
+- Clicking the Delete tab will open the `delete_recipe` page which will give the user three options, Cancel - which will take you back to the recipe detail page. Update Instead - which will take you to the `update_recipe` page with the prepopulated data for that recipe and last, Delete Recipe, which will remove the recipe from the database and return you to a user's recipes.
 
 *[As a logged-in User, I can view my liked recipes so that I can return to them easily](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/39)*
 
 ![Kichen Tales saved recipes tab](docs/testing/user-testing/kitchen-tales-saved-recipes-tab.webp)
 
-- My liked recipes can be found by clicking on the drop-down-menu within the nav section. After clicking on the Saved-Recipes tab, this will open a logged-in users starred recipes.
+- My liked recipes can be found by clicking on the drop-down menu within the nav section. After clicking on the Saved-Recipes tab, this will open logged-in users starred recipes.
 
 ![Kichen Tales liked recipes page](docs/testing/user-testing/kitchen-tales-liked-recipes-page.webp)
-
 
 *[As a logged-in User, I can like or star a recipe so that I can bookmark it for later](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/42)*
 
@@ -266,15 +246,15 @@
 ### EPIC | *User Account Management*
 <br>
 
-*[As a User, I can register for an account so that I can interact with the site content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/22)*
+*[As a User, I can register for an account so that I can interact with the site's content](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/22)*
 
 ![Kichen Tales sign up tab](docs/testing/user-testing/kitchen-tales-sign-up-tab.webp)
 
-- Users can sign-up for an account by clicking on the drop down menu MyAccount and then selecting **Register** from the list.
+- Users can sign-up for an account by clicking on the drop-down menu MyAccount and then selecting **Register** from the list.
 
 ![Kichen Tales sign up button](docs/testing/user-testing/kitchen-tales-sign-up-button.webp)
 
-- For users which are not logged-in, a banner is displayed on the homepage which intices people to register to share recipes.
+- For users which are not logged in, a banner is displayed on the homepage which invites people to register to share recipes.
 
 ![Kichen Tales sign up text](docs/testing/user-testing/kitchen-tales-sign-up-text.webp)
 
@@ -284,18 +264,17 @@
 
 ![Kichen Tales sign in tab](docs/testing/user-testing/kitchen-tales-sign-in.webp)
 
-- Users can sign-in to their account by clicking on the MyAccount dropdown menu and after clicking on Sign-in.
+- Users can sign in to their account by clicking on the MyAccount dropdown menu and after clicking on Sign-in.
 
 ![Kichen Tales sign in page](docs/testing/user-testing/kitchen-tales-sign-in-page.webp)
 
-- This will take the user to the sign-in page where a username and password is requested. You can select a small tick box to remember login credentials to make it easier for future sign-ins.
-
+- This will take the user to the sign-in page where a username and password are requested. You can select a small tick box to remember login credentials to make it easier for future sign-ins.
 
 *[As a User, I can safely log out of my account so that I can disconnect from the site](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/25)*
 
 ![Kichen Tales sign out tab](docs/testing/user-testing/kitchen-tales-sign-out-tab.webp)
 
-- Users can safetly sign-out of their account by clicking on their personal drop-down menu and after selecting Logout from the bottom of the list.
+- Users can safely sign out of their account by clicking on their drop-down menu and after selecting Logout from the bottom of the list.
 
 ![Kichen Tales sign out page](docs/testing/user-testing/kitchen-tales-sign-out-page.webp)
 
@@ -305,11 +284,11 @@
 
 ![Kichen Tales login status](docs/testing/user-testing/kitchen-tales-login-status.webp)
 
-- At first, I left the MyAccount tab as it was for signed-in users but soon realised this was not as intuitive for the user to realize their login status unless they clicked on their MyAccount menu. I have now changed this heading to the users name and a profile icon so that a user will instantly know when there logged-in as they will be able to see there profile name in the nav-section.
+- At first, I left the MyAccount tab as it was for signed-in users but soon realised this was not as intuitive for the user to realize their login status unless they clicked on their MyAccount menu. I have now changed this heading to the user's name and a profile icon so that a user will instantly know when there logged-in as they will be able to see their profile name in the nav section.
 
 ![Kichen Tales navbar status for logged in user](docs/testing/user-testing/kitchen-tales-logged-in-navbar.webp)
 
-- I have organized the items within the drop-down menu of hierarchy, with Logout being the least likely page a user will want to navigate to when signed in.
+- I have organized the items within the drop-down menu of importance, with Logout being the least likely page a user will want to navigate to when signed in.
 
 #
 
@@ -328,33 +307,31 @@
 
 ![Kichen Tales admin comment panel](docs/testing/user-testing/django-comment-panel.webp)
 
-- The *Comment* admin panel has been set up in a similar way to *Recipes* and displays comments by created date with newest comments to be approved at the top.
-
+- The *Comment* admin panel has been set up in a similar way to *Recipes* and displays comments by created date with the newest comments to be approved at the top.
 
 *[As a Site admin, I can authorize comments so that I can review the content before it's made public](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/29)*
 
 ![Kichen Tales admin panel approve comments](docs/testing/user-testing/django-admin-approve-comment.webp)
 
-- Comments have to be approved by a site admin before they are published publically. The user should receive an alert when a comment has been posted stating that the comment is under review. 
-
+- Comments need to be approved by a site admin before they are published publically. The user should receive an alert when a comment has been posted stating that the comment is under review. 
 
 *[As a Site owner, I would like to display my social icons so that I can promote my other channels](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/31)*
 
 ![Kichen Tales social icons](docs/testing/user-testing/kitchen-tales-social-icons.webp)
 
-- Social Icons are displayed at the bottom of every page, this includes links to Facebook, Instagram, Youtube and Twitter. All links open in a new tab for user convenience.
+- Social Icons are displayed at the bottom of every page, this includes links to Facebook, Instagram, Youtube, and Twitter. All links open in a new tab for user convenience.
 
 <br>
 
 [Back to top ⇧](#contents)
+
 ***
 
 ## Validator Testing
 
 ![HTML w3c validator](docs/testing/html/html-w3c-validation.webp)
 
-The *[W3C HTML validator](https://validator.w3.org/)* was used to test all HTML pages, **no errors** were reported in the final deployment.
-
+The *[W3C HTML validator](https://validator.w3.org/)* was used to test all HTML pages, and **no errors** were reported in the final deployment.
 
 ### HTML
 
@@ -404,16 +381,13 @@ The *[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)* was used to vali
 ![JavaScript Code to test](docs/testing/javascript/testing-jshint-code.webp)
 ![JShint test result](docs/testing/javascript/testing-jshint-result.webp)
 
-
 ***
-
 
 ### Python
 
-Code Institutes *[PEP8](https://pep8ci.herokuapp.com/)* linter was used to test the Python files. The table below shows the pages tested and their result, all pages are **error free** in the final deployment.
+Code Institutes *[PEP8](https://pep8ci.herokuapp.com/)* linter was used to test the Python files. The table below shows the pages tested and their result, all pages are **error-free** in the final deployment.
 
 ![Code Institute's Python linter](docs/testing/python/ci-python-linter.webp)
-
 
 
 | Page                   | `kitchentales` |  `recipes`   | 
@@ -427,7 +401,6 @@ Code Institutes *[PEP8](https://pep8ci.herokuapp.com/)* linter was used to test 
 | `test_forms.py`        |     *n/a*      |    *pass*    |
 | `test_models.py`       |     *n/a*      |    *pass*    |
 | `test_views.py`        |     *n/a*      |    *pass*    |
-
 
 ***
 
@@ -457,7 +430,7 @@ I have run the website through Google Chrome's Lighthouse audit application and 
 
 <br>
 
-The results are satisfactory and the suggested modification with regards to the issue within the console appears to give a lower score for *Best Practices* throughout mobile and desktop tests. Please see *[issue #64](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/64)* for further information regarding Audit usage of navigator.userAgent, navigator.appVersion & navigator.platform and a potential future issue to fix the current warning. The other suggestion is relating to the sizing of the site logo. This is a design choice, the image looks much better when it hasn't been cropped. If more time were available, image editing software could be utilised to edit the image but the effect is negligble. Overall the site runs better on desktop, the performace is low for mobile when adding and updating a recipe, this is mostly due to using summernote widgets for certain fields. This has been left as it is for now as the overall performace for the site is good. 
+The results are satisfactory and the suggested modification with regards to the issue within the console appears to give a lower score for *Best Practices* throughout mobile and desktop tests. Please see *[issue #64](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/64)* for further information regarding the Audit usage of navigator.userAgent, navigator.appVersion & navigator.platform and a potential future issue to fix the current warning. The other suggestion is relating to the sizing of the site logo. This is a design choice, the image looks much better when it hasn't been cropped. If more time were available, image editing software could be utilised to edit the image but the effect is negligible. Overall the site runs better on desktop, but the performance could be improved for mobile when adding and updating a recipe, this is mostly due to using *Summernote* widgets for certain fields. This has been left as it is for now as the overall performance of the site is good. 
 
 ![lighthouse low score](docs/testing/lighthouse/lighthouse-enable-text-compression.webp)
 
@@ -465,11 +438,11 @@ The results are satisfactory and the suggested modification with regards to the 
 
 ***
 
-### WAVE accessability evaluation tool
+### WAVE accessibility evaluation tool
 
-All pages of the site were tested through the [WAVE evaluation tool](https://wave.webaim.org/), The results are documented as images in the [`docs/testing/accessibility/`](https://github.com/chris-townsend/PP4-Kitchen_Tales/tree/main/docs/testing/accessibility) directory.
+Most pages of the site were tested through the [WAVE evaluation tool](https://wave.webaim.org/), The results are documented as images in the [`docs/testing/accessibility/`](https://github.com/chris-townsend/PP4-Kitchen_Tales/tree/main/docs/testing/accessibility) directory.
 
-The overall result is good and the two alerts are for Adjacent links which go to the same URL. One of these is for the *'Home'* tab in the nav section and the second one is the sign up button on the homepage in the welcome section, the signup button allows the user to intutivly sign-up without having to open the *MyAccount* tab in the nav section.      
+The overall result is good and the two alerts are for Adjacent links which go to the same URL. One of these is for the *'Home'* tab in the nav section and the second one is the sign-up button on the homepage in the welcome section, the signup button allows the user to intuitively sign-up without having to open the *MyAccount* tab in the nav section.      
 
  <br>
 
@@ -485,7 +458,7 @@ The Website was tested on Google Chrome, Internet Explorer and Microsoft Edge wi
 
 ## Device Testing
 
-The website was viewed on a variety of devices such as Desktop, Laptop, Oneplus 5t, iPhone SE, iPhone 8, iPad & Samsung Galaxy S21 to ensure that the responsive design worked as intended. [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to test the responsiveness on different devices.
+The website has been viewed on a variety of devices such as Desktop, Laptop, Oneplus 5t, iPhone SE, iPhone 8, iPad & Samsung Galaxy S21 to ensure that the responsive design worked as intended. [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to test the responsiveness on different devices.
 
 ***
 
@@ -515,7 +488,7 @@ The process and outcomes of manual testing are described in depth in the followi
 |                 |*All nav headings*   |   *hover*  |*Display darker text & underlined*| **pass** |
 |                 |                     |             |                                 |            |
 |**Mobile view**  |                     |             |                                 |           |
-|                 |**Navbar**           |  *display*   |*Hamburger menu when screen size is less than 900px*  | **pass**            |
+|                 |**Navbar**           |  *display*   |*Hamburger menu when the screen size is less than 900px*  | **pass**            |
 |                 |*Home link*          |   *click*   | *Redirect to homepage*    |  **pass**   |
 |                 |*Recipes link*       |   *click*   | *Open `all_recipes` page* |  **pass**   |
 |                 |*Kitchen Tales logo* |   *click*   | *Redirect to homepage*    |  **pass**   |
@@ -536,37 +509,38 @@ The process and outcomes of manual testing are described in depth in the followi
 
 | Page/Status     | Element             |   Action    | Expected Result     |   Pass/Fail     |
 | ---             | ---                 |   :---:     |    :---:            |    :---:        |
-|**Homepage**     |**Welcome to KT section**|         |                     |                 |
+|**Homepage**     |**Welcome to Kitchen Tales section**|         |                     |                 |
 |                 | *Image*             | *display*   |*Image displayed*    | **pass**        |
 |**logged-out**   |*Sign up today link* | *click*     |*Open `signup` page* | **pass**        |
 |                 |                     | *hover*     |*Dark background/light text*| **pass** |
 |**logged-in**    |*Welcome text*       | *display*   |*Welcome text with username*| **pass** |
 |                 |*Add recipe link*    | *click*     |*Open `add_recipe` page* | **pass**    |
 |                 |                     | *hover*     |*Dark background/light text*| **pass** | 
-| **All users**   |**Image carousel section**|        |                     |                 |
+| **All user's**   |**Image carousel section**|        |                     |                 |
 |                 | *Images*            | *display*   |*Image displayed*    | **pass**        |
 |                 |                     |*aria-label check*|*Display aria-labels* |**pass**   |
 |                 | *Carousel-control button*| *click*|*Go to next image*   | **pass**        |
-| **All users**   |**Card section**     |             |                     |                 |
+| **All user's**   |**Card section**     |             |                     |                 |
 |                 | *Images*            | *display*   |*Image displayed*    | **pass**        |
 |                 |                     | *aria-label check*|*Display aria-labels*|           |
 |                 |*Recipe App/Cheese Club images*|*hover*|*Rotate image 180°*| **pass**      |
-| **All users**   |**Newsletter section**|            |                     |                 |
+| **All user's**   |**Newsletter section**|            |                     |                 |
 |                 | *Subscribe button*  | *click*     |*Open `newsletter` page* | **pass**    |
 |                 |                     | *hover*     |*Dark background/light text*| **pass** |
 |**Mobile view**  |                     |             |                       |               |
-|                 |**Welcome to KT section**|         |                     |                 |
+|                 |**Welcome to Kitchen Tales section**|         |                     |                 |
 |                 | *Image*             | *display*   |*Image not displayed*    | **pass**    |
 |**logged-out**   |*Sign up today link* | *click*     |*Open `signup` page* | **pass**        |
 |**logged-in**    |*Welcome text*       | *display*   |*Welcome text with username*| **pass** |
 |                 |*Add recipe link*    | *click*     |*Open `add_recipe` page* | **pass**    |
-| **All users**   |**Image carousel section**|        |                     |                 |
+| **All user's**   |**Image carousel section**|        |                     |                 |
 |                 | *Images*            | *display*   |*Image displayed*    | **pass**        |
 |                 | *Carousel-control button*| *click*|*Go to next image*   | **pass**        |
-| **All users**   |                     |             |                     |                 |
+| **All user's**   |                     |             |                     |                 |
 |                 | **Card section**    | *display*   |*Responsive*| **pass**   |
-| **All users**   |**Newsletter section**|            |                     |                 |
+| **All user's**   |**Newsletter section**|            |                     |                 |
 |                 | *Subscribe button*  | *click*     |*Open `newsletter` page* | **pass**    |
+|                 |                     | *hover*     | *Dark background/light text* | **pass** |
 
 
 ### Homepage - *Footer*
@@ -594,25 +568,25 @@ The process and outcomes of manual testing are described in depth in the followi
 |                 |                   | *order display*|*Order from newest to oldest*| **pass**  |
 |                 |                   | *click*       | *Open recipe detail page*    | **pass**  |
 |                 |**Paginator buttons**  | *display*     |*Display pagination buttons if more than 8 recipes* | **pass**         |
-|                 | ***Next** button* | *click*       |*Display next page of recipes*| **pass**   |
+|                 | ***Next** button* | *click*       |*Display the next page of recipes*| **pass**   |
 |                 |                   | *if clicked display*|*First/Previous buttons*| **pass**   |
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
-|                 | ***Last** button* | *click*       |*Display last page of recipes*| **pass**   |
+|                 | ***Last** button* | *click*       |*Display the last page of recipes*| **pass**   |
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
-|                 | ***First** button*| *click*       |*Display first page of recipes*| **pass**  |
+|                 | ***First** button*| *click*       |*Display the first page of recipes*| **pass**  |
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
-|                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
+|                 |***Previous** button*| *click*     |*Display the previous page of recipes*| **pass**|
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
 | **Mobile view** |                   |               |                              |            |
 |                 |**Navbar**         | *display*     | *Hamburger menu*             | **pass**   |
 |                 |**Recipe card**    |*display*      |        *Responsive layout*|**pass**     |
 |                 |                   | *click*       | *Open recipe detail page*    | **pass**  |
 |                 |**Paginator buttons**  | *display*     |*Display pagination buttons if more than 8 recipes* | **pass**         |
-|                 | ***Next** button* | *click*       |*Display next page of recipes*| **pass**   |
+|                 | ***Next** button* | *click*       |*Display the next page of recipes*| **pass**   |
 |                 |                   | *if clicked display*|*First/Previous buttons*| **pass**   |
-|                 | ***Last** button* | *click*       |*Display last page of recipes*| **pass**   |
-|                 | ***First** button*| *click*       |*Display first page of recipes*| **pass**  |
-|                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
+|                 | ***Last** button* | *click*       |*Display the last page of recipes*| **pass**   |
+|                 | ***First** button*| *click*       |*Display the first page of recipes*| **pass**  |
+|                 |***Previous** button*| *click*     |*Display the previous page of recipes*| **pass**|
 |                 |**Footer**           | *display*   | *Responsive layout*              | **pass**|
 
 
@@ -622,19 +596,19 @@ The process and outcomes of manual testing are described in depth in the followi
 | Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
 | ---             | ---               |   :---:       |    :---:                   |    :---:    |
 |`recipe_detail`  |**Navbar**         | *display*     | *Display navbar*           |   **pass**  |
-|                 |**Recipe Content** | *display*     | *Display image, title, author, Prep & Cook time, Last updated date and Like status*| **pass**    |
-|                 |                    | *display*    |*Display ingredients & method side by side*| **pass**          |
+|                 |**Recipe Content** | *display*     | *Display image, title, author, prep & cook time, last updated date, and like status*| **pass**    |
+|                 |                    | *display*    |*Ingredients & method side by side*| **pass**          |
 |                 |**Comments**        | *display*    | *Comments from other users including date & comment author*| **pass**    |
 |                 |                  | *display*     | *Comments are ordered from oldest to newest*|
 |                 |**Social icons**    | *display*    | *Display social icons*     | **pass**    |
 |                 |                    | *hover*      | *Change scale **1.2***     | **pass**    |
 |**logged-out**   |*Star button & sign up link* |*click*| *Open `signup` page*     | **pass**    |
 |                 |                           |*hover*| <u>*Underline text*</u>           | **pass**    |
-|**logged-in**    |*Star button outline & text*| *click*| *Clicking the outlined star changes it to a solid star and displays number of likes*     | **pass** |
-|                 |                    | *click*       | *Recipe saved to a logged-in users `my_starred_recipes`* | **pass**   | 
+|**logged-in**    |*Star button outline & text*| *click*| *Clicking the outlined star changes it to a solid star and displays the number of likes*     | **pass** |
+|                 |                    | *click*       | *Recipe saved to a logged-in user `my_starred_recipes`* | **pass**   | 
 |                 |          | *click*| *Success message to alert the user that the recipe has been saved* | **pass**     |
 |                 |*Star button solid state* | *click* | *Clicking the solid star changes it to an outline star*     | **pass** | 
-|                 |                    |*click*        | *Remove saved recipe from a logged-in users `my_starred_recipes`* | **pass**   | 
+|                 |                    |*click*        | *Remove saved recipe from a logged-in user `my_starred_recipes`* | **pass**   | 
 |                 |                    |*click* | *Success message to alert the user that the recipe has been removed from their `my_starred_recipes`* | **pass**     |
 |                 | **Comments**    | *display*    | *Text input box with submit button*| **pass**|
 |                 | *Submit button* | *hover*    | *Lighter background colour* | **pass**     |
@@ -652,7 +626,7 @@ The process and outcomes of manual testing are described in depth in the followi
 | **Mobile view**      |             |         |                             |                      |   
 |                      |**Navbar**         | *display*     | *Hamburger menu*           |   **pass**  |
 |                      |**Recipe Content** | *display*     | *Display responsive layout*| **pass**    |
-|                 |                    | *display*    |*Display ingredients & method side by side*| **pass**          |
+|                 |                    | *display*    |*Display ingredients & method separately*| **pass**          |
 |                 |  **Comments**      | *display*     | *Comments are ordered from oldest to newest*| **pass**           |
 |                 |**Social icons**    | *display*    | *Responsive design*     | **pass**    |  
 
@@ -663,22 +637,22 @@ The process and outcomes of manual testing are described in depth in the followi
 | Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
 | ---             | ---               |   :---:       |    :---:                   |    :---:    |
 |`my_recipes`     |**Navbar**         | *display*     | *Display navbar*           |   **pass**  |
-| **logged-in**   |`my_recipes` page  | *display*     | *Only display a logged-in users created recipes*| **pass**|
-|                 |                   | *access*      | *If an unauthorized user tries to access this page by changing the URL, redirect to sign-in page*| **pass** |
+| **logged-in**   |`my_recipes` page  | *display*     | *Only display the logged-in users created recipes*| **pass**|
+|                 |                   | *access*      | *If an unauthorized user tries to access this page by changing the URL, redirect to the sign-in page*| **pass** |
 |                 |**Recipe card**    |*display image*| *Correct recipe image clipped*|**pass**  |
 |                 |  *Image*          |*hover*        | *Rotate image 180°*        | **pass**    |
 |                 |  *Content*     |*display*|*Title, Cook & Prep time, Like counter*| **pass**  |
 |                 |                   | *order display*|*Order from newest to oldest*| **pass**  |
 |                 |                   | *click*        | *Open recipe detail page*   | **pass**  |
 |                 |**Paginator buttons**  | *display*     |*Display pagination buttons if more than 8 recipes* | **pass**         |
-|                 | ***Next** button* | *click*       |*Display next page of recipes*| **pass**   |
+|                 | ***Next** button* | *click*       |*Display the next page of recipes*| **pass**   |
 |                 |                   | *if clicked display*|*First/Previous buttons*| **pass**   |
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
-|                 | ***Last** button* | *click*       |*Display last page of recipes*| **pass**   |
+|                 | ***Last** button* | *click*       |*Display the last page of recipes*| **pass**   |
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
-|                 | ***First** button*| *click*       |*Display first page of recipes*| **pass**  |
+|                 | ***First** button*| *click*       |*Display the first page of recipes*| **pass**  |
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
-|                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
+|                 |***Previous** button*| *click*     |*Display the previous page of recipes*| **pass**|
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |  
@@ -688,10 +662,10 @@ The process and outcomes of manual testing are described in depth in the followi
 |                 |                   | *order display*|*Order from newest to oldest*| **pass**  |
 |                 | **Recipe Card**   | *click*        | *Open recipe detail page*   | **pass**  |
 |                 |**Paginator buttons**  | *display*     |*Display pagination buttons if more than 8 recipes* | **pass**         |
-|                 | ***Next** button* | *click*       |*Display next page of recipes*| **pass**   |
-|                 | ***Last** button* | *click*       |*Display last page of recipes*| **pass**   |
-|                 | ***First** button*| *click*       |*Display first page of recipes*| **pass**  |
-|                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
+|                 | ***Next** button* | *click*       |*Display the next page of recipes*| **pass**   |
+|                 | ***Last** button* | *click*       |*Display the last page of recipes*| **pass**   |
+|                 | ***First** button*| *click*       |*Display the first page of recipes*| **pass**  |
+|                 |***Previous** button*| *click*     |*Display the previous page of recipes*| **pass**|
 |                 |**Footer**         | *display*     | *Social icons responsive* | **pass**|
 
 
@@ -701,22 +675,22 @@ The process and outcomes of manual testing are described in depth in the followi
 | Page/Status     | Element           |   Action      | Expected Result            | Pass/Fail   |
 | ---             | ---               |   :---:       |    :---:                   |    :---:    |
 |`my_starred_recipes`|**Navbar**         | *display*     | *Display navbar*        |   **pass**  |
-| **logged-in**   |`my_starred_recipes` | *display*     | *Only display a logged-in users starred recipes*| **pass**|
-|                 |                   | *access*      | *If an unauthorized user tries to access this page by changing the URL, redirect to sign-in page*| **pass** |
+| **logged-in**   |`my_starred_recipes` | *display*     | *Only display the logged-in users starred recipes*| **pass**|
+|                 |                   | *access*      | *If an unauthorized user tries to access this page by changing the URL, redirect to the sign-in page*| **pass** |
 |                 |**Recipe card**    |*display image*| *Correct recipe image clipped*|**pass**  |
 |                 |  *Image*          |*hover*        | *Rotate image 180°*        | **pass**    |
 |                 |  *Content*     |*display*|*Title, Cook & Prep time, Like counter*| **pass**  |
 |                 |                   | *order display*|*Order from newest to oldest*| **pass**  |
 |                 |                   | *click*        | *Open recipe detail page*   | **pass**  |
 |                 |**Paginator buttons**  | *display*     |*Display pagination buttons if more than 8 recipes* | **pass**         |
-|                 | ***Next** button* | *click*       |*Display next page of recipes*| **pass**   |
+|                 | ***Next** button* | *click*       |*Display the next page of recipes*| **pass**   |
 |                 |                   | ***if** clicked display*|*First/Previous buttons*| **pass**   |
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
-|                 | ***Last** button* | *click*       |*Display last page of recipes*| **pass**   |
+|                 | ***Last** button* | *click*       |*Display the last page of recipes*| **pass**   |
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
-|                 | ***First** button*| *click*       |*Display first page of recipes*| **pass**  |
+|                 | ***First** button*| *click*       |*Display the first page of recipes*| **pass**  |
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
-|                 |***Previous** button*| *click*     |*Display previous page of recipes*| **pass**|
+|                 |***Previous** button*| *click*     |*Display the previous page of recipes*| **pass**|
 |                 |                   | *hover*       | *Lighter background colour*  | **pass**   |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
@@ -750,8 +724,8 @@ The process and outcomes of manual testing are described in depth in the followi
 |                 |                   | *enter valid data*| *Form submits*             | **pass**    |
 |                 | ***Password field***  | *leave empty*       | *Error message*          | **pass**    |
 |                 |                   | *enter valid data*| *Form submits*             |  **pass**   |
-|                 |                   | *password not match* | *Error message*         | **pass**    |
-|                 |                   | *password not match* | *Form won't submit*     | **pass**    |
+|                 |                   | *password does not match* | *Error message*         | **pass**    |
+|                 |                   | *password does not match* | *Form won't submit*     | **pass**    |
 |                 | ***Signup button*** | *hover*            |*Lighter background colour*|**pass**   |
 |                 |                   | *click*         | *Form submits*          | **pass**    |
 |                 |                   | *click*         | *Return to homepage*    | **pass**    |
@@ -771,8 +745,8 @@ The process and outcomes of manual testing are described in depth in the followi
 |                 |                   | *enter valid data*| *Form submits*             | **pass**    |
 |                 | ***Password field***  | *leave empty*       | *Error message*          | **pass**    |
 |                 |                   | *enter valid data*| *Form submits*             |  **pass**   |
-|                 |                   | *password not match* | *Error message*         | **pass**    |
-|                 |                   | *password not match* | *Form won't submit*     | **pass**    |
+|                 |                   | *password does not match* | *Error message*         | **pass**    |
+|                 |                   | *password does not match* | *Form won't submit*     | **pass**    |
 |`login`         |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
 |                 | *Sign up link*      | *click*           | *Redirect to `signup` page*  |   **pass**  |
 |                 | ***Username field***  | *leave empty*     |  *Error message*           | **pass**    |
@@ -781,8 +755,8 @@ The process and outcomes of manual testing are described in depth in the followi
 |                 |                   | *enter invalid format* | *Error message*       | **pass**    |
 |                 | ***Password field***  | *leave empty*       | *Error message*          | **pass**    |
 |                 |                   | *enter valid data*| *Form submits*             |  **pass**   |
-|                 |                   | *password not match* | *Error message*         | **pass**    |
-|                 |                   | *password not match* | *Form won't submit*     | **pass**    |
+|                 |                   | *password does not match* | *Error message*         | **pass**    |
+|                 |                   | *password does not match* | *Form won't submit*     | **pass**    |
 |                 | ***Sign-in button***| *hover*            | *Lighter background colour* | **pass**|
 |                 |                         | *click*    | *Form submits*          | **pass**    |
 |                 |                   | *click*         | *Return to homepage*    | **pass**    |
@@ -798,14 +772,14 @@ The process and outcomes of manual testing are described in depth in the followi
 |                 |                   | *enter invalid format* | *Error message*       | **pass**    |
 |                 | ***Password field***  | *leave empty*       | *Error message*          | **pass**    |
 |                 |                   | *enter valid data*| *Form submits*             |  **pass**   |
-|                 |                   | *password not match* | *Error message*         | **pass**    |
-|                 |                   | *password not match* | *Form won't submit*     | **pass**    |
+|                 |                   | *password does not match* | *Error message*         | **pass**    |
+|                 |                   | *password does not match* | *Form won't submit*     | **pass**    |
 |                 | ***Sign-in button***|*click*    | *Form submits*          | **pass**    |
 |                 |                   | *click*         | *Return to homepage*    | **pass**    |
 |                 |                   | *click*         | *Success message to alert the user of a successful login* | **pass** |
 |                 |                   |                      | *Automatically close alert after 2.8sec*| **pass**  |
 |`logout`         |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
-|                 |***Signout button***| *hover*          | *Lighter background colour*| **pass**    |
+|                 |***Sign out button***| *hover*          | *Lighter background colour*| **pass**    |
 |                 |                   | *click*    | *Form submits*               | **pass**    |
 |                 |                   | *click*         | *Return to homepage*    | **pass**    |
 |                 |                   | *click*         | *Success message to alert the user of a successful logout* | **pass** |
@@ -814,7 +788,7 @@ The process and outcomes of manual testing are described in depth in the followi
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
 |**Mobile view**       |                   |              |                            |              |
 |`logout`         |**Navbar**         | *display*    | *Display hamburger menu*   |   **pass**  |
-|                 |***Signout button*** | *click*    | *Form submits*               | **pass**    |
+|                 |***Sign out button*** | *click*    | *Form submits*               | **pass**    |
 |                 |                   | *click*         | *Return to homepage*    | **pass**    |
 |                 |                   | *click*         | *Success message to alert the user of a successful logout* | **pass** |
 |                 |                   |                 | *Automatically close alert after 2.8sec*| **pass**  |
@@ -828,7 +802,7 @@ The process and outcomes of manual testing are described in depth in the followi
 |`add_recipe`     |**Navbar**         | *display*         | *Display navbar*           |   **pass**  |
 |                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to 403 error page*| **pass** |
 |  **logged-in**  | **Form**          | *leave empty*     |  *Form won't submit*       | **pass**    |
-|                 |                   | *display*      | *Summernote display for ingredients, method and notes*| **pass**  | 
+|                 |                   | *display*      | *Summernote display for ingredients, method, and notes*| **pass**  | 
 |                 | *Image **Choose file** button*| *click*        | *Open device storage*      | **pass**    |
 |                 |                | *display*      | *Placeholder image if no image selected*| **pass**|
 |                 |                  | *display*      | *selected image name displayed*| **pass** |
@@ -838,10 +812,10 @@ The process and outcomes of manual testing are described in depth in the followi
 |                 |***Prep & Cook time field***| *display*          | *default 0 mins*             |**pass**     |   
 |                 |                 | *max length*|*No more than 8 characters long* | **pass**     |
 |                 | ***Cancel button*** | *hover* | *Lighter background colour*     | **pass**     |
-|                 |                     | *click* | *Redirct to `all_recipes`*      | **pass**     |
+|                 |                     | *click* | *Redirect to `all_recipes`*      | **pass**     |
 |                 | ***Add recipe button*** | *hover* | *Lighter background colour* | **pass**     |
 |                 |                     | *click* | *Form submits*                  | **pass**     |
-|                 |                     | *click* | *Go to newly created `recipe_detail` page*| **pass**     |
+|                 |                     | *click* | *Redirect to the newly created `recipe_detail` page*| **pass**     |
 |                 |                     | *click* | *Success message to alert the user of a successfully added new recipe* | **pass** |
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
@@ -849,9 +823,9 @@ The process and outcomes of manual testing are described in depth in the followi
 |**Mobile view**  |                   |              |                            |              |
 |`add_recipe`     |**Navbar**         | *display*         | *Hamburger menu*      |   **pass**  |
 |                 | `add_recipe` page | *display*         | *Responsive*          |  **pass**   |
-|                 | ***Cancel button***| *click* | *Redirct to `all_recipes`*      | **pass**     |
+|                 | ***Cancel button***| *click* | *Redirect to `all_recipes`*      | **pass**     |
 |                 |***Add recipe button*** | *click* | *Form submits*                  | **pass**     |
-|                 |                     | *click* | *Go to newly created `recipe_detail` page*| **pass**     |
+|                 |                     | *click* | *Redirect to the newly created `recipe_detail` page*| **pass**     |
 |                 |                     | *click* | *Success message to alert the user of a successfully added new recipe* | **pass** |
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Responsive layout* | **pass**|
@@ -867,18 +841,18 @@ The process and outcomes of manual testing are described in depth in the followi
 |                 |  ***Form***       | *display*         |*Prepopulated data with last recipe content*| **pass** |
 |                 |                   | *leave field empty* | *Form won't submit* | **pass**        |
 |                 | ***Cancel button*** | *hover* | *Lighter background colour*     |      **pass**   |
-|                 |                     | *click* | *Redirct to last `recipe_detail` page*| **pass**  |
+|                 |                     | *click* | *Redirect to the last `recipe_detail` page*| **pass**  |
 |                 |***Update recipe button*** | *hover* | *Lighter background colour* | **pass**     |
 |                 |                     | *click* | *Form submits*                  | **pass**     |
 |                 |                     | *click* | *Go to updated `recipe_detail` page*| **pass**     |
-|                 |                     | *click* | *Success message to alert the user of successful update of their recipe* | **pass** |
+|                 |                     | *click* | *Success message to alert the user of the successful update of their recipe* | **pass** |
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
 |**Mobile view**  |                   |              |                            |              |
 |`update_recipe`     |**Navbar**         | *display*         | *Hamburger menu*      |   **pass**  |
 |                 | `update_recipe` page | *display*         | *Responsive*          |  **pass**   |
-|                 | ***Cancel button***| *click* | *Redirct to last `recipe_detail` page* | **pass**     |
+|                 | ***Cancel button***| *click* | *Redirect to last `recipe_detail` page* | **pass**     |
 |                 |***Update recipe button*** | *click* | *Form submits*                  | **pass**     |
 |                 |                     | *click* | *Go to updated `recipe_detail` page*| **pass**     |
 |                 |                     | *click* | *Success message to alert the user of successfully updating their recipe* | **pass** |
@@ -895,13 +869,13 @@ The process and outcomes of manual testing are described in depth in the followi
 |                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to 403 error page*| **pass** |
 |                 | ***Text***           | *display*   |  *Display recipe_title within text*| **pass** | 
 |                 | ***Cancel button*** | *hover* | *Lighter background colour*     |      **pass**   |
-|                 |                     | *click* | *Redirct to last `recipe_detail` page*| **pass**  |
+|                 |                     | *click* | *Redirect to the last `recipe_detail` page*| **pass**  |
 |                 |***Update instead button*** | *hover* | *Lighter background colour* | **pass**     |
 |                 |                     | *click* | *Go to `update_recipe` page with populated data*| **pass**      |
 |                 | ***Delete button*** | *display*| *Warning red coloured box*| **pass**             |
 |                 |                     | *hover* | *Darker background colour*     |      **pass**    |
 |                 |                     | *click* | *Recipe removed from database* | **pass**
-|                 |                     | *click* | *Redirct to `my_recipes` page*| **pass**  |
+|                 |                     | *click* | *Redirect to `my_recipes` page*| **pass**  |
 | |   |*click* | *Success message to alert the user of successfully deleting their recipe* | **pass** |
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
@@ -909,7 +883,7 @@ The process and outcomes of manual testing are described in depth in the followi
 |**Mobile view**  |                   |              |                            |              |
 |`delete_recipe`     |**Navbar**         | *display*         | *Hamburger menu*      |   **pass**  |
 |                 | `delete_recipe` page | *display*         | *Responsive*          |  **pass**   |
-|                 | ***Cancel button***| *click* | *Redirct to last `recipe_detail` page* | **pass**     |
+|                 | ***Cancel button***| *click* | *Redirect to the last `recipe_detail` page* | **pass**     |
 |                 |***Update Instead button*** | *click* | *Go to `update_recipe` page*  | **pass**     |
 |                 | ***Delete button*** | *click* | *Recipe removed from database* | **pass** |
 |                 |                     | *click* | *Redirct to `my_recipes` page*| **pass**  |
@@ -927,10 +901,10 @@ The process and outcomes of manual testing are described in depth in the followi
 |                 |  ***Form***       | *display*         |*Prepopulated data with last recipe content*| **pass** |
 |                 |                   | *leave field empty* | *Form won't submit* | **pass**        |
 |                 | ***Cancel button*** | *hover* | *Lighter background colour*     |      **pass**   |
-|                 |                     | *click* | *Redirect to last `recipe_detail` page*| **pass**  |
+|                 |                     | *click* | *Redirect to the last `recipe_detail` page*| **pass**  |
 |                 |***Update comment button*** | *hover* | *Lighter background colour* | **pass**     |
 |                 |                     | *click* | *Form submits*                | **pass**     |
-|                 |                     | *click* | *Redirect to updated `recipe_detail` page*| **pass**     |
+|                 |                     | *click* | *Redirect to the updated `recipe_detail` page*| **pass**     |
 |                 |                     | *click* | *Success message to alert the user of a successful update of their comment* | **pass** |
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
@@ -948,13 +922,13 @@ The process and outcomes of manual testing are described in depth in the followi
 | ---             | ---               |   :---:       |    :---:                   |    :---:    |
 |`delete_comment`     |**Navbar**         | *display* | *Display navbar*           |   **pass**  |
 |                 |                   | *access*          | *If an unauthorized user tries to access this page by changing the URL, redirect to 403 error page*| **pass** |
-| **logged-in**   |`delete_comment` page  | *display* | *Recipe title in confirmation message*| **pass**|
+| **logged-in**   |`delete_comment` page  | *display* | *The recipe title displayed in the confirmation message*| **pass**|
 |                 |***Cancel button***| *click*       | *Return to `recipe_detail` page*   | **pass**    |
 |                 |                   |  *hover*      | *Lighter background colour* | **pass**    |
 |                 |***Delete button***|  *hover*      | *Darker background colour*  | **pass**    |
 |                 |                   | *click*       | *Remove recipe from database*| **pass**   |
 |                 |                   | *click*       | *Return to `my_recipes` page*|**pass**|
-|                 |                     | *click* | *Success message to alert the user of successful deletion of their comment* | **pass** |
+|                 |                     | *click* | *Success message to alert the user of the successful deletion of their comment* | **pass** |
 |                 |          |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
 |                 |                   | *hover*      | *Change scale **1.2***     | **pass**    |
@@ -975,7 +949,7 @@ The process and outcomes of manual testing are described in depth in the followi
 |                 |                   |*invalid format*| *Error message*           | **pass**    |
 |                 |**Subscribe button**| *hover*       | *Alternate colour*        | **pass**    |
 |                 |                    | *click*       | *Email saved to database*  | **pass**    |
-|                 |                    | *click*       | *Redirect to homepage*     | **pass**    |
+|                 |                    | *click*       | *Redirect to the homepage* | **pass**    |
 |                 |                    | *click*       | *Success message of successfully subscribing* | **pass** |
 |                 |                     |          | *Automatically close alert after 2.8sec*  | **pass**     |
 |                 |**Footer**         | *display*     | *Social icons are displayed at the bottom of the page* | **pass**|
@@ -1020,7 +994,7 @@ into the template*
 
 5. [FieldError within Recipe model form](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/47)
 
-*resolved - Follow error code and remove `created_date` from the fields*
+*resolved - Follow the error code and remove `created_date` from the fields*
 
 6. [NameError: 'self' is not defined within MyRecipesView](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/49)
 
@@ -1050,7 +1024,7 @@ into the template*
 
 *Credit - [Bootstrap navbar Active State not working](https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working)*
 
-11. [Placeholder image automatically added to a new recipe instead of the user uploaded image](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/53)
+11. [Placeholder image automatically added to a new recipe instead of the user-uploaded image](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/53)
 
 *resolved - [09f9c79](https://github.com/chris-townsend/PP4-Kitchen_Tales/commit/09f9c79793272f6c000d202c9f3f30df8cb2f6bd)*
 
@@ -1060,7 +1034,7 @@ into the template*
 
 *resolved - [aa6c9f8](https://github.com/chris-townsend/PP4-Kitchen_Tales/commit/aa6c9f8e8344f044ba26c53f23bbb3b82e9ed7e3)*
 
-*Add correct line of code and remove commented out unused code*
+*Add the correct line of code and remove commented-out unused code*
 
 #
 
@@ -1068,14 +1042,13 @@ into the template*
 
 1. [Placeholder image automatically set when updating a recipe](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/55)
 
-*When a user goes to update their recipe, the placeholder image replaces their own image unless it has been specified again. This should be an easy fix by adding to the if/else statement*
-
+*When a user goes to update their recipe, the placeholder image replaces their image unless it has been specified again. This should be an easy fix by adding to the if/else statement*
 
 ***
 
 ## Automated Testing
 
-A number of unit tests were written to test the views, forms and database models. These can be found in the [`recipes`](https://github.com/chris-townsend/PP4-Kitchen_Tales/tree/main/recipes) folder and test files begin with `test_`.
+Several unit tests were written to test the views, forms, and database models. These can be found in the [`recipes`](https://github.com/chris-townsend/PP4-Kitchen_Tales/tree/main/recipes) folder and test files begin with `test_`.
 
 #
 
