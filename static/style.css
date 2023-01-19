@@ -40,7 +40,6 @@ hr {
     font-weight: 300;
 }
 
-
 /* Navigation */
 
 .login-status {
@@ -416,9 +415,6 @@ hr {
     margin-bottom: 10px;
 }
 
-
-
-
 /* Newsletter Page */
 
 .newsletter-container {
@@ -428,7 +424,6 @@ hr {
     width: 90%;
     height: 340px;
 }
-
 
 /* Media Queries */
 
@@ -509,7 +504,6 @@ hr {
     }
 }
 
-
 /* For Small devices (mobiles, less than 320px) */
 
 @media screen and (max-width: 320px) {
@@ -531,8 +525,8 @@ hr {
         font-size: 16px;
     }
 
-    .carousel-inner {
-        height: 200px;
+    #carouselExampleControls {
+        display:none;
     }
 
     .welcome-container {
@@ -558,12 +552,11 @@ hr {
     }
 
     .sign-up-container {
-        margin-left: 14px;
         margin-top: 20px;
         background-color: antiquewhite;
-        width: 90%;
+        width: 95%;
         justify-content: center;
-        height: 300px;
+        height: 350px;
     }
 
     .welcome-news-text {
@@ -577,9 +570,10 @@ hr {
     /* Newsletter page */
 
     .newsletter-container {
-        width: 80%;
-        height: 440px;
-        margin-left: 30px;
+        width: 300px;
+        height: 400px;
+        margin-left: 8px;
+        padding: 2px;
     }
 
     /* Login/out styling */
