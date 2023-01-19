@@ -569,72 +569,72 @@ Custom Error Pages were created to give the user more information on the error a
 **Recipe Header Section**
 ![Recipe detail](docs/features/images/features-recipe-detail.webp)
 
-- At the top of every recipe detail page, the title, author, prep and cook time, last updated date and star icon is displayed. The star icon is a way of bookmarking a recipe and its displayed as a total likes counter on recipe card pages.
+- Every recipe detail page prominently displays the title, author, preparation and cooking time, last updated date, and a star icon at the top section of the page. The star icon serves as a way for users to bookmark a recipe, and it also appears as a total likes counter on recipe card pages.
 
 **Recipe Action Buttons**
 ![Recipe action buttons](docs/features/images/features-action-button.webp)
 
-- If the logged-in user is the author of the recipe, edit and delete icons will appear near the top of the recipe detail page.
+- On the recipe detail page, if the logged-in user is the author of the recipe, they will have the option to edit or delete the recipe by the presence of edit and delete icons near the top of the page.
 
 **Recipe Details Section**
 
 ![Recipe detail method](docs/features/images/features-method.webp)
 ![Recipe detail notes](docs/features/images/features-notes.webp)
 
-- Recipe ingredients, method and notes are displayed using Summernote which gives the user more freedom to style their content. 
+- The recipe ingredients, method, and notes are presented using Summernote, which allows users to format their content in a more visually pleasing and personalized way.
 
 **Comments Section**
 ![Comments section](docs/features/images/features-comments.webp)
 ![Comments section](docs/features/images/features-comment-body.webp)
 
-- The comments section is displayed at the bottom of every `recipe_detail` page, If the user is logged-in a *body* text input box will be displayed for the user to post a comment. If a user submits a comment, a success message will alert the user that their comment is awaiting approval. 
+- At the bottom of every `recipe_detail` page, there is a comments section that allows users to view and post comments. If the user is logged-in, a text input box will appear for them to write their comment. Upon submission, a success message will inform the user that their comment is awaiting approval.
 
 ![Comment alert approval](docs/features/images/kitchen-tales-alert-add-comment.webp)
 
 ### Update Comment
 ![Update comment page](docs/features/images/features-update-comment.webp)
 
-- This page is displayed if a user has posted a comment and wants to update their comment. The update comment icon is only displayed if they are the author of the comment and the data comes prepopulated from the last add or update. A success message alerts the user when they have updated their comment. 
+- This page is displayed when a user wishes to update a comment they have previously posted. The update comment icon will only be visible to the comment's author, and the fields will be pre-populated with the existing information. Once the user has successfully updated their comment, a success message will appear to notify them.
 
 ![Update comment alert](docs/features/images/kitchen-tales-alert-update-comment.webp)
 
 ### Delete Comment
 ![Delete comment page](docs/features/images/features-delete-comment.webp)
 
-- A user can delete their comment by clicking on the bin icon next to where the comment is being displayed. A confirmation page gives the user the option to cancel or delete. A success message will alert the user if they delete a comment. 
+- Users have the ability to delete their comments by clicking on the bin icon next to the comment's display. This will prompt a confirmation page, giving the user the option to cancel or proceed with the deletion. If the user chooses to delete the comment, they will receive a success message confirming the deletion.
 
 ![Delete comment alert](docs/features/images/kitchen-tales-alert-delete-comment.webp)
 
 ### Add Recipe Form
 ![Add recipe page](docs/features/images/features-add-recipe.webp)
 
-- This page is accessible by logging in, clicking on the dropdown menu at the top of the page and selecting *'Add-Recipe'*. After adding a new recipe, the user should be taken to their newly created recipe detail page and if the form has been filled out correctly, the user will recieve a success message of a successful add. 
+- Users can easily add a recipe by accessing the dropdown menu at the top of the page and selecting the 'Add-Recipe' option. Once the recipe has been successfully added, the user will be directed to a detailed page dedicated to the newly created recipe. Additionally, a confirmation message will appear to inform the user that their recipe has been added successfully.
 
 ![Add recipe alert](docs/features/images/kitchen-tales-alert-add-recipe.webp)
 
 ### Update Recipe Form
 ![Update recipe page](docs/features/images/features-update-recipe.webp)
 
-- Clicking on the edit icon will take the user to the update recipe page. The data is prepopulated from the time it was added or updated and this has been done for ease of use for when updating recipes. Success messages are used to notify the user when they successfully update their recipe.
+- By clicking on the edit icon, the user will be directed to the recipe update page. The fields will be pre-populated with the existing information, making it easy to make updates to the recipe. A success message will be displayed to the user once the recipe has been successfully updated.
 
 ![Update recipe alert](docs/features/images/kitchen-tales-alert-update-recipe.webp)
 
 ### Delete Recipe
 ![Delete recipe page](docs/features/images/features-delete-recipe.webp)
 
-- Clicking on the delete icon will take the user to the confirmation page for deleting a recipe. The title of the recipe is included in the confirmation message and the user has three options; Cancel, which will take the user back to the recipe detail page, update instead - which will take the user to the update recipe page for that recipe and finally delete - to completly remove the recipe from the database. A success message alerts the user if they remove a recipe from the database. 
+- When the user clicks on the delete icon, they will be directed to a confirmation page for deleting a recipe. The recipe title is included in the confirmation message, and the user has three options: Cancel, which will bring the user back to the recipe detail page; Update, which will redirect the user to the update recipe page for that recipe; and Delete, which will permanently remove the recipe from the database. A success message will be displayed to the user if they successfully delete the recipe.
 
 ![Delete recipe success message](docs/features/images/kitchen-tales-alert-delete-recipe.webp)
 
 ### My Recipes Page
 ![My recipes page](docs/features/images/features-my-recipes.webp)
 
-- Personally created recipes can be found by clicking on the users dropdown bar and selecting My-Recipes. The recipes are paginated eight to a page.
+- Personal recipes can be easily accessed by clicking on the user dropdown menu and selecting "My Recipes". These recipes are conveniently organized into pages with eight recipes per page for easy browsing.
 
 ### My Bookmarks Page
 ![My bookmarks page](docs/features/images/features-my-liked-recipes.webp)
 
-- The bookmarks page is a users starred recipes, this is denoted by a star icon displayed on a recipe detail page and any user which clicks the star icon will have the recipe saved to their personal starred recipes page. The style is the same as other recipe card pages in the fact that the recipes are paginated by eight. 
+- The Bookmarks page displays a user's personal collection of starred recipes, easily identified by a shining star icon on the recipe detail page. By simply clicking the star icon, a recipe can be saved to the user's personal Bookmarks page. The layout of this page is consistent with the other recipe card pages, with the added convenience of being able to browse through eight recipes per page.
 
 ### Error Pages
 
