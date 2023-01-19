@@ -21,7 +21,7 @@ def newsletter_signup(request):
     newsletter_form = NewsletterForm()
     if request.method == 'POST':
         newsletter_form = NewsletterForm(request.POST)
-        print(newsletter_form)
+
         if newsletter_form.is_valid():
             newsletter_form.save()
             messages.success(request,
@@ -220,7 +220,7 @@ class UpdateRecipeView(LoginRequiredMixin, View):
         within the form
         """
         recipe = Recipe.objects.get(id=recipe_id)
-        print(recipe)
+
         return render(
             request,
             "update_recipe.html",
@@ -324,7 +324,7 @@ class UpdateCommentView(LoginRequiredMixin, View):
         and displays a form to edit the comment
         """
         comment = Comment.objects.get(id=comment_id)
-        print(comment)
+
         return render(
             request,
             "update_comment.html",
