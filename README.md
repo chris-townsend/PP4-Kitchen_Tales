@@ -394,7 +394,6 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 #### Colour Scheme
 
-
 A light colour scheme was chosen to allow good contrast with text and give a clean feel throughout the site. Great care was taken during the design process to establish a good contrast between background colours and text, and also to ensure it met accessibility requirements.
 
 
@@ -469,23 +468,25 @@ The diagram below details the database schema.
 
 ### User Authentication
 
-- Django's LoginRequiredMixin is used to ensure that any requests to access secure pages by unauthenticated users are forwarded to the login page.
+Django's LoginRequiredMixin is utilized to ensure that any requests to access secure pages by unauthenticated users are redirected to the login page, this helps to keep the site secure.
 
 ### Form Validation
-A warning will appear to the user advising them of the field that caused the issue if inaccurate or empty data is added to a form, which will prevent the form from submitting.
+
+A warning message will appear to the user when inaccurate or empty data is entered into a form, identifying the specific field that caused the issue. This prevents the form from being submitted until the issue is resolved, ensuring that only accurate and complete data is processed.
 
 ### Database Security
+
 The secret keys and Database url are stored in the env.py file to prevent any unwanted connections to the database and this was set up prior to the first push to Github to ensure security was met.
 
-Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site. The purpose of the CSRF tokens help protect against CSRF attacks by making it difficult for an attacker to construct a valid request on behalf of the victim. As the attacker has no way of predicting the correct value for the CSRF token, they won't be able to include it in the malicious request.
+Cross-Site Request Forgery (CSRF) tokens were implemented on all forms throughout the site to protect against CSRF attacks. These tokens make it difficult for an attacker to construct a valid request on behalf of a victim by including a unique, unpredictable value that the attacker cannot guess. This helps ensure that only legitimate requests are processed, improving the security of the site.
 
-### Custom error pages:
+### Custom error pages
 
-Custom Error Pages were created to give the user more information on the error and to provide them with buttons to guide them back to the site.
+Custom error pages were designed to give users more information about the error they encountered and provide them with buttons to guide them back to the site, improving the user experience.
 
 - 403 Page Forbidden - Looks like you're trying to access forbidden content. Please sign in to the correct account.
 - 404 Page Not Found - The page you're looking for doesn't exist.
-- 500 Server Error - Kitchen Tales is currently unable to handle this request
+- 500 Server Error - Kitchen Tales is currently unable to handle this request.
 
 [Back to top ⇧](#kitchen-tales)
 
@@ -495,15 +496,17 @@ Custom Error Pages were created to give the user more information on the error a
 
 ### Header
 
+**Logo**
+
+- A customised logo was created using Hatchful by Shopify which is a free logo generator.
+
 ![Kitchen Tales logo](docs/features/images/kitchen-tales-logo.webp)
 
-**Logo**
-- A customised logo was created using Hatchful by Shopify which is a free logo generator.
-- This logo is positioned in the top left of the navigation bar. The logo is linked to the home page for ease of navigation for the user.
+- The logo is prominently positioned in the top-left corner of the navigation bar. It is linked to the homepage to make it easy for users to navigate back to the main page of the website.
 
 **Navigation Bar**
 
-- The Navbar is displayed on all pages of the website and allows users to navigate the site with ease. The navbar is comprised of a logo, links to navigate the site and a search bar. The links on the navbar will vary depending on whether a user is logged into their account.
+- The navigation bar, or Navbar, is present on all pages of the website and allows for easy navigation. The Navbar includes a logo, links to various pages, and a search bar. The links on the Navbar will change depending on whether the user is logged into their account or not.
 
 #### *User not logged-in Navbar*
 
@@ -513,7 +516,7 @@ Custom Error Pages were created to give the user more information on the error a
 
 #### *User logged-in Navbar*
 
-- If a user is logged in it will display their profile name in the navbar as part of a drop-down menu. The drop-down menu gives logged-in users the ability to manage and save recipes and the option to sign out of their account.
+- If a user is logged in, their profile name will be displayed in the navigation bar as part of a drop-down menu. This menu provides logged-in users with the ability to manage and save recipes, as well as the option to sign out of their account.
 
 ![Navigation section authorized users](docs/features/images/features-auth-navbar.webp)
 
@@ -522,9 +525,10 @@ Custom Error Pages were created to give the user more information on the error a
 ### Footer
 
 - The footer section includes links to Facebook, Instagram, Twitter and Youtube.
-- Clicking the links in the footer opens a separate browser tab to avoid pulling the user away from the site.
 
 ![footer](docs/features/images/section-footer.webp)
+
+- Clicking the links in the footer will open in a separate browser tab to prevent users from navigating away from the site.
 
 ### Home Page
 ![Homepage](docs/features/images/features-homepage.webp)
@@ -535,7 +539,7 @@ Custom Error Pages were created to give the user more information on the error a
 ### Newsletter Page
 ![Newsletter page](docs/features/images/features-newsletter-page.webp)
 
-- The newsletter section was a late addition to the site, I wanted to fill the homepage with more content and a newsletter seemed like a sensible option. The database currently saves the email address but more code is needed to set up the email side. Next time with more planning I would make the newsletter its own app instead of having it in with the *Recipes* app and it would be set up better with a name field to make it easier to differentiate logged-in users and users who have only signed up to the newsletter. The newsletter currently doesn't have an unsubscibe button which would be needed in the future. The code to perform this is very similiar to adding a newsletter user and the purpose of setting this up one sided was to show a little more functionality to the site. A success message alerts the user when they have submitted a valid email address.
+- The newsletter feature was added as a later addition to the website to provide more content and options for users. Currently, the database saves email addresses, but additional code is needed to set up the email side. In the future, it is intended to convert the newsletter feature into its own app, separate from the "Recipes" app, in order to improve organization and functionality. This would involve adding a name field to differentiate between logged-in users and newsletter subscribers. Additionally, an unsubscribe button will be added for user convenience and full functionality. A success message will be displayed to confirm when a user has successfully submitted their email address.
 
 ![Newsletter success message](docs/features/images/kitchen-tales-alert-newsletter.webp)
 
@@ -550,15 +554,14 @@ Custom Error Pages were created to give the user more information on the error a
 **Log In**
 
 ![Login section](docs/features/images/section-sign-in.webp)
+![Success message login](docs/features/images/kitchen-tales-alert-login.webp)
 
 **Log Out**
 
 ![Logout section](docs/features/images/section-sign-out.webp)
-
-- Success messages inform the user if they have logged in/ logged out successfully.
-
-![Success message login](docs/features/images/kitchen-tales-alert-login.webp)
 ![Success message logout](docs/features/images/kitchen-tales-alert-logout.webp)
+
+Success messages confirm to the user that their login or logout was successful.
 
 ### Browse Recipes
 
@@ -653,7 +656,8 @@ Custom Error Pages were created to give the user more information on the error a
 
 ### Future Features
 
-In the future, there are a number of functionalities that I would like to implement. I've left the initial user stories that were created in the project kanban board as potential areas for future improvement and these have been left in the [Future Features](https://github.com/users/chris-townsend/projects/5) section of the kanban board. The key areas I would like to add to the site are:
+In the future, there are a number of functionalities that I would like to implement. I have left the initial user stories that were created in the project kanban board as potential areas for future improvement and these have been left in the [Future Features](https://github.com/users/chris-townsend/projects/5) section of the kanban board. The key areas I would like to add to the site include:
+
 
 - [#23](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/23) The ability for users to login via social networks such as facebook or google.
 
@@ -661,7 +665,7 @@ In the future, there are a number of functionalities that I would like to implem
 
 - Create a model profiles and give users the ability to create and edit their own profile.
 
-Some of the funtionality for [#23](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/23) is provided by Django allauth. As this is already implemented for the site, it only requires being setup and seems fairly straight forward. The other functionality would need developing but also seems easily completable with more time.
+Some of the functionality for [issue #23](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/23)  is already provided by Django allauth, which is already implemented on the site. It only requires setup and appears to be relatively straightforward. The remaining functionality would need to be developed but also appears to be easily achievable with more time.
 
 ***
 
