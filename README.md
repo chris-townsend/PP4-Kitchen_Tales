@@ -517,6 +517,12 @@ Custom error pages were designed to give users more information about the error 
 
 ![Navigation dropdown authorized users](docs/features/images/features-auth-dropdown.webp)
 
+### Home Page
+![Homepage](docs/features/images/features-homepage.webp)
+![Homepage bootstrap carousel](docs/features/images/features-bootstrap-carousel.webp)
+![Homepage card section](docs/features/images/features-card-section.webp)
+![Homepage newsletter section](docs/features/images/features-newsletter-section.webp)
+
 ### Footer
 
 - The footer section includes links to Facebook, Instagram, Twitter and Youtube.
@@ -524,12 +530,6 @@ Custom error pages were designed to give users more information about the error 
 ![footer](docs/features/images/section-footer.webp)
 
 - Clicking the links in the footer will open in a separate browser tab to prevent users from navigating away from the site.
-
-### Home Page
-![Homepage](docs/features/images/features-homepage.webp)
-![Homepage bootstrap carousel](docs/features/images/features-bootstrap-carousel.webp)
-![Homepage card section](docs/features/images/features-card-section.webp)
-![Homepage newsletter section](docs/features/images/features-newsletter-section.webp)
 
 ### Newsletter Page
 ![Newsletter page](docs/features/images/features-newsletter-page.webp)
