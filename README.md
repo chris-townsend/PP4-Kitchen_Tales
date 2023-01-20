@@ -1,8 +1,8 @@
 # Kitchen Tales
 
-Kitchen Tales is a full-stack project built in Django using Python, HTML and CSS. My goals are to create a functioning and responsive website that allows users to create and share recipes. The website will have full CRUD functionality which will give users the ability to edit and delete their own recipes. On each recipe page, users will be able to communicate with a comments section and the ability to like and save recipes to a favourites page.
+Kitchen Tales is a full-stack project built using Django, Python, HTML and CSS. The goal is to create a functional and responsive website that enables users to create and share recipes. The website will have full CRUD functionality, allowing users to edit and delete their own recipes. Each recipe page will have a comments section and options to like and save recipes to a favorites page.
 
-The site should be instantly recognisable following UX design principles, which meets accessibility guidelines, is easy to navigate and allows the user to find information and resources intuitively. The site provides role based permissions for users to interact within a central dataset while integrating Djangos built-in authentication system.
+The website follows UX design principles, is accessible and easy to navigate, allowing users to find information and resources intuitively. The site also provides role-based permissions for users to interact with a central dataset while integrating Django's built-in authentication system.
 
 ![Am i responsive](docs/features/am-i-responsive/am-i-responsive.webp)
 
@@ -50,7 +50,6 @@ The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuap
     + [Media](#media)
   * [Acknowledgments](#acknowledgments)
 
-
 ***
 
 ## User Experience (UX)
@@ -60,7 +59,6 @@ The target audience for Kitchen Tales would likely be individuals who are intere
 <br>
 
 ### Epics 
-
 
 7 Epics were created as Milestones which were then further developed into 42 User Stories. The details on each epic, along with the user stories linked to each one can be found [here](https://github.com/chris-townsend/PP4-Kitchen_Tales/milestones).
 
@@ -227,15 +225,15 @@ The following user stories were scoped out of the project due to time constraint
 
 ### Design
 
-The website was intentionally given a very straightforward and minimalistic style in order to stay on theme with the site's objectives. The simple design allows the user to intuitively navigate around the site.
+The website was designed with a minimalistic style to align with the site's objectives. The simple design allows users to easily navigate through the site and find what they are looking for.
 
 ***
 
 #### Wireframes
 
-Initial wireframes were made for the original ideas and as functionality was reduced, these wireframes have also become guidelines for the more basic functions which remain in place for future development. The wireframes were designed using [Balsamiq](#programs), with a mobile-first approach.
+Initial wireframes were created for the original ideas, and as functionality was scaled back, these wireframes have also served as guidelines for the more basic features that remain in place for future development. The wireframes were designed using Balsamiq, with a mobile-first approach in mind.
 
-*Please note: To view the wireframe images, please **click** on the arrow next to each title*
+*Please note that to view the wireframe images, you need to click on the arrow next to each title.*
 
 #### ***Mobile***
 
@@ -394,8 +392,7 @@ Initial wireframes were made for the original ideas and as functionality was red
 
 #### Colour Scheme
 
-A light colour scheme was chosen to allow good contrast with text and give a clean feel throughout the site. Great care was taken during the design process to establish a good contrast between background colours and text, and also to ensure it met accessibility requirements.
-
+A light color scheme was chosen to provide good contrast with text and create a clean and visually pleasing look throughout the site. Careful consideration was given during the design process to establish a strong contrast between background colors and text, and to ensure that the site meets accessibility requirements.
 
 ![Colour Palette](docs/features/colour-scheme/coolers-colour-scheme.webp)
 *Colour palette from* [*Coolors*](https://coolors.co/)
@@ -404,15 +401,13 @@ A light colour scheme was chosen to allow good contrast with text and give a cle
 
 #### Imagery
 
-The imagery used throughout the site is intended to inspire people to cook. All static images are sourced through [Pexels](https://www.pexels.com/) and are royalty-free. There is a list of images used available in the [credits](#credits). At the time of writing, the images within the database have come from [BBC Goodfood](https://www.bbcgoodfood.com/).
+The imagery used throughout the site is intended to inspire users to cook, and all the static images are sourced from either [Pexels](https://www.pexels.com/) or [unsplash](https://unsplash.com/), which are both royalty-free. A list of images used is available in the credits section. At the time of writing, the images within the database have been sourced from [BBC Goodfood](https://www.bbcgoodfood.com/).
 
 ***
 
 #### Typography 
 
-While deciding on which typefaces I wanted to use, I tried to choose fonts which resemble a  relaxing and elegant theme, this allows for easy reading and doesn't detract from the overall feel and style. To add a little more style, one of the fonts used on the homepage (*Italiana*) has a cursive style, while still being easy to read, it adds elegance and sophistication to the site.
-
-Both fonts are from [Google fonts](https://fonts.google.com/about), meaning they can be imported from their API and give wide coverage to keep the styling maintained across various devices. *Sans Serif* is the backup font, incase for any reason the main font isn't being imported into the site correctly.
+When selecting typefaces for the site, I aimed to choose fonts that evoke a relaxing and elegant theme, for easy reading and to complement the overall feel and style of the site. One of the fonts used on the homepage, "Italiana," has a cursive style that adds elegance and sophistication to the site, while still being easy to read. Both fonts are from Google fonts, which can be imported from their API and provide wide coverage to maintain consistent styling across various devices. A backup font, "Sans Serif," was also selected in case the primary font is not imported correctly.
 
 **Headings:** *'Karla'*
 
@@ -434,9 +429,9 @@ Github projects was used to manage the development process using an agile approa
 ![GitHub kanban board](docs/features/agile/github-kanban-board.webp)
 
 
-A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution. The issues were closed automatically when the pull request was linked to the issue. I have done this for most user stories but some have been closed manually.
+A Github Issue was created for each User Story, which was then allocated to a milestone (Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution. The issues were closed automatically when the pull request was linked to the issue, most of them were closed automatically but some were closed manually.
 
-Towards the end of the project, I knew there would be some user stories that would be scoped out of the project. These user stories have been placed within the Future features section on the kanban board and are intended to be implemented at a later date.
+As the project progressed, I realized that some user stories would have to be scoped out due to time and resource constraints. These user stories have been placed within the "Future Features" section on the kanban board, and are intended to be implemented at a later date.
 
 ![Guthub kanban board future features](docs/features/agile/github-kanban-board-future-features.webp)
 
