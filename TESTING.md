@@ -11,6 +11,7 @@
   * [WAVE accessibility tool](#wave-accessibility-evaluation-tool)
 - [Browser Testing](#browser-testing)
 - [Device Testing](#device-testing)
+  * [Mobile](#mobile)
 - [Manual Testing](#manual-testing)
   * [Navigation](#navigation)
   * [Homepage](#homepage-content)
