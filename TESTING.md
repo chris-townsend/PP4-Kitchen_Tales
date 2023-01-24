@@ -1073,6 +1073,9 @@ into the template*
 
 *When a user goes to update their recipe, the placeholder image replaces their image unless it has been specified again. This should be an easy fix by adding to the if/else statement*
 
+This bug related to the recipe model was attempted to be fixed with commit [aec7728](https://github.com/chris-townsend/PP4-Kitchen_Tales/commit/aec7728ce67fe8c912b14b2bccdac25225c61f23). Initially, it was believed that by adding an image_url field to the recipe model and adjusting the recipe_detail template to take this field into account would resolve the issue. However, despite these efforts, the bug persists.
+
+
 ***
 
 ## Automated Testing
