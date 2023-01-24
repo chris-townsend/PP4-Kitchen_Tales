@@ -18,9 +18,9 @@
             <div class="card recipe-card mb-3 shadow-sm mx-auto mx-sm-2">
                 {% if "placeholder" in recipe.image.url %}
                 <img src="{% static 'images/placeholder.webp' %}"
-                    class="custom-recipe-card" alt="placeholder image">
+                    class="custom-recipe-card" alt="Ingredients placeholder image">
                 {% else %}
-                <img src=" {{ recipe.image.url }}" alt="recipe image" class="custom-recipe-card">
+                <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="custom-recipe-card">
                 {% endif %}
                 <div class="card-body mt-1">
                     <h2 class="card-title custom-recipe-title">{{ recipe.title }}</h2>

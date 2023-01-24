@@ -13,12 +13,12 @@
                     <!-- Uses a placeholder image if the user does not upload there
                           own image to a recipe -->
                     {% if "placeholder" not in recipe.image.url %}
-                    <img src="{{ recipe.image.url }}" alt="recipe image" class="custom-recipe-detail-img">
+                    <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" class="custom-recipe-detail-img">
                     {% elif recipe.image_url %}
-                    <img src="{{ recipe.image_url }}" alt="recipe image" class="custom-recipe-detail-img">
+                    <img src="{{ recipe.image_url }}" alt="{{ recipe.title }}" class="custom-recipe-detail-img">
                     {% else %}
                     <img src="{% static 'images/placeholder.webp' %}" class="custom-recipe-detail-img"
-                        alt="placeholder image">
+                        alt="Ingredients placeholder image">
                     {% endif %}
                 </div>
                 <div class="col-12 col-md-8">
