@@ -460,6 +460,33 @@ The Website was tested on Google Chrome, Internet Explorer and Microsoft Edge wi
 
 The website has been viewed on a variety of devices such as Desktop, Laptop, Oneplus 5t, iPhone SE, iPhone 8, iPad & Samsung Galaxy S21 to ensure that the responsive design worked as intended. [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to test the responsiveness on different devices.
 
+### Mobile 
+
+All pages have been tested through Google's [Mobile friendly test](https://search.google.com/test/mobile-friendly), the results are displayed below:
+
+
+
+| Page                     |    Result      |  URL    |
+| ---                      |      :---:     |   :---: |
+| `403.html`               |                |         |
+| `404.html`               |                |         |
+| `500.html`               |                |         |
+| `add_recipe.html`        |                |         |
+| `all_recipes.html`       |                |         |
+| `index.html`             |                |         |
+| `delete_comment.html`    |                |         |
+| `my-recipes.html`        |                |         |
+| `my_starred_recipes.html`|                |         |
+| `newsletter.html`        |                |         |
+| `recipe_detail.html`     |                |         |
+| `search_results.html`    |                |         |
+| `update_comment.html`    |                |         |
+| `update_recipe.html`     |                |         |
+| `login.html`             |                |         |
+| `logout.html`            |                |         |
+| `signup.html`            |                |         |
+
+
 ***
 
 ## Manual Testing
