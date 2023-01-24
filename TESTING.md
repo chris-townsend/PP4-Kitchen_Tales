@@ -338,27 +338,27 @@ The *[W3C HTML validator](https://validator.w3.org/)* was used to test all HTML 
 | Page                   | Status      |              | URL         |
 | ---                    |   :---:     |    :---:     |    :---:    |
 |                        | *logged-in* | *logged-out* |             |
-|403.html                |   *pass*    |   *pass*     |      -      |  
-|404.html                |   *pass*    |   *pass*     |      -      |
-|500.html                |   *pass*    |   *pass*     |      -      |
-|add_recipe.html         |   *pass*    |   *n/a*      |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fadd_recipe%2F#l189c24)*           |
-|all_recipes.html        |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fall_recipes%2F)*    |
-|base.html               |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    |
-|delete_comment.html     |   *pass*    |   *n/a*      |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fdelete_comment%2F62%2F#l189c24)*           |
-|delete_recipe.html      |   *pass*    |   *n/a*      | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fdelete_recipe%2F62%2F#l189c24)*   |
-|footer.html             |   *pass*    |   *pass*     | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    |
-|index.html              |   *pass*    |   *pass*     | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    | 
-|my_recipes.html         |   *pass*    |   *n/a*      | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fmy_recipes%2F#l189c24)* |
-|my_starred_recipes.html |   *pass*    |   *n/a*      |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fmy_starred_recipes%2F#l189c24)*|
-|newsletter.html         |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fnewsletter#l189c24)*    |
-|recipe_detail.html      |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Frecipe_detail%2Fbutternut-squash-sage-risotto%2F#l189c24)*    |
-|recipe_paginator.html   |   *pass*    |    *pass*    |      -      |
-|search_results.html     |   *pass*    |    *pass*    | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fsearch_results%2F)* |
-|update_comment.html     |   *pass*    |    *n/a*     | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fupdate_comment%2F62%2F#l189c24)*            |
-|update_recipe.html      |   *pass*    |    *n/a*     | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fupdate_recipe%2F62%2F#l189c24)* |
-|login.html              |   *pass*    |    *pass*    | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Faccounts%2Flogin%2F#l189c24)*           |
-|logout.html             |   *pass*    |    *n/a*     | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Faccounts%2Flogout%2F#l189c24)*            |
-|signup.html             |   *n/a*     |    *pass*    | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Faccounts%2Fsignup#l189c24)*           |
+|`403.html`                |   *pass*    |   *pass*     |      -      |  
+|`404.html`                |   *pass*    |   *pass*     |      -      |
+|`500.html`                |   *pass*    |   *pass*     |      -      |
+|`add_recipe.html`         |   *pass*    |   *n/a*      |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fadd_recipe%2F#l189c24)*           |
+|`all_recipes.html`        |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fall_recipes%2F)*    |
+|`base.html`               |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    |
+|`delete_comment.html`     |   *pass*    |   *n/a*      |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fdelete_comment%2F62%2F#l189c24)*           |
+|`delete_recipe.html`      |   *pass*    |   *n/a*      | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fdelete_recipe%2F62%2F#l189c24)*   |
+|`footer.html`             |   *pass*    |   *pass*     | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    |
+|`index.html`            |   *pass*    |   *pass*     | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2F)*    | 
+|`my_recipes.html`         |   *pass*    |   *n/a*      | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fmy_recipes%2F#l189c24)* |
+|`my_starred_recipes.html` |   *pass*    |   *n/a*      |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fmy_starred_recipes%2F#l189c24)*|
+|`newsletter.html`         |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fnewsletter#l189c24)*    |
+|`recipe_detail.html`      |   *pass*    |   *pass*     |  *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Frecipe_detail%2Fbutternut-squash-sage-risotto%2F#l189c24)*    |
+|`recipe_paginator.html`   |   *pass*    |    *pass*    |      -      |
+|`search_results.html`     |   *pass*    |    *pass*    | *[result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fsearch_results%2F)* |
+|`update_comment.html`     |   *pass*    |    *n/a*     | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fupdate_comment%2F62%2F#l189c24)*            |
+|`update_recipe.html`      |   *pass*    |    *n/a*     | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Fupdate_recipe%2F62%2F#l189c24)* |
+|`login.html`              |   *pass*    |    *pass*    | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Faccounts%2Flogin%2F#l189c24)*           |
+|`logout.html`             |   *pass*    |    *n/a*     | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Faccounts%2Flogout%2F#l189c24)*            |
+|`signup.html`             |   *n/a*     |    *pass*    | *[result](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fkitchen-tales.herokuapp.com%2Faccounts%2Fsignup#l189c24)*           |
 
 ***
 
@@ -468,23 +468,24 @@ All pages have been tested through Google's [Mobile friendly test](https://searc
 
 | Page                     |    Result      |  URL    |
 | ---                      |      :---:     |   :---: |
-| `403.html`               |                |         |
-| `404.html`               |                |         |
-| `500.html`               |                |         |
-| `add_recipe.html`        |                |         |
-| `all_recipes.html`       |                |         |
-| `index.html`             |                |         |
-| `delete_comment.html`    |                |         |
-| `my-recipes.html`        |                |         |
-| `my_starred_recipes.html`|                |         |
-| `newsletter.html`        |                |         |
-| `recipe_detail.html`     |                |         |
-| `search_results.html`    |                |         |
-| `update_comment.html`    |                |         |
-| `update_recipe.html`     |                |         |
-| `login.html`             |                |         |
-| `logout.html`            |                |         |
-| `signup.html`            |                |         |
+| `403.html`               |    *pass*      |    -    |
+| `404.html`               |    *pass*      |    -    |
+| `500.html`               |    *pass*      |    -    |
+| `add_recipe.html`        |   *pass*       | *[result](https://search.google.com/test/mobile-friendly/result?id=aOHBnnl3q2jqRJLkO4_a1Q)*    |
+| `all_recipes.html`       |   *pass*       | *[result](https://search.google.com/test/mobile-friendly/result?id=SQ3Ve7ab9qAzr8q4B1AP7g)*    |
+| `index.html`             |   *pass*       | *[result](https://search.google.com/test/mobile-friendly/result?id=ZQ5JeN0J8_jCrs9AL-XSJA)*    |
+| `delete_comment.html`    |   *pass*       |  *[result](https://search.google.com/test/mobile-friendly/result?id=5DLzP6zScRzRy2gBUH89DQ)*    |
+| `delete_recipe.html`     |   *pass*       | *[result](https://search.google.com/test/mobile-friendly/result?id=Sm8GiQESmvpbkrqUSqSJjA)*    |
+| `my-recipes.html`        |   *pass*       | *[result](https://search.google.com/test/mobile-friendly/result?id=5u4qBbuuRxDLr8LM_QYGjQ)*    |
+| `my_starred_recipes.html`|   *pass*       | *[result](https://search.google.com/test/mobile-friendly/result?id=S1NwkY_ro0IdeyDjlhdIdA)*    |
+| `newsletter.html`        |   *pass*       | *[result](https://search.google.com/test/mobile-friendly/result?id=DrcZuU6x3WnlnhslIWkenw)*    |
+| `recipe_detail.html`     |   *pass*       | *[result](https://search.google.com/test/mobile-friendly/result?id=Fph8ccy1CKWQy9xQmGfuHA)*    |
+| `search_results.html`    |   *pass*       |  *[result](https://search.google.com/test/mobile-friendly/result?id=fByRDAqrCjNM8N1eJ4DPhw)*    |
+| `update_comment.html`    |    *pass*      |  *[result](https://search.google.com/test/mobile-friendly/result?id=dfQ-514X3tHc3ZdwCPmfcQ)*      |
+| `update_recipe.html`     |   *pass*       |  *[result](https://search.google.com/test/mobile-friendly/result?id=aA7MKDRWPfvomdeN44znqA)*    |
+| `login.html`             |   *pass*       | *[result](https://search.google.com/test/mobile-friendly/result?id=xmBoy-5AJASdU-s9G3uXzg)*    |
+| `logout.html`            |   *pass*       | *[result](https://search.google.com/test/mobile-friendly/result?id=fnUDeMALErhOhEv-SZHeHA)*    |
+| `signup.html`            |   *pass*       | *[result](https://search.google.com/test/mobile-friendly/result?id=3WljjfpwBdCXQ1KCJv-ieg)*    |
 
 
 ***
