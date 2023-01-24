@@ -80,7 +80,7 @@ The target audience for Kitchen Tales would likely be individuals who are intere
 
 ### User Stories
 
-From the Epics, 42 user stories were developed. Initially, some of the user stories focused on setting up the environment and deploying early, which made it challenging to accurately estimate story points for each iteration. The classification of each story was determined as must-have, should-have, or could-have. During the development process, I assigned each story a user story point based on my assessment of the time and difficulty required to complete it. However, due to my inexperience with story estimation, Django, and time constraints, I was only able to complete 46 out of the initial 77 story points. Among the remaining points, 29 were designated as "Could Have" stories - which were aimed to bring the project to its fullest potential, but were ultimately not completed due to time constraints.
+From the Epics, 42 user stories were developed. Initially, some of the user stories focused on setting up the environment and deploying early, which made it challenging to accurately estimate story points for each iteration. The classification of each story was determined as must-have, should-have, or could-have. During the development process, I assigned each story a user story point estimation, based on my assessment of the time and difficulty required to complete it. However, due to my inexperience with story estimation, Django, and time constraints, I was only able to complete 46 out of the initial 77 story points. Among the remaining points, 29 were designated as "Could Have" stories - which were aimed to bring the project to its fullest potential, but were ultimately not completed due to time constraints.
 
 #
 
@@ -421,7 +421,6 @@ When selecting typefaces for the site, I aimed to choose fonts that evoke a rela
 
 ***
 
-
 ## Agile Methodology
 
 Github projects was used to manage the development process using an agile approach. To view the project kanban board, please click on the link [here](https://github.com/users/chris-townsend/projects/5/views/1)
@@ -450,12 +449,16 @@ The Comment model allows users to comment on individual recipes and the Recipe i
 
 ![Custom comment model](docs/features/data-model/custom-comment-model.webp)
 
+The newsletter feature enables users to easily subscribe and stay informed with the latest updates. While this feature was added later on in the development of the site, I have plans to enhance it by creating a standalone app for it. Currently, the functionality is simple and only captures a user's email address and the date it was added to the database. However, in order to provide a more seamless experience, I plan to include the ability for users to unsubscribe at their convenience, as well as fully setting up the email aspect of the newsletter.
 
-The diagram below details the database schema.
+![Custom newsletter model](docs/features/data-model/custom-newsletter-model.webp)
+
+The diagram below illustrates the detailed structure of the database schema, which was designed to support the functionality of the website. However, it should be noted that the newsletter model was added at a later stage of development and was not included in the initial diagram. This model is not directly related to the other models, but it is an important feature that allows members to subscribe to the newsletter without being logged in.
 
 ![Database Schema](docs/features/data-model/database-schema.webp)
 
 *Database schema from [drawSQL](https://drawsql.app/)*
+
 ***
 
 ## Security Features and Defensive Design
