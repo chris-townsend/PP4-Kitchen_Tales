@@ -24,11 +24,11 @@ The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuap
       - [Typography](#typography)
   * [Agile Methodology](#agile-methodology)
   * [Data Model](#data-model)
-  * [Security Features](#security-features)
+  * [Security Features](#security-features-and-defensive-design)
     + [User Authentication](#user-authentication)
     + [Form Validation](#form-validation)
     + [Database Security](#database-security)
-    + [Custom error pages](#custom-error-pages-)
+    + [Custom error pages](#custom-error-pages)
   * [Features](#features)
     - [Features Left to Implement](#future-features)
     - [Languages Used](#languages-used)
@@ -43,12 +43,12 @@ The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuap
   * [Deployment](#deployment)
     - [Heroku](#heroku)
     - [ElephantSQL](#elephant-sql)
-    - [Forking the GitHub Repository](#forking-this-repository)
+    - [Forking the GitHub Repository](#forking-the-github-repository)
     - [Making a local clone](#cloning-this-repository)
   * [Credits](#credits)
     + [Content](#content)
     + [Media](#media)
-  * [Acknowledgements](#acknowledgments)
+  * [Acknowledgements](#acknowledgements)
 
 ***
 
