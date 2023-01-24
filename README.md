@@ -1,8 +1,8 @@
 # Kitchen Tales
 
-Kitchen Tales is a full-stack project built using Django, Python, HTML and CSS. The goal is to create a functional and responsive website that enables users to create and share recipes. The website will have full CRUD functionality, allowing users to edit and delete their own recipes. Each recipe page will have a comments section and options to like and save recipes to a favorites page.
+Kitchen Tales is a full-stack project built using Django, Python, HTML and CSS. The goal is to create a functional and responsive website that enables users to create and share recipes. The website will have full CRUD functionality, allowing users to edit and delete their recipes. Each recipe page will have a comments section and options to like and save recipes to a favourites page.
 
-The website follows UX design principles, is accessible and easy to navigate, allowing users to find information and resources intuitively. The site also provides role-based permissions for users to interact with a central dataset while integrating Django's built-in authentication system.
+The website should follow UX design principles, and is accessible and easy to navigate, allowing users to find information and resources intuitively. The site also provides role-based permissions for users to interact with a central dataset while integrating Django's built-in authentication system.
 
 ![Am i responsive](docs/features/am-i-responsive/am-i-responsive.webp)
 
@@ -48,13 +48,13 @@ The live link can be found here - [Kitchen Tales](https://kitchen-tales.herokuap
   * [Credits](#credits)
     + [Content](#content)
     + [Media](#media)
-  * [Acknowledgments](#acknowledgments)
+  * [Acknowledgements](#acknowledgments)
 
 ***
 
 ## User Experience (UX)
 
-The target audience for Kitchen Tales would likely be individuals who are interested in cooking and looking for new recipe ideas or inspiration. This can include home cooks, food enthusiasts, and those who enjoy experimenting with different ingredients and flavors. As food is loved by most, Kitchen Tales is designed to be a place to bring food and people together. Features are designed to be intuitive so that a wide age demographic can easily use the site.
+The target audience for Kitchen Tales would likely be individuals who are interested in cooking and looking for new recipe ideas or inspiration. This can include home cooks, food enthusiasts, and those who enjoy experimenting with different ingredients and flavours. As food is loved by most, Kitchen Tales is designed to be a place to bring food and people together. Features are designed to be intuitive so that a wide age demographic can easily use the site.
 
 
 ### Epics 
@@ -80,7 +80,7 @@ The target audience for Kitchen Tales would likely be individuals who are intere
 
 ### User Stories
 
-From the Epics, 42 user stories were developed. Initially, some of the user stories focused on setting up the environment and deploying early, which made it challenging to accurately estimate story points for each iteration. The classification of each story was determined as must-have, should-have, or could-have. During the development process, I assigned each story a user story point estimation, based on my assessment of the time and difficulty required to complete it. However, due to my inexperience with story estimation, Django, and time constraints, I was only able to complete 46 out of the initial 77 story points. Among the remaining points, 29 were designated as "Could Have" stories - which were aimed to bring the project to its fullest potential, but were ultimately not completed due to time constraints.
+From the Epics, 42 user stories were developed. Initially, some of the user stories focused on setting up the environment and deploying early, which made it challenging to accurately estimate story points for each iteration. The classification of each story was determined as must-have, should-have, or could-have. During the development process, I assigned each story a user story point estimation, based on my assessment of the time and difficulty required to complete it. However, due to my inexperience with story estimation, Django, and time constraints, I was only able to complete 46 out of the initial 77 story points. Among the remaining points, 29 were designated as "Could Have" stories - which were aimed to bring the project to its fullest potential but were ultimately not completed due to time constraints.
 
 #
 
@@ -199,7 +199,7 @@ From the Epics, 42 user stories were developed. Initially, some of the user stor
 #### User stories not yet implemented
 
 
-The following user stories were scoped out of the project due to time constraints and labelled as "Won't Have" on the project board on Github. It is intended that these user stories will be implemented at a later date. 
+The following user stories were scoped out of the project due to time constraints and labelled as "Won't Have" on the project board on GitHub. It is intended that these user stories will be implemented at a later date. 
 
 [#20](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/20)  **Rate a recipe** - *As a **logged-in User**, I can **give a recipe a rating** so that **I can provide feedback***
 
@@ -391,7 +391,7 @@ Initial wireframes were created for the original ideas, and as functionality was
 
 #### Colour Scheme
 
-A light color scheme was chosen to provide good contrast with text and create a clean and visually pleasing look throughout the site. Careful consideration was given during the design process to establish a strong contrast between background colors and text, and to ensure that the site meets accessibility requirements.
+A light colour scheme was chosen to provide good contrast with the text and create a clean and visually pleasing look throughout the site. Careful consideration was given during the design process to establish a strong contrast between background colours and text, and to ensure that the site meets accessibility requirements.
 
 ![Colour Palette](docs/features/colour-scheme/coolers-colour-scheme.webp)
 *Colour palette from* [*Coolors*](https://coolors.co/)
@@ -400,13 +400,13 @@ A light color scheme was chosen to provide good contrast with text and create a 
 
 #### Imagery
 
-The imagery used throughout the site is intended to inspire users to cook, and all the static images are sourced from either [Pexels](https://www.pexels.com/) or [unsplash](https://unsplash.com/), which are both royalty-free. A list of images used is available in the credits section. At the time of writing, the images within the database have been sourced from [BBC Goodfood](https://www.bbcgoodfood.com/).
+The imagery used throughout the site is intended to inspire users to cook, and all the static images are sourced from either [Pexels](https://www.pexels.com/) or [Unsplash](https://unsplash.com/), which are both royalty-free. A list of images used is available in the credits section. At the time of writing, the images within the database have been sourced from [BBC Goodfood](https://www.bbcgoodfood.com/).
 
 ***
 
 #### Typography 
 
-When selecting typefaces for the site, I aimed to choose fonts that evoke a relaxing and elegant theme, for easy reading and to complement the overall feel and style of the site. One of the fonts used on the homepage, "Italiana," has a cursive style that adds elegance and sophistication to the site, while still being easy to read. Both fonts are from Google fonts, which can be imported from their API and provide wide coverage to maintain consistent styling across various devices. A backup font, "Sans Serif," was also selected in case the primary font is not imported correctly.
+When selecting typefaces for the site, I aimed to choose fonts that evoke a relaxing and elegant theme, for easy reading and complement the overall feel and style of the site. One of the fonts used on the homepage, "Italiana," has a cursive style that adds elegance and sophistication to the site, while still being easy to read. Both fonts are from Google fonts, which can be imported from their API and provide wide coverage to maintain consistent styling across various devices. A backup font, "Sans Serif," was also selected in case the primary font is not imported correctly.
 
 **Headings:** *'Karla'*
 
@@ -423,11 +423,11 @@ When selecting typefaces for the site, I aimed to choose fonts that evoke a rela
 
 ## Agile Methodology
 
-Github projects was used to manage the development process using an agile approach. To view the project kanban board, please click on the link [here](https://github.com/users/chris-townsend/projects/5/views/1)
+GitHub projects were used to manage the development process using an agile approach. To view the project kanban board, please click on the link [here](https://github.com/users/chris-townsend/projects/5/views/1)
 ![GitHub kanban board](docs/features/agile/github-kanban-board.webp)
 
 
-A Github Issue was created for each User Story, which was then allocated to a milestone (Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution. The issues were closed automatically when the pull request was linked to the issue, most of them were closed automatically but some were closed manually.
+A GitHub Issue was created for each User Story, which was then allocated to a milestone (Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution. The issues were closed automatically when the pull request was linked to the issue, most of them were closed automatically but some were closed manually.
 
 As the project progressed, I realized that some user stories would have to be scoped out due to time and resource constraints. These user stories have been placed within the "Future Features" section on the kanban board, and are intended to be implemented at a later date.
 
@@ -441,7 +441,7 @@ I used principles of Object-Oriented Programming throughout this project and Dja
 
 Django AllAuth was used for the user authentication system.
 
-In order for the users to create recipes a custom recipe model was required. The recipe author is a foreign key to the User model given a recipe can only have one author.
+For the users to create recipes a custom recipe model was required. The recipe author is a foreign key to the User model given a recipe can only have one author.
 
 ![Custom recipe model](docs/features/data-model/custom-recipe-model.webp)
 
@@ -449,7 +449,7 @@ The Comment model allows users to comment on individual recipes and the Recipe i
 
 ![Custom comment model](docs/features/data-model/custom-comment-model.webp)
 
-The newsletter feature enables users to easily subscribe and stay informed with the latest updates. While this feature was added later on in the development of the site, I have plans to enhance it by creating a standalone app for it. Currently, the functionality is simple and only captures a user's email address and the date it was added to the database. However, in order to provide a more seamless experience, I plan to include the ability for users to unsubscribe at their convenience, as well as fully setting up the email aspect of the newsletter.
+The newsletter feature enables users to easily subscribe and stay informed with the latest updates. While this feature was added later on in the development of the site, I have plans to enhance it by creating a standalone app for it. Currently, the functionality is simple and only captures a user's email address and the date it was added to the database. However, to provide a more seamless experience, I plan to include the ability for users to unsubscribe at their convenience, as well as fully set up the email aspect of the newsletter.
 
 ![Custom newsletter model](docs/features/data-model/custom-newsletter-model.webp)
 
@@ -473,7 +473,7 @@ A warning message will appear to the user when inaccurate or empty data is enter
 
 ### Database Security
 
-The secret keys and Database url are stored in the env.py file to prevent any unwanted connections to the database and this was set up prior to the first push to Github to ensure security was met.
+The secret keys and Database URL are stored in the env.py file to prevent any unwanted connections to the database and this was set up before the first push to Github to ensure security was met.
 
 Cross-Site Request Forgery (CSRF) tokens were implemented on all forms throughout the site to protect against CSRF attacks. These tokens make it difficult for an attacker to construct a valid request on behalf of a victim by including a unique, unpredictable value that the attacker cannot guess. This helps ensure that only legitimate requests are processed, improving the security of the site.
 
@@ -505,7 +505,7 @@ Custom error pages were designed to give users more information about the error 
 
 - The navigation bar, or Navbar, is present on all pages of the website and allows for easy navigation. The Navbar includes a logo, links to various pages, and a search bar. The links on the Navbar will change depending on whether the user is logged into their account or not.
 
-#### *User not logged-in Navbar*
+#### *User is not logged in Navbar*
 
 ![Navigation section](docs/features/images/section-navigation.webp)
 
@@ -513,7 +513,7 @@ Custom error pages were designed to give users more information about the error 
 
 #### *User logged-in Navbar*
 
-- If a user is logged in, their profile name will be displayed in the navigation bar as part of a drop-down menu. This menu provides logged-in users with the ability to manage and save recipes, as well as the option to sign out of their account.
+- If a user is logged in, their profile name will be displayed in the navigation bar as part of a drop-down menu. This menu provides a logged-in user with the ability to manage and save recipes, as well as the option to sign out of their account.
 
 ![Navigation section authorized users](docs/features/images/features-auth-navbar.webp)
 
@@ -531,18 +531,18 @@ Custom error pages were designed to give users more information about the error 
 
 ![footer](docs/features/images/section-footer.webp)
 
-- Clicking the links in the footer will open in a separate browser tab to prevent users from navigating away from the site.
+- Clicking the links in the footer will open a separate browser tab to prevent users from navigating away from the site.
 
 ### Newsletter Page
 ![Newsletter page](docs/features/images/features-newsletter-page.webp)
 
-- The newsletter feature was added as a later addition to the website to provide more content and options for users. Currently, the database saves email addresses, but additional code is needed to set up the email side. In the future, it is intended to convert the newsletter feature into its own app, separate from the "Recipes" app, in order to improve organization and functionality. This would involve adding a name field to differentiate between logged-in users and newsletter subscribers. Additionally, an unsubscribe button will be added for user convenience and full functionality. A success message will be displayed to confirm when a user has successfully submitted their email address.
+- The newsletter feature was added as a later addition to the website to provide more content and options for users. Currently, the database saves email addresses, but additional code is needed to set up the email side. In the future, it is intended to convert the newsletter feature into its own app, separate from the "Recipes" app, to improve organization and functionality. This would involve adding a name field to differentiate between logged-in users and newsletter subscribers. Additionally, an unsubscribe button will be added for user convenience and full functionality. A success message will be displayed to confirm when a user has successfully submitted their email address.
 
 ![Newsletter success message](docs/features/images/kitchen-tales-alert-newsletter.webp)
 
 ### User Account Pages
 
-- Django allauth was installed and used to create the Sign up, Log in and Log out functionality. 
+- Django allauth was installed and used to create the Signup, Login and Log out functionality. 
 
 **Sign Up**
 
@@ -587,7 +587,7 @@ Success messages confirm to the user that their login or logout was successful.
 ![Comments section](docs/features/images/features-comments.webp)
 ![Comments section](docs/features/images/features-comment-body.webp)
 
-- At the bottom of every `recipe_detail` page, there is a comments section that allows users to view and post comments. If the user is logged-in, a text input box will appear for them to write their comment. Upon submission, a success message will inform the user that their comment is awaiting approval.
+- At the bottom of every `recipe_detail` page, there is a comments section that allows users to view and post comments. If the user is logged in, a text input box will appear for them to write their comment. Upon submission, a success message will inform the user that their comment is awaiting approval.
 
 ![Comment alert approval](docs/features/images/kitchen-tales-alert-add-comment.webp)
 
@@ -601,7 +601,7 @@ Success messages confirm to the user that their login or logout was successful.
 ### Delete Comment
 ![Delete comment page](docs/features/images/features-delete-comment.webp)
 
-- Users have the ability to delete their comments by clicking on the bin icon next to the comment's display. This will prompt a confirmation page, giving the user the option to cancel or proceed with the deletion. If the user chooses to delete the comment, they will receive a success message confirming the deletion.
+- Users can delete their comments by clicking on the bin icon next to the comment's display. This will prompt a confirmation page, giving the user the option to cancel or proceed with the deletion. If the user chooses to delete the comment, they will receive a success message confirming the deletion.
 
 ![Delete comment alert](docs/features/images/kitchen-tales-alert-delete-comment.webp)
 
@@ -634,7 +634,7 @@ Success messages confirm to the user that their login or logout was successful.
 ### My Bookmarks Page
 ![My bookmarks page](docs/features/images/features-my-liked-recipes.webp)
 
-- The Bookmarks page displays a user's personal collection of starred recipes, easily identified by a shining star icon on the recipe detail page. By simply clicking the star icon, a recipe can be saved to the user's personal Bookmarks page. The layout of this page is consistent with the other recipe card pages, with the added convenience of being able to browse through eight recipes per page.
+- The Bookmarks page displays a user's collection of starred recipes, easily identified by a shining star icon on the recipe detail page. By simply clicking the star icon, a recipe can be saved to the user's personal Bookmarks page. The layout of this page is consistent with the other recipe card pages, with the added convenience of being able to browse through eight recipes per page.
 
 ### Error Pages
 
@@ -643,7 +643,7 @@ Success messages confirm to the user that their login or logout was successful.
 - ***403** Page Forbidden* - You don't have access to this page.
 ![403 error](docs/features/images/kitchen-tales-error-403.webp)
 
-- ***404** Page Not Found* - The page your trying to access doesn't exist.
+- ***404** Page Not Found* - The page you're trying to access doesn't exist.
 ![404 error](docs/features/images/kitchen-tales-error-404.webp)
 
 - ***500** Server Error* - Unable to handle this request.
@@ -653,14 +653,14 @@ Success messages confirm to the user that their login or logout was successful.
 
 ### Future Features
 
-In the future, there are a number of functionalities that I would like to implement. I have left the initial user stories that were created in the project kanban board as potential areas for future improvement and these have been left in the [Future Features](https://github.com/users/chris-townsend/projects/5) section of the kanban board. The key areas I would like to add to the site include:
+In the future, there are several functionalities that I would like to implement. I have left the initial user stories that were created in the project kanban board as potential areas for future improvement and these have been left in the [Future Features](https://github.com/users/chris-townsend/projects/5) section of the kanban board. The key areas I would like to add to the site include:
 
 
-- [#23](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/23) The ability for users to login via social networks such as facebook or google.
+- [#23](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/23) The ability for users to log in via social networks such as Facebook or Google.
 
-- [#32](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/32) Find an appropriate api to prepopulate recipes.
+- [#32](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/32) Find an appropriate API to prepopulate recipes.
 
-- Create a model profiles and give users the ability to create and edit their own profile.
+- Create a separate app called profiles and give users the ability to create and edit their profiles.
 
 Some of the functionality for [issue #23](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/23)  is already provided by Django allauth, which is already implemented on the site. It only requires setup and appears to be relatively straightforward. The remaining functionality would need to be developed but also appears to be easily achievable with more time.
 
@@ -724,11 +724,11 @@ Some of the functionality for [issue #23](https://github.com/chris-townsend/PP4-
 
 [**Gunicorn**](https://gunicorn.org/) - Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server.
 
-[**django-all-auth**](https://github.com/pennersr/django-allauth) Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party *social* account authentication.
+[**Django-all-auth**](https://github.com/pennersr/django-allauth) Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party *social* account authentication.
 
-[**django-crispy-forms**](https://django-crispy-forms.readthedocs.io/en/latest/) Used to control the rendering behaviour of my django forms.
+[**Django-crispy-forms**](https://django-crispy-forms.readthedocs.io/en/latest/) This is used to control the rendering behaviour of my Django forms.
 
-[**django-cloudinary-storage**](https://pypi.org/project/django-cloudinary-storage/) Facillitates integration with  Cloudinary by implementing a Django Storage API. This is to enable storage of static and media files.
+[**Django-cloudinary-storage**](https://pypi.org/project/django-cloudinary-storage/) Facilitates integration with  Cloudinary by implementing a Django Storage API. This is to enable the storage of static and media files.
 
 ***
 
@@ -740,15 +740,15 @@ Testing and results can be found [here](/TESTING.md)
 
 # Development
 
-This site was made using [GitHub](#github) & [Gitpod](https://www.gitpod.io/). The site was further developed using [Django](#django), a Python web-framework.
+This site was made using [GitHub](#github) & [Gitpod](https://www.gitpod.io/). The site was further developed using [Django](#django), a Python web framework.
 
 ## GitHub
 
 ### Create the repository
 
-1. Sign into Github and navigate to [Code Institute's Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template).
+1. Sign in to GitHub and navigate to [Code Institute's Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template).
 ![GitHub Code Institute template](docs/development/github/github-use-this-template.webp)
- - At the top of the repository click **Use this template** followed by **Create a new repository**.
+ - At the top of the repository, click **Use this template** followed by **Create a new repository**.
  ![GitHub Code Institute template](docs/development/github/github-create-new-repository.webp)
 
 *Alternatively:*
@@ -765,7 +765,7 @@ This site was made using [GitHub](#github) & [Gitpod](https://www.gitpod.io/). T
 4. Give the repository a name and description and then click **Create repository**.
 ![GitHub create repository](docs/development/github/github-create-repository.webp)
 
-The repository has now been created and is ready for editing through the gitpod terminal.
+The repository has now been created and is ready for editing through the Gitpod terminal.
  
 ***
 
@@ -798,7 +798,7 @@ To initialise a Django project, first Django must be installed within your Pytho
 **5.** Create a Django project (*kitchentales*): ``django-admin startproject 'PROJ_NAME' .`` 
 **(Don’t forget the ``.`` at the end of the project name to tell Django admin we want to create our project in the current directory.)**
 
- - This should have created a new directory called your ``'PROJ_NAME'`` and a ``manage.py`` file. Wthin your project folder you should see the file settings and URL files added to the directory.
+ - This should have created a new directory called your ``'PROJ_NAME'`` and a ``manage.py`` file. Within your project folder, you should see the file settings and URL files added to the directory.
 
 **6.** Create an App name (*recipes*): ``python3 manage.py startapp 'APP_NAME'``
 
@@ -821,7 +821,7 @@ To initialise a Django project, first Django must be installed within your Pytho
 
 ### Attaching the Database
 
-Create a new env.py file at the top level directory - ``env.py``
+Create a new env.py file at the top-level directory - ``env.py``
 
 #### - Within ``env.py``:
 
@@ -867,8 +867,8 @@ Create a new env.py file at the top level directory - ``env.py``
 
 | Instruction | Code |
 | --- | --- |
-| **1.** Add Cloudinary URL to Heroku Config Vars | Add to Settings tab in Config Vars e.g. ``COUDINARY_URL, cloudinary://************************`` |
-| **2.** Add ``DISABLE_COLLECTSTATIC`` to Heroku Config Vars (temporary step which will be removed before deployment) | ``DISABLE_COLLECTSTATIC = 1``
+| **1.** Add Cloudinary URL to Heroku Config Vars | Add to the *Settings* tab in Config Vars e.g. ``COUDINARY_URL, cloudinary://************************`` |
+| **2.** Add ``DISABLE_COLLECTSTATIC`` to Heroku Config Vars (a temporary step which will be removed before deployment) | ``DISABLE_COLLECTSTATIC = 1``
 
 #### **- Within ``settings.py``:**
 
@@ -876,7 +876,7 @@ Create a new env.py file at the top level directory - ``env.py``
 | --- | --- |
 | **1.** Add Cloudinary Libraries to installed apps | ``INSTALLED_APPS = […,'cloudinary_storage','django.contrib.staticfiles','cloudinary', …,]`` |
 | **2.** Tell Django to use Cloudinary to store media and static files - *Place under the Static files* | ``STATIC_URL = '/static/'``<br> ``STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'``<br>``STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]``<br>``STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')``<br>``MEDIA_URL = '/media/' ``<br>``DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'`` |
-| **3.** Link file to the templates directory in Heroku - Place under the ``BASE_DIR`` | ``TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')`` |
+| **3.** Link the file to the templates directory in Heroku - Place it under the ``BASE_DIR`` | ``TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')`` |
 | **4.** Change the templates directory to ``TEMPLATES_DIR`` - Place within the ``TEMPLATES`` array | ``TEMPLATES = [``<br>``{``<br>``…,``<br>``'DIRS': [TEMPLATES_DIR],``<br>``…,``<br>``],``<br>``},``<br>``},``<br>``]``<br>
 | **5.** Add Heroku Hostname to ``ALLOWED_HOSTS`` *(e.g. kitchentales)* | ``ALLOWED_HOSTS = ["PROJ_NAME.herokuapp.com", "localhost"]`` |
 
@@ -884,13 +884,13 @@ Create a new env.py file at the top level directory - ``env.py``
 
 1. Create three new folders at the top level directory - ``media``, ``static`` & ``templates``.
 
-2. Create a file named **Procfile** at the top level directory - ``Procfile``.
+2. Create a file named **Procfile** in the top-level directory - ``Procfile``.
 
     - Add the following code: ``web: gunicorn PROJ_NAME.wsgi``
 
 **The Procfile must live in your app’s root directory. It does not function if placed anywhere else.**
 
-*The purpose of the Procfile is a mechanism for declaring what commands are run by your application’s dynos on the Heroku platform.*
+*The purpose of the Procfile is a mechanism for declaring what command is run by your application’s dynos on the Heroku platform.*
 
 ***
 
@@ -934,10 +934,10 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 |``DISABLE_COLLECTSTATIC``  |=  ``1`` |
 
 
-7. Below your Config Vars in your app settings, click **Add buildpack**.
+7. Below your Config Vars in your app settings, click **Add build pack**.
 ![Heroku add buildpack](docs/deployment/heroku/heroku-add-buildpack.webp)
 
-8. Select **Python** from the list of buildpacks.
+8. Select **Python** from the list of build packs.
 ![Heroku select buildpack](docs/deployment/heroku/heroku-select-buildpack.webp)
 - Remember to click **Save changes**.
 
@@ -965,7 +965,7 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 
 ![Heroku manual deploy](docs/deployment/heroku/heroku-manual-deploy.webp)
 
-- For the first time deploying to Heroku you may have to deploy manually but if you select automatic deploys it will update from then onwards.
+- For the first time deploying to Heroku, you may have to deploy manually but if you select automatic deploys it will update from then onwards.
 
 14. Click **View** to view the deployed site.
 ![Heroku successful deploy](docs/deployment/heroku/heroku-successful-deploy.webp)
@@ -974,7 +974,7 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
 
 ## Elephant SQL
 
-Heroku announced in September 2022 that they would be ending their free tier hosting at the end of November 2022. As I am a student who is currently registered with the GitHub Student Developer Pack, I can apply for the Heroku credits. The Heroku credits allowed me to transfer my projects from free dynos to Eco dynos to ensure that they continue to work. Unfortunately the student offer does not include the postgres add-on being used to host my postgres database. Code Insitute therefore have recommended students to migrate their databases to a new provider. In this case its ElephantSQL, as they are free. The ``DATABASE_URL`` value now points to the elephantSQL database in my Heroku Config Vars.
+Heroku announced in September 2022 that they would be ending their free tier hosting at the end of November 2022. As I am a student who is currently registered with the GitHub Student Developer Pack, I can apply for the Heroku credits. The Heroku credits allowed me to transfer my projects from free dynos to Eco dynos to ensure that they continue to work. Unfortunately the student offer does not include the Postgres add-on being used to host my Postgres database. Code Insitute, therefore, have recommended students migrate their databases to a new provider. In this case, it's ElephantSQL, as they are free. The ``DATABASE_URL`` value now points to the elephantSQL database in my Heroku Config Vars.
 
 As the database provided by Django is only accessible within Gitpod and is not suitable for a production environment. The deployed project on Heroku will not be able to access it. So, you need to create a new database that can be accessed by Heroku. The following steps will create a new PostgreSQL database instance for use within the project.
 
@@ -997,7 +997,7 @@ As the database provided by Django is only accessible within Gitpod and is not s
 4. Click **Select Region**.        
 ![Elephant SQL select region](docs/deployment/elephant-sql/elephant-select-region.webp)
 
-5. Select a **data center** near you.
+5. Select a **data centre** near you.
 ![Elephant SQL select data center](docs/deployment/elephant-sql/elephant-select-data-center.webp)
 
 6. Click **Review**.                 
@@ -1022,7 +1022,7 @@ As the database provided by Django is only accessible within Gitpod and is not s
 
 ### Forking the GitHub Repository
 
-By forking the GitHub Repository you can make a copy of the original repository. You can view and/or make changes without affecting the original repository by using the following steps..
+By forking the GitHub Repository you can make a copy of the original repository. You can view and/or make changes without affecting the original repository by using the following steps...
 
 **1.** Log in to GitHub and locate the [GitHub Repository](https://github.com/) you would like to fork.
 
@@ -1087,7 +1087,7 @@ By forking the GitHub Repository you can make a copy of the original repository.
 
 ***
 
-## Acknowledgments
+## Acknowledgements
 
 **Sean** from *CI tutor support* for helping with setting up the `UpdateRecipeView` and for his overall solid advice regarding the project.
 
