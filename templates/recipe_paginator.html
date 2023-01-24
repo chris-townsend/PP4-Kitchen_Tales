@@ -9,20 +9,20 @@
                 <ul class="pagination justify-content-center my-3">
                     {% if page_obj.has_previous %}
                     <li>
-                        <a class="btn btn-search btn-sm mr-2 paginator-text" href="?page=1">&laquo; First</a>
+                        <a class="btn btn-search btn-md mr-2 paginator-text" href="?page=1">&laquo; First</a>
                     </li>
                     <li>
-                        <a class="btn btn-search btn-sm mr-2 paginator-text"
+                        <a class="btn btn-search btn-md mr-2 paginator-text"
                             href="?page={{ page_obj.previous_page_number }}">Previous</a>
                     </li>
                     {% endif %}
 
                     {% if page_obj.has_next %}
                     <li>
-                        <a class=" btn btn-search btn-sm mr-2 paginator-text"
+                        <a class=" btn btn-search btn-md mr-2 paginator-text"
                             href="?page={{ page_obj.next_page_number }}">Next</a>
                     </li>
-                    <li><a class=" btn btn-search btn-sm mr-2 paginator-text"
+                    <li><a class=" btn btn-search btn-md mr-2 paginator-text"
                             href="?page={{ page_obj.paginator.num_pages }}">Last &raquo;</a>
                     </li>
                     {% endif %}
