@@ -81,7 +81,7 @@ The target audience for Kitchen Tales would likely be individuals who are intere
 
 ### User Stories
 
-From the Epics, 42 User stories were developed. Some of my initial user stories were based around setting up the environment and deploying early. Each story was assigned a classification of must-have, should-have, could-have or won't have. Each story was also assigned user story points, based on my best estimation of the difficulty/time of completing each story. I gave the project a total of 
+From the Epics, 42 user stories were developed. Initially, some of the user stories focused on setting up the environment and deploying early, which made it challenging to accurately estimate story points for each iteration. The classification of each story was determined as must-have, should-have, or could-have. During the development process, I assigned each story a user story point based on my assessment of the time and difficulty required to complete it. However, due to my inexperience with story estimation, Django, and time constraints, I was only able to complete 46 out of the initial 77 story points. Among the remaining points, 29 were designated as "Could Have" stories - which were aimed to bring the project to its fullest potential, but were ultimately not completed due to time constraints.
 
 #
 
