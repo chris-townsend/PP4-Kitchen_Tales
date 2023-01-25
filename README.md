@@ -686,8 +686,6 @@ Some of the functionality for [issue #23](https://github.com/chris-townsend/PP4-
 
 [**Google DevTools**](https://developer.chrome.com/docs/devtools/) - Once the website was made to a basic deployment level, Google DevTools was used frequently to resize objects within the site, very helpful for making my website responsive.
 
-[**Python Tutor**](https://pythontutor.com/) - Python Tutor was used for helping step through non-functioning code and resolve issues.
-
 [**Git**](https://git-scm.com/) - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 
 [**GitHub**](https://github.com/) - GitHub is used to store the project's code after being pushed from Git.
@@ -1063,6 +1061,20 @@ By forking the GitHub Repository you can make a copy of the original repository.
 
 ## Credits
 
+### Content 
+
+- [Django 3.2 docs](https://docs.djangoproject.com/en/3.2/releases/3.2/)
+
+- [Bootstrap 4.6 docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+
+- [Code Institute - *'I Think Therefore I Blog'* walkthrough project](https://github.com/Code-Institute-Solutions/Django3blog)
+
+- [How to set up a database for unit tests - *Stack Overflow*](https://stackoverflow.com/questions/4650509/different-db-for-testing-in-django)
+
+- [Create a Search Bar - *Codemy*](https://www.youtube.com/watch?v=AGtae4L5BbI)
+
+#
+
 ### Media
 
 - Photo by *Cottonbro Studio*: https://www.pexels.com/photo/person-in-blue-t-shirt-sitting-on-chair-in-front-of-table-with-foods-4877863/
@@ -1082,14 +1094,6 @@ By forking the GitHub Repository you can make a copy of the original repository.
 - Photo by *Alfred Kenneally*: https://unsplash.com/photos/QkyRG0bB_xg
 
 - Photo by *Rebecca Orlov*: https://unsplash.com/photos/rfI4MmZXZOk
-
-### Content 
-
-- [Django 3.2 docs](https://docs.djangoproject.com/en/3.2/releases/3.2/)
-
-- [Bootstrap 4.6 docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-
-- [Code Institute - *I Think Therefore I Blog* walkthrough project](https://github.com/Code-Institute-Solutions/Django3blog)
 
 ***
 
