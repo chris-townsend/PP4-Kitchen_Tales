@@ -724,11 +724,15 @@ Some of the functionality for [issue #23](https://github.com/chris-townsend/PP4-
 
 [**Gunicorn**](https://gunicorn.org/) - Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server.
 
-[**Django-all-auth**](https://github.com/pennersr/django-allauth) Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party *social* account authentication.
+[**Django-all-auth**](https://github.com/pennersr/django-allauth) - Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party *social* account authentication.
 
-[**Django-crispy-forms**](https://django-crispy-forms.readthedocs.io/en/latest/) This is used to control the rendering behaviour of my Django forms.
+[**Django-crispy-forms**](https://django-crispy-forms.readthedocs.io/en/latest/) - This is used to control the rendering behaviour of my Django forms.
 
-[**Django-cloudinary-storage**](https://pypi.org/project/django-cloudinary-storage/) Facilitates integration with  Cloudinary by implementing a Django Storage API. This is to enable the storage of static and media files.
+[**Django-cloudinary-storage**](https://pypi.org/project/django-cloudinary-storage/) - Facilitates integration with Cloudinary by implementing a Django Storage API. This is to enable the storage of static and media files.
+
+[**Django-summernote**](https://summernote.org/) - Summernote is a free & open-source simple *WYSIWYG* *(what you see is what you get)* editor based on Bootstrap & jQuery. It is a JavaScript library that is easy to use & contains many customizable options. 
+
+[**Coverage.py**](https://coverage.readthedocs.io/en/7.1.0/) - *Coverage.py* is a tool for measuring code coverage of Python programs. It monitors your program, noting which parts of the code have been executed, then analyzes the source to identify code that could have been executed but was not.
 
 ***
 
