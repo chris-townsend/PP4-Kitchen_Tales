@@ -1082,6 +1082,18 @@ This bug related to the recipe model was attempted to be fixed with commit [aec7
 
 Several unit tests were written to test the views, forms, and database models. These can be found in the [`recipes`](https://github.com/chris-townsend/PP4-Kitchen_Tales/tree/main/recipes) folder and test files begin with `test_`.
 
+<details>
+
+ **<summary>Coverage report</summary>**
+
+![Automated testing coverage report](docs/testing/automated/coverage-report.webp)
+
+</details>
+
+<br>
+
+*Coverage report generated from* [*Coverage.py*](https://coverage.readthedocs.io/en/7.1.0/)
+
 #
 
 <br>
