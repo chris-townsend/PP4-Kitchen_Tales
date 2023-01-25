@@ -459,9 +459,7 @@ The diagram below illustrates the detailed structure of the database schema, whi
 
 *Database schema from [drawSQL](https://drawsql.app/)*
 
-Upon creating my database models with drawSQL, I discovered that certain fields were not properly configured, including the title field in the Recipe model which should have been a Charfield. Additionally, some specific fields were also unavailable for use.
-
-***
+Upon creating my database models with drawSQL, I discovered that certain fields were not properly configured, including the title field in the Recipe model which should have been a Charfield. Additionally, some specific fields were also unavailable for use. I later came to realize the importance of including a 'description' field in the Recipe model, and thus, added it as an essential feature for the recipe detail page.
 
 ## Security Features and Defensive Design
 
