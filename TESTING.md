@@ -14,7 +14,7 @@
   * [Mobile](#mobile)
 - [Manual Testing](#manual-testing)
   * [Navigation](#navigation)
-  * [Homepage](#homepage-content)
+  * [Homepage](#homepage---content)
   * [Footer](#homepage---footer)
   * [All Recipes](#recipes)
   * [Recipe Detail](#recipe-detail)
@@ -27,13 +27,14 @@
   * [Update Comment](#update-comment)
   * [Delete Comment](#delete-comment)
   * [Newsletter Page](#newsletter)
-- [Bugs](#bugs)
-  * [Fixed Bugs](#fixed-bugs)
-  * [Unfixed Bugs](#unfixed-bugs)
 - [Automated Testing](#automated-testing)
   * [`test_forms.py`](https://github.com/chris-townsend/PP4-Kitchen_Tales/blob/main/recipes/test_forms.py)
   * [`test_models.py`](https://github.com/chris-townsend/PP4-Kitchen_Tales/blob/main/recipes/test_models.py)
   * [`test_views.py`](https://github.com/chris-townsend/PP4-Kitchen_Tales/blob/main/recipes/test_views.py)
+- [Bugs](#bugs)
+  * [Fixed Bugs](#fixed-bugs)
+  * [Unfixed Bugs](#unfixed-bugs)
+
 <br>
 
 *Please note: To open any external links in a new browser tab, please press **CTRL + Click***
@@ -464,7 +465,6 @@ The website has been viewed on a variety of devices such as Desktop, Laptop, One
 ### Mobile 
 
 All pages have been tested through Google's [Mobile friendly test](https://search.google.com/test/mobile-friendly), the results are displayed below:
-
 
 
 | Page                     |    Result      |  URL    |
@@ -987,6 +987,24 @@ The process and outcomes of manual testing are described in depth in the followi
 
 ***
 
+## Automated Testing
+
+Several unit tests were written to test the views, forms, and database models. These can be found in the [`recipes`](https://github.com/chris-townsend/PP4-Kitchen_Tales/tree/main/recipes) folder and test files begin with `test_`.
+
+<details>
+
+ **<summary>Coverage report</summary>**
+
+![Automated testing coverage report](docs/testing/automated/coverage-report.webp)
+
+</details>
+
+<br>
+
+*Coverage report generated from* [*Coverage.py*](https://coverage.readthedocs.io/en/7.1.0/)
+
+***
+
 ## Bugs
 
 Issues were created on GitHub and noted with a `bug` label.
@@ -1071,34 +1089,15 @@ into the template*
 
 1. [Placeholder image automatically set when updating a recipe](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/55)
 
-*When a user goes to update their recipe, the placeholder image replaces their image unless it has been specified again. This should be an easy fix by adding to the if/else statement*
+*When a user goes to update their recipe, the placeholder image replaces their image unless it has been specified again.*
 
 This bug related to the recipe model was attempted to be fixed with commit [aec7728](https://github.com/chris-townsend/PP4-Kitchen_Tales/commit/aec7728ce67fe8c912b14b2bccdac25225c61f23). Initially, it was believed that by adding an image_url field to the recipe model and adjusting the recipe_detail template to take this field into account would resolve the issue. However, despite these efforts, the bug persists.
 
-
-***
-
-## Automated Testing
-
-Several unit tests were written to test the views, forms, and database models. These can be found in the [`recipes`](https://github.com/chris-townsend/PP4-Kitchen_Tales/tree/main/recipes) folder and test files begin with `test_`.
-
-<details>
-
- **<summary>Coverage report</summary>**
-
-![Automated testing coverage report](docs/testing/automated/coverage-report.webp)
-
-</details>
-
-<br>
-
-*Coverage report generated from* [*Coverage.py*](https://coverage.readthedocs.io/en/7.1.0/)
-
-#
 
 <br>
 
 [Back to top ⇧](#contents)
 
 [Back to *README.md*](/README.md#testing)
+
 ***
