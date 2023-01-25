@@ -1101,7 +1101,7 @@ By forking the GitHub Repository you can make a copy of the original repository.
 
 I would like to express my gratitude towards **Sean** from CI Tutor Support for his invaluable assistance and guidance in helping me navigate and successfully set up the `UpdateRecipeView`.
 
-I would like to extend my appreciation to **Dario** for his unwavering support and insightful advice throughout the course of the project.
+I would like to extend my appreciation to **Dario** for his support and insightful advice throughout the course of the project.
 
 <br>
 
