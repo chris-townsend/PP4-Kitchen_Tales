@@ -730,7 +730,7 @@ Some of the functionality for [issue #23](https://github.com/chris-townsend/PP4-
 
 [**Django-cloudinary-storage**](https://pypi.org/project/django-cloudinary-storage/) - Facilitates integration with Cloudinary by implementing a Django Storage API. This is to enable the storage of static and media files.
 
-[**Django-summernote**](https://summernote.org/) - Summernote is a free & open-source simple *WYSIWYG* *(what you see is what you get)* editor based on Bootstrap & jQuery. It is a JavaScript library that is easy to use & contains many customizable options. 
+[**Django-summernote**](https://summernote.org/) - Summernote is a free & open-source simple WYSIWYG *(what you see is what you get)* editor based on Bootstrap & jQuery. It is a JavaScript library that is easy to use & contains many customizable options. 
 
 [**Coverage.py**](https://coverage.readthedocs.io/en/7.1.0/) - *Coverage.py* is a tool for measuring code coverage of Python programs. It monitors your program, noting which parts of the code have been executed, then analyzes the source to identify code that could have been executed but was not.
 
@@ -1085,19 +1085,19 @@ By forking the GitHub Repository you can make a copy of the original repository.
 
 ### Content 
 
-- [Django Docs](https://docs.djangoproject.com/en/4.0/)
-- [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-- [Code Institute - Blog Walkthrough Project](https://github.com/Code-Institute-Solutions/)
+- [Django 3.2 docs](https://docs.djangoproject.com/en/3.2/releases/3.2/)
+
+- [Bootstrap 4.6 docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+
+- [Code Institute - *I Think Therefore I Blog* walkthrough project](https://github.com/Code-Institute-Solutions/Django3blog)
 
 ***
 
 ## Acknowledgements
 
-**Sean** from *CI tutor support* for helping with setting up the `UpdateRecipeView` and for his overall solid advice regarding the project.
+I would like to express my gratitude towards **Sean** from CI Tutor Support for his invaluable assistance and guidance in helping me navigate and successfully set up the `UpdateRecipeView`.
 
-**Rebecca** from *CI tutor support* for the helpful information when trying to add a profanity filter.
-
-**Dario** for his continued support and advice throughout the project.
+I would like to extend my appreciation to **Dario** for his unwavering support and insightful advice throughout the course of the project.
 
 <br>
 
