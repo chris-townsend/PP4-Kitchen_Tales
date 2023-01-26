@@ -32,12 +32,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-# DEBUG = False
+DEBUG = False
 
-DEBUG = 'DEVELOPMENT'
+# Only use this for development
+# DEBUG = 'DEVELOPMENT'
 
-
-# X_FRAME_OPTIONS = 'SAMEORIGIN'
+# Allows summernote to be rendered with DEBUG set to False
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['kitchen-tales.herokuapp.com', 'localhost']
 
