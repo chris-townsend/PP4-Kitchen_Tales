@@ -5,9 +5,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
-from django.utils.datastructures import MultiValueDictKeyError
-from django.core.exceptions import ValidationError
-from django.core.validators import validate_email
 from .models import Recipe, Comment, NewsletterUser
 from .forms import CommentForm, RecipeForm, NewsletterForm
 
