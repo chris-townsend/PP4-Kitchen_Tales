@@ -79,13 +79,13 @@ hr {
 }
 
 .btn-search {
-    background-color: #4492d1;
+    background-color: #2C6DAA;
     color: #fff;
 }
 
 .btn-search:hover,
 .btn-search:active {
-    background-color: rgb(41, 182, 218);
+    background-color: #4492d1;
     color: #fff;
 }
 
