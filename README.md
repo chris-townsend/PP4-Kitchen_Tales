@@ -547,7 +547,7 @@ Custom error pages were designed to give users more information about the error 
 ### Newsletter Page
 ![Newsletter page](docs/features/images/features-newsletter-page.webp)
 
-- The newsletter feature was added as a later addition to the website to provide more content and options for users. Currently, the database saves email addresses, but additional code is needed to set up the email side. In the future, it is intended to convert the newsletter feature into its own app, separate from the "Recipes" app, to improve organization and functionality. This would involve adding a name field to differentiate between logged-in users and newsletter subscribers. Additionally, an unsubscribe button will be added for user convenience and full functionality. A success message will be displayed to confirm when a user has successfully submitted their email address.
+- The newsletter feature was added as a later addition to the website to provide more content and options for users. Currently, the database saves email addresses, but additional code is needed to set up the email side. In the future, it is intended to convert the newsletter feature into its own app, separate from the "Recipes" app, to improve organization and functionality. Additionally, an unsubscribe button will be added for user convenience and full functionality. A success message will be displayed to confirm when a user has successfully submitted their email address.
 
 ![Newsletter success message](docs/features/images/kitchen-tales-alert-newsletter.webp)
 
