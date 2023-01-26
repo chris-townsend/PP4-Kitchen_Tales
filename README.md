@@ -198,8 +198,7 @@ From the Epics, 42 user stories were developed. Initially, some of the user stor
 
 #### User stories not yet implemented
 
-
-The following user stories were scoped out of the project due to time constraints and labelled as "Won't Have" on the project board on GitHub. It is intended that these user stories will be implemented at a later date. 
+The following user stories were scoped out of the project due to time constraints and its intended that these user stories will be implemented at a later date. 
 
 [#20](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/20)  **Rate a recipe** - *As a **logged-in User**, I can **give a recipe a rating** so that **I can provide feedback***
 
@@ -216,7 +215,6 @@ The following user stories were scoped out of the project due to time constraint
 [#21](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/21) **Print a recipe** - *As a **User**, I would **like the option to print a recipe** so that **I can have a paper copy***
 
 [#37](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/37) **Contact the site owner** - *As a **User**, I can **contact the site owner** so that **I can offer my feedback***
-
 
 [Back to top ⇧](#kitchen-tales)
 
