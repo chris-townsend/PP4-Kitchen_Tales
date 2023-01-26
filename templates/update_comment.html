@@ -4,7 +4,10 @@
 {% load cloudinary %}
 {% load crispy_forms_tags %}
 
-<!-- This page allows a user to update their own comment -->
+{% if user.is_authenticated and user.username == comment.name %}
+
+<!-- This page allows a user to update their comment if they are the author
+        of the comment else redirect to 403 template -->
 <div class="container">
     <h1 class="page-title">Update Comment</h1>
     <hr>
@@ -24,5 +27,11 @@
         </div>
     </div>
 </div>
+
+{% elif user.is_authenticated %}
+
+{% include "403.html" %}
+
+{% endif %}
 
 {% endblock content %}
