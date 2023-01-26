@@ -4,8 +4,10 @@
 {% load cloudinary %}
 {% load crispy_forms_tags %}
 
+{% if user.is_authenticated and user.username == comment.name %}
 
-<!-- This page allows a user to delete their own comment -->
+<!-- This page allows a user to delete their comment if they are the
+      comment author else redirect to 403 template -->
 <div class="container">
     <h1 class="page-title">Delete Comment</h1>
     <hr>
@@ -24,4 +26,11 @@
         </div>
     </div>
 </div>
+
+{% elif user.is_authenticated %}
+
+{% include "403.html" %}
+
+{% endif %}
+
 {% endblock %}
