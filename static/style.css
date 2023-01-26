@@ -194,12 +194,12 @@ hr {
 }
 
 .comment-btn a {
-    color: #4492d1;
+    color: #2C6DAA;
 }
 
 .comment-btn a:hover,
 .comment-btn a:active {
-    color: rgb(41, 182, 218);
+    color: #4492d1;
 }
 
 /* Account styling e.g login.html/ logout.html */
