@@ -87,7 +87,6 @@ hr {
     color: #fff;
 }
 
-
 /* Recipe Cards */
 
 .card-text {
@@ -120,7 +119,6 @@ hr {
 .recipe-card-body {
     font-family: 'Karla', sans-serif;
 }
-
 
 /* Recipe Detail page */
 
@@ -204,7 +202,6 @@ hr {
     color: rgb(41, 182, 218);
 }
 
-
 /* Account styling e.g login.html/ logout.html */
 
 .btn-signup {
@@ -262,7 +259,6 @@ hr {
     border-radius: 4px;
 }
 
-
 /* Alert messages */
 
 .btn-close {
@@ -282,7 +278,6 @@ hr {
     background: transparent;
     color: rgb(34, 50, 54);
 }
-
 
 /* footer.html Styling */
 
@@ -316,7 +311,6 @@ hr {
 .social-icons a:hover {
     transform: scale(1.2);
 }
-
 
 /* Homepage */
 
