@@ -1083,6 +1083,12 @@ into the template*
 
 *Add the correct line of code and remove commented-out unused code*
 
+13. [Any logged-in user can edit a users recipe by typing in the URL](https://github.com/chris-townsend/PP4-Kitchen_Tales/issues/65)
+
+*resolved - [f4c2eb8](https://github.com/chris-townsend/PP4-Kitchen_Tales/commit/f4c2eb86f80ab9535f020ce477c36a4c85254b7a)*
+
+*Add Django tags to templates so that it only displays the content if the user is the author of the recipe else display a 403 error page*
+
 #
 
 ### Unfixed Bugs
