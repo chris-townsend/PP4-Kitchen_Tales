@@ -421,6 +421,10 @@ hr {
     height: 340px;
 }
 
+.link-copy {
+    color: #00458F;
+}
+
 /* Media Queries */
 
 /* For Medium devices (tablets, less than 768px) */
