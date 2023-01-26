@@ -4,7 +4,9 @@
 {% load cloudinary %}
 {% load crispy_forms_tags %}
 
-<!-- This page allows a user to delete their own recipe -->
+{% if user.is_authenticated and user.id == recipe.author.id %}
+
+<!-- This page allows a user to delete their recipe if they are the recipe author -->
 <div class="container">
     <h1 class="page-title">Delete Recipe</h1>
     <hr>
@@ -27,5 +29,11 @@
         </div>
     </div>
 </div>
+
+{% elif user.is_authenticated %}
+
+{% include "403.html" %}
+
+{% endif %}
 
 {% endblock %}

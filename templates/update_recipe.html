@@ -4,8 +4,9 @@
 {% load cloudinary %}
 {% load crispy_forms_tags %}
 
+{% if user.is_authenticated and user.id == recipe.author.id %}
 
-<!-- This page allows a user to update their own recipe -->
+<!-- This page allows a user to update their recipe if they are the recipe author -->
 <div class="container">
     <h1 class="page-title">Update Recipe</h1>
     <hr>
@@ -25,5 +26,10 @@
     </div>
 </div>
 
+{% elif user.is_authenticated %}
 
-{% endblock content %}
+{% include "403.html" %}
+
+{% endif %}
+
+{% endblock %}
