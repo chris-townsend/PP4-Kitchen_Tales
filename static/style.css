@@ -178,10 +178,10 @@ hr {
     font-weight: bold;
 }
 
+/* This class is also used on the account page links */
 .link {
     font-weight: bold;
 }
-
 
 /* Comments section in recipe_detail template */
 
@@ -210,14 +210,18 @@ hr {
 /* Account styling e.g login.html/ logout.html */
 
 .btn-signup {
-    background-color: #4492d1;
+    background-color: #2C6DAA;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: rgb(41, 182, 218);
+    background-color: #4492d1;
     color: #fff;
+}
+
+.sign-up-link {
+    color: #1C4D6D;
 }
 
 .sign-up-form {

@@ -9,18 +9,18 @@
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
       <h1 class="page-title mt-2">{% trans "Sign Out" %}</h1>
-        <hr>
-        <br>
-        <!-- Sign out form -->
-        <form class="sign-in text-center form-font mt-1 col-md-8 logout-form" method="post"
-          action="{% url 'account_logout' %}">
-          <h5 class="text-center form-font">{% trans 'Are you sure you want to sign out?' %}</h5>
-          {% csrf_token %}
-          {% if redirect_field_value %}
-          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-          {% endif %}
-          <button class="btn btn-signup form-font mt-4" type="submit">{% trans 'Sign Out' %}</button>
-        </form>
+      <hr>
+      <br>
+      <!-- Sign out form -->
+      <form class="sign-in text-center form-font mt-1 col-md-8 logout-form" method="post"
+        action="{% url 'account_logout' %}">
+        <h5 class="text-center form-font">{% trans 'Are you sure you want to sign out?' %}</h5>
+        {% csrf_token %}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <button class="btn btn-signup form-font mt-4" type="submit">{% trans 'Sign Out' %}</button>
+      </form>
     </div>
   </div>
 </div>
