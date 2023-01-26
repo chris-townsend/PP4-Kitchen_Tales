@@ -230,7 +230,7 @@ The website was designed with a minimalistic style to align with the site's obje
 
 #### Wireframes
 
-Initial wireframes were created for the original ideas, and as functionality was scaled back, these wireframes have also served as guidelines for the more basic features that remain in place for future development. The wireframes were designed using Balsamiq, with a mobile-first approach in mind.
+Initial wireframes were created for the original ideas, and as functionality was scaled back, these wireframes have also served as guidelines for the more basic features that remain in place for future development. The wireframes were designed using Balsamiq, with a mobile-first approach in mind. When building the recipe detail page, I noticed that the white space to the left of the screen resulted in a poor user experience when viewed on desktop. In order to improve the overall layout, this issue was addressed and the white space was removed to cover the entire screen.
 
 *Please note that to view the wireframe images, you need to click on the arrow next to each title.*
 
@@ -426,7 +426,6 @@ When selecting typefaces for the site, I aimed to choose fonts that evoke a rela
 GitHub projects were used to manage the development process using an agile approach. To view the project kanban board, please click on the link [here](https://github.com/users/chris-townsend/projects/5/views/1)
 ![GitHub kanban board](docs/features/agile/github-kanban-board.webp)
 
-
 A GitHub Issue was created for each User Story, which was then allocated to a milestone (Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution. The issues were closed automatically when the pull request was linked to the issue, most of them were closed automatically but some were closed manually.
 
 As the project progressed, I realized that some user stories would have to be scoped out due to time and resource constraints. These user stories have been placed within the "Future Features" section on the kanban board, and are intended to be implemented at a later date.
@@ -520,9 +519,21 @@ Custom error pages were designed to give users more information about the error 
 ![Navigation dropdown authorized users](docs/features/images/features-auth-dropdown.webp)
 
 ### Home Page
+
+- When a user logs in, they will be greeted with a personalized welcome message and a convenient link to add a new recipe. On the other hand, non-logged in users will still receive a welcoming message, but the link will redirect them to the sign-up page instead.
+
 ![Homepage](docs/features/images/features-homepage.webp)
+
+- The carousel of images is optimized for display on desktop and tablet devices, but for optimal viewing on mobile devices, the images are not shown due to the reduced quality when viewed on smaller screens.
+
 ![Homepage bootstrap carousel](docs/features/images/features-bootstrap-carousel.webp)
+
+- The card section and content were thoughtfully designed to align with the website's theme and target audience. It adheres to the same aesthetic as recipe cards, while also providing relevant information specific to a recipe-sharing website.
+
 ![Homepage card section](docs/features/images/features-card-section.webp)
+
+- The newsletter section is designed to entice users to sign up by providing valuable information and benefits. Users can easily subscribe by clicking on the subscribe button, which will take them to the newsletter sign-up page.
+
 ![Homepage newsletter section](docs/features/images/features-newsletter-section.webp)
 
 ### Footer
