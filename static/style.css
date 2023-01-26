@@ -139,6 +139,7 @@ hr {
 
 .description {
     background-color: bisque;
+    color: #5C4242;
 }
 
 .title-underlined {
@@ -177,6 +178,7 @@ hr {
 /* This class is also used on the account page links */
 .link {
     font-weight: bold;
+    color: #1C4D6D;
 }
 
 /* Comments section in recipe_detail template */
